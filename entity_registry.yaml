@@ -1,0 +1,735 @@
+zwave.aeotec_zw090_zstick_gen5_us:
+  config_entry_id:
+  name: ZStick
+  platform: zwave
+  unique_id: node-1
+zwave.sigma_valveswitch:
+  config_entry_id:
+  name: WaterValve
+  platform: zwave
+  unique_id: node-2
+switch.sigma_valveswitch:
+  config_entry_id:
+  name: WaterSwitch
+  platform: zwave
+  unique_id: 2-72057594076282880
+zwave.neo_coolcam_water_leakage_detector:
+  config_entry_id:
+  name: WaterLeak
+  platform: zwave
+  unique_id: node-3
+sensor.neo_coolcam_water_leakage_detector_alarm_type:
+  config_entry_id:
+  name: WaterLeak_AlarmType
+  platform: zwave
+  unique_id: 3-72057594094305281
+sensor.neo_coolcam_water_leakage_detector_alarm_level:
+  config_entry_id:
+  name: WaterLeak_AlarmLvl
+  platform: zwave
+  unique_id: 3-72057594094305297
+binary_sensor.neo_coolcam_water_leakage_detector_sensor:
+  config_entry_id:
+  name: WaterLeak_Sensor
+  platform: zwave
+  unique_id: 3-72057594093240320
+sensor.neo_coolcam_water_leakage_detector_sourcenodeid:
+  config_entry_id:
+  name: WaterLeak_Src
+  platform: zwave
+  unique_id: 3-72057594094305313
+sensor.neo_coolcam_water_leakage_detector_flood:
+  config_entry_id:
+  name: WaterLeak_Flood
+  platform: zwave
+  unique_id: 3-72057594094305409
+zwave.intermatic_ha04c_outdoor_module:
+  config_entry_id:
+  name: HA04-black
+  platform: zwave
+  unique_id: node-4
+switch.intermatic_ha04c_outdoor_module_switch:
+  config_entry_id:
+  name: HA04-black
+  platform: zwave
+  unique_id: 4-72057594109837312
+zwave.intermatic_ha02_appliance_module:
+  config_entry_id:
+  name: HA02-white
+  platform: zwave
+  unique_id: node-5
+switch.intermatic_ha02_appliance_module_switch:
+  config_entry_id:
+  name: HA02-white
+  platform: zwave
+  unique_id: 5-72057594126614528
+zwave.neo_coolcam_power_plug_12a_01:
+  config_entry_id:
+  name: Neo01
+  platform: zwave
+  unique_id: node-8
+switch.neo_coolcam_power_plug_12a_switch01:
+  config_entry_id:
+  name: Neo01_Switch
+  platform: zwave
+  unique_id: 8-72057594176946176
+sensor.neo_coolcam_power_plug_12a_energy01:
+  config_entry_id:
+  name: Neo01_Energy
+  platform: zwave
+  unique_id: 8-72057594177159170
+sensor.neo_coolcam_power_plug_12a_previous_reading01:
+  config_entry_id:
+  name: Neo01_PrevRead
+  platform: zwave
+  unique_id: 8-72057594177159186
+sensor.neo_coolcam_power_plug_12a_interval01:
+  config_entry_id:
+  name: Neo01_Interval
+  platform: zwave
+  unique_id: 8-72057594177159203
+sensor.neo_coolcam_power_plug_12a_power01:
+  config_entry_id:
+  name: Neo01_Power
+  platform: zwave
+  unique_id: 8-72057594177159298
+sensor.neo_coolcam_power_plug_12a_previous_reading_2_01:
+  config_entry_id:
+  name: Neo01_PrevRead2
+  platform: zwave
+  unique_id: 8-72057594177159314
+sensor.neo_coolcam_power_plug_12a_interval_2_01:
+  config_entry_id:
+  name: Neo01_Interval2
+  platform: zwave
+  unique_id: 8-72057594177159331
+sensor.neo_coolcam_power_plug_12a_voltage01:
+  config_entry_id:
+  name: Neo01_Volts
+  platform: zwave
+  unique_id: 8-72057594177159426
+sensor.neo_coolcam_power_plug_12a_previous_reading_3_01:
+  config_entry_id:
+  name: Neo01_PrevRead3
+  platform: zwave
+  unique_id: 8-72057594177159442
+sensor.neo_coolcam_power_plug_12a_interval_3_01:
+  config_entry_id:
+  name: Neo01_Interval3
+  platform: zwave
+  unique_id: 8-72057594177159459
+sensor.neo_coolcam_power_plug_12a_current01:
+  config_entry_id:
+  name: Neo01_Amps
+  platform: zwave
+  unique_id: 8-72057594177159490
+sensor.neo_coolcam_power_plug_12a_previous_reading_4_01:
+  config_entry_id:
+  name: Neo01_PrevRead4
+  platform: zwave
+  unique_id: 8-72057594177159506
+sensor.neo_coolcam_power_plug_12a_interval_4_01:
+  config_entry_id:
+  name: Neo01_Interval4
+  platform: zwave
+  unique_id: 8-72057594177159523
+sensor.neo_coolcam_power_plug_12a_exporting01:
+  config_entry_id:
+  name: Neo01_Export
+  platform: zwave
+  unique_id: 8-72057594177159680
+sensor.neo_coolcam_power_plug_12a_alarm_type01:
+  config_entry_id:
+  name: Neo01_AlarmType
+  platform: zwave
+  unique_id: 8-72057594178191361
+sensor.neo_coolcam_power_plug_12a_alarm_level01:
+  config_entry_id:
+  name: Neo01_AlarmLvl
+  platform: zwave
+  unique_id: 8-72057594178191377
+sensor.neo_coolcam_power_plug_12a_sourcenodeid01:
+  config_entry_id:
+  name: Neo01_Src
+  platform: zwave
+  unique_id: 8-72057594178191393
+sensor.neo_coolcam_power_plug_12a_power_management01:
+  config_entry_id:
+  name: Neo01_Mgmt
+  platform: zwave
+  unique_id: 8-72057594178191537
+zwave.neo_coolcam_power_plug_12a_02:
+  config_entry_id:
+  name: Neo02
+  platform: zwave
+  unique_id: node-10
+switch.neo_coolcam_power_plug_12a_switch02:
+  config_entry_id:
+  name: Neo02_Switch
+  platform: zwave
+  unique_id: 10-72057594210500608
+sensor.neo_coolcam_power_plug_12a_energy02:
+  config_entry_id:
+  name: Neo02_Energy
+  platform: zwave
+  unique_id: 10-72057594210713602
+sensor.neo_coolcam_power_plug_12a_previous_reading02:
+  config_entry_id:
+  name: Neo02_PrevRead
+  platform: zwave
+  unique_id: 10-72057594210713618
+sensor.neo_coolcam_power_plug_12a_interval02:
+  config_entry_id:
+  name: Neo02_Interval
+  platform: zwave
+  unique_id: 10-72057594210713635
+sensor.neo_coolcam_power_plug_12a_power02:
+  config_entry_id:
+  name: Neo02_Power
+  platform: zwave
+  unique_id: 10-72057594210713730
+sensor.neo_coolcam_power_plug_12a_previous_reading_2_02:
+  config_entry_id:
+  name: Neo02_PrevRead2
+  platform: zwave
+  unique_id: 10-72057594210713746
+sensor.neo_coolcam_power_plug_12a_interval_2_02:
+  config_entry_id:
+  name: Neo02_Interval2
+  platform: zwave
+  unique_id: 10-72057594210713763
+sensor.neo_coolcam_power_plug_12a_voltage02:
+  config_entry_id:
+  name: Neo02_Volts
+  platform: zwave
+  unique_id: 10-72057594210713858
+sensor.neo_coolcam_power_plug_12a_previous_reading_3_02:
+  config_entry_id:
+  name: Neo02_PrevRead3
+  platform: zwave
+  unique_id: 10-72057594210713874
+sensor.neo_coolcam_power_plug_12a_interval_3_02:
+  config_entry_id:
+  name: Neo02_Interval3
+  platform: zwave
+  unique_id: 10-72057594210713891
+sensor.neo_coolcam_power_plug_12a_current02:
+  config_entry_id:
+  name: Neo02_Amps
+  platform: zwave
+  unique_id: 10-72057594210713922
+sensor.neo_coolcam_power_plug_12a_previous_reading_4_02:
+  config_entry_id:
+  name: Neo02_PrevRead4
+  platform: zwave
+  unique_id: 10-72057594210713938
+sensor.neo_coolcam_power_plug_12a_interval_4_02:
+  config_entry_id:
+  name: Neo02_Interval4
+  platform: zwave
+  unique_id: 10-72057594210713955
+sensor.neo_coolcam_power_plug_12a_exporting02:
+  config_entry_id:
+  name: Neo02_Export
+  platform: zwave
+  unique_id: 10-72057594210714112
+sensor.neo_coolcam_power_plug_12a_alarm_type02:
+  config_entry_id:
+  name: Neo02_AlarmType
+  platform: zwave
+  unique_id: 10-72057594211745793
+sensor.neo_coolcam_power_plug_12a_alarm_level02:
+  config_entry_id:
+  name: Neo02_AlarmLvl
+  platform: zwave
+  unique_id: 10-72057594211745809
+sensor.neo_coolcam_power_plug_12a_sourcenodeid02:
+  config_entry_id:
+  name: Neo02_Src
+  platform: zwave
+  unique_id: 10-72057594211745825
+sensor.neo_coolcam_power_plug_12a_power_management02:
+  config_entry_id:
+  name: Neo02_Mgmt
+  platform: zwave
+  unique_id: 10-72057594211745969
+zwave.neo_coolcam_power_plug_12a_03:
+  config_entry_id:
+  name: Neo03
+  platform: zwave
+  unique_id: node-12
+switch.neo_coolcam_power_plug_12a_switch03:
+  config_entry_id:
+  name: Neo03_Switch
+  platform: zwave
+  unique_id: 12-72057594244055040
+sensor.neo_coolcam_power_plug_12a_energy03:
+  config_entry_id:
+  name: Neo03_Energy
+  platform: zwave
+  unique_id: 12-72057594244268034
+sensor.neo_coolcam_power_plug_12a_previous_reading03:
+  config_entry_id:
+  name: Neo03_PrevRead
+  platform: zwave
+  unique_id: 12-72057594244268050
+sensor.neo_coolcam_power_plug_12a_interval03:
+  config_entry_id:
+  name: Neo03_Interval
+  platform: zwave
+  unique_id: 12-72057594244268067
+sensor.neo_coolcam_power_plug_12a_power03:
+  config_entry_id:
+  name: Neo03_Power
+  platform: zwave
+  unique_id: 12-72057594244268162
+sensor.neo_coolcam_power_plug_12a_previous_reading_2_03:
+  config_entry_id:
+  name: Neo03_PrevRead2
+  platform: zwave
+  unique_id: 12-72057594244268178
+sensor.neo_coolcam_power_plug_12a_interval_2_03:
+  config_entry_id:
+  name: Neo03_Interval2
+  platform: zwave
+  unique_id: 12-72057594244268195
+sensor.neo_coolcam_power_plug_12a_voltage03:
+  config_entry_id:
+  name: Neo03_Volts
+  platform: zwave
+  unique_id: 12-72057594244268290
+sensor.neo_coolcam_power_plug_12a_previous_reading_3_03:
+  config_entry_id:
+  name: Neo03_PrevRead3
+  platform: zwave
+  unique_id: 12-72057594244268306
+sensor.neo_coolcam_power_plug_12a_interval_3_03:
+  config_entry_id:
+  name: Neo03_Interval3
+  platform: zwave
+  unique_id: 12-72057594244268323
+sensor.neo_coolcam_power_plug_12a_current03:
+  config_entry_id:
+  name: Neo03_Amps
+  platform: zwave
+  unique_id: 12-72057594244268354
+sensor.neo_coolcam_power_plug_12a_previous_reading_4_03:
+  config_entry_id:
+  name: Neo03_PrevRead4
+  platform: zwave
+  unique_id: 12-72057594244268370
+sensor.neo_coolcam_power_plug_12a_interval_4_03:
+  config_entry_id:
+  name: Neo03_Interval4
+  platform: zwave
+  unique_id: 12-72057594244268387
+sensor.neo_coolcam_power_plug_12a_exporting03:
+  config_entry_id:
+  name: Neo03_Export
+  platform: zwave
+  unique_id: 12-72057594244268544
+sensor.neo_coolcam_power_plug_12a_alarm_type03:
+  config_entry_id:
+  name: Neo03_AlarmType
+  platform: zwave
+  unique_id: 12-72057594245300225
+sensor.neo_coolcam_power_plug_12a_alarm_level03:
+  config_entry_id:
+  name: Neo03_AlarmLvl
+  platform: zwave
+  unique_id: 12-72057594245300241
+sensor.neo_coolcam_power_plug_12a_sourcenodeid03:
+  config_entry_id:
+  name: Neo03_Src
+  platform: zwave
+  unique_id: 12-72057594245300257
+sensor.neo_coolcam_power_plug_12a_power_management03:
+  config_entry_id:
+  name: Neo03_Mgmt
+  platform: zwave
+  unique_id: 12-72057594245300401
+zwave.neo_coolcam_power_plug_12a_04:
+  config_entry_id:
+  name: Neo04
+  platform: zwave
+  unique_id: node-14
+switch.neo_coolcam_power_plug_12a_switch04:
+  config_entry_id:
+  name: Neo04_Switch
+  platform: zwave
+  unique_id: 14-72057594277609472
+sensor.neo_coolcam_power_plug_12a_energy04:
+  config_entry_id:
+  name: Neo04_Energy
+  platform: zwave
+  unique_id: 14-72057594277822466
+sensor.neo_coolcam_power_plug_12a_previous_reading04:
+  config_entry_id:
+  name: Neo04_PrevRead
+  platform: zwave
+  unique_id: 14-72057594277822482
+sensor.neo_coolcam_power_plug_12a_interval04:
+  config_entry_id:
+  name: Neo04_Interval
+  platform: zwave
+  unique_id: 14-72057594277822499
+sensor.neo_coolcam_power_plug_12a_power04:
+  config_entry_id:
+  name: Neo04_Power
+  platform: zwave
+  unique_id: 14-72057594277822594
+sensor.neo_coolcam_power_plug_12a_previous_reading_2_04:
+  config_entry_id:
+  name: Neo04_PrevRead2
+  platform: zwave
+  unique_id: 14-72057594277822610
+sensor.neo_coolcam_power_plug_12a_interval_2_04:
+  config_entry_id:
+  name: Neo04_Interval2
+  platform: zwave
+  unique_id: 14-72057594277822627
+sensor.neo_coolcam_power_plug_12a_voltage04:
+  config_entry_id:
+  name: Neo04_Volts
+  platform: zwave
+  unique_id: 14-72057594277822722
+sensor.neo_coolcam_power_plug_12a_previous_reading_3_04:
+  config_entry_id:
+  name: Neo04_PrevRead3
+  platform: zwave
+  unique_id: 14-72057594277822738
+sensor.neo_coolcam_power_plug_12a_interval_3_04:
+  config_entry_id:
+  name: Neo04_Interval3
+  platform: zwave
+  unique_id: 14-72057594277822755
+sensor.neo_coolcam_power_plug_12a_current04:
+  config_entry_id:
+  name: Neo04_Amps
+  platform: zwave
+  unique_id: 14-72057594277822786
+sensor.neo_coolcam_power_plug_12a_previous_reading_4_04:
+  config_entry_id:
+  name: Neo04_PrevRead4
+  platform: zwave
+  unique_id: 14-72057594277822802
+sensor.neo_coolcam_power_plug_12a_interval_4_04:
+  config_entry_id:
+  name: Neo04_Interval4
+  platform: zwave
+  unique_id: 14-72057594277822819
+sensor.neo_coolcam_power_plug_12a_exporting04:
+  config_entry_id:
+  name: Neo04_Export
+  platform: zwave
+  unique_id: 14-72057594277822976
+sensor.neo_coolcam_power_plug_12a_alarm_type04:
+  config_entry_id:
+  name: Neo04_AlarmType
+  platform: zwave
+  unique_id: 14-72057594278854657
+sensor.neo_coolcam_power_plug_12a_alarm_level04:
+  config_entry_id:
+  name: Neo04_AlarmLvl
+  platform: zwave
+  unique_id: 14-72057594278854673
+sensor.neo_coolcam_power_plug_12a_sourcenodeid04:
+  config_entry_id:
+  name: Neo04_Src
+  platform: zwave
+  unique_id: 14-72057594278854689
+sensor.neo_coolcam_power_plug_12a_power_management04:
+  config_entry_id:
+  name: Neo04_Mgmt
+  platform: zwave
+  unique_id: 14-72057594278854833
+zwave.vision_zp3111_multisensor_4in1_1:
+  config_entry_id:
+  name: Multi01
+  platform: zwave
+  unique_id: node-15
+binary_sensor.vision_zp3111_multisensor_4in1_sensor_1:
+  config_entry_id:
+  name: Multi01_Sensor
+  platform: zwave
+  unique_id: 15-72057594294566912
+sensor.vision_zp3111_multisensor_4in1_temperature_1:
+  config_entry_id:
+  name: Multi01_Temp
+  platform: zwave
+  unique_id: 15-72057594294583314
+sensor.vision_zp3111_multisensor_4in1_luminance_1:
+  config_entry_id:
+  name: Multi01_Lum
+  platform: zwave
+  unique_id: 15-72057594294583346
+sensor.vision_zp3111_multisensor_4in1_relative_humidity_1:
+  config_entry_id:
+  name: Multi01_Hum
+  platform: zwave
+  unique_id: 15-72057594294583378
+sensor.vision_zp3111_multisensor_4in1_alarm_type_1:
+  config_entry_id:
+  name: Multi01_AlarmType
+  platform: zwave
+  unique_id: 15-72057594295631873
+sensor.vision_zp3111_multisensor_4in1_alarm_level_1:
+  config_entry_id:
+  name: Multi01_AlarmLvl
+  platform: zwave
+  unique_id: 15-72057594295631889
+sensor.vision_zp3111_multisensor_4in1_sourcenodeid_1:
+  config_entry_id:
+  name: Multi01_Src
+  platform: zwave
+  unique_id: 15-72057594295631905
+sensor.vision_zp3111_multisensor_4in1_burglar_1:
+  config_entry_id:
+  name: Multi01_Burglar
+  platform: zwave
+  unique_id: 15-72057594295632033
+sensor.vision_zp3111_multisensor_4in1_system_1:
+  config_entry_id:
+  name: Multi01_Sys
+  platform: zwave
+  unique_id: 15-72057594295632065
+zwave.vision_zp3111_multisensor_4in1_2:
+  config_entry_id:
+  name: Multi02
+  platform: zwave
+  unique_id: node-16
+binary_sensor.vision_zp3111_multisensor_4in1_sensor_2:
+  config_entry_id:
+  name: Multi02_Sensor
+  platform: zwave
+  unique_id: 16-72057594311344128
+sensor.vision_zp3111_multisensor_4in1_temperature_2:
+  config_entry_id:
+  name: Multi02_Temp
+  platform: zwave
+  unique_id: 16-72057594311360530
+sensor.vision_zp3111_multisensor_4in1_luminance_2:
+  config_entry_id:
+  name: Multi02_Lum
+  platform: zwave
+  unique_id: 16-72057594311360562
+sensor.vision_zp3111_multisensor_4in1_relative_humidity_2:
+  config_entry_id:
+  name: Multi02_Hum
+  platform: zwave
+  unique_id: 16-72057594311360594
+sensor.vision_zp3111_multisensor_4in1_alarm_type_2:
+  config_entry_id:
+  name: Multi02_AlarmType
+  platform: zwave
+  unique_id: 16-72057594312409089
+sensor.vision_zp3111_multisensor_4in1_alarm_level_2:
+  config_entry_id:
+  name: Multi02_AlarmLvl
+  platform: zwave
+  unique_id: 16-72057594312409105
+sensor.vision_zp3111_multisensor_4in1_sourcenodeid_2:
+  config_entry_id:
+  name: Multi02_Src
+  platform: zwave
+  unique_id: 16-72057594312409121
+sensor.vision_zp3111_multisensor_4in1_burglar_2:
+  config_entry_id:
+  name: Multi02_Burglar
+  platform: zwave
+  unique_id: 16-72057594312409249
+sensor.vision_zp3111_multisensor_4in1_power_management_2:
+  config_entry_id:
+  name: Multi02_PowerMgmt
+  platform: zwave
+  unique_id: 16-72057594312409265
+sensor.vision_zp3111_multisensor_4in1_emergency_2:
+  config_entry_id:
+  name: Multi02_Emerg
+  platform: zwave
+  unique_id: 16-72057594312409297
+sensor.vision_zp3111_multisensor_4in1_clock_2:
+  config_entry_id:
+  name: Multi02_Clock
+  platform: zwave
+  unique_id: 16-72057594312409313
+sensor.vision_zp3111_multisensor_4in1_appliance_2:
+  config_entry_id:
+  name: Multi02_Appliance
+  platform: zwave
+  unique_id: 16-72057594312409329
+zwave.vision_zp3111_multisensor_4in1_3:
+  config_entry_id:
+  name: Multi03
+  platform: zwave
+  unique_id: node-17
+binary_sensor.vision_zp3111_multisensor_4in1_sensor_3:
+  config_entry_id:
+  name: Multi03_Sensor
+  platform: zwave
+  unique_id: 17-72057594328121344
+sensor.vision_zp3111_multisensor_4in1_temperature_3:
+  config_entry_id:
+  name: Multi03_Temp
+  platform: zwave
+  unique_id: 17-72057594328137746
+sensor.vision_zp3111_multisensor_4in1_luminance_3:
+  config_entry_id:
+  name: Multi03_Lum
+  platform: zwave
+  unique_id: 17-72057594328137778
+sensor.vision_zp3111_multisensor_4in1_relative_humidity_3:
+  config_entry_id:
+  name: Multi03_Hum
+  platform: zwave
+  unique_id: 17-72057594328137810
+sensor.vision_zp3111_multisensor_4in1_alarm_type_3:
+  config_entry_id:
+  name: Multi03_AlarmType
+  platform: zwave
+  unique_id: 17-72057594329186305
+sensor.vision_zp3111_multisensor_4in1_alarm_level_3:
+  config_entry_id:
+  name: Multi03_AlarmLvl
+  platform: zwave
+  unique_id: 17-72057594329186321
+sensor.vision_zp3111_multisensor_4in1_sourcenodeid_3:
+  config_entry_id:
+  name: Multi03_Src
+  platform: zwave
+  unique_id: 17-72057594329186337
+sensor.vision_zp3111_multisensor_4in1_burglar_3:
+  config_entry_id:
+  name: Multi03_Burglar
+  platform: zwave
+  unique_id: 17-72057594329186465
+sensor.vision_zp3111_multisensor_4in1_emergency_3:
+  config_entry_id:
+  name: Multi03_Emerg
+  platform: zwave
+  unique_id: 17-72057594329186513
+sensor.vision_zp3111_multisensor_4in1_clock_3:
+  config_entry_id:
+  name: Multi03_Clock
+  platform: zwave
+  unique_id: 17-72057594329186529
+sensor.vision_zp3111_multisensor_4in1_appliance_3:
+  config_entry_id:
+  name: Multi03_Appliance
+  platform: zwave
+  unique_id: 17-72057594329186545
+zwave.vision_zp3111_multisensor_4in1_4:
+  config_entry_id:
+  name: Multi04
+  platform: zwave
+  unique_id: node-19
+binary_sensor.vision_zp3111_multisensor_4in1_sensor_4:
+  config_entry_id:
+  name: Multi04_Sensor
+  platform: zwave
+  unique_id: 19-72057594361675776
+sensor.vision_zp3111_multisensor_4in1_temperature_4:
+  config_entry_id:
+  name: Multi04_Temp
+  platform: zwave
+  unique_id: 19-72057594361692178
+sensor.vision_zp3111_multisensor_4in1_luminance_4:
+  config_entry_id:
+  name: Multi04_Lum
+  platform: zwave
+  unique_id: 19-72057594361692210
+sensor.vision_zp3111_multisensor_4in1_relative_humidity_4:
+  config_entry_id:
+  name: Multi04_Hum
+  platform: zwave
+  unique_id: 19-72057594361692242
+sensor.vision_zp3111_multisensor_4in1_alarm_type_4:
+  config_entry_id:
+  name: Multi04_AlarmType
+  platform: zwave
+  unique_id: 19-72057594362740737
+sensor.vision_zp3111_multisensor_4in1_alarm_level_4:
+  config_entry_id:
+  name: Multi04_AlarmLvl
+  platform: zwave
+  unique_id: 19-72057594362740753
+sensor.vision_zp3111_multisensor_4in1_sourcenodeid_4:
+  config_entry_id:
+  name: Multi04_Src
+  platform: zwave
+  unique_id: 19-72057594362740769
+sensor.vision_zp3111_multisensor_4in1_burglar_4:
+  config_entry_id:
+  name: Multi04_Burglar
+  platform: zwave
+  unique_id: 19-72057594362740897
+sensor.vision_zp3111_multisensor_4in1_system_4:
+  config_entry_id:
+  name: Multi04_Sys
+  platform: zwave
+  unique_id: 19-72057594362740929
+sensor.vision_zp3111_multisensor_4in1_emergency_4:
+  config_entry_id:
+  name: Multi04_Emerg
+  platform: zwave
+  unique_id: 19-72057594362740945
+sensor.vision_zp3111_multisensor_4in1_clock_4:
+  config_entry_id:
+  name: Multi04_Clock
+  platform: zwave
+  unique_id: 19-72057594362740961
+sensor.vision_zp3111_multisensor_4in1_appliance_4:
+  config_entry_id:
+  name: Multi04_Appliance
+  platform: zwave
+  unique_id: 19-72057594362740977
+media_player.xbr65x900e:
+  config_entry_id: b36f2711ae30424da085e7bf8465f3bb
+  name:
+  platform: cast
+  unique_id: d64706ea-584a-6d3a-df29-558f7f6bbe6c
+media_player.joes_office_tv:
+  config_entry_id: b36f2711ae30424da085e7bf8465f3bb
+  name:
+  platform: cast
+  unique_id: cdd85fdf-3233-c772-a1bc-1d2287f72ef3
+media_player.boardroom_tv:
+  config_entry_id: b36f2711ae30424da085e7bf8465f3bb
+  name:
+  platform: cast
+  unique_id: 1af89bcf-9e90-d618-56d0-54b92e62f4db
+media_player.meeting_room_ne_tv:
+  config_entry_id: b36f2711ae30424da085e7bf8465f3bb
+  name:
+  platform: cast
+  unique_id: a0da2c76-4a49-2d2f-c3a1-5184c0a1653b
+media_player.meeting_room_central:
+  config_entry_id: b36f2711ae30424da085e7bf8465f3bb
+  name:
+  platform: cast
+  unique_id: c821a211-f116-a6de-b374-b7edc6b3bdff
+media_player.meeting_room_east_tv:
+  config_entry_id: b36f2711ae30424da085e7bf8465f3bb
+  name:
+  platform: cast
+  unique_id: a321b26c-d625-5549-5a99-4a2501c068ab
+media_player.meeting_room_pluto_tv:
+  config_entry_id: b36f2711ae30424da085e7bf8465f3bb
+  name:
+  platform: cast
+  unique_id: 110a78a3-d147-90ce-df21-5391d1418811
+media_player.meeting_room_colosseumtv:
+  config_entry_id: b36f2711ae30424da085e7bf8465f3bb
+  name:
+  platform: cast
+  unique_id: f281a71d-5e7f-c900-584a-8f7fdea6db84
+media_player.meeting_room_roastery_tv:
+  config_entry_id: b36f2711ae30424da085e7bf8465f3bb
+  name:
+  platform: cast
+  unique_id: cac03c75-6dc0-0312-5fdf-0d41a097fc30
+media_player.kitchen_tv:
+  config_entry_id: b36f2711ae30424da085e7bf8465f3bb
+  name:
+  platform: cast
+  unique_id: 2d9536a6-efaa-2a43-945c-121688b29d32

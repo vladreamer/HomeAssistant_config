@@ -1,0 +1,13 @@
+- name: MailToPykodel 
+  platform: smtp
+  server: smtp.gmail.com
+  port: 587
+  timeout: 15
+  sender: pykodel@gmail.com
+  starttls: 1
+  username: pykodel@gmail.com
+  password: Darish2015 
+  recipient:
+    - pykodel@gmail.com
+  #  - redalertmail@gmail.com
+  sender_name: HomeAssistant

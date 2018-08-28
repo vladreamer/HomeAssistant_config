@@ -1,0 +1,6 @@
+test_notification:
+  alias: 'Test Gmail'
+  sequence:
+    - service: notify.MailToPykodel
+      data:
+        message: This is a test!

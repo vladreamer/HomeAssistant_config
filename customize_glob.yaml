@@ -1,0 +1,73 @@
+##################
+## PowerPlugs 
+##################
+"sensor.neo_coolcam_power_plug_12a_previous_reading*":
+  hidden: true
+"sensor.neo_coolcam_power_plug_12a_power_management*":
+  hidden: true
+"sensor.neo_coolcam_power_plug_12a_sourcenodeid*":
+  hidden: true
+"sensor.neo_coolcam_power_plug_12a_alarm_type*":
+  hidden: true
+"sensor.neo_coolcam_power_plug_12a_alarm_level*":
+  hidden: true
+"sensor.neo_coolcam_power_plug_12a_exporting*":
+  hidden: true
+"sensor.neo_coolcam_power_plug_12a_interval*":
+  hidden: true
+"sensor.neo_coolcam_power_plug_12a_power*":
+  icon: mdi:power-plug
+"sensor.neo_coolcam_power_plug_12a_voltage*":
+  icon: mdi:power-socket
+"sensor.neo_coolcam_power_plug_12a_current*":
+  icon: mdi:flash
+##################
+## LeakDetector
+##################
+"sensor.neo_coolcam_water_leakage_detector_alarm_level*":
+  hidden: true
+"sensor.neo_coolcam_water_leakage_detector_alarm_type*":
+  hidden: true
+"sensor.neo_coolcam_water_leakage_detector_sourcenodeid*":
+  hidden: true
+"sensor.neo_coolcam_water_leakage_detector_flood*":
+  hidden: true
+##################
+## MediaPlayer 
+##################
+"media_player.*":         
+  hidden: true
+##################
+## MultiSensors 
+##################
+"sensor.multisensor*_alarm_level":
+  hidden: true
+"sensor.multisensor*_alarm_type":
+  hidden: true
+"sensor.multisensor*_burglar":
+  hidden: true
+"sensor.multisensor*_sourcenodeid":
+  hidden: true
+"binary_sensor.multisensor*_sensor":
+  hidden: true
+"sensor.multisensor*_system":
+  hidden: true
+"sensor.multisensor*_emergency":
+  hidden: true
+"sensor.multisensor*_power_management":
+  hidden: true
+#"sensor.multisensor*_luminance":
+#  friendly_name: Luminance
+#  icon: mdi:brightness-5
+#"sensor.multisensor*_relative_humidity":
+#  friendly_name: Humidity
+#  icon: mdi:water-percent
+#"sensor.multisensor*_temperature":
+#  friendly_name: Temperature
+#  icon: mdi:temperature-celsius
+#"sensor.multisensor*_battery":
+#  friendly_name: BatteryStatus
+"binary_sensor.multisensor*_tamper":
+  friendly_name: Tamper
+"binary_sensor.multisensor*_motion":
+  friendly_name: Motion

@@ -1,0 +1,255 @@
+### Groups ###
+# Views
+default_view:
+  view: yes
+  name: Settings
+  entities:
+    - sensor.disk_use_percent_
+    - sensor.since_last_boot
+    - sensor.weather_temperature
+    - sensor.weather_humidity
+    - group.basement
+    - group.kitchen
+    - group.bedroom1
+    - group.masteroom
+#    - group.neo01
+#    - group.neo02
+#    - group.neo03
+#    - group.neo04
+#    - group.multi01
+#    - group.multi02
+#    - group.multi03
+#    - group.multi04
+    - group.date_time
+    - group.batteries
+    - group.watervalve
+
+date_time:
+  name: Date and Time
+  entities:
+    - sensor.time
+    - sensor.date
+    - sensor.time_utc
+    - sensor.time_in_odessa
+    - script.test_notification    
+
+basement:
+  name: Basement
+  entities:
+    - binary_sensor.multi01_motion
+    - binary_sensor.multi01_tamper
+    - sensor.vision_zp3111_multisensor_4in1_luminance_1
+    - sensor.vision_zp3111_multisensor_4in1_relative_humidity_1
+    - sensor.vision_zp3111_multisensor_4in1_temperature_1
+    - sensor.vision_zp3111_multisensor_4in1_battery_1
+    - sensor.neo_coolcam_power_plug_12a_power01 
+    - sensor.neo_coolcam_power_plug_12a_voltage01
+    - sensor.neo_coolcam_power_plug_12a_current01
+    - switch.neo_coolcam_power_plug_12a_switch01
+
+kitchen:
+  name: Kitchent
+  entities:
+    - binary_sensor.multi02_motion
+    - binary_sensor.multi02_tamper
+    - sensor.vision_zp3111_multisensor_4in1_luminance_2
+    - sensor.vision_zp3111_multisensor_4in1_relative_humidity_2
+    - sensor.vision_zp3111_multisensor_4in1_temperature_2
+    - sensor.vision_zp3111_multisensor_4in1_battery_2
+    - sensor.neo_coolcam_power_plug_12a_power02 
+    - sensor.neo_coolcam_power_plug_12a_voltage02
+    - sensor.neo_coolcam_power_plug_12a_current02
+    - switch.neo_coolcam_power_plug_12a_switch02
+
+bedroom1:
+  name: Vlad's Room
+  entities:
+    - binary_sensor.multi03_motion
+    - binary_sensor.multi03_tamper
+    - sensor.vision_zp3111_multisensor_4in1_luminance_3
+    - sensor.vision_zp3111_multisensor_4in1_relative_humidity_3
+    - sensor.vision_zp3111_multisensor_4in1_temperature_3
+    - sensor.vision_zp3111_multisensor_4in1_battery_3
+    - sensor.neo_coolcam_power_plug_12a_power03 
+    - sensor.neo_coolcam_power_plug_12a_voltage03
+    - sensor.neo_coolcam_power_plug_12a_current03
+    - switch.neo_coolcam_power_plug_12a_switch03
+
+masteroom:
+  name: Master Bedroom
+  entities:
+    - binary_sensor.multi04_motion
+    - binary_sensor.multi04_tamper
+    - sensor.vision_zp3111_multisensor_4in1_luminance_4
+    - sensor.vision_zp3111_multisensor_4in1_relative_humidity_4
+    - sensor.vision_zp3111_multisensor_4in1_temperature_4
+    - sensor.vision_zp3111_multisensor_4in1_battery_4
+    - sensor.neo_coolcam_power_plug_12a_power04 
+    - sensor.neo_coolcam_power_plug_12a_voltage04
+    - sensor.neo_coolcam_power_plug_12a_current04
+    - switch.neo_coolcam_power_plug_12a_switch04
+
+#neo01:
+#  name: NeoSwitch1
+#  entities:
+#    - sensor.neo_coolcam_power_plug_12a_power01 
+#    - sensor.neo_coolcam_power_plug_12a_voltage01
+#    - sensor.neo_coolcam_power_plug_12a_current01
+#    - switch.neo_coolcam_power_plug_12a_switch01
+
+  
+#neo02:
+#  name: NeoSwitch2
+#  entities:
+#    - sensor.neo_coolcam_power_plug_12a_power02 
+#    - sensor.neo_coolcam_power_plug_12a_voltage02
+#    - sensor.neo_coolcam_power_plug_12a_current02
+#    - switch.neo_coolcam_power_plug_12a_switch02
+
+#neo03:
+#  name: NeoSwitch3
+#  entities:
+#    - sensor.neo_coolcam_power_plug_12a_power03 
+#    - sensor.neo_coolcam_power_plug_12a_voltage03
+#    - sensor.neo_coolcam_power_plug_12a_current03
+#    - switch.neo_coolcam_power_plug_12a_switch03
+
+
+#neo04:
+#  name: NeoSwitch4
+#  entities:
+#    - sensor.neo_coolcam_power_plug_12a_power04 
+#    - sensor.neo_coolcam_power_plug_12a_voltage04
+#    - sensor.neo_coolcam_power_plug_12a_current04
+#    - switch.neo_coolcam_power_plug_12a_switch04
+
+
+#multi01:
+#  name: MultiSensor1 - Basement
+#  entities:
+#    - binary_sensor.multi01_motion
+#    - binary_sensor.multi01_tamper
+#    - sensor.vision_zp3111_multisensor_4in1_luminance_1
+#    - sensor.vision_zp3111_multisensor_4in1_relative_humidity_1
+#    - sensor.vision_zp3111_multisensor_4in1_temperature_1
+#    - sensor.vision_zp3111_multisensor_4in1_battery_1
+
+
+#multi02:
+#  name: MultiSensor2 - Kitchen
+#  entities:
+#    - binary_sensor.multi02_motion
+#    - binary_sensor.multi02_tamper
+#    - sensor.vision_zp3111_multisensor_4in1_luminance_2
+#    - sensor.vision_zp3111_multisensor_4in1_relative_humidity_2
+#    - sensor.vision_zp3111_multisensor_4in1_temperature_2
+#    - sensor.vision_zp3111_multisensor_4in1_battery_2
+
+
+#multi03:
+#  name: MultiSensor3 - FamilyRoom
+#  entities:
+#    - binary_sensor.multi03_motion
+#    - binary_sensor.multi03_tamper
+#    - sensor.vision_zp3111_multisensor_4in1_luminance_3
+#    - sensor.vision_zp3111_multisensor_4in1_relative_humidity_3
+#    - sensor.vision_zp3111_multisensor_4in1_temperature_3
+#    - sensor.vision_zp3111_multisensor_4in1_battery_3
+
+
+#multi04:
+#  name: MultiSensor4 - BedRoom
+#  entities:
+#    - binary_sensor.multi03_motion
+#    - binary_sensor.multi03_tamper
+#    - sensor.vision_zp3111_multisensor_4in1_luminance_4
+#    - sensor.vision_zp3111_multisensor_4in1_relative_humidity_4
+#    - sensor.vision_zp3111_multisensor_4in1_temperature_4
+#    - sensor.vision_zp3111_multisensor_4in1_battery_4
+
+batteries:
+  name: Batteries
+  entities:
+    - sensor.multi01_battery
+    - sensor.multi02_battery
+    - sensor.multi03_battery
+    - sensor.multi04_battery
+    - sensor.waterleaksensor_battery
+
+watervalve:
+  name: WaterValveControl - Basement
+  entities:
+    - binary_sensor.neo_coolcam_water_leakage_detector_sensor
+    - switch.sigma_valveswitch    
+
+security:
+  view: yes
+  name: Security
+  entities:
+    - group.cameras
+
+
+cameras:
+  name: SecurityCameras
+  control: hidden
+  entities:
+    - camera.camera0 
+    - camera.camera1 
+    - camera.camera2
+
+
+power_switch:
+  view: yes
+  name: Switches
+  entities:
+    - group.all_switches
+    - group.neoswitch
+    - group.oldswitch
+
+
+neoswitch:
+  name: Neo_Coolcam
+  entities:
+    - switch.neo_coolcam_power_plug_12a_switch01
+    - switch.neo_coolcam_power_plug_12a_switch02
+    - switch.neo_coolcam_power_plug_12a_switch03
+    - switch.neo_coolcam_power_plug_12a_switch04
+
+oldswitch:
+  name: Intermatic
+  entities:
+    -  switch.intermatic_ha02_appliance_module_switch 
+    -  switch.intermatic_ha04c_outdoor_module_switch
+
+graphs:
+  view: yes
+  name: Monitoring Chart
+  icon: mdi:chart-line-variant
+  entities:
+    - group.temperature
+    - group.humidity
+    - group.luminance
+    - group.power
+    
+temperature:
+    name: Temperature
+    entities:
+    - history_graph.temperature_graphs
+humidity:
+    name: Humidity
+    entities:
+    - history_graph.humidity_graphs
+luminance:
+    name: Luminance
+    entities:
+    - history_graph.luminance_graphs
+power:
+    name: Power
+    entities:
+    - history_graph.power_graphs
+
+#z-wave:
+#  view: yes
+#  name: Z-Wave devices
+#  entities:
+#    - group.z-wave

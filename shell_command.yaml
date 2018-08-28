@@ -1,0 +1,6 @@
+#################################################
+#
+# Fixing Camera snapshoot
+#
+#################################################
+fix_snapshot: '/usr/bin/convert {{filename1}} {{filename2}}'

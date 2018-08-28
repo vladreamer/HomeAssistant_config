@@ -1,0 +1,102 @@
+#######################################
+#
+# Multisensors Settings
+#
+#######################################
+sensor.vision_zp3111_multisensor_4in1_temperature_1:
+  friendly_name: Multi01_Temp
+  icon: mdi:temperature-celsius
+  unit_of_measurement: '°C'
+sensor.vision_zp3111_multisensor_4in1_temperature_2:
+  friendly_name: Multi02_Temp
+  icon: mdi:temperature-celsius
+  unit_of_measurement: '°C'
+sensor.vision_zp3111_multisensor_4in1_temperature_3:
+  friendly_name: Multi03_Temp
+  icon: mdi:temperature-celsius
+  unit_of_measurement: '°C'
+sensor.vision_zp3111_multisensor_4in1_temperature_4:
+  friendly_name: Multi04_Temp
+  icon: mdi:temperature-celsius
+  unit_of_measurement: '°C'
+#
+sensor.vision_zp3111_multisensor_4in1_relative_humidity_1:
+  friendly_name: Multi01_Hum
+  icon: mdi:water-percent
+  unit_of_measurement: '%' 
+sensor.vision_zp3111_multisensor_4in1_relative_humidity_2:
+  friendly_name: Multi02_Hum
+  icon: mdi:water-percent
+  unit_of_measurement: '%' 
+sensor.vision_zp3111_multisensor_4in1_relative_humidity_3:
+  friendly_name: Multi03_Hum
+  icon: mdi:water-percent
+  unit_of_measurement: '%' 
+sensor.vision_zp3111_multisensor_4in1_relative_humidity_4:
+  friendly_name: Multi04_Hum
+  icon: mdi:water-percent
+  unit_of_measurement: '%' 
+#
+sensor.vision_zp3111_multisensor_4in1_luminance_1:
+  friendly_name: Multi01_Lum
+  icon: mdi:brightness-5
+  unit_of_measurement: '%'
+sensor.vision_zp3111_multisensor_4in1_luminance_2:
+  friendly_name: Multi02_Lum
+  icon: mdi:brightness-5
+  unit_of_measurement: '%'
+sensor.vision_zp3111_multisensor_4in1_luminance_3:
+  friendly_name: Multi03_Lum
+  icon: mdi:brightness-5
+  unit_of_measurement: '%'
+sensor.vision_zp3111_multisensor_4in1_luminance_4:
+  friendly_name: Multi04_Lum
+  icon: mdi:brightness-5
+  unit_of_measurement: '%'
+#
+#
+#######################################
+#
+# External Settings
+#
+#######################################
+sensor.disk_use_percent_:
+  friendly_name: Disk
+sensor.since_last_boot:
+  friendly_name: UpTime
+sensor.weather_temperature:
+  friendly_name: WeatherTemp  
+  unit_of_measurement: '°C'
+#sensor.time
+#  friendly_name: Time in Toronto
+#
+#
+#######################################
+#
+# Group Settings
+#
+#######################################
+group.all_automations:
+  hidden: false
+  friendly_name: All Automations
+group.all_devices:
+  hidden: false
+  friendly_name: All Devices
+group.all_lights:
+  hidden: false
+  friendly_name: All Lights
+group.all_locks:
+  hidden: false
+  friendly_name: All Locks
+group.all_remotes:
+  hidden: false
+  friendly_name: All Remotes
+group.all_scripts:
+  hidden: false
+  friendly_name: All Scripts
+group.all_switches:
+  hidden: false
+  friendly_name: All Switches
+group.all_sensors:
+  hidden: false
+  friendly_name: All Sensors

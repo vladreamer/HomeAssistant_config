@@ -1,0 +1,8 @@
+# Example .gitignore file for your config dir
+OZW_Log.txt
+secrets.yaml
+known_devices.yaml
+home-assistant*.db
+zwcfg*.xml
+!*.yaml
+!.gitignore

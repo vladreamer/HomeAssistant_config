@@ -1,0 +1,37 @@
+temperature:
+  name: Temperature Graphs
+  entities:
+    - sensor.weather_temperature
+    - sensor.vision_zp3111_multisensor_4in1_temperature_1
+    - sensor.vision_zp3111_multisensor_4in1_temperature_2
+    - sensor.vision_zp3111_multisensor_4in1_temperature_3
+    - sensor.vision_zp3111_multisensor_4in1_temperature_4
+  hours_to_show: 72 
+#
+humidity:
+  name: Humidity Graphs
+  entities:
+    - sensor.weather_humidity
+    - sensor.vision_zp3111_multisensor_4in1_relative_humidity_1
+    - sensor.vision_zp3111_multisensor_4in1_relative_humidity_2
+    - sensor.vision_zp3111_multisensor_4in1_relative_humidity_3
+    - sensor.vision_zp3111_multisensor_4in1_relative_humidity_4
+  hours_to_show: 72 
+#
+luminance:
+  name: Luminance Graphs
+  entities:
+    - sensor.vision_zp3111_multisensor_4in1_luminance_1
+    - sensor.vision_zp3111_multisensor_4in1_luminance_2
+    - sensor.vision_zp3111_multisensor_4in1_luminance_3
+    - sensor.vision_zp3111_multisensor_4in1_luminance_4
+  hours_to_show: 72 
+#
+power:
+  name: Power Graphs
+  entities:
+    - sensor.neo_coolcam_power_plug_12a_power01
+    - sensor.neo_coolcam_power_plug_12a_power02
+    - sensor.neo_coolcam_power_plug_12a_power03
+    - sensor.neo_coolcam_power_plug_12a_power04
+  hours_to_show: 72 

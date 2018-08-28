@@ -1,0 +1,24 @@
+########################
+# USB_Camera
+########################
+- platform: mjpeg 
+  mjpeg_url: http://localhost:8081 
+  name: Camera0
+  username: viewer
+  password: 1234
+########################
+# Network_Camera Indoor 
+########################
+- platform: mjpeg 
+  mjpeg_url: http://192.168.0.221/img/video.mjpeg
+  name: Camera1
+  username: viewer
+  password: 1234
+###########################
+# Network_Camera External 
+###########################
+- platform: mjpeg 
+  mjpeg_url: http://192.168.0.222/img/video.mjpeg
+  name: Camera2
+  username: viewer 
+  password: 1234
