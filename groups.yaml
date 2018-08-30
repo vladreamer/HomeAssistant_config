@@ -193,9 +193,10 @@ cameras:
   name: SecurityCameras
   control: hidden
   entities:
-    - camera.camera0 
     - camera.camera1 
-    - camera.camera2
+    - camera.camera2 
+    - camera.camera3
+    - camera.camera4
 
 
 power_switch:

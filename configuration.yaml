@@ -26,6 +26,10 @@ frontend:
 # Enables configuration UI
 config:
 
+ffmpeg:
+  #ffmpeg_bin: /usr/bin/ffmpeg
+  ffmpeg_bin: /usr/bin/avconv
+
 http:
   # Secrets are defined in the file secrets.yaml
   #api_password: !secret http_password
