@@ -4,5 +4,6 @@ secrets.yaml
 known_devices.yaml
 home-assistant*.db
 zwcfg*.xml
+*.jpg
 !*.yaml
 !.gitignore
