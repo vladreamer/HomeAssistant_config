@@ -1,6 +1,6 @@
 homeassistant:
   # Name of the location where Home Assistant is running
-  name: Home
+  name: Sydie Lane, Tottenham 
   # Location required to calculate the time the sun rises and sets
   latitude: 44.0168
   longitude: -79.8163
@@ -32,8 +32,8 @@ ffmpeg:
 
 http:
   # Secrets are defined in the file secrets.yaml
-  #api_password: !secret http_password
-  api_password: 3health1 
+  api_password: !secret http_password
+  #api_password: 3health1 
   # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
   # base_url: http://smarthome.ehealthinnovation.org:8123
 
@@ -71,8 +71,8 @@ logger:
 map:
 
 # Text to speech
-tts:
-  - platform: google
+#tts:
+#  - platform: google
 
 # Cloud
 #cloud:

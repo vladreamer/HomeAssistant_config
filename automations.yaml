@@ -1,3 +1,14 @@
+#- id: '2018090801'
+########################################################
+## Set Zwave config parameter for Multi04
+########################################################
+#  service: zwave.set_config_parameter
+#  data_template: {
+#                "node_id": 19,
+#                "parameter": 7,
+#                "value": 2
+#                 }
+
 - id: '2018082601'
 ########################################################
 ## Turn switch Neo4 (MAsterBedroom) "ON" if it was "OFF" triggered by

@@ -8,6 +8,7 @@ default_view:
     - sensor.since_last_boot
     - sensor.weather_temperature
     - sensor.weather_humidity
+    - binary_sensor.neo_coolcam_water_leakage_detector_sensor
     - group.basement
     - group.kitchen
     - group.bedroom1
