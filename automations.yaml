@@ -105,7 +105,7 @@
         filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_04cor.jpg"
     - service: notify.MailtoPykodel
       data_template:
-        title: "Motion in Basement"
+        title: "Basement Motion Detected"
         message: "Motion Detected in Basement by Multisensor Multi01"
         data:
           images:
@@ -340,4 +340,4 @@
   - service: notify.MailtoPykodel
     data:
       title: "FLOOD ALERT"
-      message: "WaterSwitch trigerred  by WaterLeak sensor"
+      message: "WaterSwitch trigerred by WaterLeak sensor"

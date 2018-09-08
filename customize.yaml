@@ -57,6 +57,27 @@ sensor.vision_zp3111_multisensor_4in1_luminance_4:
 #
 #######################################
 #
+# Switches
+#
+#######################################
+switch.neo_coolcam_power_plug_12a_switch01:
+  friendly_name: BasementSwitch 
+switch.neo_coolcam_power_plug_12a_switch02:
+  friendly_name: KitchenSwitch 
+switch.neo_coolcam_power_plug_12a_switch03:
+  friendly_name: VladRoomSwitch 
+switch.neo_coolcam_power_plug_12a_switch04:
+  friendly_name: MasterRoomSwitch1
+switch.intermatic_ha02_appliance_module_switch: 
+  friendly_name: MasterRoomSwitch2
+switch.intermatic_ha04c_outdoor_module_switch:
+  friendly_name: GarageSwitch
+
+
+#
+#
+#######################################
+#
 # External Settings
 #
 #######################################
@@ -65,8 +86,13 @@ sensor.disk_use_percent_:
 sensor.since_last_boot:
   friendly_name: UpTime
 sensor.weather_temperature:
-  friendly_name: WeatherTemp  
+  friendly_name: OutTemp  
   unit_of_measurement: '°C'
+  icon: mdi:temperature-celsius
+sensor.weather_humidity:
+  friendly_name: OutHumid  
+  unit_of_measurement: '%'
+  icon: mdi:water-percent
 #sensor.time
 #  friendly_name: Time in Toronto
 #
