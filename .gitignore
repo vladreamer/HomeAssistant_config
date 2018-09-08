@@ -3,6 +3,8 @@ OZW_Log.txt
 secrets.yaml
 known_devices.yaml
 home-assistant*.db
+home-assistant_v2.db-wal
+home-assistant_v2.db-shm
 zwcfg*.xml
 *.jpg
 !*.yaml
