@@ -88,6 +88,7 @@ masteroom:
     - sensor.neo_coolcam_power_plug_12a_voltage04
     - sensor.neo_coolcam_power_plug_12a_current04
     - switch.neo_coolcam_power_plug_12a_switch04
+    - switch.intermatic_ha02_appliance_module_switch 
 
 #neo01:
 #  name: NeoSwitch1
