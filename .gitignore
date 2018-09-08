@@ -5,7 +5,7 @@ known_devices.yaml
 home-assistant*.db
 home-assistant_v2.db-wal
 home-assistant_v2.db-shm
-zwcfg*.xml
+!zwcfg*.xml
 *.jpg
 !*.yaml
 !.gitignore
