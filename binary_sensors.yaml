@@ -40,5 +40,5 @@
 
     multi04_tamper:
       value_template: "{{ is_state('sensor.vision_zp3111_multisensor_4in1_burglar_4', '3') }}"
-      friendly_name: "Multi05 Tamper"
+      friendly_name: "Multi04 Tamper"
       device_class: safety
