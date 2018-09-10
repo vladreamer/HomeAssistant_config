@@ -45,7 +45,7 @@
 "sensor.multisensor*_alarm_type":
   hidden: true
 "sensor.multisensor*_burglar":
-  hidden: true
+  hidden: false
 "sensor.multisensor*_sourcenodeid":
   hidden: true
 "binary_sensor.multisensor*_sensor":

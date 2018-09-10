@@ -76,6 +76,7 @@ masteroom:
     - sensor.vision_zp3111_multisensor_4in1_relative_humidity_4
     - sensor.vision_zp3111_multisensor_4in1_temperature_4
     - sensor.vision_zp3111_multisensor_4in1_battery_4
+    - sensor.vision_zp3111_multisensor_4in1_burglar_4
     - sensor.neo_coolcam_power_plug_12a_power04 
     - sensor.neo_coolcam_power_plug_12a_voltage04
     - sensor.neo_coolcam_power_plug_12a_current04
