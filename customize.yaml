@@ -60,21 +60,57 @@ sensor.vision_zp3111_multisensor_4in1_luminance_4:
 # Switches
 #
 #######################################
+  ##Neo01
 switch.neo_coolcam_power_plug_12a_switch01:
-  friendly_name: BasementSwitch 
+  friendly_name: BasementSwitch
+sensor.neo_coolcam_power_plug_12a_power01:  
+  friendly_name: BasementSwPower
+sensor.neo_coolcam_power_plug_12a_voltage01:  
+  friendly_name: BasementSwVolts
+sensor.neo_coolcam_power_plug_12a_current01:  
+  friendly_name: BasementSwAmps
+  ##Neo02
 switch.neo_coolcam_power_plug_12a_switch02:
-  friendly_name: KitchenSwitch 
+  friendly_name: KitchenSwitch
+sensor.neo_coolcam_power_plug_12a_power02:  
+  friendly_name: KitchenSwPower
+sensor.neo_coolcam_power_plug_12a_voltage02:  
+  friendly_name: KitchenSwVolts
+sensor.neo_coolcam_power_plug_12a_current02:  
+  friendly_name: KitchenSwAmps
+  ##Zooz 
 switch.hank_hkzwso03_smart_plug_switch:
   friendly_name: VladRoomSwitch 
+sensor.hank_hkzwso03_smart_plug_power:
+  friendly_name: VladRoomSwPower
+sensor.hank_hkzwso03_smart_plug_voltage:
+  friendly_name: VladRoomSwVolts
+sensor.hank_hkzwso03_smart_plug_current:
+  friendly_name: VladRoomSwAmps
+  ##Neo03
 switch.neo_coolcam_power_plug_12a_switch03:
   friendly_name: MasterRoomSwitch2
+sensor.neo_coolcam_power_plug_12a_power03:  
+  friendly_name: MasterRoomSw2Power
+sensor.neo_coolcam_power_plug_12a_voltage03:  
+  friendly_name: MasterRoomSw2Volts
+sensor.neo_coolcam_power_plug_12a_current03:  
+  friendly_name: MasterRoomSw2Amps
+  ##Neo04
 switch.neo_coolcam_power_plug_12a_switch04:
   friendly_name: MasterRoomSwitch1
+sensor.neo_coolcam_power_plug_12a_power04:  
+  friendly_name: MasterRoomSw1Power
+sensor.neo_coolcam_power_plug_12a_voltage04:  
+  friendly_name: MasterRoomSw1Volts
+sensor.neo_coolcam_power_plug_12a_current04:  
+  friendly_name: MasterRoomSw1Amps
+  ##HA02-White
 switch.intermatic_ha02_appliance_module_switch: 
   friendly_name: MasterRoomSwitch3
+  ##HA04-Black
 switch.intermatic_ha04c_outdoor_module_switch:
   friendly_name: GarageSwitch
-
 
 #
 #
