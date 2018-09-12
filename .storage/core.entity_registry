@@ -3,6 +3,7 @@
         "entities": [
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "zwave.aeotec_zw090_zstick_gen5_us",
                 "name": "ZStick",
                 "platform": "zwave",
@@ -10,6 +11,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "zwave.sigma_valveswitch",
                 "name": "WaterValve",
                 "platform": "zwave",
@@ -17,6 +19,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "switch.sigma_valveswitch",
                 "name": "WaterSwitch",
                 "platform": "zwave",
@@ -24,6 +27,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "zwave.neo_coolcam_water_leakage_detector",
                 "name": "WaterLeak",
                 "platform": "zwave",
@@ -31,6 +35,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_water_leakage_detector_alarm_type",
                 "name": "WaterLeak_AlarmType",
                 "platform": "zwave",
@@ -38,6 +43,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_water_leakage_detector_alarm_level",
                 "name": "WaterLeak_AlarmLvl",
                 "platform": "zwave",
@@ -45,6 +51,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "binary_sensor.neo_coolcam_water_leakage_detector_sensor",
                 "name": "WaterLeak_Sensor",
                 "platform": "zwave",
@@ -52,6 +59,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_water_leakage_detector_sourcenodeid",
                 "name": "WaterLeak_Src",
                 "platform": "zwave",
@@ -59,6 +67,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_water_leakage_detector_flood",
                 "name": "WaterLeak_Flood",
                 "platform": "zwave",
@@ -66,6 +75,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "zwave.intermatic_ha04c_outdoor_module",
                 "name": "HA04-black",
                 "platform": "zwave",
@@ -73,6 +83,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "switch.intermatic_ha04c_outdoor_module_switch",
                 "name": "HA04-black",
                 "platform": "zwave",
@@ -80,6 +91,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "zwave.intermatic_ha02_appliance_module",
                 "name": "HA02-white",
                 "platform": "zwave",
@@ -87,6 +99,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "switch.intermatic_ha02_appliance_module_switch",
                 "name": "HA02-white",
                 "platform": "zwave",
@@ -94,6 +107,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "zwave.neo_coolcam_power_plug_12a_01",
                 "name": "Neo01",
                 "platform": "zwave",
@@ -101,6 +115,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "switch.neo_coolcam_power_plug_12a_switch01",
                 "name": "Neo01_Switch",
                 "platform": "zwave",
@@ -108,6 +123,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_energy01",
                 "name": "Neo01_Energy",
                 "platform": "zwave",
@@ -115,6 +131,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading01",
                 "name": "Neo01_PrevRead",
                 "platform": "zwave",
@@ -122,6 +139,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_interval01",
                 "name": "Neo01_Interval",
                 "platform": "zwave",
@@ -129,6 +147,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_power01",
                 "name": "Neo01_Power",
                 "platform": "zwave",
@@ -136,6 +155,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading_2_01",
                 "name": "Neo01_PrevRead2",
                 "platform": "zwave",
@@ -143,6 +163,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_interval_2_01",
                 "name": "Neo01_Interval2",
                 "platform": "zwave",
@@ -150,6 +171,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_voltage01",
                 "name": "Neo01_Volts",
                 "platform": "zwave",
@@ -157,6 +179,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading_3_01",
                 "name": "Neo01_PrevRead3",
                 "platform": "zwave",
@@ -164,6 +187,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_interval_3_01",
                 "name": "Neo01_Interval3",
                 "platform": "zwave",
@@ -171,6 +195,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_current01",
                 "name": "Neo01_Amps",
                 "platform": "zwave",
@@ -178,6 +203,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading_4_01",
                 "name": "Neo01_PrevRead4",
                 "platform": "zwave",
@@ -185,6 +211,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_interval_4_01",
                 "name": "Neo01_Interval4",
                 "platform": "zwave",
@@ -192,6 +219,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_exporting01",
                 "name": "Neo01_Export",
                 "platform": "zwave",
@@ -199,6 +227,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_alarm_type01",
                 "name": "Neo01_AlarmType",
                 "platform": "zwave",
@@ -206,6 +235,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_alarm_level01",
                 "name": "Neo01_AlarmLvl",
                 "platform": "zwave",
@@ -213,6 +243,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_sourcenodeid01",
                 "name": "Neo01_Src",
                 "platform": "zwave",
@@ -220,6 +251,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_power_management01",
                 "name": "Neo01_Mgmt",
                 "platform": "zwave",
@@ -227,6 +259,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "zwave.neo_coolcam_power_plug_12a_02",
                 "name": "Neo02",
                 "platform": "zwave",
@@ -234,6 +267,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "switch.neo_coolcam_power_plug_12a_switch02",
                 "name": "Neo02_Switch",
                 "platform": "zwave",
@@ -241,6 +275,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_energy02",
                 "name": "Neo02_Energy",
                 "platform": "zwave",
@@ -248,6 +283,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading02",
                 "name": "Neo02_PrevRead",
                 "platform": "zwave",
@@ -255,6 +291,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_interval02",
                 "name": "Neo02_Interval",
                 "platform": "zwave",
@@ -262,6 +299,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_power02",
                 "name": "Neo02_Power",
                 "platform": "zwave",
@@ -269,6 +307,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading_2_02",
                 "name": "Neo02_PrevRead2",
                 "platform": "zwave",
@@ -276,6 +315,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_interval_2_02",
                 "name": "Neo02_Interval2",
                 "platform": "zwave",
@@ -283,6 +323,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_voltage02",
                 "name": "Neo02_Volts",
                 "platform": "zwave",
@@ -290,6 +331,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading_3_02",
                 "name": "Neo02_PrevRead3",
                 "platform": "zwave",
@@ -297,6 +339,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_interval_3_02",
                 "name": "Neo02_Interval3",
                 "platform": "zwave",
@@ -304,6 +347,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_current02",
                 "name": "Neo02_Amps",
                 "platform": "zwave",
@@ -311,6 +355,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading_4_02",
                 "name": "Neo02_PrevRead4",
                 "platform": "zwave",
@@ -318,6 +363,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_interval_4_02",
                 "name": "Neo02_Interval4",
                 "platform": "zwave",
@@ -325,6 +371,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_exporting02",
                 "name": "Neo02_Export",
                 "platform": "zwave",
@@ -332,6 +379,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_alarm_type02",
                 "name": "Neo02_AlarmType",
                 "platform": "zwave",
@@ -339,6 +387,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_alarm_level02",
                 "name": "Neo02_AlarmLvl",
                 "platform": "zwave",
@@ -346,6 +395,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_sourcenodeid02",
                 "name": "Neo02_Src",
                 "platform": "zwave",
@@ -353,6 +403,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_power_management02",
                 "name": "Neo02_Mgmt",
                 "platform": "zwave",
@@ -360,6 +411,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "zwave.neo_coolcam_power_plug_12a_03",
                 "name": "Neo03",
                 "platform": "zwave",
@@ -367,6 +419,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "switch.neo_coolcam_power_plug_12a_switch03",
                 "name": "Neo03_Switch",
                 "platform": "zwave",
@@ -374,6 +427,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_energy03",
                 "name": "Neo03_Energy",
                 "platform": "zwave",
@@ -381,6 +435,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading03",
                 "name": "Neo03_PrevRead",
                 "platform": "zwave",
@@ -388,6 +443,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_interval03",
                 "name": "Neo03_Interval",
                 "platform": "zwave",
@@ -395,6 +451,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_power03",
                 "name": "Neo03_Power",
                 "platform": "zwave",
@@ -402,6 +459,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading_2_03",
                 "name": "Neo03_PrevRead2",
                 "platform": "zwave",
@@ -409,6 +467,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_interval_2_03",
                 "name": "Neo03_Interval2",
                 "platform": "zwave",
@@ -416,6 +475,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_voltage03",
                 "name": "Neo03_Volts",
                 "platform": "zwave",
@@ -423,6 +483,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading_3_03",
                 "name": "Neo03_PrevRead3",
                 "platform": "zwave",
@@ -430,6 +491,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_interval_3_03",
                 "name": "Neo03_Interval3",
                 "platform": "zwave",
@@ -437,6 +499,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_current03",
                 "name": "Neo03_Amps",
                 "platform": "zwave",
@@ -444,6 +507,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading_4_03",
                 "name": "Neo03_PrevRead4",
                 "platform": "zwave",
@@ -451,6 +515,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_interval_4_03",
                 "name": "Neo03_Interval4",
                 "platform": "zwave",
@@ -458,6 +523,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_exporting03",
                 "name": "Neo03_Export",
                 "platform": "zwave",
@@ -465,6 +531,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_alarm_type03",
                 "name": "Neo03_AlarmType",
                 "platform": "zwave",
@@ -472,6 +539,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_alarm_level03",
                 "name": "Neo03_AlarmLvl",
                 "platform": "zwave",
@@ -479,6 +547,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_sourcenodeid03",
                 "name": "Neo03_Src",
                 "platform": "zwave",
@@ -486,6 +555,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_power_management03",
                 "name": "Neo03_Mgmt",
                 "platform": "zwave",
@@ -493,6 +563,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "zwave.neo_coolcam_power_plug_12a_04",
                 "name": "Neo04",
                 "platform": "zwave",
@@ -500,6 +571,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "switch.neo_coolcam_power_plug_12a_switch04",
                 "name": "Neo04_Switch",
                 "platform": "zwave",
@@ -507,6 +579,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_energy04",
                 "name": "Neo04_Energy",
                 "platform": "zwave",
@@ -514,6 +587,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading04",
                 "name": "Neo04_PrevRead",
                 "platform": "zwave",
@@ -521,6 +595,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_interval04",
                 "name": "Neo04_Interval",
                 "platform": "zwave",
@@ -528,6 +603,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_power04",
                 "name": "Neo04_Power",
                 "platform": "zwave",
@@ -535,6 +611,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading_2_04",
                 "name": "Neo04_PrevRead2",
                 "platform": "zwave",
@@ -542,6 +619,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_interval_2_04",
                 "name": "Neo04_Interval2",
                 "platform": "zwave",
@@ -549,6 +627,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_voltage04",
                 "name": "Neo04_Volts",
                 "platform": "zwave",
@@ -556,6 +635,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading_3_04",
                 "name": "Neo04_PrevRead3",
                 "platform": "zwave",
@@ -563,6 +643,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_interval_3_04",
                 "name": "Neo04_Interval3",
                 "platform": "zwave",
@@ -570,6 +651,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_current04",
                 "name": "Neo04_Amps",
                 "platform": "zwave",
@@ -577,6 +659,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading_4_04",
                 "name": "Neo04_PrevRead4",
                 "platform": "zwave",
@@ -584,6 +667,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_interval_4_04",
                 "name": "Neo04_Interval4",
                 "platform": "zwave",
@@ -591,6 +675,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_exporting04",
                 "name": "Neo04_Export",
                 "platform": "zwave",
@@ -598,6 +683,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_alarm_type04",
                 "name": "Neo04_AlarmType",
                 "platform": "zwave",
@@ -605,6 +691,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_alarm_level04",
                 "name": "Neo04_AlarmLvl",
                 "platform": "zwave",
@@ -612,6 +699,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_sourcenodeid04",
                 "name": "Neo04_Src",
                 "platform": "zwave",
@@ -619,6 +707,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_power_management04",
                 "name": "Neo04_Mgmt",
                 "platform": "zwave",
@@ -626,6 +715,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "zwave.vision_zp3111_multisensor_4in1_1",
                 "name": "Multi01",
                 "platform": "zwave",
@@ -633,6 +723,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "binary_sensor.vision_zp3111_multisensor_4in1_sensor_1",
                 "name": "Multi01_Sensor",
                 "platform": "zwave",
@@ -640,6 +731,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_temperature_1",
                 "name": "Multi01_Temp",
                 "platform": "zwave",
@@ -647,6 +739,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_luminance_1",
                 "name": "Multi01_Lum",
                 "platform": "zwave",
@@ -654,6 +747,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_relative_humidity_1",
                 "name": "Multi01_Hum",
                 "platform": "zwave",
@@ -661,6 +755,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_alarm_type_1",
                 "name": "Multi01_AlarmType",
                 "platform": "zwave",
@@ -668,6 +763,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_alarm_level_1",
                 "name": "Multi01_AlarmLvl",
                 "platform": "zwave",
@@ -675,6 +771,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_sourcenodeid_1",
                 "name": "Multi01_Src",
                 "platform": "zwave",
@@ -682,6 +779,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_burglar_1",
                 "name": "Multi01_Burglar",
                 "platform": "zwave",
@@ -689,6 +787,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_system_1",
                 "name": "Multi01_Sys",
                 "platform": "zwave",
@@ -696,6 +795,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "zwave.vision_zp3111_multisensor_4in1_2",
                 "name": "Multi02",
                 "platform": "zwave",
@@ -703,6 +803,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "binary_sensor.vision_zp3111_multisensor_4in1_sensor_2",
                 "name": "Multi02_Sensor",
                 "platform": "zwave",
@@ -710,6 +811,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_temperature_2",
                 "name": "Multi02_Temp",
                 "platform": "zwave",
@@ -717,6 +819,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_luminance_2",
                 "name": "Multi02_Lum",
                 "platform": "zwave",
@@ -724,6 +827,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_relative_humidity_2",
                 "name": "Multi02_Hum",
                 "platform": "zwave",
@@ -731,6 +835,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_alarm_type_2",
                 "name": "Multi02_AlarmType",
                 "platform": "zwave",
@@ -738,6 +843,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_alarm_level_2",
                 "name": "Multi02_AlarmLvl",
                 "platform": "zwave",
@@ -745,6 +851,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_sourcenodeid_2",
                 "name": "Multi02_Src",
                 "platform": "zwave",
@@ -752,6 +859,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_burglar_2",
                 "name": "Multi02_Burglar",
                 "platform": "zwave",
@@ -759,6 +867,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_power_management_2",
                 "name": "Multi02_PowerMgmt",
                 "platform": "zwave",
@@ -766,6 +875,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_emergency_2",
                 "name": "Multi02_Emerg",
                 "platform": "zwave",
@@ -773,6 +883,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_clock_2",
                 "name": "Multi02_Clock",
                 "platform": "zwave",
@@ -780,6 +891,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_appliance_2",
                 "name": "Multi02_Appliance",
                 "platform": "zwave",
@@ -787,6 +899,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "zwave.vision_zp3111_multisensor_4in1_3",
                 "name": "Multi03",
                 "platform": "zwave",
@@ -794,6 +907,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "binary_sensor.vision_zp3111_multisensor_4in1_sensor_3",
                 "name": "Multi03_Sensor",
                 "platform": "zwave",
@@ -801,6 +915,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_temperature_3",
                 "name": "Multi03_Temp",
                 "platform": "zwave",
@@ -808,6 +923,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_luminance_3",
                 "name": "Multi03_Lum",
                 "platform": "zwave",
@@ -815,6 +931,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_relative_humidity_3",
                 "name": "Multi03_Hum",
                 "platform": "zwave",
@@ -822,6 +939,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_alarm_type_3",
                 "name": "Multi03_AlarmType",
                 "platform": "zwave",
@@ -829,6 +947,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_alarm_level_3",
                 "name": "Multi03_AlarmLvl",
                 "platform": "zwave",
@@ -836,6 +955,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_sourcenodeid_3",
                 "name": "Multi03_Src",
                 "platform": "zwave",
@@ -843,6 +963,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_burglar_3",
                 "name": "Multi03_Burglar",
                 "platform": "zwave",
@@ -850,6 +971,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_emergency_3",
                 "name": "Multi03_Emerg",
                 "platform": "zwave",
@@ -857,6 +979,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_clock_3",
                 "name": "Multi03_Clock",
                 "platform": "zwave",
@@ -864,6 +987,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_appliance_3",
                 "name": "Multi03_Appliance",
                 "platform": "zwave",
@@ -871,6 +995,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "zwave.vision_zp3111_multisensor_4in1_4",
                 "name": "Multi04",
                 "platform": "zwave",
@@ -878,6 +1003,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "binary_sensor.vision_zp3111_multisensor_4in1_sensor_4",
                 "name": "Multi04_Sensor",
                 "platform": "zwave",
@@ -885,6 +1011,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_temperature_4",
                 "name": "Multi04_Temp",
                 "platform": "zwave",
@@ -892,6 +1019,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_luminance_4",
                 "name": "Multi04_Lum",
                 "platform": "zwave",
@@ -899,6 +1027,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_relative_humidity_4",
                 "name": "Multi04_Hum",
                 "platform": "zwave",
@@ -906,6 +1035,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_alarm_type_4",
                 "name": "Multi04_AlarmType",
                 "platform": "zwave",
@@ -913,6 +1043,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_alarm_level_4",
                 "name": "Multi04_AlarmLvl",
                 "platform": "zwave",
@@ -920,6 +1051,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_sourcenodeid_4",
                 "name": "Multi04_Src",
                 "platform": "zwave",
@@ -927,6 +1059,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_burglar_4",
                 "name": "Multi04_Burglar",
                 "platform": "zwave",
@@ -934,6 +1067,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_system_4",
                 "name": "Multi04_Sys",
                 "platform": "zwave",
@@ -941,6 +1075,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_emergency_4",
                 "name": "Multi04_Emerg",
                 "platform": "zwave",
@@ -948,6 +1083,7 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_clock_4",
                 "name": "Multi04_Clock",
                 "platform": "zwave",
@@ -955,10 +1091,67 @@
             },
             {
                 "config_entry_id": null,
+                "device_id": null,
                 "entity_id": "sensor.vision_zp3111_multisensor_4in1_appliance_4",
                 "name": "Multi04_Appliance",
                 "platform": "zwave",
                 "unique_id": "19-72057594362740977"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "zwave.hank_hkzwso03_smart_plug",
+                "name": "Zooz01",
+                "platform": "zwave",
+                "unique_id": "node-20"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "sensor.hank_hkzwso03_smart_plug_power",
+                "name": "Zooz01_Power",
+                "platform": "zwave",
+                "unique_id": "20-72057594378485890"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "sensor.hank_hkzwso03_smart_plug_voltage",
+                "name": "Zooz01_Volts",
+                "platform": "zwave",
+                "unique_id": "20-72057594378486018"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "switch.hank_hkzwso03_smart_plug_switch",
+                "name": "Zooz01",
+                "platform": "zwave",
+                "unique_id": "20-72057594378272768"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "sensor.hank_hkzwso03_smart_plug_current",
+                "name": "Zooz01_Amps",
+                "platform": "zwave",
+                "unique_id": "20-72057594378486082"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "sensor.hank_hkzwso03_smart_plug_energy",
+                "name": "Zooz01_Energy",
+                "platform": "zwave",
+                "unique_id": "20-72057594378485762"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "sensor.hank_hkzwso03_smart_plug_previous_reading",
+                "name": "Zooz01_PrevRead",
+                "platform": "zwave",
+                "unique_id": "20-72057594378485778"
             }
         ]
     },

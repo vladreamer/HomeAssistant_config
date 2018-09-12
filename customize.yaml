@@ -64,12 +64,14 @@ switch.neo_coolcam_power_plug_12a_switch01:
   friendly_name: BasementSwitch 
 switch.neo_coolcam_power_plug_12a_switch02:
   friendly_name: KitchenSwitch 
-switch.neo_coolcam_power_plug_12a_switch03:
+switch.hank_hkzwso03_smart_plug_switch:
   friendly_name: VladRoomSwitch 
+switch.neo_coolcam_power_plug_12a_switch03:
+  friendly_name: MasterRoomSwitch2
 switch.neo_coolcam_power_plug_12a_switch04:
   friendly_name: MasterRoomSwitch1
 switch.intermatic_ha02_appliance_module_switch: 
-  friendly_name: MasterRoomSwitch2
+  friendly_name: MasterRoomSwitch3
 switch.intermatic_ha04c_outdoor_module_switch:
   friendly_name: GarageSwitch
 

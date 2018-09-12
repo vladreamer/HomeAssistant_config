@@ -70,6 +70,23 @@ logger:
 # Enables a map showing the location of tracked devices
 map:
 
+recorder:
+  purge_keep_days: 5
+  db_url: mysql://hassuser:vw123wv@localhost/hass 
+  include:
+    domains:
+      - sensor
+      - switch 
+  exclude:
+    domains:
+      - automation
+      - weblink
+      - updater
+    entities:
+      - sun.sun # Don't record sun data
+      - sensor.last_boot # Comes from 'systemmonitor' sensor platform
+      - sensor.date
+
 # Text to speech
 #tts:
 #  - platform: google

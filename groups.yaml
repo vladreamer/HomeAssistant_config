@@ -8,7 +8,6 @@ default_view:
     - sensor.since_last_boot
     - sensor.weather_temperature
     - sensor.weather_humidity
-    - binary_sensor.neo_coolcam_water_leakage_detector_sensor
     - group.basement
     - group.kitchen
     - group.bedroom1
@@ -30,10 +29,12 @@ basement:
   entities:
     - binary_sensor.multi01_motion
     - binary_sensor.multi01_tamper
+      ## Multi01
     - sensor.vision_zp3111_multisensor_4in1_luminance_1
     - sensor.vision_zp3111_multisensor_4in1_relative_humidity_1
     - sensor.vision_zp3111_multisensor_4in1_temperature_1
     - sensor.vision_zp3111_multisensor_4in1_battery_1
+      ## Neo01
     - sensor.neo_coolcam_power_plug_12a_power01 
     - sensor.neo_coolcam_power_plug_12a_voltage01
     - sensor.neo_coolcam_power_plug_12a_current01
@@ -44,10 +45,12 @@ kitchen:
   entities:
     - binary_sensor.multi02_motion
     - binary_sensor.multi02_tamper
+      ## Multi02
     - sensor.vision_zp3111_multisensor_4in1_luminance_2
     - sensor.vision_zp3111_multisensor_4in1_relative_humidity_2
     - sensor.vision_zp3111_multisensor_4in1_temperature_2
     - sensor.vision_zp3111_multisensor_4in1_battery_2
+      ## Neo02
     - sensor.neo_coolcam_power_plug_12a_power02 
     - sensor.neo_coolcam_power_plug_12a_voltage02
     - sensor.neo_coolcam_power_plug_12a_current02
@@ -58,29 +61,38 @@ bedroom1:
   entities:
     - binary_sensor.multi03_motion
     - binary_sensor.multi03_tamper
+      ## Multi03
     - sensor.vision_zp3111_multisensor_4in1_luminance_3
     - sensor.vision_zp3111_multisensor_4in1_relative_humidity_3
     - sensor.vision_zp3111_multisensor_4in1_temperature_3
     - sensor.vision_zp3111_multisensor_4in1_battery_3
-    - sensor.neo_coolcam_power_plug_12a_power03 
-    - sensor.neo_coolcam_power_plug_12a_voltage03
-    - sensor.neo_coolcam_power_plug_12a_current03
-    - switch.neo_coolcam_power_plug_12a_switch03
+      ## Zooz01 
+    - sensor.hank_hkzwso03_smart_plug_power  
+    - sensor.hank_hkzwso03_smart_plug_voltage  
+    - sensor.hank_hkzwso03_smart_plug_current  
+    - switch.hank_hkzwso03_smart_plug_switch  
 
 masteroom:
   name: Master Bedroom
   entities:
     - binary_sensor.multi04_motion
     - binary_sensor.multi04_tamper
+      ## Multi04
     - sensor.vision_zp3111_multisensor_4in1_luminance_4
     - sensor.vision_zp3111_multisensor_4in1_relative_humidity_4
     - sensor.vision_zp3111_multisensor_4in1_temperature_4
     - sensor.vision_zp3111_multisensor_4in1_battery_4
-    - sensor.vision_zp3111_multisensor_4in1_burglar_4
-    - sensor.neo_coolcam_power_plug_12a_power04 
+      ## Neo04
+    - sensor.neo_coolcam_power_plug_12a_power04
     - sensor.neo_coolcam_power_plug_12a_voltage04
     - sensor.neo_coolcam_power_plug_12a_current04
     - switch.neo_coolcam_power_plug_12a_switch04
+      ## Neo03
+    - sensor.neo_coolcam_power_plug_12a_power03 
+    - sensor.neo_coolcam_power_plug_12a_voltage03
+    - sensor.neo_coolcam_power_plug_12a_current03
+    - switch.neo_coolcam_power_plug_12a_switch03
+      ## HA02-hite
     - switch.intermatic_ha02_appliance_module_switch 
 
 batteries:
