@@ -34,5 +34,5 @@ power:
     - sensor.neo_coolcam_power_plug_12a_power02
     - sensor.neo_coolcam_power_plug_12a_power03
     - sensor.neo_coolcam_power_plug_12a_power04
-    - sensor.hank_hkzwso03_smart_plug_power  
+    - sensor.hank_hkzwso03_smart_plug_power01  
   hours_to_show: 72 

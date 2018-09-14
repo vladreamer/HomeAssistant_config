@@ -1100,58 +1100,58 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
-                "entity_id": "zwave.hank_hkzwso03_smart_plug",
+                "entity_id": "zwave.hank_hkzwso03_smart_plug01",
                 "name": "Zooz01",
                 "platform": "zwave",
-                "unique_id": "node-20"
+                "unique_id": "node-21"
             },
             {
                 "config_entry_id": null,
                 "device_id": null,
-                "entity_id": "sensor.hank_hkzwso03_smart_plug_power",
+                "entity_id": "switch.hank_hkzwso03_smart_plug_switch01",
+                "name": "Zooz01",
+                "platform": "zwave",
+                "unique_id": "21-72057594395049984"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "sensor.hank_hkzwso03_smart_plug_power01",
                 "name": "Zooz01_Power",
                 "platform": "zwave",
-                "unique_id": "20-72057594378485890"
+                "unique_id": "21-72057594395263106"
             },
             {
                 "config_entry_id": null,
                 "device_id": null,
-                "entity_id": "sensor.hank_hkzwso03_smart_plug_voltage",
+                "entity_id": "sensor.hank_hkzwso03_smart_plug_voltage01",
                 "name": "Zooz01_Volts",
                 "platform": "zwave",
-                "unique_id": "20-72057594378486018"
+                "unique_id": "21-72057594395263234"
             },
             {
                 "config_entry_id": null,
                 "device_id": null,
-                "entity_id": "switch.hank_hkzwso03_smart_plug_switch",
-                "name": "Zooz01",
-                "platform": "zwave",
-                "unique_id": "20-72057594378272768"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "entity_id": "sensor.hank_hkzwso03_smart_plug_current",
+                "entity_id": "sensor.hank_hkzwso03_smart_plug_current01",
                 "name": "Zooz01_Amps",
                 "platform": "zwave",
-                "unique_id": "20-72057594378486082"
+                "unique_id": "21-72057594395263298"
             },
             {
                 "config_entry_id": null,
                 "device_id": null,
-                "entity_id": "sensor.hank_hkzwso03_smart_plug_energy",
+                "entity_id": "sensor.hank_hkzwso03_smart_plug_energy01",
                 "name": "Zooz01_Energy",
                 "platform": "zwave",
-                "unique_id": "20-72057594378485762"
+                "unique_id": "21-72057594395262978"
             },
             {
                 "config_entry_id": null,
                 "device_id": null,
-                "entity_id": "sensor.hank_hkzwso03_smart_plug_previous_reading",
+                "entity_id": "sensor.hank_hkzwso03_smart_plug_previous_reading01",
                 "name": "Zooz01_PrevRead",
                 "platform": "zwave",
-                "unique_id": "20-72057594378485778"
+                "unique_id": "21-72057594395262994"
             }
         ]
     },

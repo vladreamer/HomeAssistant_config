@@ -67,10 +67,10 @@ bedroom1:
     - sensor.vision_zp3111_multisensor_4in1_temperature_3
     - sensor.vision_zp3111_multisensor_4in1_battery_3
       ## Zooz01 
-    - sensor.hank_hkzwso03_smart_plug_power  
-    - sensor.hank_hkzwso03_smart_plug_voltage  
-    - sensor.hank_hkzwso03_smart_plug_current  
-    - switch.hank_hkzwso03_smart_plug_switch  
+    - sensor.hank_hkzwso03_smart_plug_power01  
+    - sensor.hank_hkzwso03_smart_plug_voltage01  
+    - sensor.hank_hkzwso03_smart_plug_current01  
+    - switch.hank_hkzwso03_smart_plug_switch01  
 
 masteroom:
   name: Master Bedroom
