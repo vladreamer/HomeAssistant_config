@@ -62,55 +62,55 @@ sensor.vision_zp3111_multisensor_4in1_luminance_4:
 #######################################
   ##Neo01
 switch.neo_coolcam_power_plug_12a_switch01:
-  friendly_name: BasementSwitch_Id:8
+  friendly_name: BasementSW_Id:8
 sensor.neo_coolcam_power_plug_12a_power01:  
-  friendly_name: BasementSwPower
+  friendly_name: BasementSW_Pwr
 sensor.neo_coolcam_power_plug_12a_voltage01:  
-  friendly_name: BasementSwVolts
+  friendly_name: BasementSW_V
 sensor.neo_coolcam_power_plug_12a_current01:  
-  friendly_name: BasementSwAmps
+  friendly_name: BasementSW_A
   ##Neo02
 switch.neo_coolcam_power_plug_12a_switch02:
-  friendly_name: KitchenSwitch_Id:10
+  friendly_name: GreatRmSW_Id:10
 sensor.neo_coolcam_power_plug_12a_power02:  
-  friendly_name: KitchenSwPower
+  friendly_name: GreatRmSW_Pwr
 sensor.neo_coolcam_power_plug_12a_voltage02:  
-  friendly_name: KitchenSwVolts
+  friendly_name: GreatRmSW_V
 sensor.neo_coolcam_power_plug_12a_current02:  
-  friendly_name: KitchenSwAmps
+  friendly_name: GreatRmSW_A
   ##Zooz 
 switch.hank_hkzwso03_smart_plug_switch01:
-  friendly_name: VladRoomSwitch_Id:21 
+  friendly_name: KitchenSW_Id:21 
 sensor.hank_hkzwso03_smart_plug_power01:
-  friendly_name: VladRoomSwPower
+  friendly_name: KitchenSW_Pwr
 sensor.hank_hkzwso03_smart_plug_voltage01:
-  friendly_name: VladRoomSwVolts
+  friendly_name: KitchenSW_V
 sensor.hank_hkzwso03_smart_plug_current01:
-  friendly_name: VladRoomSwAmps
+  friendly_name: KitchenSW_A
   ##Neo03
 switch.neo_coolcam_power_plug_12a_switch03:
-  friendly_name: MasterRoomSwitch2_Id:12
+  friendly_name: Room1SW2_Id:12
 sensor.neo_coolcam_power_plug_12a_power03:  
-  friendly_name: MasterRoomSw2Power
+  friendly_name: Room1SW2_Pwr
 sensor.neo_coolcam_power_plug_12a_voltage03:  
-  friendly_name: MasterRoomSw2Volts
+  friendly_name: Room1SW2_V
 sensor.neo_coolcam_power_plug_12a_current03:  
-  friendly_name: MasterRoomSw2Amps
+  friendly_name: Room1SW2_A
   ##Neo04
 switch.neo_coolcam_power_plug_12a_switch04:
-  friendly_name: MasterRoomSwitch1_Id:14
+  friendly_name: MasterRmSW1_Id:14
 sensor.neo_coolcam_power_plug_12a_power04:  
-  friendly_name: MasterRoomSw1Power
+  friendly_name: MasterRmSW1_Pwr
 sensor.neo_coolcam_power_plug_12a_voltage04:  
-  friendly_name: MasterRoomSw1Volts
+  friendly_name: MasterRmSW1_V
 sensor.neo_coolcam_power_plug_12a_current04:  
-  friendly_name: MasterRoomSw1Amps
+  friendly_name: MasterRmSW1_A
   ##HA02-White
 switch.intermatic_ha02_appliance_module_switch: 
-  friendly_name: MasterRoomSwitch3_Id:5
+  friendly_name: MasterRmSW2_Id:5
   ##HA04-Black
 switch.intermatic_ha04c_outdoor_module_switch:
-  friendly_name: GarageSwitch_Id:4
+  friendly_name: GarageSW_Id:4
 
 #
 #

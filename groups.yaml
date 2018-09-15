@@ -55,6 +55,11 @@ kitchen:
     - sensor.neo_coolcam_power_plug_12a_voltage02
     - sensor.neo_coolcam_power_plug_12a_current02
     - switch.neo_coolcam_power_plug_12a_switch02
+      ## Zooz01 
+    - sensor.hank_hkzwso03_smart_plug_power01  
+    - sensor.hank_hkzwso03_smart_plug_voltage01  
+    - sensor.hank_hkzwso03_smart_plug_current01  
+    - switch.hank_hkzwso03_smart_plug_switch01  
 
 bedroom1:
   name: Vlad's Room
@@ -66,11 +71,11 @@ bedroom1:
     - sensor.vision_zp3111_multisensor_4in1_relative_humidity_3
     - sensor.vision_zp3111_multisensor_4in1_temperature_3
     - sensor.vision_zp3111_multisensor_4in1_battery_3
-      ## Zooz01 
-    - sensor.hank_hkzwso03_smart_plug_power01  
-    - sensor.hank_hkzwso03_smart_plug_voltage01  
-    - sensor.hank_hkzwso03_smart_plug_current01  
-    - switch.hank_hkzwso03_smart_plug_switch01  
+      ## Neo03
+    - sensor.neo_coolcam_power_plug_12a_power03 
+    - sensor.neo_coolcam_power_plug_12a_voltage03
+    - sensor.neo_coolcam_power_plug_12a_current03
+    - switch.neo_coolcam_power_plug_12a_switch03
 
 masteroom:
   name: Master Bedroom
@@ -87,11 +92,6 @@ masteroom:
     - sensor.neo_coolcam_power_plug_12a_voltage04
     - sensor.neo_coolcam_power_plug_12a_current04
     - switch.neo_coolcam_power_plug_12a_switch04
-      ## Neo03
-    - sensor.neo_coolcam_power_plug_12a_power03 
-    - sensor.neo_coolcam_power_plug_12a_voltage03
-    - sensor.neo_coolcam_power_plug_12a_current03
-    - switch.neo_coolcam_power_plug_12a_switch03
       ## HA02-hite
     - switch.intermatic_ha02_appliance_module_switch 
 
