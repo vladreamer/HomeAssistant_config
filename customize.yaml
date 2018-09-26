@@ -4,53 +4,65 @@
 #
 #######################################
 sensor.vision_zp3111_multisensor_4in1_temperature_1:
-  friendly_name: Multi01_Temp
+  #friendly_name: Multi01_Temp
+  friendly_name: Basement
   icon: mdi:temperature-celsius
   unit_of_measurement: '°C'
 sensor.vision_zp3111_multisensor_4in1_temperature_2:
-  friendly_name: Multi02_Temp
+  #friendly_name: Multi02_Temp
+  friendly_name: GreatRoom
   icon: mdi:temperature-celsius
   unit_of_measurement: '°C'
 sensor.vision_zp3111_multisensor_4in1_temperature_3:
-  friendly_name: Multi03_Temp
+  #friendly_name: Multi03_Temp
+  friendly_name: Vlad'sRoom
   icon: mdi:temperature-celsius
   unit_of_measurement: '°C'
 sensor.vision_zp3111_multisensor_4in1_temperature_4:
-  friendly_name: Multi04_Temp
+  #friendly_name: Multi04_Temp
+  friendly_name: MasterRoom
   icon: mdi:temperature-celsius
   unit_of_measurement: '°C'
 #
 sensor.vision_zp3111_multisensor_4in1_relative_humidity_1:
-  friendly_name: Multi01_Hum
+  #friendly_name: Multi01_Hum
+  friendly_name: Basement
   icon: mdi:water-percent
   unit_of_measurement: '%' 
 sensor.vision_zp3111_multisensor_4in1_relative_humidity_2:
-  friendly_name: Multi02_Hum
+  #friendly_name: Multi02_Hum
+  friendly_name: GreatRoom
   icon: mdi:water-percent
   unit_of_measurement: '%' 
 sensor.vision_zp3111_multisensor_4in1_relative_humidity_3:
-  friendly_name: Multi03_Hum
+  #friendly_name: Multi03_Hum
+  friendly_name: Vlad'sRoom
   icon: mdi:water-percent
   unit_of_measurement: '%' 
 sensor.vision_zp3111_multisensor_4in1_relative_humidity_4:
-  friendly_name: Multi04_Hum
+  #friendly_name: Multi04_Hum
+  friendly_name: MasterRoom
   icon: mdi:water-percent
   unit_of_measurement: '%' 
 #
 sensor.vision_zp3111_multisensor_4in1_luminance_1:
-  friendly_name: Multi01_Lum
+  #friendly_name: Multi01_Lum
+  friendly_name: Basement
   icon: mdi:brightness-5
   unit_of_measurement: '%'
 sensor.vision_zp3111_multisensor_4in1_luminance_2:
-  friendly_name: Multi02_Lum
+  #friendly_name: Multi02_Lum
+  friendly_name: GreatRoom
   icon: mdi:brightness-5
   unit_of_measurement: '%'
 sensor.vision_zp3111_multisensor_4in1_luminance_3:
-  friendly_name: Multi03_Lum
+  #friendly_name: Multi03_Lum
+  friendly_name: Vlad'sRoom
   icon: mdi:brightness-5
   unit_of_measurement: '%'
 sensor.vision_zp3111_multisensor_4in1_luminance_4:
-  friendly_name: Multi04_Lum
+  #friendly_name: Multi04_Lum
+  friendly_name: MasterRoom
   icon: mdi:brightness-5
   unit_of_measurement: '%'
 #
@@ -98,20 +110,24 @@ sensor.neo_coolcam_power_plug_12a_current03:
   friendly_name: Room1SW2_A
   ##Neo04
 switch.neo_coolcam_power_plug_12a_switch04:
-  friendly_name: MasterRmSW1_Id:14
+  friendly_name: Neo04_Id:14
 sensor.neo_coolcam_power_plug_12a_power04:  
-  friendly_name: MasterRmSW1_Pwr
+  friendly_name: Neo04_Pwr
 sensor.neo_coolcam_power_plug_12a_voltage04:  
-  friendly_name: MasterRmSW1_V
+  friendly_name: Neo04_V
 sensor.neo_coolcam_power_plug_12a_current04:  
-  friendly_name: MasterRmSW1_A
+  friendly_name: Neo04_A
   ##HA02-White
 switch.intermatic_ha02_appliance_module_switch: 
-  friendly_name: MasterRmSW2_Id:5
+  friendly_name: SecondFloorHall_Id:5
   ##HA04-Black
 switch.intermatic_ha04c_outdoor_module_switch:
   friendly_name: GarageSW_Id:4
-
+  ##Inovelli01##
+switch.inovelli_2ch_01_1:
+  friendly_name: MasterRmSW1_Id:22
+switch.inovelli_2ch_01_2:
+  friendly_name: MasterRmSW2_Id:22
 #
 #
 #######################################

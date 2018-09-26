@@ -11,11 +11,11 @@
 
 - id: '2018082601'
 ########################################################
-## Turn switch Neo4 (MAsterBedroom) "ON" if it was "OFF" triggered by
+## Turn switch Inovelli01 SW2 (MAsterBedroom) "ON" if it was "OFF" triggered by
 ## Multisensor4 After that take 4 snapshoots and send
 ## them by mail "notify.MailtoPykodel"
 ########################################################
-  alias: Turn on Neo4 when there is movement
+  alias: Turn on Inolelli01 SW2  when there is movement
   trigger:
     - entity_id: binary_sensor.multi04_motion
       platform: state
@@ -31,19 +31,19 @@
       #- thu
       #- fri     
     - condition: state
-      entity_id: switch.neo_coolcam_power_plug_12a_switch04
+      entity_id: switch.inovelli_2ch_01_2
       state: 'off'
   action:
     - service: homeassistant.turn_on
-      entity_id: switch.neo_coolcam_power_plug_12a_switch04
+      entity_id: switch.inovelli_2ch_01_2
 
 - id: '2018082602'
 ########################################################
-## Turn switch Neo4 "OFF" if it was "ON" triggered by
+## Turn switch Inovelli01 SW2 "OFF" if it was "ON" triggered by
 ## Multisensor4 after 15 minutes "NO MOTION"
 ##
 ########################################################
-  alias: Turn off Neo4 15 minutes after last movement
+  alias: Turn off Inovelli01 SW2 15 minutes after last movement
   trigger:
   - entity_id: binary_sensor.multi04_motion
     for:
@@ -52,11 +52,11 @@
     to: 'off'
   condition:
   - condition: state
-    entity_id: switch.neo_coolcam_power_plug_12a_switch04
+    entity_id: switch.inovelli_2ch_01_2
     state: 'on'
   action:
   - service: homeassistant.turn_off
-    entity_id: switch.neo_coolcam_power_plug_12a_switch04
+    entity_id: switch.inovelli_2ch_01_2
 
 
 
@@ -194,11 +194,11 @@
     to: 'off'
   condition:
   - condition: state
-    entity_id: switch.neo_coolcam_power_plug_12a_switch_3
+    entity_id: switch.neo_coolcam_power_plug_12a_switch_33
     state: 'on'
   action:
   - service: homeassistant.turn_off 
-    entity_id: switch.neo_coolcam_power_plug_12a_switch_3
+    entity_id: switch.neo_coolcam_power_plug_12a_switch_33
 #
 #
 #
@@ -210,16 +210,16 @@
 ########################################################
   alias: Turn off Neo3 if Neo2 on
   trigger:
-    - entity_id: switch.neo_coolcam_power_plug_12a_switch_2
+    - entity_id: switch.neo_coolcam_power_plug_12a_switch_22
       platform: state
       to: 'on'
   condition:
     - condition: state
-      entity_id: switch.neo_coolcam_power_plug_12a_switch_3
+      entity_id: switch.neo_coolcam_power_plug_12a_switch_33
       state: 'on'
   action:
     - service: homeassistant.turn_off 
-      entity_id: switch.neo_coolcam_power_plug_12a_switch_3
+      entity_id: switch.neo_coolcam_power_plug_12a_switch_33
     - service: camera.snapshot
       data:
         entity_id: camera.camera1

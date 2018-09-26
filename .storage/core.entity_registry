@@ -1152,6 +1152,38 @@
                 "name": "Zooz01_PrevRead",
                 "platform": "zwave",
                 "unique_id": "21-72057594395262994"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "zwave.inovelli_2ch_01",
+                "name": "Inovelli01",
+                "platform": "zwave",
+                "unique_id": "node-22"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "switch.inovelli_2ch_01_1",
+                "name": "Inovelli01SW1",
+                "platform": "zwave",
+                "unique_id": "22-144115188449755136"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "switch.inovelli_2ch_01_2",
+                "name": "Inovelli01SW2",
+                "platform": "zwave",
+                "unique_id": "22-216172782487683072"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "switch.inovelli_2ch_01_3",
+                "name": "Inovelli01SW3->SW1",
+                "platform": "zwave",
+                "unique_id": "22-72057594411827200"
             }
         ]
     },

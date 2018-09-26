@@ -87,12 +87,15 @@ masteroom:
     - sensor.vision_zp3111_multisensor_4in1_relative_humidity_4
     - sensor.vision_zp3111_multisensor_4in1_temperature_4
     - sensor.vision_zp3111_multisensor_4in1_battery_4
+      ## Inovelli01
+    - switch.inovelli_2ch_01_1
+    - switch.inovelli_2ch_01_2  
       ## Neo04
     - sensor.neo_coolcam_power_plug_12a_power04
     - sensor.neo_coolcam_power_plug_12a_voltage04
     - sensor.neo_coolcam_power_plug_12a_current04
     - switch.neo_coolcam_power_plug_12a_switch04
-      ## HA02-hite
+      ## HA02-white
     - switch.intermatic_ha02_appliance_module_switch 
 
 batteries:
