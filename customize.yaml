@@ -10,7 +10,7 @@ sensor.vision_zp3111_multisensor_4in1_temperature_1:
   unit_of_measurement: '°C'
 sensor.vision_zp3111_multisensor_4in1_temperature_2:
   #friendly_name: Multi02_Temp
-  friendly_name: GreatRoom
+  friendly_name: Attic
   icon: mdi:temperature-celsius
   unit_of_measurement: '°C'
 sensor.vision_zp3111_multisensor_4in1_temperature_3:
@@ -31,7 +31,7 @@ sensor.vision_zp3111_multisensor_4in1_relative_humidity_1:
   unit_of_measurement: '%' 
 sensor.vision_zp3111_multisensor_4in1_relative_humidity_2:
   #friendly_name: Multi02_Hum
-  friendly_name: GreatRoom
+  friendly_name: Attic
   icon: mdi:water-percent
   unit_of_measurement: '%' 
 sensor.vision_zp3111_multisensor_4in1_relative_humidity_3:
@@ -52,7 +52,7 @@ sensor.vision_zp3111_multisensor_4in1_luminance_1:
   unit_of_measurement: '%'
 sensor.vision_zp3111_multisensor_4in1_luminance_2:
   #friendly_name: Multi02_Lum
-  friendly_name: GreatRoom
+  friendly_name: Attic 
   icon: mdi:brightness-5
   unit_of_measurement: '%'
 sensor.vision_zp3111_multisensor_4in1_luminance_3:

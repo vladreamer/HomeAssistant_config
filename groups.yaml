@@ -12,6 +12,7 @@ default_view:
     - group.kitchen
     - group.bedroom1
     - group.masteroom
+    - group.attic
     - group.batteries
     - group.watervalve
 
@@ -43,13 +44,6 @@ basement:
 kitchen:
   name: Kitchent
   entities:
-    - binary_sensor.multi02_motion
-    - binary_sensor.multi02_tamper
-      ## Multi02
-    - sensor.vision_zp3111_multisensor_4in1_luminance_2
-    - sensor.vision_zp3111_multisensor_4in1_relative_humidity_2
-    - sensor.vision_zp3111_multisensor_4in1_temperature_2
-    - sensor.vision_zp3111_multisensor_4in1_battery_2
       ## Neo02
     - sensor.neo_coolcam_power_plug_12a_power02 
     - sensor.neo_coolcam_power_plug_12a_voltage02
@@ -98,6 +92,18 @@ masteroom:
       ## HA02-white
     - switch.intermatic_ha02_appliance_module_switch 
 
+attic:
+  name: AtticSpace
+  entities:
+    - binary_sensor.multi02_motion
+    - binary_sensor.multi02_tamper
+      ## Multi02
+    - sensor.vision_zp3111_multisensor_4in1_luminance_2
+    - sensor.vision_zp3111_multisensor_4in1_relative_humidity_2
+    - sensor.vision_zp3111_multisensor_4in1_temperature_2
+    - sensor.vision_zp3111_multisensor_4in1_battery_2
+
+          
 batteries:
   name: Batteries
   entities:
