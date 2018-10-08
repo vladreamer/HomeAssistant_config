@@ -1,6 +1,16 @@
 {
     "data": {
-        "entries": []
+        "entries": [
+            {
+                "connection_class": "local_push",
+                "data": {},
+                "domain": "cast",
+                "entry_id": "cc84ff9870624e8787bdbe79cebe7748",
+                "source": "discovery",
+                "title": "Google Cast",
+                "version": 1
+            }
+        ]
     },
     "key": "core.config_entries",
     "version": 1

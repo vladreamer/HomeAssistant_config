@@ -8,13 +8,16 @@ default_view:
     - sensor.since_last_boot
     - sensor.weather_temperature
     - sensor.weather_humidity
+    - binary_sensor.neo_coolcam_water_leakage_detector_sensor01
     - group.basement
     - group.kitchen
     - group.bedroom1
+    - group.bedroom2
     - group.masteroom
     - group.attic
     - group.batteries
     - group.watervalve
+    - group.date_time
 
 date_time:
   name: Date and Time
@@ -37,22 +40,25 @@ basement:
     - sensor.vision_zp3111_multisensor_4in1_battery_1
       ## Neo01
     - sensor.neo_coolcam_power_plug_12a_power01 
-    - sensor.neo_coolcam_power_plug_12a_voltage01
-    - sensor.neo_coolcam_power_plug_12a_current01
+    #- sensor.neo_coolcam_power_plug_12a_voltage01
+    #- sensor.neo_coolcam_power_plug_12a_current01
     - switch.neo_coolcam_power_plug_12a_switch01
 
 kitchen:
-  name: Kitchent
+  name: MainFloor 
   entities:
+    - binary_sensor.ezm01_motion
+    - sensor.homeseer_hsm200_wireless_multisensor_luminance_1
+    - sensor.homeseer_hsm200_wireless_multisensor_temperature_1      
       ## Neo02
     - sensor.neo_coolcam_power_plug_12a_power02 
-    - sensor.neo_coolcam_power_plug_12a_voltage02
-    - sensor.neo_coolcam_power_plug_12a_current02
+    #- sensor.neo_coolcam_power_plug_12a_voltage02
+    #- sensor.neo_coolcam_power_plug_12a_current02
     - switch.neo_coolcam_power_plug_12a_switch02
       ## Zooz01 
     - sensor.hank_hkzwso03_smart_plug_power01  
-    - sensor.hank_hkzwso03_smart_plug_voltage01  
-    - sensor.hank_hkzwso03_smart_plug_current01  
+    #- sensor.hank_hkzwso03_smart_plug_voltage01  
+    #- sensor.hank_hkzwso03_smart_plug_current01  
     - switch.hank_hkzwso03_smart_plug_switch01  
 
 bedroom1:
@@ -67,9 +73,20 @@ bedroom1:
     - sensor.vision_zp3111_multisensor_4in1_battery_3
       ## Neo03
     - sensor.neo_coolcam_power_plug_12a_power03 
-    - sensor.neo_coolcam_power_plug_12a_voltage03
-    - sensor.neo_coolcam_power_plug_12a_current03
+    #- sensor.neo_coolcam_power_plug_12a_voltage03
+    #- sensor.neo_coolcam_power_plug_12a_current03
     - switch.neo_coolcam_power_plug_12a_switch03
+
+bedroom2:
+  name: Office
+  entities:
+      ## Neo04
+    - sensor.neo_coolcam_power_plug_12a_power04
+    #- sensor.neo_coolcam_power_plug_12a_voltage04
+    #- sensor.neo_coolcam_power_plug_12a_current04
+    - switch.neo_coolcam_power_plug_12a_switch04
+      ## HA02-white
+    - switch.intermatic_ha02_appliance_module_switch 
 
 masteroom:
   name: Master Bedroom
@@ -84,13 +101,6 @@ masteroom:
       ## Inovelli01
     - switch.inovelli_2ch_01_1
     - switch.inovelli_2ch_01_2  
-      ## Neo04
-    - sensor.neo_coolcam_power_plug_12a_power04
-    - sensor.neo_coolcam_power_plug_12a_voltage04
-    - sensor.neo_coolcam_power_plug_12a_current04
-    - switch.neo_coolcam_power_plug_12a_switch04
-      ## HA02-white
-    - switch.intermatic_ha02_appliance_module_switch 
 
 attic:
   name: AtticSpace
@@ -111,13 +121,13 @@ batteries:
     - sensor.multi02_battery
     - sensor.multi03_battery
     - sensor.multi04_battery
-    - sensor.waterleaksensor_battery
+    - sensor.waterleaksensor01_battery
 
 watervalve:
   name: WaterValveControl - Basement
   entities:
-    - binary_sensor.neo_coolcam_water_leakage_detector_sensor
-    - switch.sigma_valveswitch    
+    - sensor.waterleakstatus01
+    - switch.sigma_valveswitch01    
 
 security:
   view: yes
@@ -166,8 +176,10 @@ graphs:
   entities:
     - group.temperature
     - group.humidity
+    - group.mainfloorlux
     - group.luminance
     - group.power
+    - group.voltage
     
 temperature:
     name: Temperature
@@ -181,7 +193,15 @@ luminance:
     name: Luminance
     entities:
     - history_graph.luminance_graphs
+mainfloorlux:
+    name: MainFloor
+    entities:
+    - history_graph.mainfloorlux_graphs
 power:
     name: Power
     entities:
     - history_graph.power_graphs
+voltage:
+    name: Voltage
+    entities:
+    - history_graph.voltage_graphs

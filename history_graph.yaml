@@ -6,7 +6,7 @@ temperature:
     - sensor.vision_zp3111_multisensor_4in1_temperature_2
     - sensor.vision_zp3111_multisensor_4in1_temperature_3
     - sensor.vision_zp3111_multisensor_4in1_temperature_4
-  hours_to_show: 72 
+  hours_to_show: 168
 #
 humidity:
   name: Humidity Graphs
@@ -16,7 +16,13 @@ humidity:
     - sensor.vision_zp3111_multisensor_4in1_relative_humidity_2
     - sensor.vision_zp3111_multisensor_4in1_relative_humidity_3
     - sensor.vision_zp3111_multisensor_4in1_relative_humidity_4
-  hours_to_show: 72 
+  hours_to_show: 168
+#
+mainfloorlux:
+  name: MainFloorLux Graphs
+  entities:
+    - sensor.homeseer_hsm200_wireless_multisensor_luminance_1
+  hours_to_show: 168
 #
 luminance:
   name: Luminance Graphs
@@ -25,7 +31,7 @@ luminance:
     - sensor.vision_zp3111_multisensor_4in1_luminance_2
     - sensor.vision_zp3111_multisensor_4in1_luminance_3
     - sensor.vision_zp3111_multisensor_4in1_luminance_4
-  hours_to_show: 72 
+  hours_to_show: 168
 #
 power:
   name: Power Graphs
@@ -35,4 +41,14 @@ power:
     - sensor.neo_coolcam_power_plug_12a_power03
     - sensor.neo_coolcam_power_plug_12a_power04
     - sensor.hank_hkzwso03_smart_plug_power01  
-  hours_to_show: 72 
+  hours_to_show: 168
+#
+voltage:
+  name: Voltage Graphs
+  entities:
+    - sensor.neo_coolcam_power_plug_12a_voltage01
+    - sensor.neo_coolcam_power_plug_12a_voltage02
+    - sensor.neo_coolcam_power_plug_12a_voltage03
+    - sensor.neo_coolcam_power_plug_12a_voltage04
+    - sensor.hank_hkzwso03_smart_plug_voltage01 
+  hours_to_show: 168

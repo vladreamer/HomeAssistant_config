@@ -3,6 +3,11 @@
 ##################
 - platform: template
   sensors:
+    ezm01_motion:
+      value_template: "{{ is_state('sensor.homeseer_hsm200_wireless_multisensor_burglar_1', '7') }}"
+      friendly_name: "EZM01 Motion"
+      device_class: motion
+   
     multi01_motion:
       value_template: "{{ is_state('sensor.vision_zp3111_multisensor_4in1_burglar_1', '8') }}"
       friendly_name: "Multi01 Motion"
@@ -42,3 +47,4 @@
       value_template: "{{ is_state('sensor.vision_zp3111_multisensor_4in1_burglar_4', '3') }}"
       friendly_name: "Multi04 Tamper"
       device_class: safety
+

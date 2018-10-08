@@ -1,0 +1,26 @@
+{
+    "data": {
+        "devices": [
+            {
+                "config_entries": [
+                    "cc84ff9870624e8787bdbe79cebe7748"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "2d26e1f99c964c8ebf39ad8b5bf9d4bc",
+                "identifiers": [
+                    [
+                        "cast",
+                        "2d9536a6efaa2a43945c121688b29d32"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Chromecast",
+                "name": "Kitchen TV",
+                "sw_version": null
+            }
+        ]
+    },
+    "key": "core.device_registry",
+    "version": 1
+}

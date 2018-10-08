@@ -139,20 +139,20 @@
         {% endif %}
         {% endif %} 
 
-#######################
-## WaterLeak Batterie
-#######################
-    waterleaksensor_battery:
-      friendly_name: "Waterleak_Battery"
-      value_template: "{% if states.zwave.neo_coolcam_water_leakage_detector %}
-        {{ states.zwave.neo_coolcam_water_leakage_detector.attributes.battery_level }}
+#############################################
+## WaterLeak01 Battery and Status  Node_Id:3
+#############################################
+    waterleaksensor01_battery:
+      friendly_name: "Waterleak01_Battery"
+      value_template: "{% if states.zwave.neo_coolcam_water_leakage_detector01 %}
+        {{ states.zwave.neo_coolcam_water_leakage_detector01.attributes.battery_level }}
         {% else %}
         unknown
         {% endif %}"
-      unit_of_measurement: '%'
-      # entity_id: zwave.neo_coolcam_water_leakage_detector
+      unit_of_measurement: '%' 
+      # entity_id: zwave.neo_coolcam_water_leakage_detector01
       icon_template: >-
-        {% set battery_level = states('sensor.waterleaksensor_battery')|int('unknown') %}
+        {% set battery_level = states('sensor.waterleaksensor01_battery')|int('unknown') %}
         {% set battery_round = (battery_level|int / 10)|int * 10 %}
         {% if battery_level == 'unknown' %}
         mdi:battery-unknown
@@ -165,3 +165,14 @@
         mdi:battery-alert
         {% endif %}
         {% endif %}
+#
+        
+    waterleakstatus01:
+      friendly_name: "Basement"
+      value_template: "{{ states('binary_sensor.neo_coolcam_water_leakage_detector_sensor01') }}"
+      icon_template: >-
+       {% if is_state('binary_sensor.neo_coolcam_water_leakage_detector_sensor01', 'on') %}
+         mdi:water
+       {% else %}
+         mdi:water-off
+       {% endif %}

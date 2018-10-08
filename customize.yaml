@@ -1,5 +1,14 @@
 #######################################
 #
+# WaterLeak Sensors    
+#
+#######################################
+binary_sensor.neo_coolcam_water_leakage_detector_sensor01:
+  friendly_name: Basement
+  device_class: moisture
+
+#######################################
+#
 # Multisensors Settings
 #
 #######################################
@@ -21,6 +30,10 @@ sensor.vision_zp3111_multisensor_4in1_temperature_3:
 sensor.vision_zp3111_multisensor_4in1_temperature_4:
   #friendly_name: Multi04_Temp
   friendly_name: MasterRoom
+  icon: mdi:temperature-celsius
+  unit_of_measurement: '°C'
+sensor.homeseer_hsm200_wireless_multisensor_temperature_1:
+  friendly_name: MainFloor_Id23
   icon: mdi:temperature-celsius
   unit_of_measurement: '°C'
 #
@@ -65,6 +78,9 @@ sensor.vision_zp3111_multisensor_4in1_luminance_4:
   friendly_name: MasterRoom
   icon: mdi:brightness-5
   unit_of_measurement: '%'
+sensor.homeseer_hsm200_wireless_multisensor_luminance_1:
+  friendly_name: MainFloor_Id23
+  icon: mdi:brightness-5
 #
 #
 #######################################
@@ -101,22 +117,22 @@ sensor.hank_hkzwso03_smart_plug_current01:
   friendly_name: KitchenSW_A
   ##Neo03
 switch.neo_coolcam_power_plug_12a_switch03:
-  friendly_name: Room1SW2_Id:12
+  friendly_name: Vlad'sRoom_Id:12
 sensor.neo_coolcam_power_plug_12a_power03:  
-  friendly_name: Room1SW2_Pwr
+  friendly_name: Vlad'sRoom_Pwr
 sensor.neo_coolcam_power_plug_12a_voltage03:  
-  friendly_name: Room1SW2_V
+  friendly_name: Vlad'sRoom_V
 sensor.neo_coolcam_power_plug_12a_current03:  
-  friendly_name: Room1SW2_A
+  friendly_name: Vlad'sRoom_A
   ##Neo04
 switch.neo_coolcam_power_plug_12a_switch04:
-  friendly_name: Neo04_Id:14
+  friendly_name: Office_Id:14
 sensor.neo_coolcam_power_plug_12a_power04:  
-  friendly_name: Neo04_Pwr
+  friendly_name: Office_Pwr
 sensor.neo_coolcam_power_plug_12a_voltage04:  
-  friendly_name: Neo04_V
+  friendly_name: Office_V
 sensor.neo_coolcam_power_plug_12a_current04:  
-  friendly_name: Neo04_A
+  friendly_name: Office_A
   ##HA02-White
 switch.intermatic_ha02_appliance_module_switch: 
   friendly_name: SecondFloorHall_Id:5
@@ -128,6 +144,9 @@ switch.inovelli_2ch_01_1:
   friendly_name: MasterRmSW1_Id:22
 switch.inovelli_2ch_01_2:
   friendly_name: MasterRmSW2_Id:22
+  ##WaterSwitch
+switch.sigma_valveswitch01:
+  friendly_name: WaterSwitch01_Id:2
 #
 #
 #######################################

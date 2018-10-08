@@ -22,7 +22,7 @@
       to: 'on'
   condition:
     - condition: time
-      after: '19:00:00'
+      after: '18:00:00'
       before: '22:50:00'
       #weekday:
       #- mon  
@@ -202,89 +202,87 @@
 #
 #
 #
-- id: '2018073003'
+- id: '2018100300'
 ########################################################
-## Turn switch Neo3 "OFF" if it was "ON" triggered by 
-## switch Neo2 from "OFF" to "ON". After that take 4 
-## snapshoots and send them by mail "notify.MailtoPykodel" 
+## Triger by EZM01 ID 23 (MainFloor_Motion) 
+## Take 4 snapshoots and send them by mail "notify.MailtoPykodel" 
+## 
 ########################################################
-  alias: Turn off Neo3 if Neo2 on
+  alias: Snapshots trigered by EZM01 ID:23
   trigger:
-    - entity_id: switch.neo_coolcam_power_plug_12a_switch_22
+    - entity_id: binary_sensor.ezm01_motion
       platform: state
       to: 'on'
   condition:
-    - condition: state
-      entity_id: switch.neo_coolcam_power_plug_12a_switch_33
-      state: 'on'
+    - condition: time
+      after: '14:30:00'
+      before: '22:50:00'    
   action:
-    - service: homeassistant.turn_off 
-      entity_id: switch.neo_coolcam_power_plug_12a_switch_33
     - service: camera.snapshot
       data:
         entity_id: camera.camera1
-        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera1_11.jpg"
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera1_01.jpg"
     - service: camera.snapshot
       data:
         entity_id: camera.camera2
-        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_11.jpg"
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_01.jpg"
     - service: shell_command.fix_snapshot
       data:
-        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_11.jpg"  
-        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_11c.jpg"  
+        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_01.jpg"  
+        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_01cor.jpg"  
     - delay: '00:00:02'
     - service: camera.snapshot
       data:
         entity_id: camera.camera1
-        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera1_12.jpg"
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera1_02.jpg"
     - service: camera.snapshot
       data:
         entity_id: camera.camera2
-        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_12.jpg"
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_02.jpg"
     - service: shell_command.fix_snapshot
       data:
-        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_12.jpg"  
-        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_12c.jpg"  
+        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_02.jpg"  
+        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_02cor.jpg"  
     - delay: '00:00:12'
     - service: camera.snapshot
       data:
         entity_id: camera.camera1
-        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera1_13.jpg"
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera1_03.jpg"
     - service: camera.snapshot
       data:
         entity_id: camera.camera2
-        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_13.jpg"
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_03.jpg"
     - service: shell_command.fix_snapshot
       data:
-        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_13.jpg"  
-        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_13c.jpg"  
+        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_03.jpg"  
+        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_03cor.jpg"  
     - delay: '00:00:25'
     - service: camera.snapshot
       data:
         entity_id: camera.camera1
-        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera1_14.jpg"
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera1_04.jpg"
     - service: camera.snapshot
       data:
         entity_id: camera.camera2
-        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_14.jpg"
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_04.jpg"
     - service: shell_command.fix_snapshot
       data:
-        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_14.jpg"  
-        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_14c.jpg"  
+        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_04.jpg"  
+        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_04cor.jpg"  
     - service: notify.MailtoPykodel
       data_template:
-        title: "Sw3 triggered"
-        message: "Switch3 Trigger Snapshot"
+        title: "MainFloor Motion detected"
+        message: "MainFloor Motion detected"
         data:
           images:
-            - /home/homeassistant/.homeassistant/downloads/snapshot_camera1_11.jpg
-            - /home/homeassistant/.homeassistant/downloads/snapshot_camera1_12.jpg
-            - /home/homeassistant/.homeassistant/downloads/snapshot_camera1_13.jpg
-            - /home/homeassistant/.homeassistant/downloads/snapshot_camera1_14.jpg
-            - /home/homeassistant/.homeassistant/downloads/snapshot_camera2_11c.jpg
-            - /home/homeassistant/.homeassistant/downloads/snapshot_camera2_12c.jpg
-            - /home/homeassistant/.homeassistant/downloads/snapshot_camera2_13c.jpg
-            - /home/homeassistant/.homeassistant/downloads/snapshot_camera2_14c.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera1_01.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera1_02.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera1_03.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera1_04.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera2_01cor.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera2_02cor.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera2_03cor.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera2_04cor.jpg
           
           html: >
             <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -293,7 +291,7 @@
                 <meta charset="UTF-8">
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Switch Triggered</title>
+                <title>MainFloor Motion detected</title>
                 <style type="text/css">
                   h1,h2,h3,h4,h5,h6 {
                   font-family:Arial,sans-serif;
@@ -301,30 +299,30 @@
                 </style>
               </head>
               <body>
-                <h1>Switch3 Triggered 0sec</h1>
+                <h1>MainFloor Motion detected (Camera1) 0sec</h1>
                 <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera1?api_password=3health1">
-                <img style="width: 100%; alt="Image1 from Camera1" src="cid:snapshot_camera1_11.jpg" /></a>
+                <img style="width: 100%; alt="Image1 from Camera1" src="cid:snapshot_camera1_01.jpg" /></a>
                 <h6>4 sec</h6>
                 <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera1?api_password=3health1">
-                <img style="width: 100%; alt="Image2 from Camera1" src="cid:snapshot_camera1_12.jpg" /></a>
+                <img style="width: 100%; alt="Image2 from Camera1" src="cid:snapshot_camera1_02.jpg" /></a>
                 <h6>16 sec</h6>
                 <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera1?api_password=3health1">
-                <img style="width: 100%; alt="Image3 from Camera1" src="cid:snapshot_camera1_13.jpg" /></a>
+                <img style="width: 100%; alt="Image3 from Camera1" src="cid:snapshot_camera1_03.jpg" /></a>
                 <h6>32 sec</h6>
                 <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera1?api_password=3health1">
-                <img style="width: 100%; alt="Image3 from Camera1" src="cid:snapshot_camera1_14.jpg" /></a>
-                <h1>Switch3 Triggered (camera2) 0sec</h1>
+                <img style="width: 100%; alt="Image3 from Camera1" src="cid:snapshot_camera1_04.jpg" /></a>
+                <h1>MainFloor Motion detected (Camera2) 0sec</h1>
                 <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera2?api_password=3health1">
-                <img style="width: 100%; alt="Image1 from Camera2" src="cid:snapshot_camera2_11c.jpg" /></a>
+                <img style="width: 100%; alt="Image1 from Camera2" src="cid:snapshot_camera2_01cor.jpg" /></a>
                 <h6>4 sec</h6>
                 <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera2?api_password=3health1">
-                <img style="width: 100%; alt="Image2 from Camera2" src="cid:snapshot_camera2_12c.jpg" /></a>
+                <img style="width: 100%; alt="Image2 from Camera2" src="cid:snapshot_camera2_02cor.jpg" /></a>
                 <h6>16 sec</h6>
                 <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera2?api_password=3health1">
-                <img style="width: 100%; alt="Image3 from Camera2" src="cid:snapshot_camera2_13c.jpg" /></a>
+                <img style="width: 100%; alt="Image3 from Camera2" src="cid:snapshot_camera2_03cor.jpg" /></a>
                 <h6>32 sec</h6>
                 <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera2?api_password=3health1">
-                <img style="width: 100%; alt="Image3 from Camera2" src="cid:snapshot_camera2_14c.jpg" /></a>
+                <img style="width: 100%; alt="Image3 from Camera2" src="cid:snapshot_camera2_04cor.jpg" /></a>
               </body>
             </html>
 #
@@ -338,7 +336,7 @@
 ########################################################
   alias: Auto_Switch_Water
   trigger:
-  - entity_id: binary_sensor.neo_coolcam_water_leakage_detector_sensor
+  - entity_id: binary_sensor.neo_coolcam_water_leakage_detector_sensor01
     platform: state
     to: 'on'
   condition:

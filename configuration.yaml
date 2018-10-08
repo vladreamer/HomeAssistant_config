@@ -104,3 +104,4 @@ script: !include scripts.yaml
 notify: !include notify.yaml
 history_graph: !include history_graph.yaml
 shell_command: !include shell_command.yaml
+device_tracker: !include hitron.yaml
