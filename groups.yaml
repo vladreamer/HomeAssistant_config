@@ -9,6 +9,8 @@ default_view:
     - sensor.weather_temperature
     - sensor.weather_humidity
     - binary_sensor.neo_coolcam_water_leakage_detector_sensor01
+    - binary_sensor.neo_coolcam_water_leakage_detector_sensor02
+    - binary_sensor.neo_coolcam_water_leakage_detector_sensor03
     - group.basement
     - group.kitchen
     - group.bedroom1
@@ -38,6 +40,8 @@ basement:
     - sensor.vision_zp3111_multisensor_4in1_relative_humidity_1
     - sensor.vision_zp3111_multisensor_4in1_temperature_1
     - sensor.vision_zp3111_multisensor_4in1_battery_1
+      ## Zen21
+    - switch.zooz_zen21_switch_v20_switch_01
       ## Neo01
     - sensor.neo_coolcam_power_plug_12a_power01 
     #- sensor.neo_coolcam_power_plug_12a_voltage01
@@ -122,11 +126,15 @@ batteries:
     - sensor.multi03_battery
     - sensor.multi04_battery
     - sensor.waterleaksensor01_battery
+    - sensor.waterleaksensor02_battery
+    - sensor.waterleaksensor03_battery
 
 watervalve:
-  name: WaterValveControl - Basement
+  name: Water Control
   entities:
     - sensor.waterleakstatus01
+    - sensor.waterleakstatus02
+    - sensor.waterleakstatus03
     - switch.sigma_valveswitch01    
 
 security:
@@ -176,10 +184,10 @@ graphs:
   entities:
     - group.temperature
     - group.humidity
-    - group.mainfloorlux
+      #- group.mainfloorlux
     - group.luminance
     - group.power
-    - group.voltage
+      #- group.voltage
     
 temperature:
     name: Temperature

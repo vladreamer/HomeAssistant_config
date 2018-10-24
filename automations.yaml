@@ -74,11 +74,13 @@
       to: 'on'
   condition:
     - condition: state
-      entity_id: switch.neo_coolcam_power_plug_12a_switch01
+      #entity_id: switch.neo_coolcam_power_plug_12a_switch01
+      entity_id: switch.zooz_zen21_switch_v20_switch_01 
       state: 'off'
   action:
     - service: homeassistant.turn_on 
-      entity_id: switch.neo_coolcam_power_plug_12a_switch01
+      #entity_id: switch.neo_coolcam_power_plug_12a_switch01
+      entity_id: switch.zooz_zen21_switch_v20_switch_01 
     - service: camera.snapshot
       data:
         entity_id: camera.camera4
@@ -166,16 +168,18 @@
   trigger:
   - entity_id: binary_sensor.multi01_motion
     for:
-      minutes: 15
+      minutes: 3
     platform: state
     to: 'off'
   condition:
   - condition: state
-    entity_id: switch.neo_coolcam_power_plug_12a_switch01
+    #entity_id: switch.neo_coolcam_power_plug_12a_switch01
+    entity_id: switch.zooz_zen21_switch_v20_switch_01
     state: 'on'
   action:
   - service: homeassistant.turn_off
-    entity_id: switch.neo_coolcam_power_plug_12a_switch01
+    #entity_id: switch.neo_coolcam_power_plug_12a_switch01
+    entity_id: switch.zooz_zen21_switch_v20_switch_01
 #
 #
 #

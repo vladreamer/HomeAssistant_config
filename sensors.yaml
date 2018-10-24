@@ -176,3 +176,79 @@
        {% else %}
          mdi:water-off
        {% endif %}
+
+#############################################
+## WaterLeak02 Battery and Status  Node_Id:26
+#############################################
+    waterleaksensor02_battery:
+      friendly_name: "Waterleak02_Battery"
+      value_template: "{% if states.zwave.neo_coolcam_water_leakage_detector02 %}
+        {{ states.zwave.neo_coolcam_water_leakage_detector02.attributes.battery_level }}
+        {% else %}
+        unknown
+        {% endif %}"
+      unit_of_measurement: '%' 
+      # entity_id: zwave.neo_coolcam_water_leakage_detector02
+      icon_template: >-
+        {% set battery_level = states('sensor.waterleaksensor02_battery')|int('unknown') %}
+        {% set battery_round = (battery_level|int / 10)|int * 10 %}
+        {% if battery_level == 'unknown' %}
+        mdi:battery-unknown
+        {% else %}
+        {% if battery_round >= 100 %}
+        mdi:battery
+        {% elif battery_round > 0 %}
+        mdi:battery-{{ battery_round }}
+        {% else %}
+        mdi:battery-alert
+        {% endif %}
+        {% endif %}
+#
+        
+    waterleakstatus02:
+      friendly_name: "Kitchen"
+      value_template: "{{ states('binary_sensor.neo_coolcam_water_leakage_detector_sensor02') }}"
+      icon_template: >-
+       {% if is_state('binary_sensor.neo_coolcam_water_leakage_detector_sensor02', 'on') %}
+         mdi:water
+       {% else %}
+         mdi:water-off
+       {% endif %}
+
+#############################################
+## WaterLeak03 Battery and Status  Node_Id:27
+#############################################
+    waterleaksensor03_battery:
+      friendly_name: "Waterleak03_Battery"
+      value_template: "{% if states.zwave.neo_coolcam_water_leakage_detector03 %}
+        {{ states.zwave.neo_coolcam_water_leakage_detector03.attributes.battery_level }}
+        {% else %}
+        unknown
+        {% endif %}"
+      unit_of_measurement: '%' 
+      # entity_id: zwave.neo_coolcam_water_leakage_detector03
+      icon_template: >-
+        {% set battery_level = states('sensor.waterleaksensor03_battery')|int('unknown') %}
+        {% set battery_round = (battery_level|int / 10)|int * 10 %}
+        {% if battery_level == 'unknown' %}
+        mdi:battery-unknown
+        {% else %}
+        {% if battery_round >= 100 %}
+        mdi:battery
+        {% elif battery_round > 0 %}
+        mdi:battery-{{ battery_round }}
+        {% else %}
+        mdi:battery-alert
+        {% endif %}
+        {% endif %}
+#
+        
+    waterleakstatus03:
+      friendly_name: "Laundry"
+      value_template: "{{ states('binary_sensor.neo_coolcam_water_leakage_detector_sensor03') }}"
+      icon_template: >-
+       {% if is_state('binary_sensor.neo_coolcam_water_leakage_detector_sensor03', 'on') %}
+         mdi:water
+       {% else %}
+         mdi:water-off
+       {% endif %}

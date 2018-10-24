@@ -18,6 +18,24 @@
                 "model": "Chromecast",
                 "name": "Kitchen TV",
                 "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "cc84ff9870624e8787bdbe79cebe7748"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "28631360f9db4d45afe8beb3438a313c",
+                "identifiers": [
+                    [
+                        "cast",
+                        "2e2a591a6f2697d75e7dd35d0d3456e6"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Chromecast",
+                "name": "Kitchen TV",
+                "sw_version": null
             }
         ]
     },

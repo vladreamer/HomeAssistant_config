@@ -1413,6 +1413,285 @@
                 "name": null,
                 "platform": "cast",
                 "unique_id": "2d9536a6-efaa-2a43-945c-121688b29d32"
+            },
+            {
+                "config_entry_id": "cc84ff9870624e8787bdbe79cebe7748",
+                "device_id": "28631360f9db4d45afe8beb3438a313c",
+                "disabled_by": null,
+                "entity_id": "media_player.kitchen_tv",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "2e2a591a-6f26-97d7-5e7d-d35d0d3456e6"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.zooz_zen21_switch_v20_01",
+                "name": "Zen21_01",
+                "platform": "zwave",
+                "unique_id": "node-24"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.zooz_zen21_switch_v20_switch_01",
+                "name": "Zen21_01",
+                "platform": "zwave",
+                "unique_id": "24-72057594445381632"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.aeotec_zw095_home_energy_meter_gen5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-25"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_power",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-72057594462371970"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_voltage",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-72057594462372098"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_current",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-72057594462372162"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_power_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-144115188500299906"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_voltage_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-144115188500300034"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_current_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-144115188500300098"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_energy",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-144115188500299778"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_power_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-216172782538227842"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_voltage_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-216172782538227970"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_current_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-216172782538228034"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_energy_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-216172782538227714"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_previous_reading",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-72057594462371858"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_previous_reading_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-144115188500299794"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_previous_reading_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-216172782538227730"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.neo_coolcam_water_leakage_detector02",
+                "name": "WaterLeak02",
+                "platform": "zwave",
+                "unique_id": "node-26"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_water_leakage_detector_sourcenodeid02",
+                "name": "WaterLeak02_Src",
+                "platform": "zwave",
+                "unique_id": "26-72057594480181281"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_water_leakage_detector_flood02",
+                "name": "WaterLeak02_Flood",
+                "platform": "zwave",
+                "unique_id": "26-72057594480181377"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_water_leakage_detector_alarm_type02",
+                "name": "WaterLeak02_AlarmType",
+                "platform": "zwave",
+                "unique_id": "26-72057594480181249"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_water_leakage_detector_alarm_level02",
+                "name": "WaterLeak02_AlarmLvl",
+                "platform": "zwave",
+                "unique_id": "26-72057594480181265"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.neo_coolcam_water_leakage_detector_sensor02",
+                "name": "WaterLeak02",
+                "platform": "zwave",
+                "unique_id": "26-72057594479116288"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.neo_coolcam_water_leakage_detector03",
+                "name": "WaterLeak03",
+                "platform": "zwave",
+                "unique_id": "node-27"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_water_leakage_detector_sourcenodeid03",
+                "name": "WaterLeak03_Src",
+                "platform": "zwave",
+                "unique_id": "27-72057594496958497"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_water_leakage_detector_flood03",
+                "name": "WaterLeak03_Flood",
+                "platform": "zwave",
+                "unique_id": "27-72057594496958593"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_water_leakage_detector_alarm_level03",
+                "name": "WaterLeak03_AlarmLvl",
+                "platform": "zwave",
+                "unique_id": "27-72057594496958481"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.neo_coolcam_water_leakage_detector_sensor03",
+                "name": "WaterLeak03",
+                "platform": "zwave",
+                "unique_id": "27-72057594495893504"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_water_leakage_detector_alarm_type03",
+                "name": "WaterLeak03_AlarmType",
+                "platform": "zwave",
+                "unique_id": "27-72057594496958465"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_energy_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-72057594462371842"
             }
         ]
     },
