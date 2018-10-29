@@ -8,6 +8,7 @@ default_view:
     - sensor.since_last_boot
     - sensor.weather_temperature
     - sensor.weather_humidity
+    - binary_sensor.hvacfan  
     - binary_sensor.neo_coolcam_water_leakage_detector_sensor01
     - binary_sensor.neo_coolcam_water_leakage_detector_sensor02
     - binary_sensor.neo_coolcam_water_leakage_detector_sensor03
@@ -17,7 +18,6 @@ default_view:
     - group.bedroom2
     - group.masteroom
     - group.attic
-    - group.batteries
     - group.watervalve
     - group.date_time
 
@@ -117,6 +117,56 @@ attic:
     - sensor.vision_zp3111_multisensor_4in1_temperature_2
     - sensor.vision_zp3111_multisensor_4in1_battery_2
 
+watervalve:
+  name: Water Control
+  entities:
+    - sensor.waterleakstatus01
+    - sensor.waterleakstatus02
+    - sensor.waterleakstatus03
+    - switch.sigma_valveswitch01    
+###############################################################
+#
+#  NewTab "THERMOSTAT" 
+#
+###############################################################    
+thermostat_views:
+  view: yes
+  name: Thermostat
+  entities:
+  - group.thermostat_mode
+thermostat_mode:
+  name: Thermostat Modes
+  entities:
+  - climate.2gig_technologies_ct101_thermostat_iris_cooling_1
+  - climate.2gig_technologies_ct101_thermostat_iris_heating_1
+  - sensor.thermostat_battery
+    #- sensor.thermostat_cool_fan_state
+    #- sensor.thermostat_heat_fan_state
+  - sensor.thermostat_cool_operation_mode_state
+  - sensor.thermostat_heat_operation_mode_state
+  - sensor.thermostat_cool_current_temperature
+  - sensor.thermostat_heat_current_temperature
+  - sensor.thermostat_cool_temperature
+  - sensor.thermostat_heat_temperature
+  - sensor.thermostat_cool_min_temp
+  - sensor.thermostat_heat_min_temp
+  - sensor.thermostat_cool_max_temp
+  - sensor.thermostat_heat_max_temp    
+
+###############################################################
+#
+#  NewTab "HOME ENERGY MONITOR" 
+#
+###############################################################
+energy:
+  view: yes
+  name: Energy/Battery
+  entities:
+    - group.powermeter
+    - group.hemvoltage
+    - group.hempower
+    - group.hemenergy
+    - group.batteries
           
 batteries:
   name: Batteries
@@ -129,20 +179,37 @@ batteries:
     - sensor.waterleaksensor02_battery
     - sensor.waterleaksensor03_battery
 
-watervalve:
-  name: Water Control
+powermeter:
+  name: HomeEnergyMeter
   entities:
-    - sensor.waterleakstatus01
-    - sensor.waterleakstatus02
-    - sensor.waterleakstatus03
-    - switch.sigma_valveswitch01    
-
+    - sensor.aeotec_zw095_home_energy_meter_gen5_current
+    - sensor.aeotec_zw095_home_energy_meter_gen5_voltage
+    - sensor.aeotec_zw095_home_energy_meter_gen5_power
+    - sensor.aeotec_zw095_home_energy_meter_gen5_energy
+  
+hemvoltage:
+  name: Home Voltage,V
+  entities:
+    - history_graph.hemvoltage_graph
+hempower:
+  name: Home Power,W
+  entities:
+    - history_graph.hempower_graph
+hemenergy:
+  name: Home Energy,kWh
+  entities:
+    - history_graph.hemenergy_graph
+      
+###############################################################
+#
+#  NewTab "SECURITY" 
+#
+###############################################################
 security:
   view: yes
   name: Security
   entities:
     - group.cameras
-
 
 cameras:
   name: SecurityCameras
@@ -153,7 +220,11 @@ cameras:
     - camera.camera3
     - camera.camera4
 
-
+###############################################################
+#
+#  NewTab "SWITCHES" 
+#
+###############################################################
 power_switch:
   view: yes
   name: Switches
@@ -177,6 +248,11 @@ oldswitch:
     -  switch.intermatic_ha02_appliance_module_switch 
     -  switch.intermatic_ha04c_outdoor_module_switch
 
+###############################################################
+#
+#  NewTab "MONITORING CHARTS" 
+#
+###############################################################
 graphs:
   view: yes
   name: Monitoring Chart

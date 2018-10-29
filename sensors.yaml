@@ -252,3 +252,160 @@
        {% else %}
          mdi:water-off
        {% endif %}
+       
+       
+#############################################
+## Thermostat  Node_Id:28
+#############################################
+- platform: template
+  sensors:
+    thermostat_battery:
+      friendly_name: "Thermostat Battery"
+      unit_of_measurement: "%"
+      value_template: >-
+        {%- if states.zwave['2gig_technologies_ct101_thermostat_iris'].attributes.battery_level %}
+            {{ states.zwave['2gig_technologies_ct101_thermostat_iris'].attributes.battery_level }}
+        {% else %}
+            Unknown
+        {%- endif %}
+      icon_template: >-
+        {% set battery_level = states('sensor.thermostat_battery')|int('unknown') %}
+        {% set battery_round = (battery_level|int / 10)|int * 10 %}
+        {% if battery_level == 'unknown' %}
+        mdi:battery-unknown
+        {% else %}
+        {% if battery_round >= 100 %}
+        mdi:battery
+        {% elif battery_round > 0 %}
+        mdi:battery-{{ battery_round }}
+        {% else %}
+        mdi:battery-alert
+        {% endif %}
+        {% endif %}
+#
+    thermostat_cool_fan_state:
+      friendly_name: "Thermostat Cool Fan State"
+      value_template: >-
+        {%- if states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.fan_state %}
+            {{ states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.fan_state }}
+        {% else %}
+            Unknown
+        {%- endif %}
+    thermostat_heat_fan_state:
+      friendly_name: "Thermostat Heat Fan State"
+      value_template: >-
+        {%- if states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.fan_state %}
+            {{ states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.fan_state }}
+        {% else %}
+            Unknown
+        {%- endif %}
+#
+    thermostat_cool_operation_mode_state:
+      friendly_name: "Thermostat Cool State"
+      value_template: >-
+        {%- if states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.operating_state %}
+            {{ states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.operating_state }}
+        {% else %}
+            Unknown
+        {%- endif %}
+      icon_template: >-
+        mdi:snowflake  
+    thermostat_heat_operation_mode_state:
+      friendly_name: "Thermostat Heat State"
+      value_template: >-
+        {%- if states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.operating_state %}
+            {{ states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.operating_state }}
+        {% else %}
+            Unknown
+        {%- endif %}
+      icon_template: >-
+        mdi:fire 
+#
+    thermostat_cool_current_temperature:
+      friendly_name: "Thermostat Cool Current Temperature"
+      value_template: >-
+        {%- if states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.current_temperature %}
+            {{ states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.current_temperature }}
+        {% else %}
+            Unknown
+        {%- endif %}
+      icon_template: >-
+        mdi:thermometer
+#        
+    thermostat_heat_current_temperature:
+      friendly_name: "Thermostat Heat Current Temperature"
+      value_template: >-
+        {%- if states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.current_temperature %}
+            {{ states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.current_temperature }}
+        {% else %}
+            Unknown
+        {%- endif %}
+      icon_template: >-
+        mdi:thermometer 
+#
+    thermostat_cool_temperature:
+      friendly_name: "Thermostat Cool Temperature"
+      value_template: >-
+        {%- if states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.temperature %}
+            {{ states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.temperature }}
+        {% else %}
+            Unknown
+        {%- endif %}
+      icon_template: >-
+        mdi:thermometer-lines
+# 
+    thermostat_heat_temperature:
+      friendly_name: "Thermostat Heat Temperature"
+      value_template: >-
+        {%- if states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.temperature %}
+            {{ states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.temperature }}
+        {% else %}
+            Unknown
+        {%- endif %}
+      icon_template: >-
+        mdi:thermometer-lines 
+#
+    thermostat_cool_min_temp:
+      friendly_name: "Thermostat Cool Minimum Temperature"
+      value_template: >-
+        {%- if states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.min_temp %}
+            {{ states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.min_temp }}
+        {% else %}
+            Unknown
+        {%- endif %}
+      icon_template: >-
+        mdi:thermometer-lines 
+#
+    thermostat_heat_min_temp:
+      friendly_name: "Thermostat Heat Minimum Temperature"
+      value_template: >-
+        {%- if states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.min_temp %}
+            {{ states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.min_temp }}
+        {% else %}
+            Unknown
+        {%- endif %}
+      icon_template: >-
+        mdi:thermometer-lines 
+#
+    thermostat_cool_max_temp:
+      friendly_name: "Thermostat Cool Maximum Temperature"
+      value_template: >-
+        {%- if states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.max_temp %}
+            {{ states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.max_temp }}
+        {% else %}
+            Unknown
+        {%- endif %}
+      icon_template: >-
+        mdi:thermometer-lines 
+##
+    thermostat_heat_max_temp:
+      friendly_name: "Thermostat Heat Maximum Temperature"
+      value_template: >-
+        {%- if states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.max_temp %}
+            {{ states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.max_temp }}
+        {% else %}
+            Unknown
+        {%- endif %}
+      icon_template: >-
+        mdi:thermometer-lines 
+#

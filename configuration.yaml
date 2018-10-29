@@ -49,6 +49,10 @@ updater:
 # Discover some devices automatically
 discovery:
 
+# Climate controll 
+climate:
+ - platform: zwave
+
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
 
@@ -71,7 +75,7 @@ logger:
 map:
 
 recorder:
-  purge_keep_days: 5
+  purge_keep_days: 31
   db_url: mysql://hassuser:vw123wv@localhost/hass 
   include:
     domains:

@@ -23,10 +23,16 @@
   username: viewer 
   password: 1234
 ###########################
+# Network_Camera D-Link01 
+###########################
+- platform: mjpeg 
+  mjpeg_url: http://viewer:1234@192.168.0.223/video1.mjpg
+  name: Camera4
+###########################
 # Network_Camera Digoo
 ###########################
-- platform: ffmpeg
-  name: Camera4
-  input: rtsp://admin:vw1234wv@192.168.0.17/onvif2
-  extra_arguments: -q:v 2
+#- platform: ffmpeg
+#  name: Camera4
+#  input: rtsp://admin:vw1234wv@192.168.0.17/onvif2
+#  extra_arguments: -q:v 2
 

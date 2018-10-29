@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<script language="javascript" src="/var.js" ></script>
+<script>loadJS("/common.js");</script>
+
+<script>InitLoad();</script>
+<script>
+
+	if( g_oemname=='etisalat' && g_firstlogin==1){		
+		
+		alert(GL("err_etisalat_msg"));
+		 location.href="maintenance.htm";
+	}	 
+
+		 
+	loadJS("/D-Link.js");
+	loadJS("/index.js");
+	loadJS("/ptzctrl.js");
+	loadJS("/ptz_dlink.js");
+</script>
+
+<script>
+
+window.onbeforeunload = bunload; 
+ 
+function bunload() 
+{ 
+   SetCookie("chromeVerAlert", "false");
+} 
+//<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+//<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ //  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+if(g_isSupportEPTZ == 1)
+{
+  loadJS("/uvumi/mootools-for-crop.js");
+  loadJS("/uvumi/UvumiCrop.js");
+};
+
+mpMode=UpdateGSize(mpMode);
+
+//--start 2011.3.8 added for aspect ratio
+UpdateGlobalViewHeight();
+//--end 2011.3.8
+
+WriteDLinkHtmlHead("D-LINK CORPORATION| INTERNET CAMERA| LIVE VIDEO",null,null,"CallOnUnload","CallOnResize",null,0);
+</script>
+
+
+<script>
+DW('<table bordercolordark="#FFFFFF" width="950" align="center" bgcolor="#ffffff" border="1" cellpadding="2" cellspacing="0" ><tr>');
+DW('<td id="sidenav_container" valign="top" width="125">');
+WriteLeftSideTable();
+DW('</td><td id="maincontent_container" valign="top">');
+WriteLiveVideoTable();
+DW('</td></tr></table>');
+WriteDLinkBottom(0);
+	
+</script>
+<script>
+//2010.12.21 modified
+//*****object tag must be alone between script tag.*****
+if(browser_IE)
+  DW('<OBJECT CLASSID="CLSID:'+AxUuid+'" CODEBASE="/VDControl.CAB?'+AxVer+'#version='+AxVer+'" width="0" height="0" ></OBJECT>');
+else
+{
+  if(mpMode == 1)
+    var RTSPName = g_RTSPName1;
+  else if(mpMode == 2)
+    var RTSPName = g_RTSPName2;
+  else if(mpMode == 3)
+    var RTSPName = g_RTSPName3;
+ 
+  var o='';
+  
+	if(g_isIPv6)
+	//because ipv6 not support rtsp.
+		var host = g_netip;
+	else
+		var host = g_host;
+
+  o+='<object id="qtrtsp_object" width="0" height="0" codebase="http://www.apple.com/qtactivex/qtplugin.cab" ';
+		o+='classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" type="video/quicktime">';
+  o+='<param name="src" value="http://'+host+":"+g_Port+'/qt.mov" />';
+  o+='<param name="autoplay" value="true" />';
+  o+='<param name="controller" value="false" />';
+  o+='<param name="qtsrc" value="rtsp://'+host+':'+g_RTSPPort+'/'+RTSPName+'"/>';
+  o+='</object>';
+  //alert(o);
+  DW(o);
+}
+  ALC(1000);
+</script>
+</html>

@@ -1446,7 +1446,7 @@
                 "device_id": null,
                 "disabled_by": null,
                 "entity_id": "zwave.aeotec_zw095_home_energy_meter_gen5",
-                "name": null,
+                "name": "HEM01",
                 "platform": "zwave",
                 "unique_id": "node-25"
             },
@@ -1455,7 +1455,7 @@
                 "device_id": null,
                 "disabled_by": null,
                 "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_power",
-                "name": null,
+                "name": "HEM01_Power",
                 "platform": "zwave",
                 "unique_id": "25-72057594462371970"
             },
@@ -1464,7 +1464,7 @@
                 "device_id": null,
                 "disabled_by": null,
                 "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_voltage",
-                "name": null,
+                "name": "HEM01_Volts",
                 "platform": "zwave",
                 "unique_id": "25-72057594462372098"
             },
@@ -1473,7 +1473,7 @@
                 "device_id": null,
                 "disabled_by": null,
                 "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_current",
-                "name": null,
+                "name": "HEM01_Amps",
                 "platform": "zwave",
                 "unique_id": "25-72057594462372162"
             },
@@ -1482,7 +1482,16 @@
                 "device_id": null,
                 "disabled_by": null,
                 "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_power_2",
-                "name": null,
+                "name": "HEM01_Power2",
+                "platform": "zwave",
+                "unique_id": "25-216172782538227842"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_power_3",
+                "name": "HEM01_Power3",
                 "platform": "zwave",
                 "unique_id": "25-144115188500299906"
             },
@@ -1491,7 +1500,7 @@
                 "device_id": null,
                 "disabled_by": null,
                 "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_voltage_2",
-                "name": null,
+                "name": "HEM01_Volts2",
                 "platform": "zwave",
                 "unique_id": "25-144115188500300034"
             },
@@ -1500,7 +1509,7 @@
                 "device_id": null,
                 "disabled_by": null,
                 "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_current_2",
-                "name": null,
+                "name": "HEM01_Amps2",
                 "platform": "zwave",
                 "unique_id": "25-144115188500300098"
             },
@@ -1509,7 +1518,16 @@
                 "device_id": null,
                 "disabled_by": null,
                 "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_energy",
-                "name": null,
+                "name": "HEM01_Energy",
+                "platform": "zwave",
+                "unique_id": "25-72057594462371842"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_energy_3",
+                "name": "HEM01_Energy3",
                 "platform": "zwave",
                 "unique_id": "25-144115188500299778"
             },
@@ -1517,17 +1535,8 @@
                 "config_entry_id": null,
                 "device_id": null,
                 "disabled_by": null,
-                "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_power_3",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "25-216172782538227842"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
                 "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_voltage_3",
-                "name": null,
+                "name": "HEM01_Volts3",
                 "platform": "zwave",
                 "unique_id": "25-216172782538227970"
             },
@@ -1536,7 +1545,7 @@
                 "device_id": null,
                 "disabled_by": null,
                 "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_current_3",
-                "name": null,
+                "name": "HEM01_Amps3",
                 "platform": "zwave",
                 "unique_id": "25-216172782538228034"
             },
@@ -1545,7 +1554,7 @@
                 "device_id": null,
                 "disabled_by": null,
                 "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_energy_2",
-                "name": null,
+                "name": "HEM01_Power2",
                 "platform": "zwave",
                 "unique_id": "25-216172782538227714"
             },
@@ -1554,7 +1563,7 @@
                 "device_id": null,
                 "disabled_by": null,
                 "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_previous_reading",
-                "name": null,
+                "name": "HEM01_PrevRead",
                 "platform": "zwave",
                 "unique_id": "25-72057594462371858"
             },
@@ -1563,7 +1572,7 @@
                 "device_id": null,
                 "disabled_by": null,
                 "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_previous_reading_2",
-                "name": null,
+                "name": "HEM01_PrevRead2",
                 "platform": "zwave",
                 "unique_id": "25-144115188500299794"
             },
@@ -1572,7 +1581,7 @@
                 "device_id": null,
                 "disabled_by": null,
                 "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_previous_reading_3",
-                "name": null,
+                "name": "HEM01_PrevRead3",
                 "platform": "zwave",
                 "unique_id": "25-216172782538227730"
             },
@@ -1688,10 +1697,37 @@
                 "config_entry_id": null,
                 "device_id": null,
                 "disabled_by": null,
-                "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_energy_3",
-                "name": null,
+                "entity_id": "zwave.2gig_technologies_ct101_thermostat_iris",
+                "name": "Thermostat",
                 "platform": "zwave",
-                "unique_id": "25-72057594462371842"
+                "unique_id": "node-28"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "climate.2gig_technologies_ct101_thermostat_iris_heating_1",
+                "name": "Thermostat_heat",
+                "platform": "zwave",
+                "unique_id": "28-72057594512982034"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "climate.2gig_technologies_ct101_thermostat_iris_cooling_1",
+                "name": "Thermostat_cool",
+                "platform": "zwave",
+                "unique_id": "28-72057594512982050"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.2gig_technologies_ct101_thermostat_iris_temperature",
+                "name": "Thermostat",
+                "platform": "zwave",
+                "unique_id": "28-72057594512687122"
             }
         ]
     },

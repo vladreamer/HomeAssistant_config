@@ -1,13 +1,96 @@
-#- id: '2018090801'
+- id: '2018102900'
 ########################################################
-## Set Zwave config parameter for Multi04
+## Thrmostat (ID:28) 
 ########################################################
-#  service: zwave.set_config_parameter
-#  data_template: {
-#                "node_id": 19,
-#                "parameter": 7,
-#                "value": 2
-#                 }
+  alias: 'Set heat 22C at 07:15'
+  trigger:
+      platform: time
+      at: "07:15:00"
+  action:
+    - service: climate.set_temperature
+      data:
+       entity_id: climate.2gig_technologies_ct101_thermostat_iris_heating_1
+       temperature: 22
+       operation_mode: Heat
+    - service: notify.MailtoPykodel
+      data_template:
+        title: "Morning Temperature to 22C at 7am"
+        message: ""
+
+        
+- id: '2018102901'
+########################################################
+## Thrmostat (ID:28) 
+########################################################
+  alias: 'Set heat 21C at 09:00'
+  trigger:
+      platform: time
+      at: "09:00:00"
+  action:
+    - service: climate.set_temperature
+      data:
+       entity_id: climate.2gig_technologies_ct101_thermostat_iris_heating_1
+       temperature: 21
+       operation_mode: Heat
+    - service: notify.MailtoPykodel
+      data_template:
+        title: "Day Temperature to 21C at 9am"
+        message: ""
+        
+- id: '2018102902'
+########################################################
+## Thrmostat (ID:28) 
+########################################################
+  alias: 'Set heat 22C at 17:30'
+  trigger:
+      platform: time
+      at: "17:30:00"
+  action:
+    - service: climate.set_temperature
+      data:
+       entity_id: climate.2gig_technologies_ct101_thermostat_iris_heating_1
+       temperature: 22
+       operation_mode: Heat
+    - service: notify.MailtoPykodel
+      data_template:
+        title: "Evening Temperature to 22C at 5:30pm"
+        message: ""
+        
+- id: '2018102903'
+########################################################
+## Thrmostat (ID:28) 
+########################################################
+  alias: 'Set heat 20C at 22:30'
+  trigger:
+      platform: time
+      at: "22:30:00"
+  action:
+    - service: climate.set_temperature
+      data:
+       entity_id: climate.2gig_technologies_ct101_thermostat_iris_heating_1
+       temperature: 20
+       operation_mode: Heat
+    - service: notify.MailtoPykodel
+      data_template:
+        title: "Night Temperature to 20C at 10:30pm"
+        message: ""
+
+
+- id: '2018102500'
+########################################################
+## Reset Home Energy Meter (ID:25) monthly consumption 
+########################################################
+  alias: Reset Home Energy Meter (ID:25) monthly consumption 
+  trigger:
+      platform: time
+      at: '00:00:00'
+  condition:
+      condition: template
+      value_template: "{{ now().date().day == 1 }}" 
+  action:
+    - service: zwave.reset_node_meters 
+      data: {"node_id": 25}
+
 
 - id: '2018082601'
 ########################################################

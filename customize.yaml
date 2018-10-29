@@ -1,7 +1,25 @@
 #######################################
-#
+# HomeEnergyMonitor 
+#######################################
+sensor.aeotec_zw095_home_energy_meter_gen5_power:
+  friendly_name: PowerConsumtion
+  icon: mdi:power-plug
+  unit_of_measurement: 'W'
+sensor.aeotec_zw095_home_energy_meter_gen5_energy:
+  friendly_name: EnergyUsed 
+  icon: mdi:finance
+  unit_of_measurement: 'kWh'
+sensor.aeotec_zw095_home_energy_meter_gen5_voltage:
+  friendly_name: Voltage
+  icon: mdi:power-socket
+  unit_of_measurement: 'V'
+sensor.aeotec_zw095_home_energy_meter_gen5_current:
+  friendly_name: Amps
+  icon: mdi:flash-auto
+  unit_of_measurement: 'A'
+
+  #######################################
 # WaterLeak Sensors    
-#
 #######################################
 binary_sensor.neo_coolcam_water_leakage_detector_sensor01:
   friendly_name: Basement
@@ -14,9 +32,7 @@ binary_sensor.neo_coolcam_water_leakage_detector_sensor03:
   device_class: moisture
 
 #######################################
-#
 # Multisensors Settings
-#
 #######################################
 sensor.vision_zp3111_multisensor_4in1_temperature_1:
   #friendly_name: Multi01_Temp
