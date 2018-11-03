@@ -262,6 +262,7 @@
     thermostat_battery:
       friendly_name: "Thermostat Battery"
       unit_of_measurement: "%"
+      entity_id: sensor.time
       value_template: >-
         {%- if states.zwave['2gig_technologies_ct101_thermostat_iris'].attributes.battery_level %}
             {{ states.zwave['2gig_technologies_ct101_thermostat_iris'].attributes.battery_level }}
@@ -285,6 +286,7 @@
 #
     thermostat_cool_fan_state:
       friendly_name: "Thermostat Cool Fan State"
+      entity_id: sensor.time
       value_template: >-
         {%- if states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.fan_state %}
             {{ states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.fan_state }}
@@ -293,6 +295,7 @@
         {%- endif %}
     thermostat_heat_fan_state:
       friendly_name: "Thermostat Heat Fan State"
+      entity_id: sensor.time
       value_template: >-
         {%- if states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.fan_state %}
             {{ states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.fan_state }}
@@ -302,6 +305,7 @@
 #
     thermostat_cool_operation_mode_state:
       friendly_name: "Thermostat Cool State"
+      entity_id: sensor.time
       value_template: >-
         {%- if states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.operating_state %}
             {{ states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.operating_state }}
@@ -310,8 +314,10 @@
         {%- endif %}
       icon_template: >-
         mdi:snowflake  
+#        
     thermostat_heat_operation_mode_state:
       friendly_name: "Thermostat Heat State"
+      entity_id: sensor.time
       value_template: >-
         {%- if states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.operating_state %}
             {{ states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.operating_state }}
@@ -323,6 +329,7 @@
 #
     thermostat_cool_current_temperature:
       friendly_name: "Thermostat Cool Current Temperature"
+      entity_id: sensor.time
       value_template: >-
         {%- if states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.current_temperature %}
             {{ states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.current_temperature }}
@@ -334,6 +341,7 @@
 #        
     thermostat_heat_current_temperature:
       friendly_name: "Thermostat Heat Current Temperature"
+      entity_id: sensor.time
       value_template: >-
         {%- if states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.current_temperature %}
             {{ states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.current_temperature }}
@@ -345,6 +353,7 @@
 #
     thermostat_cool_temperature:
       friendly_name: "Thermostat Cool Temperature"
+      entity_id: sensor.time
       value_template: >-
         {%- if states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.temperature %}
             {{ states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.temperature }}
@@ -356,6 +365,7 @@
 # 
     thermostat_heat_temperature:
       friendly_name: "Thermostat Heat Temperature"
+      entity_id: sensor.time
       value_template: >-
         {%- if states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.temperature %}
             {{ states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.temperature }}
@@ -367,6 +377,7 @@
 #
     thermostat_cool_min_temp:
       friendly_name: "Thermostat Cool Minimum Temperature"
+      entity_id: sensor.time
       value_template: >-
         {%- if states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.min_temp %}
             {{ states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.min_temp }}
@@ -378,6 +389,7 @@
 #
     thermostat_heat_min_temp:
       friendly_name: "Thermostat Heat Minimum Temperature"
+      entity_id: sensor.time
       value_template: >-
         {%- if states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.min_temp %}
             {{ states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.min_temp }}
@@ -389,6 +401,7 @@
 #
     thermostat_cool_max_temp:
       friendly_name: "Thermostat Cool Maximum Temperature"
+      entity_id: sensor.time
       value_template: >-
         {%- if states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.max_temp %}
             {{ states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.max_temp }}
@@ -400,6 +413,7 @@
 ##
     thermostat_heat_max_temp:
       friendly_name: "Thermostat Heat Maximum Temperature"
+      entity_id: sensor.time
       value_template: >-
         {%- if states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.max_temp %}
             {{ states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.max_temp }}

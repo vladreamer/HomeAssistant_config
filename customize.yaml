@@ -152,13 +152,13 @@ sensor.neo_coolcam_power_plug_12a_current03:
   friendly_name: Vlad'sRoom_A
   ##Neo04
 switch.neo_coolcam_power_plug_12a_switch04:
-  friendly_name: Office_Id:14
+  friendly_name: ChatRoom_Id:14
 sensor.neo_coolcam_power_plug_12a_power04:  
-  friendly_name: Office_Pwr
+  friendly_name: ChatRoom_Pwr
 sensor.neo_coolcam_power_plug_12a_voltage04:  
-  friendly_name: Office_V
+  friendly_name: ChatRoom_V
 sensor.neo_coolcam_power_plug_12a_current04:  
-  friendly_name: Office_A
+  friendly_name: ChatRoom_A
   ##HA02-White
 switch.intermatic_ha02_appliance_module_switch: 
   friendly_name: SecondFloorHall_Id:5

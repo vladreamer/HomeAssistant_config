@@ -16,7 +16,7 @@
                 ],
                 "manufacturer": "Google Inc.",
                 "model": "Chromecast",
-                "name": "Kitchen TV",
+                "name": "GreatRoom",
                 "sw_version": null
             },
             {
@@ -34,7 +34,385 @@
                 ],
                 "manufacturer": "Google Inc.",
                 "model": "Chromecast",
-                "name": "Kitchen TV",
+                "name": "ChatRoom",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "ec26598bbbf345c9bdff3dc2acede599",
+                "identifiers": [
+                    [
+                        "zwave",
+                        2
+                    ]
+                ],
+                "manufacturer": "Sigma Designs",
+                "model": "Unknown: type=0003, id=0002",
+                "name": "Sigma Designs Unknown: type=0003, id=0002",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "c35e8ba5fbcc4ff79fb7cd491d75aa4e",
+                "identifiers": [
+                    [
+                        "zwave",
+                        3
+                    ]
+                ],
+                "manufacturer": "Neo CoolCam",
+                "model": "Water Leakage Detector",
+                "name": "Neo CoolCam Water Leakage Detector",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "92af5cc7d730447791589b836ffdc8f8",
+                "identifiers": [
+                    [
+                        "zwave",
+                        4
+                    ]
+                ],
+                "manufacturer": "Intermatic",
+                "model": "HA-04C Outdoor Module",
+                "name": "Intermatic HA-04C Outdoor Module",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "f9723246e8ac4f49851ed79200f81696",
+                "identifiers": [
+                    [
+                        "zwave",
+                        5
+                    ]
+                ],
+                "manufacturer": "Intermatic",
+                "model": "HA-02 Appliance Module",
+                "name": "Intermatic HA-02 Appliance Module",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "8d5c9cceffa54cac9bc025e831632715",
+                "identifiers": [
+                    [
+                        "zwave",
+                        8
+                    ]
+                ],
+                "manufacturer": "Neo CoolCam",
+                "model": "Power plug 12A",
+                "name": "Neo CoolCam Power plug 12A",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "9dcdfc588fae451e85e084072c8be72a",
+                "identifiers": [
+                    [
+                        "zwave",
+                        10
+                    ]
+                ],
+                "manufacturer": "Neo CoolCam",
+                "model": "Power plug 12A",
+                "name": "Neo CoolCam Power plug 12A",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "9389c755fde24c0c82cc8e9c6ed5de78",
+                "identifiers": [
+                    [
+                        "zwave",
+                        12
+                    ]
+                ],
+                "manufacturer": "Neo CoolCam",
+                "model": "Power plug 12A",
+                "name": "Neo CoolCam Power plug 12A",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "7e507f37b7cd47ecbe23de78b648cedc",
+                "identifiers": [
+                    [
+                        "zwave",
+                        14
+                    ]
+                ],
+                "manufacturer": "Neo CoolCam",
+                "model": "Power plug 12A",
+                "name": "Neo CoolCam Power plug 12A",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "9ec006c84d7547d4a193e50a774eda3c",
+                "identifiers": [
+                    [
+                        "zwave",
+                        15
+                    ]
+                ],
+                "manufacturer": "Vision",
+                "model": "ZP3111 Multisensor 4in1",
+                "name": "Vision ZP3111 Multisensor 4in1",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "febfd7db23194cccad55ca05dd20a919",
+                "identifiers": [
+                    [
+                        "zwave",
+                        16
+                    ]
+                ],
+                "manufacturer": "Vision",
+                "model": "ZP3111 Multisensor 4in1",
+                "name": "Vision ZP3111 Multisensor 4in1",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "8d169808d666498ba6da036ca8961dbe",
+                "identifiers": [
+                    [
+                        "zwave",
+                        17
+                    ]
+                ],
+                "manufacturer": "Vision",
+                "model": "ZP3111 Multisensor 4in1",
+                "name": "Vision ZP3111 Multisensor 4in1",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "a277b4089d0f4101889e08f5a76cd57b",
+                "identifiers": [
+                    [
+                        "zwave",
+                        19
+                    ]
+                ],
+                "manufacturer": "Vision",
+                "model": "ZP3111 Multisensor 4in1",
+                "name": "Vision ZP3111 Multisensor 4in1",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "ebe27f026f054e59aac5abe537b3d7b1",
+                "identifiers": [
+                    [
+                        "zwave",
+                        21
+                    ]
+                ],
+                "manufacturer": "Hank",
+                "model": "HKZW-SO03 Smart Plug",
+                "name": "Hank HKZW-SO03 Smart Plug",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "fbb1365210b64b5296d397ecd8286b1a",
+                "identifiers": [
+                    [
+                        "zwave",
+                        22
+                    ]
+                ],
+                "manufacturer": "Zooz",
+                "model": "Unknown: type=2500, id=2500",
+                "name": "Zooz Unknown: type=2500, id=2500",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "9ea779fb11ea4920b4982871207bcc53",
+                "identifiers": [
+                    [
+                        "zwave",
+                        23
+                    ]
+                ],
+                "manufacturer": "Homeseer",
+                "model": "HSM200 Wireless Multi-Sensor",
+                "name": "EZM",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "c37ff3feea374689a9180864c5acf995",
+                "identifiers": [
+                    [
+                        "zwave",
+                        24
+                    ]
+                ],
+                "manufacturer": "Zooz",
+                "model": "ZEN21 Switch V2.0",
+                "name": "Zooz ZEN21 Switch V2.0",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "8d8d327d6c5148e2ad1e46a490c7148f",
+                "identifiers": [
+                    [
+                        "zwave",
+                        25
+                    ]
+                ],
+                "manufacturer": "Aeotec",
+                "model": "ZW095 Home Energy Meter Gen5",
+                "name": "Aeotec ZW095 Home Energy Meter Gen5",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "71ec272afa8c44f68de01ea7e102ab7e",
+                "identifiers": [
+                    [
+                        "zwave",
+                        27
+                    ]
+                ],
+                "manufacturer": "Neo CoolCam",
+                "model": "Water Leakage Detector",
+                "name": "Neo CoolCam Water Leakage Detector",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "fba60e1d8adb407e81f1d6e94ec6cae5",
+                "identifiers": [
+                    [
+                        "zwave",
+                        28
+                    ]
+                ],
+                "manufacturer": "2GIG Technologies",
+                "model": "CT101 Thermostat (Iris)",
+                "name": "2GIG Technologies CT101 Thermostat (Iris)",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "e6fe9866bff44677b573de44f0b7bb30",
+                "identifiers": [
+                    [
+                        "zwave",
+                        29
+                    ]
+                ],
+                "manufacturer": "Zooz",
+                "model": "ZEN22 Dimmer V2",
+                "name": "Zooz ZEN22 Dimmer V2",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "81628a8e280540e882195b850ceec101",
+                "identifiers": [
+                    [
+                        "zwave",
+                        31
+                    ]
+                ],
+                "manufacturer": "Neo CoolCam",
+                "model": "Water Leakage Detector",
+                "name": "Neo CoolCam Water Leakage Detector",
                 "sw_version": null
             }
         ]

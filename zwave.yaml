@@ -12,3 +12,6 @@ device_config:
   climate.2gig_technologies_ct101_thermostat_iris_heating_1:
     ignored: false
     polling_intensity: 1
+  sensor.2gig_technologies_ct101_thermostat_iris_indicator:
+    ignored: false
+    polling_intensity: 1
