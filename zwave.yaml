@@ -1,6 +1,6 @@
 #usb_path: /dev/ttyACM0
 usb_path: /dev/serial/by-id/usb-0658_0200-if00
-polling_interval: 30000
+polling_interval: 20000
 #device_config: !include zwave_device_config.yaml
 device_config:
   sensor.2gig_technologies_ct101_thermostat_iris_temperature:

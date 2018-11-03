@@ -1589,60 +1589,6 @@
                 "config_entry_id": null,
                 "device_id": null,
                 "disabled_by": null,
-                "entity_id": "zwave.neo_coolcam_water_leakage_detector02",
-                "name": "WaterLeak02",
-                "platform": "zwave",
-                "unique_id": "node-26"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.neo_coolcam_water_leakage_detector_sourcenodeid02",
-                "name": "WaterLeak02_Src",
-                "platform": "zwave",
-                "unique_id": "26-72057594480181281"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.neo_coolcam_water_leakage_detector_flood02",
-                "name": "WaterLeak02_Flood",
-                "platform": "zwave",
-                "unique_id": "26-72057594480181377"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.neo_coolcam_water_leakage_detector_alarm_type02",
-                "name": "WaterLeak02_AlarmType",
-                "platform": "zwave",
-                "unique_id": "26-72057594480181249"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "sensor.neo_coolcam_water_leakage_detector_alarm_level02",
-                "name": "WaterLeak02_AlarmLvl",
-                "platform": "zwave",
-                "unique_id": "26-72057594480181265"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "binary_sensor.neo_coolcam_water_leakage_detector_sensor02",
-                "name": "WaterLeak02",
-                "platform": "zwave",
-                "unique_id": "26-72057594479116288"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
                 "entity_id": "zwave.neo_coolcam_water_leakage_detector03",
                 "name": "WaterLeak03",
                 "platform": "zwave",
@@ -1728,6 +1674,78 @@
                 "name": "Thermostat",
                 "platform": "zwave",
                 "unique_id": "28-72057594512687122"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.zooz_zen22_dimmer_v2_1",
+                "name": "MasterDimmer",
+                "platform": "zwave",
+                "unique_id": "node-29"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "light.zooz_zen22_dimmer_v2_1_level",
+                "name": "MasterDimmer",
+                "platform": "zwave",
+                "unique_id": "29-72057594529284097"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.neo_coolcam_water_leakage_detector02",
+                "name": "WaterLeak02",
+                "platform": "zwave",
+                "unique_id": "node-31"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_water_leakage_detector_sourcenodeid02",
+                "name": "WaterLeak02_Src",
+                "platform": "zwave",
+                "unique_id": "31-72057594564067361"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_water_leakage_detector_flood02",
+                "name": "WaterLeak02_Flood",
+                "platform": "zwave",
+                "unique_id": "31-72057594564067457"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.neo_coolcam_water_leakage_detector_sensor02",
+                "name": "WaterLeak02",
+                "platform": "zwave",
+                "unique_id": "31-72057594563002368"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_water_leakage_detector_alarm_type02",
+                "name": "WaterLeak02_AlarmType",
+                "platform": "zwave",
+                "unique_id": "31-72057594564067329"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_water_leakage_detector_alarm_level02",
+                "name": "WaterLeak02_AlarmLvl",
+                "platform": "zwave",
+                "unique_id": "31-72057594564067345"
             }
         ]
     },

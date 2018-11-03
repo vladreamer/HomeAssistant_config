@@ -2,7 +2,7 @@
 # Views
 default_view:
   view: yes
-  name: Settings
+  name: AllRooms
   entities:
     - sensor.disk_use_percent_
     - sensor.since_last_boot
@@ -14,11 +14,11 @@ default_view:
     - binary_sensor.neo_coolcam_water_leakage_detector_sensor03
     - group.basement
     - group.kitchen
+    - group.chatroom
     - group.bedroom1
     - group.bedroom2
     - group.masteroom
     - group.attic
-    - group.watervalve
     - group.date_time
 
 date_time:
@@ -44,9 +44,9 @@ basement:
     - switch.zooz_zen21_switch_v20_switch_01
       ## Neo01
     - sensor.neo_coolcam_power_plug_12a_power01 
+    - switch.neo_coolcam_power_plug_12a_switch01
     #- sensor.neo_coolcam_power_plug_12a_voltage01
     #- sensor.neo_coolcam_power_plug_12a_current01
-    - switch.neo_coolcam_power_plug_12a_switch01
 
 kitchen:
   name: MainFloor 
@@ -56,14 +56,24 @@ kitchen:
     - sensor.homeseer_hsm200_wireless_multisensor_temperature_1      
       ## Neo02
     - sensor.neo_coolcam_power_plug_12a_power02 
+    - switch.neo_coolcam_power_plug_12a_switch02
     #- sensor.neo_coolcam_power_plug_12a_voltage02
     #- sensor.neo_coolcam_power_plug_12a_current02
-    - switch.neo_coolcam_power_plug_12a_switch02
       ## Zooz01 
     - sensor.hank_hkzwso03_smart_plug_power01  
+    - switch.hank_hkzwso03_smart_plug_switch01  
     #- sensor.hank_hkzwso03_smart_plug_voltage01  
     #- sensor.hank_hkzwso03_smart_plug_current01  
-    - switch.hank_hkzwso03_smart_plug_switch01  
+
+chatroom:
+  name: ChatRoom 
+  entities:
+      ## Neo04
+    - sensor.neo_coolcam_power_plug_12a_power04
+    - switch.neo_coolcam_power_plug_12a_switch04
+    #- sensor.neo_coolcam_power_plug_12a_voltage04
+    #- sensor.neo_coolcam_power_plug_12a_current04
+  
 
 bedroom1:
   name: Vlad's Room
@@ -77,18 +87,13 @@ bedroom1:
     - sensor.vision_zp3111_multisensor_4in1_battery_3
       ## Neo03
     - sensor.neo_coolcam_power_plug_12a_power03 
+    - switch.neo_coolcam_power_plug_12a_switch03
     #- sensor.neo_coolcam_power_plug_12a_voltage03
     #- sensor.neo_coolcam_power_plug_12a_current03
-    - switch.neo_coolcam_power_plug_12a_switch03
 
 bedroom2:
   name: Office
   entities:
-      ## Neo04
-    - sensor.neo_coolcam_power_plug_12a_power04
-    #- sensor.neo_coolcam_power_plug_12a_voltage04
-    #- sensor.neo_coolcam_power_plug_12a_current04
-    - switch.neo_coolcam_power_plug_12a_switch04
       ## HA02-white
     - switch.intermatic_ha02_appliance_module_switch 
 
@@ -102,6 +107,8 @@ masteroom:
     - sensor.vision_zp3111_multisensor_4in1_relative_humidity_4
     - sensor.vision_zp3111_multisensor_4in1_temperature_4
     - sensor.vision_zp3111_multisensor_4in1_battery_4
+      ## Dimmer Zen22 (Node ID:29)
+    - light.zooz_zen22_dimmer_v2_1_level
       ## Inovelli01
     - switch.inovelli_2ch_01_1
     - switch.inovelli_2ch_01_2  
@@ -117,13 +124,6 @@ attic:
     - sensor.vision_zp3111_multisensor_4in1_temperature_2
     - sensor.vision_zp3111_multisensor_4in1_battery_2
 
-watervalve:
-  name: Water Control
-  entities:
-    - sensor.waterleakstatus01
-    - sensor.waterleakstatus02
-    - sensor.waterleakstatus03
-    - switch.sigma_valveswitch01    
 ###############################################################
 #
 #  NewTab "THERMOSTAT" 
@@ -165,8 +165,8 @@ energy:
     - group.powermeter
     - group.hemvoltage
     - group.hempower
-    - group.hemenergy
     - group.batteries
+      #- group.hemenergy
           
 batteries:
   name: Batteries
@@ -200,6 +200,25 @@ hemenergy:
   entities:
     - history_graph.hemenergy_graph
       
+###############################################################
+#
+#  NewTab "Water Control" 
+#
+###############################################################
+watercontrol:
+  view: yes
+  name: Water 
+  entities:
+    - group.watervalve
+
+watervalve:
+  name: Water Leaks Control
+  entities:
+    - sensor.waterleakstatus01
+    - sensor.waterleakstatus02
+    - sensor.waterleakstatus03
+    - switch.sigma_valveswitch01    
+
 ###############################################################
 #
 #  NewTab "SECURITY" 

@@ -1,10 +1,6 @@
 sensor.homeseer_hsm200_wireless_multisensor_luminance_1:
   ignored: false
   polling_intensity: 6000
-
-############  
-## SWITCHES
-############  
 switch.neo_coolcam_power_plug_12a_switch01:
   polling_intensity: 1
   refresh_value: true
@@ -33,3 +29,6 @@ switch.intermatic_ha04c_outdoor_module_switch:
   polling_intensity: 1
   refresh_value: true
   delay: 2
+light.zooz_zen22_dimmer_v2_level:
+  ignored: false
+  polling_intensity: 1

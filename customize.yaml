@@ -18,7 +18,7 @@ sensor.aeotec_zw095_home_energy_meter_gen5_current:
   icon: mdi:flash-auto
   unit_of_measurement: 'A'
 
-  #######################################
+#######################################
 # WaterLeak Sensors    
 #######################################
 binary_sensor.neo_coolcam_water_leakage_detector_sensor01:
@@ -112,7 +112,8 @@ sensor.homeseer_hsm200_wireless_multisensor_luminance_1:
 #######################################
   ##Zen21
 switch.zooz_zen21_switch_v20_switch_01:
-  friendly_name: StairsSW_Id:24
+  friendly_name: BasementStairs_Id:24
+  icon: mdi:lightbulb
   ##Neo01
 switch.neo_coolcam_power_plug_12a_switch01:
   friendly_name: BasementSW_Id:8
