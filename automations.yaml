@@ -76,20 +76,45 @@
         message: ""
 
 
-- id: '2018102500'
+- id: 'ResetEnergySensors_2018110500'
 ########################################################
 ## Reset Home Energy Meter (ID:25) monthly consumption 
 ########################################################
   alias: Reset Home Energy Meter (ID:25) monthly consumption 
   trigger:
       platform: time
-      at: '00:00:00'
+      at: "00:00:00"
   condition:
-      condition: template
-      value_template: "{{ now().date().day == 1 }}" 
+     condition: template
+     value_template: "{{ now().date().day == 1 }}" 
   action:
+    - service: notify.MailtoPykodel
+      data_template:
+        title: "Energy iused {{states.sensor.aeotec_zw095_home_energy_meter_gen5_energy.state}} kWh"
+        message: "Total Energy Used per month is {{states.sensor.aeotec_zw095_home_energy_meter_gen5_energy.state}} kWh
+    
+        ID:21 - GreatRoomSW - {{states.sensor.hank_hkzwso03_smart_plug_energy01.state}} kWh;
+        
+        ID:8  - BasementSW - {{states.sensor.neo_coolcam_power_plug_12a_energy01.state}} kWh;
+        
+        ID:10 - GreatRoomSW - {{states.sensor.neo_coolcam_power_plug_12a_energy02.state}} kWh;
+        
+        ID:12 - Vlad'sRoomSW - {{states.sensor.neo_coolcam_power_plug_12a_energy03.state}} kWh;
+        
+        ID:14 - ChatRoomSW - {{states.sensor.neo_coolcam_power_plug_12a_energy04.state}} kWh;"
     - service: zwave.reset_node_meters 
       data: {"node_id": 25}
+    - service: zwave.reset_node_meters 
+      data: {"node_id": 21}
+    - service: zwave.reset_node_meters 
+      data: {"node_id": 8}
+    - service: zwave.reset_node_meters 
+      data: {"node_id": 10}
+    - service: zwave.reset_node_meters 
+      data: {"node_id": 12}
+    - service: zwave.reset_node_meters 
+      data: {"node_id": 14}
+    
 
 
 - id: '2018082601'

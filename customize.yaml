@@ -1,26 +1,12 @@
-#######################################
-# HomeEnergyMonitor 
-#######################################
-sensor.aeotec_zw095_home_energy_meter_gen5_power:
-  friendly_name: PowerConsumtion
-  icon: mdi:power-plug
-  unit_of_measurement: 'W'
-sensor.aeotec_zw095_home_energy_meter_gen5_energy:
-  friendly_name: EnergyUsed 
-  icon: mdi:finance
-  unit_of_measurement: 'kWh'
-sensor.aeotec_zw095_home_energy_meter_gen5_voltage:
-  friendly_name: Voltage
-  icon: mdi:power-socket
-  unit_of_measurement: 'V'
-sensor.aeotec_zw095_home_energy_meter_gen5_current:
-  friendly_name: Amps
-  icon: mdi:flash-auto
-  unit_of_measurement: 'A'
+##########################################################
+#  Water Walve/Switch  
+##########################################################
+switch.sigma_valveswitch01:
+  friendly_name: WaterSwitch01_Id:2
 
-#######################################
-# WaterLeak Sensors    
-#######################################
+##########################################################
+#  WaterLeak detectors
+##########################################################
 binary_sensor.neo_coolcam_water_leakage_detector_sensor01:
   friendly_name: Basement
   device_class: moisture
@@ -30,177 +16,195 @@ binary_sensor.neo_coolcam_water_leakage_detector_sensor02:
 binary_sensor.neo_coolcam_water_leakage_detector_sensor03:
   friendly_name: Laundry
   device_class: moisture
-
-#######################################
-# Multisensors Settings
-#######################################
+##########################################################
+#  Motion/Temperature/Humidity detectors
+##########################################################
 sensor.vision_zp3111_multisensor_4in1_temperature_1:
-  #friendly_name: Multi01_Temp
   friendly_name: Basement
   icon: mdi:temperature-celsius
-  unit_of_measurement: '°C'
+  unit_of_measurement: °C
 sensor.vision_zp3111_multisensor_4in1_temperature_2:
-  #friendly_name: Multi02_Temp
   friendly_name: Attic
   icon: mdi:temperature-celsius
-  unit_of_measurement: '°C'
+  unit_of_measurement: °C
 sensor.vision_zp3111_multisensor_4in1_temperature_3:
-  #friendly_name: Multi03_Temp
   friendly_name: Vlad'sRoom
   icon: mdi:temperature-celsius
-  unit_of_measurement: '°C'
+  unit_of_measurement: °C
 sensor.vision_zp3111_multisensor_4in1_temperature_4:
-  #friendly_name: Multi04_Temp
   friendly_name: MasterRoom
   icon: mdi:temperature-celsius
-  unit_of_measurement: '°C'
+  unit_of_measurement: °C
 sensor.homeseer_hsm200_wireless_multisensor_temperature_1:
   friendly_name: MainFloor_Id23
   icon: mdi:temperature-celsius
-  unit_of_measurement: '°C'
-#
+  unit_of_measurement: °C
 sensor.vision_zp3111_multisensor_4in1_relative_humidity_1:
-  #friendly_name: Multi01_Hum
   friendly_name: Basement
   icon: mdi:water-percent
-  unit_of_measurement: '%' 
+  unit_of_measurement: '%'
 sensor.vision_zp3111_multisensor_4in1_relative_humidity_2:
-  #friendly_name: Multi02_Hum
   friendly_name: Attic
   icon: mdi:water-percent
-  unit_of_measurement: '%' 
+  unit_of_measurement: '%'
 sensor.vision_zp3111_multisensor_4in1_relative_humidity_3:
-  #friendly_name: Multi03_Hum
   friendly_name: Vlad'sRoom
   icon: mdi:water-percent
-  unit_of_measurement: '%' 
+  unit_of_measurement: '%'
 sensor.vision_zp3111_multisensor_4in1_relative_humidity_4:
-  #friendly_name: Multi04_Hum
   friendly_name: MasterRoom
   icon: mdi:water-percent
-  unit_of_measurement: '%' 
-#
+  unit_of_measurement: '%'
 sensor.vision_zp3111_multisensor_4in1_luminance_1:
-  #friendly_name: Multi01_Lum
   friendly_name: Basement
   icon: mdi:brightness-5
   unit_of_measurement: '%'
 sensor.vision_zp3111_multisensor_4in1_luminance_2:
-  #friendly_name: Multi02_Lum
-  friendly_name: Attic 
+  friendly_name: Attic
   icon: mdi:brightness-5
   unit_of_measurement: '%'
 sensor.vision_zp3111_multisensor_4in1_luminance_3:
-  #friendly_name: Multi03_Lum
   friendly_name: Vlad'sRoom
   icon: mdi:brightness-5
   unit_of_measurement: '%'
 sensor.vision_zp3111_multisensor_4in1_luminance_4:
-  #friendly_name: Multi04_Lum
   friendly_name: MasterRoom
   icon: mdi:brightness-5
   unit_of_measurement: '%'
 sensor.homeseer_hsm200_wireless_multisensor_luminance_1:
   friendly_name: MainFloor_Id23
   icon: mdi:brightness-5
-#
-#
-#######################################
-#
-# Switches
-#
-#######################################
-  ##Zen21
+
+##########################################################
+#  Home Energy Meter HEM ID:25 
+##########################################################
+sensor.aeotec_zw095_home_energy_meter_gen5_power:
+  friendly_name: PowerConsumtion
+  icon: mdi:power-plug
+  unit_of_measurement: W
+sensor.aeotec_zw095_home_energy_meter_gen5_energy:
+  friendly_name: TotalEnergyUsed
+  icon: mdi:finance
+  unit_of_measurement: kWh
+sensor.aeotec_zw095_home_energy_meter_gen5_voltage:
+  friendly_name: Voltage
+  icon: mdi:power-socket
+  unit_of_measurement: V
+sensor.aeotec_zw095_home_energy_meter_gen5_current:
+  friendly_name: Amps
+  icon: mdi:flash-auto
+  unit_of_measurement: A
+  
+##########################################################
+#  ZEN21  Basement Light Switch ID:24 
+##########################################################
 switch.zooz_zen21_switch_v20_switch_01:
   friendly_name: BasementStairs_Id:24
   icon: mdi:lightbulb
-  ##Neo01
+  
+##########################################################
+#  Neo Coolcam Power Plugs  
+##########################################################
 switch.neo_coolcam_power_plug_12a_switch01:
   friendly_name: BasementSW_Id:8
-sensor.neo_coolcam_power_plug_12a_power01:  
+sensor.neo_coolcam_power_plug_12a_power01:
   friendly_name: BasementSW_Pwr
-sensor.neo_coolcam_power_plug_12a_voltage01:  
+sensor.neo_coolcam_power_plug_12a_voltage01:
   friendly_name: BasementSW_V
-sensor.neo_coolcam_power_plug_12a_current01:  
+sensor.neo_coolcam_power_plug_12a_current01:
   friendly_name: BasementSW_A
-  ##Neo02
+sensor.neo_coolcam_power_plug_12a_energy01:
+  friendly_name: BasementSW
+  icon: mdi:finance
+  unit_of_measurement: kWh
+  #
 switch.neo_coolcam_power_plug_12a_switch02:
-  friendly_name: GreatRmSW_Id:10
-sensor.neo_coolcam_power_plug_12a_power02:  
-  friendly_name: GreatRmSW_Pwr
-sensor.neo_coolcam_power_plug_12a_voltage02:  
-  friendly_name: GreatRmSW_V
-sensor.neo_coolcam_power_plug_12a_current02:  
-  friendly_name: GreatRmSW_A
-  ##Zooz 
+  friendly_name: GreatRoomSW_Id:10
+sensor.neo_coolcam_power_plug_12a_power02:
+  friendly_name: GreatRoomSW_Pwr
+sensor.neo_coolcam_power_plug_12a_voltage02:
+  friendly_name: GreatRoomSW_V
+sensor.neo_coolcam_power_plug_12a_current02:
+  friendly_name: GreatRoomSW_A
+sensor.neo_coolcam_power_plug_12a_energy02:
+  friendly_name: GreatRoomSW 
+  icon: mdi:finance
+  unit_of_measurement: kWh
+  #  
+switch.neo_coolcam_power_plug_12a_switch03:
+  friendly_name: Vlad'sRoomSW_Id:12
+sensor.neo_coolcam_power_plug_12a_power03:
+  friendly_name: Vlad'sRoomSW_Pwr
+sensor.neo_coolcam_power_plug_12a_voltage03:
+  friendly_name: Vlad'sRoomSW_V
+sensor.neo_coolcam_power_plug_12a_current03:
+  friendly_name: Vlad'sRoomSW_A
+sensor.neo_coolcam_power_plug_12a_energy03:
+  friendly_name: Vlad'sRoomSW 
+  icon: mdi:finance
+  unit_of_measurement: kWh
+  #
+switch.neo_coolcam_power_plug_12a_switch04:
+  friendly_name: ChatRoom_Id:14
+sensor.neo_coolcam_power_plug_12a_power04:
+  friendly_name: ChatRoom_Pwr
+sensor.neo_coolcam_power_plug_12a_voltage04:
+  friendly_name: ChatRoom_V
+sensor.neo_coolcam_power_plug_12a_current04:
+  friendly_name: ChatRoom_A
+sensor.neo_coolcam_power_plug_12a_energy04:
+  friendly_name: ChatRoomSW 
+  icon: mdi:finance
+  unit_of_measurement: kWh
+
 switch.hank_hkzwso03_smart_plug_switch01:
-  friendly_name: KitchenSW_Id:21 
+  friendly_name: KitchenSW_Id:21
 sensor.hank_hkzwso03_smart_plug_power01:
   friendly_name: KitchenSW_Pwr
 sensor.hank_hkzwso03_smart_plug_voltage01:
   friendly_name: KitchenSW_V
 sensor.hank_hkzwso03_smart_plug_current01:
   friendly_name: KitchenSW_A
-  ##Neo03
-switch.neo_coolcam_power_plug_12a_switch03:
-  friendly_name: Vlad'sRoom_Id:12
-sensor.neo_coolcam_power_plug_12a_power03:  
-  friendly_name: Vlad'sRoom_Pwr
-sensor.neo_coolcam_power_plug_12a_voltage03:  
-  friendly_name: Vlad'sRoom_V
-sensor.neo_coolcam_power_plug_12a_current03:  
-  friendly_name: Vlad'sRoom_A
-  ##Neo04
-switch.neo_coolcam_power_plug_12a_switch04:
-  friendly_name: ChatRoom_Id:14
-sensor.neo_coolcam_power_plug_12a_power04:  
-  friendly_name: ChatRoom_Pwr
-sensor.neo_coolcam_power_plug_12a_voltage04:  
-  friendly_name: ChatRoom_V
-sensor.neo_coolcam_power_plug_12a_current04:  
-  friendly_name: ChatRoom_A
-  ##HA02-White
-switch.intermatic_ha02_appliance_module_switch: 
+sensor.hank_hkzwso03_smart_plug_energy01:
+  friendly_name: KitchenSW 
+  icon: mdi:finance
+  unit_of_measurement: kWh
+  
+##########################################################
+#  Old Intermatic Power Plugs  
+##########################################################
+switch.intermatic_ha02_appliance_module_switch:
   friendly_name: SecondFloorHall_Id:5
-  ##HA04-Black
 switch.intermatic_ha04c_outdoor_module_switch:
   friendly_name: GarageSW_Id:4
-  ##Inovelli01##
+
+##########################################################
+#  Double Power Plug Inovelli Switch  
+##########################################################
 switch.inovelli_2ch_01_1:
   friendly_name: MasterRmSW1_Id:22
 switch.inovelli_2ch_01_2:
   friendly_name: MasterRmSW2_Id:22
-  ##WaterSwitch
-switch.sigma_valveswitch01:
-  friendly_name: WaterSwitch01_Id:2
-#
-#
-#######################################
-#
-# External Settings
-#
-#######################################
+
+##########################################################
+#  Internal System Sensorsh  
+##########################################################
 sensor.disk_use_percent_:
   friendly_name: Disk
 sensor.since_last_boot:
   friendly_name: UpTime
 sensor.weather_temperature:
-  friendly_name: OutTemp  
-  unit_of_measurement: '°C'
+  friendly_name: OutTemp
+  unit_of_measurement: °C
   icon: mdi:temperature-celsius
 sensor.weather_humidity:
-  friendly_name: OutHumid  
+  friendly_name: OutHumid
   unit_of_measurement: '%'
   icon: mdi:water-percent
-#sensor.time
-#  friendly_name: Time in Toronto
-#
-#
-#######################################
-#
-# Group Settings
-#
-#######################################
+
+##########################################################
+#  Groups  
+##########################################################
 group.all_automations:
   hidden: false
   friendly_name: All Automations
@@ -225,3 +229,6 @@ group.all_switches:
 group.all_sensors:
   hidden: false
   friendly_name: All Sensors
+zwave.unknown_node_26:
+  hidden: true
+  is_failed: true

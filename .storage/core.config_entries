@@ -21,6 +21,20 @@
                 "source": "import",
                 "title": "Z-Wave (import from configuration.yaml)",
                 "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "port_mapping": true,
+                    "sensors": true,
+                    "ssdp_description": "http://192.168.0.1:50356/rootDesc.xml",
+                    "udn": "uuid:69625cea-020e-361e-9483-ee6f27770d16"
+                },
+                "domain": "upnp",
+                "entry_id": "aaf1d3008e9b4e5f96e9d8edf1246394",
+                "source": "discovery",
+                "title": "CGN3ACSMR",
+                "version": 1
             }
         ]
     },

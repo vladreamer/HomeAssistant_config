@@ -12,6 +12,8 @@ default_view:
     - binary_sensor.neo_coolcam_water_leakage_detector_sensor01
     - binary_sensor.neo_coolcam_water_leakage_detector_sensor02
     - binary_sensor.neo_coolcam_water_leakage_detector_sensor03
+    - sensor.aeotec_zw095_home_energy_meter_gen5_power
+    - sensor.aeotec_zw095_home_energy_meter_gen5_energy
     - group.basement
     - group.kitchen
     - group.chatroom
@@ -85,6 +87,8 @@ bedroom1:
     - sensor.vision_zp3111_multisensor_4in1_relative_humidity_3
     - sensor.vision_zp3111_multisensor_4in1_temperature_3
     - sensor.vision_zp3111_multisensor_4in1_battery_3
+      ## Dimmer Zen22 (Node ID:32)
+    - light.zooz_zen22_dimmer_v2_2_level
       ## Neo03
     - sensor.neo_coolcam_power_plug_12a_power03 
     - switch.neo_coolcam_power_plug_12a_switch03
@@ -155,7 +159,7 @@ thermostat_mode:
 
 ###############################################################
 #
-#  NewTab "HOME ENERGY MONITOR" 
+#  NewTab "HOME ENERGY MONITOR" HEM ID:25 
 #
 ###############################################################
 energy:
@@ -166,7 +170,8 @@ energy:
     - group.hemvoltage
     - group.hempower
     - group.batteries
-      #- group.hemenergy
+    - group.energydata
+   #- group.hemenergy
           
 batteries:
   name: Batteries
@@ -199,6 +204,18 @@ hemenergy:
   name: Home Energy,kWh
   entities:
     - history_graph.hemenergy_graph
+      
+
+energydata:
+  name: Energy Usage
+  entities:
+    - sensor.aeotec_zw095_home_energy_meter_gen5_energy
+    - sensor.hank_hkzwso03_smart_plug_energy01
+    - sensor.neo_coolcam_power_plug_12a_energy01
+    - sensor.neo_coolcam_power_plug_12a_energy02
+    - sensor.neo_coolcam_power_plug_12a_energy03
+    - sensor.neo_coolcam_power_plug_12a_energy04
+
       
 ###############################################################
 #
@@ -251,6 +268,7 @@ power_switch:
     - group.all_switches
     - group.neoswitch
     - group.oldswitch
+    - group.dimmer
 
 
 neoswitch:
@@ -266,6 +284,16 @@ oldswitch:
   entities:
     -  switch.intermatic_ha02_appliance_module_switch 
     -  switch.intermatic_ha04c_outdoor_module_switch
+
+dimmer:
+  name: Dimmers
+  entities:
+      ## Dimmer Zen22 (Node ID:29)
+    - light.zooz_zen22_dimmer_v2_1_level
+      ## Dimmer Zen22 (Node ID:32)
+    - light.zooz_zen22_dimmer_v2_2_level
+
+
 
 ###############################################################
 #

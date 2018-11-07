@@ -414,6 +414,24 @@
                 "model": "Water Leakage Detector",
                 "name": "Neo CoolCam Water Leakage Detector",
                 "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "c27f25c426774873bd99c654f83a6dcb",
+                "identifiers": [
+                    [
+                        "zwave",
+                        32
+                    ]
+                ],
+                "manufacturer": "Zooz",
+                "model": "ZEN22 Dimmer V2",
+                "name": "Zooz ZEN22 Dimmer V2",
+                "sw_version": null
             }
         ]
     },

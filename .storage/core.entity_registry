@@ -1676,6 +1676,15 @@
                 "unique_id": "28-72057594512687122"
             },
             {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "fba60e1d8adb407e81f1d6e94ec6cae5",
+                "disabled_by": null,
+                "entity_id": "sensor.2gig_technologies_ct101_thermostat_iris_indicator",
+                "name": "ThermostatIndicator",
+                "platform": "zwave",
+                "unique_id": "28-72057594514096129"
+            },
+            {
                 "config_entry_id": null,
                 "device_id": null,
                 "disabled_by": null,
@@ -1748,13 +1757,22 @@
                 "unique_id": "31-72057594564067345"
             },
             {
-                "config_entry_id": "897c878fba894ee3ac600341208a3265",
-                "device_id": "fba60e1d8adb407e81f1d6e94ec6cae5",
+                "config_entry_id": null,
+                "device_id": null,
                 "disabled_by": null,
-                "entity_id": "sensor.2gig_technologies_ct101_thermostat_iris_indicator",
-                "name": null,
+                "entity_id": "zwave.zooz_zen22_dimmer_v2_2",
+                "name": "Vlad'sRoomDimmer",
                 "platform": "zwave",
-                "unique_id": "28-72057594514096129"
+                "unique_id": "node-32"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "c27f25c426774873bd99c654f83a6dcb",
+                "disabled_by": null,
+                "entity_id": "light.zooz_zen22_dimmer_v2_2_level",
+                "name": "Vlad'sRoomDimmer",
+                "platform": "zwave",
+                "unique_id": "32-72057594579615745"
             }
         ]
     },
