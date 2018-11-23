@@ -2,5 +2,6 @@ test_notification:
   alias: 'Test Gmail'
   sequence:
     - service: notify.MailToPykodel
-      data:
-        message: This is a test!
+      data_template:
+        title: "Test Message {{ now().strftime('%d %b, %Y %-I:%M %P') }}"
+        message: "This is a test!{{now()}}"

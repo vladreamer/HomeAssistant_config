@@ -1,11 +1,62 @@
-- id: '2018102900'
+- id: 'VladsRoomLightScene_20181106'
+########################################################
+## LightScene in Vlad's Room 
+## Turn Dimmer Switch (VladsRoom ID:29) "ON" with 55 brightness 
+## if it was "OFF" triggered by Multisensor3 after 6pm
+########################################################
+  alias: "Vlad's LightScene 18:00-22:30"
+  trigger:
+    - entity_id: binary_sensor.multi03_motion
+      platform: state
+      to: 'on'
+  condition:
+    - condition: time
+      after: '18:00:00'
+      before: '22:30:00'
+    - condition: state
+      entity_id: light.zooz_zen22_dimmer_v2_2_level 
+      state: 'off'
+  action:
+     service: scene.turn_on
+     entity_id: scene.lightlow_vlad
+
+- id: 'VladsRoomLightOFF_20181106'
+########################################################
+## Turn Dimmer switch (ID:29) "OFF" if it was "ON" triggered by
+## Multisensor3 after 15 minutes "NO MOTION" after 10:30pm
+########################################################
+  alias: "Vlad's Dimmer OFF 15min after 23:30"
+  trigger:
+  - entity_id: binary_sensor.multi03_motion
+    for:
+      minutes: 15
+    platform: state
+    to: 'off'
+  condition:
+    - condition: time
+      after: '23:30:00'
+    - condition: state
+      entity_id: light.zooz_zen22_dimmer_v2_2_level
+      state: 'on'
+  action:
+  - service: homeassistant.turn_off
+    entity_id: light.zooz_zen22_dimmer_v2_2_level
+
+
+- id: 'TempMorning_2018111400'
 ########################################################
 ## Thrmostat (ID:28) 
 ########################################################
-  alias: 'Set heat 22C at 07:15'
+  alias: "TEMP 22C Morning"
   trigger:
-      platform: time
-      at: "07:15:00"
+    - platform: template
+      value_template: "{% if states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') | float < 22 %} true {% endif %}"
+    - platform: time
+      at: '07:15:00'
+  condition:
+    - condition: time
+      after: '07:15:00'
+      before: '08:59:00'
   action:
     - service: climate.set_temperature
       data:
@@ -14,18 +65,26 @@
        operation_mode: Heat
     - service: notify.MailtoPykodel
       data_template:
-        title: "Morning Temperature to 22C at 7am"
-        message: ""
+        title: "Morning Temperature to 22C {{ now().strftime('%d %b, %Y %-I:%M %P') }}"
+        message: "Current Temperature is {{ states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') }}"
 
         
-- id: '2018102901'
+- id: 'TempDay_2018111400'
 ########################################################
 ## Thrmostat (ID:28) 
 ########################################################
-  alias: 'Set heat 21C at 09:00'
+  alias: "TEMP 21C Day"
   trigger:
-      platform: time
-      at: "09:00:00"
+    - platform: template
+      value_template: "{% if states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') | float > 21.5 %} true {% endif %}"
+    - platform: template
+      value_template: "{% if states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') | float < 20.5 %} true {% endif %}"
+    - platform: time
+      at: '09:00:00'    
+  condition:
+    - condition: time
+      after: '09:00:00'
+      before: '17:29:00'
   action:
     - service: climate.set_temperature
       data:
@@ -34,17 +93,23 @@
        operation_mode: Heat
     - service: notify.MailtoPykodel
       data_template:
-        title: "Day Temperature to 21C at 9am"
-        message: ""
+        title: "Day Temperature to 21C {{ now().strftime('%d %b, %Y %-I:%M %P') }}"
+        message: "Current Temperature is {{ states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') }}"
         
-- id: '2018102902'
+- id: 'TempEve_2018111400'
 ########################################################
 ## Thrmostat (ID:28) 
 ########################################################
-  alias: 'Set heat 22C at 17:30'
+  alias: "TEMP 22C Evening"
   trigger:
-      platform: time
-      at: "17:30:00"
+    - platform: template
+      value_template: "{% if states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') | float < 22 %} true {% endif %}"
+    - platform: time
+      at: '17:30:00'    
+  condition:
+    - condition: time
+      after: '17:30:00'
+      before: '22:29:00'
   action:
     - service: climate.set_temperature
       data:
@@ -53,17 +118,25 @@
        operation_mode: Heat
     - service: notify.MailtoPykodel
       data_template:
-        title: "Evening Temperature to 22C at 5:30pm"
-        message: ""
+        title: "Evening Temperature to 22C {{ now().strftime('%d %b, %Y %-I:%M %P') }}"
+        message: "Current Temperature is {{ states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') }}"
         
-- id: '2018102903'
+- id: 'TempNight_2018111400'
 ########################################################
 ## Thrmostat (ID:28) 
 ########################################################
-  alias: 'Set heat 20C at 22:30'
+  alias: "TEMP 20C Night" 
   trigger:
-      platform: time
-      at: "22:30:00"
+    - platform: template
+      value_template: "{% if states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') | float > 20.5 %} true {% endif %}"
+    - platform: template
+      value_template: "{% if states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') | float < 19.5 %} true {% endif %}"
+    - platform: time
+      at: '22:30:00'    
+  condition:
+    - condition: time
+      after: '22:30:00'
+      before: '07:14:00'
   action:
     - service: climate.set_temperature
       data:
@@ -72,15 +145,15 @@
        operation_mode: Heat
     - service: notify.MailtoPykodel
       data_template:
-        title: "Night Temperature to 20C at 10:30pm"
-        message: ""
+        title: "Night Temperature to 20C {{ now().strftime('%d %b, %Y %-I:%M %P') }}"
+        message: "Current Temperature is {{ states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') }}"
 
 
 - id: 'ResetEnergySensors_2018110500'
 ########################################################
 ## Reset Home Energy Meter (ID:25) monthly consumption 
 ########################################################
-  alias: Reset Home Energy Meter (ID:25) monthly consumption 
+  alias: Reset HEM (ID:25) monthly 
   trigger:
       platform: time
       at: "00:00:00"
@@ -117,13 +190,14 @@
     
 
 
-- id: '2018082601'
+- id: 'MasterRoom_LighON_2018082601'
 ########################################################
-## Turn switch Inovelli01 SW2 (MAsterBedroom) "ON" if it was "OFF" triggered by
+## Turn Light ON MAsterBedroom if it was "OFF" triggered by
 ## Multisensor4 After that take 4 snapshoots and send
 ## them by mail "notify.MailtoPykodel"
 ########################################################
-  alias: Turn on Inolelli01 SW2  when there is movement
+  alias: "MasterRoom LightScene 18:00-22:30"
+ #alias: Inolelli01SW2 ON before 22:50 
   trigger:
     - entity_id: binary_sensor.multi04_motion
       platform: state
@@ -131,7 +205,7 @@
   condition:
     - condition: time
       after: '18:00:00'
-      before: '22:50:00'
+      before: '22:40:00'
       #weekday:
       #- mon  
       #- tue
@@ -139,19 +213,24 @@
       #- thu
       #- fri     
     - condition: state
-      entity_id: switch.inovelli_2ch_01_2
+      #entity_id: switch.inovelli_2ch_01_2
+      entity_id: light.zooz_zen22_dimmer_v2_1_level 
       state: 'off'
   action:
-    - service: homeassistant.turn_on
-      entity_id: switch.inovelli_2ch_01_2
+   #- service: homeassistant.turn_on
+   #  entity_id: switch.inovelli_2ch_01_2
+     service: scene.turn_on
+     entity_id: scene.lightlow_master
 
-- id: '2018082602'
+
+- id: 'MasterRoom_LighOFF_2018082602'
 ########################################################
-## Turn switch Inovelli01 SW2 "OFF" if it was "ON" triggered by
+## Turn Dimmer "OFF" if it was "ON" triggered by
 ## Multisensor4 after 15 minutes "NO MOTION"
 ##
 ########################################################
-  alias: Turn off Inovelli01 SW2 15 minutes after last movement
+  alias: "Master Dimmer OFF 15min"
+ #alias: Inovelli01SW2 OFF after 15min
   trigger:
   - entity_id: binary_sensor.multi04_motion
     for:
@@ -160,22 +239,24 @@
     to: 'off'
   condition:
   - condition: state
-    entity_id: switch.inovelli_2ch_01_2
+    #entity_id: switch.inovelli_2ch_01_2
+    entity_id: light.zooz_zen22_dimmer_v2_1_level
     state: 'on'
   action:
   - service: homeassistant.turn_off
-    entity_id: switch.inovelli_2ch_01_2
+    #entity_id: switch.inovelli_2ch_01_2
+    entity_id: light.zooz_zen22_dimmer_v2_1_level
 
 
 
 
 - id: '20180083001' 
 ########################################################
-## Turn switch Neo1 "ON" if it was "OFF" triggered by 
+## Basement StairsLigth "ON" if it was "OFF" triggered by 
 ## Multisensor1 After that take 4 snapshoots and send
 ## them by mail "notify.MailtoPykodel" 
 ########################################################
-  alias: Turn on Neo1 when there is movement
+  alias: Basement StairsLight ON
   trigger:
     - entity_id: binary_sensor.multi01_motion
       platform: state
@@ -268,15 +349,15 @@
 #
 - id: '2018083002'
 ########################################################
-## Turn switch Neo1 "OFF" if it was "ON" triggered by
+## Basement StairsLight "OFF" if it was "ON" triggered by
 ## Multisensor1 after 15 minutes "NO MOTION"
 ##
 ########################################################
-  alias: Turn off Neo1 15 minutes after last movement
+  alias: Basement StairsLight 3min OFF
   trigger:
   - entity_id: binary_sensor.multi01_motion
     for:
-      minutes: 3
+      minutes: 2
     platform: state
     to: 'off'
   condition:

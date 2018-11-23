@@ -200,10 +200,10 @@ hempower:
   name: Home Power,W
   entities:
     - history_graph.hempower_graph
-hemenergy:
-  name: Home Energy,kWh
-  entities:
-    - history_graph.hemenergy_graph
+#hemenergy:
+#  name: Home Energy,kWh
+#  entities:
+#    - history_graph.hemenergy_graph
       
 
 energydata:
@@ -216,6 +216,32 @@ energydata:
     - sensor.neo_coolcam_power_plug_12a_energy03
     - sensor.neo_coolcam_power_plug_12a_energy04
 
+###############################################################
+#
+#  NewTab "Power Graphs" 
+#
+###############################################################
+powergraphs:
+  view: yes
+  name: PowerStat 
+  entities:
+    - group.powerneo
+    - group.powerzooz
+      #- group.voltage
+
+
+powerneo:
+    name: PowerNeo
+    entities:
+    - history_graph.neopower_graphs
+powerzooz:
+    name: PowerZooz
+    entities:
+    - history_graph.zoozpower_graphs
+#voltage:
+   #name: Voltage
+   #entities:
+   #- history_graph.voltage_graphs
       
 ###############################################################
 #
@@ -264,15 +290,31 @@ cameras:
 power_switch:
   view: yes
   name: Switches
+  control: hidden
   entities:
-    - group.all_switches
+    #- group.all_switches
+    - group.zoozswitch
+    - group.inovelliswitch
     - group.neoswitch
     - group.oldswitch
     - group.dimmer
 
+zoozswitch:
+  name: Zooz
+  control: hidden
+  entities:
+    - switch.hank_hkzwso03_smart_plug_switch01
+
+inovelliswitch:
+  name: Inovelli
+  control: hidden
+  entities:
+    - switch.inovelli_2ch_01_1
+    - switch.inovelli_2ch_01_2
 
 neoswitch:
   name: Neo_Coolcam
+  control: hidden
   entities:
     - switch.neo_coolcam_power_plug_12a_switch01
     - switch.neo_coolcam_power_plug_12a_switch02
@@ -281,16 +323,19 @@ neoswitch:
 
 oldswitch:
   name: Intermatic
+  control: hidden
   entities:
     -  switch.intermatic_ha02_appliance_module_switch 
     -  switch.intermatic_ha04c_outdoor_module_switch
 
 dimmer:
-  name: Dimmers
+  name: Room Light 
   entities:
-      ## Dimmer Zen22 (Node ID:29)
+      ## Light SW ZEN21 (Node ID:24)
+    - switch.zooz_zen21_switch_v20_switch_01
+      ## Dimmer Zen22 MasterBedroom (Node ID:29)
     - light.zooz_zen22_dimmer_v2_1_level
-      ## Dimmer Zen22 (Node ID:32)
+      ## Dimmer Zen22 Vlad's Room (Node ID:32)
     - light.zooz_zen22_dimmer_v2_2_level
 
 
@@ -302,15 +347,13 @@ dimmer:
 ###############################################################
 graphs:
   view: yes
-  name: Monitoring Chart
+  name: Monitor
   icon: mdi:chart-line-variant
   entities:
     - group.temperature
     - group.humidity
-      #- group.mainfloorlux
     - group.luminance
-    - group.power
-      #- group.voltage
+   #- group.mainfloorlux
     
 temperature:
     name: Temperature
@@ -324,15 +367,7 @@ luminance:
     name: Luminance
     entities:
     - history_graph.luminance_graphs
-mainfloorlux:
-    name: MainFloor
-    entities:
-    - history_graph.mainfloorlux_graphs
-power:
-    name: Power
-    entities:
-    - history_graph.power_graphs
-voltage:
-    name: Voltage
-    entities:
-    - history_graph.voltage_graphs
+#mainfloorlux:
+   #name: MainFloor
+   #entities:
+   #- history_graph.mainfloorlux_graphs

@@ -8,7 +8,7 @@ temperature:
     - sensor.vision_zp3111_multisensor_4in1_temperature_4
     - sensor.homeseer_hsm200_wireless_multisensor_temperature_1
     - sensor.2gig_technologies_ct101_thermostat_iris_temperature  
-  hours_to_show: 170
+  hours_to_show: 100
 #
 humidity:
   name: Humidity Graphs
@@ -18,13 +18,13 @@ humidity:
     - sensor.vision_zp3111_multisensor_4in1_relative_humidity_2
     - sensor.vision_zp3111_multisensor_4in1_relative_humidity_3
     - sensor.vision_zp3111_multisensor_4in1_relative_humidity_4
-  hours_to_show: 170
+  hours_to_show: 100
 #
-mainfloorlux:
-  name: MainFloorLux Graphs
-  entities:
-    - sensor.homeseer_hsm200_wireless_multisensor_luminance_1
-  hours_to_show: 170
+#mainfloorlux:
+#  name: MainFloorLux Graphs
+#  entities:
+#    - sensor.homeseer_hsm200_wireless_multisensor_luminance_1
+#  hours_to_show: 150
 #
 luminance:
   name: Luminance Graphs
@@ -33,42 +33,47 @@ luminance:
     - sensor.vision_zp3111_multisensor_4in1_luminance_2
     - sensor.vision_zp3111_multisensor_4in1_luminance_3
     - sensor.vision_zp3111_multisensor_4in1_luminance_4
-  hours_to_show: 170
+  hours_to_show: 100
 #
-power:
-  name: Power Graphs
+power_neo:
+  name: NeoPower Graphs
   entities:
     - sensor.neo_coolcam_power_plug_12a_power01
     - sensor.neo_coolcam_power_plug_12a_power02
     - sensor.neo_coolcam_power_plug_12a_power03
     - sensor.neo_coolcam_power_plug_12a_power04
-    - sensor.hank_hkzwso03_smart_plug_power01  
-  hours_to_show: 170
+  hours_to_show: 100
 #
-voltage:
-  name: Voltage Graphs
+power_zooz:
+  name: ZoozPower Graphs
   entities:
-    - sensor.neo_coolcam_power_plug_12a_voltage01
-    - sensor.neo_coolcam_power_plug_12a_voltage02
-    - sensor.neo_coolcam_power_plug_12a_voltage03
-    - sensor.neo_coolcam_power_plug_12a_voltage04
-    - sensor.hank_hkzwso03_smart_plug_voltage01 
-  hours_to_show: 170
+    - sensor.hank_hkzwso03_smart_plug_power01  
+  hours_to_show: 100
+#
+#voltage:
+#  name: Voltage Graphs
+#  entities:
+#    - sensor.neo_coolcam_power_plug_12a_voltage01
+#    - sensor.neo_coolcam_power_plug_12a_voltage02
+#    - sensor.neo_coolcam_power_plug_12a_voltage03
+#    - sensor.neo_coolcam_power_plug_12a_voltage04
+#    - sensor.hank_hkzwso03_smart_plug_voltage01 
+#  hours_to_show: 150
 #
 hemvoltage:
   name: HEMVoltage Graph
   entities:
     - sensor.aeotec_zw095_home_energy_meter_gen5_voltage   
-  hours_to_show: 170
+  hours_to_show: 150
 #
-hemenergy:
-  name: HEMEnergy Graph
-  entities:
-    - sensor.aeotec_zw095_home_energy_meter_gen5_energy  
-  hours_to_show: 170
+#hemenergy:
+#  name: HEMEnergy Graph
+#  entities:
+#    - sensor.aeotec_zw095_home_energy_meter_gen5_energy  
+#  hours_to_show: 150
 #
 hempower:
   name: HEMPower Graph
   entities:
     - sensor.aeotec_zw095_home_energy_meter_gen5_power  
-  hours_to_show: 170
+  hours_to_show: 150

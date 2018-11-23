@@ -1,0 +1,11 @@
+- name: lightlow_vlad 
+  entities:
+      light.zooz_zen22_dimmer_v2_2_level:
+        state: on
+        brightness: 70
+
+- name: lightlow_master 
+  entities:
+      light.zooz_zen22_dimmer_v2_1_level:
+        state: on
+        brightness: 40

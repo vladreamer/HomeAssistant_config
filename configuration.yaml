@@ -64,19 +64,21 @@ logbook:
 
 #Logging all except warnings about cameras connection
 logger:
+  #default: debug
   default: info 
-  logs:
-    homeassistant.components.camera: critical
-    urllib3.connectionpool: critical
-    requests.packages.urllib3: critical
-    requests.packages.urllib3.connectionpool: critical
+  #logs:
+  #  homeassistant.components.camera: critical
+  #  urllib3.connectionpool: critical
+  #  requests.packages.urllib3: critical
+  #  requests.packages.urllib3.connectionpool: critical
 
 # Enables a map showing the location of tracked devices
 map:
 
 recorder:
-  purge_keep_days: 31
-  db_url: mysql://hassuser:vw123wv@localhost/hass 
+  purge_interval: 2
+  purge_keep_days: 8
+  db_url: mysql://hassuser:vw123wv@localhost/hass?charset=utf8 
   include:
     domains:
       - sensor
@@ -108,4 +110,5 @@ script: !include scripts.yaml
 notify: !include notify.yaml
 history_graph: !include history_graph.yaml
 shell_command: !include shell_command.yaml
+scene: !include scene.yaml
 #device_tracker: !include hitron.yaml
