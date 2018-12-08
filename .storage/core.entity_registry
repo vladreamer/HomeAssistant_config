@@ -614,8 +614,8 @@
                 "unique_id": "12-72057594245300241"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "9389c755fde24c0c82cc8e9c6ed5de78",
                 "disabled_by": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_sourcenodeid03",
                 "name": "Neo03_Src",
@@ -623,8 +623,8 @@
                 "unique_id": "12-72057594245300257"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "9389c755fde24c0c82cc8e9c6ed5de78",
                 "disabled_by": null,
                 "entity_id": "sensor.neo_coolcam_power_plug_12a_power_management03",
                 "name": "Neo03_Mgmt",
@@ -1773,6 +1773,393 @@
                 "name": "Vlad'sRoomDimmer",
                 "platform": "zwave",
                 "unique_id": "32-72057594579615745"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "fba60e1d8adb407e81f1d6e94ec6cae5",
+                "disabled_by": null,
+                "entity_id": "sensor.2gig_technologies_ct101_thermostat_iris_temperature_2",
+                "name": "ThermostatTemp2",
+                "platform": "zwave",
+                "unique_id": "28-144115188550615058"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "fba60e1d8adb407e81f1d6e94ec6cae5",
+                "disabled_by": null,
+                "entity_id": "sensor.2gig_technologies_ct101_thermostat_iris_relative_humidity",
+                "name": "Humid",
+                "platform": "zwave",
+                "unique_id": "28-216172782588543058"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_power05",
+                "name": "Neo05_Power",
+                "platform": "zwave",
+                "unique_id": "33-72057594596589698"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_voltage05",
+                "name": "Neo05_Volts",
+                "platform": "zwave",
+                "unique_id": "33-72057594596589826"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_current05",
+                "name": "Neo05_Amps",
+                "platform": "zwave",
+                "unique_id": "33-72057594596589890"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_exporting05",
+                "name": "Neo05_Export",
+                "platform": "zwave",
+                "unique_id": "33-72057594596590080"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_sourcenodeid05",
+                "name": "Neo05_Src",
+                "platform": "zwave",
+                "unique_id": "33-72057594597621793"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_power_management05",
+                "name": "Neo05_Mgmt",
+                "platform": "zwave",
+                "unique_id": "33-72057594597621937"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.neo_coolcam_power_plug_12a_05",
+                "name": "Neo05",
+                "platform": "zwave",
+                "unique_id": "node-33"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_alarm_type05",
+                "name": "Neo05_AlrmType",
+                "platform": "zwave",
+                "unique_id": "33-72057594597621761"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_alarm_level05",
+                "name": "Neo05_AlrmLvl",
+                "platform": "zwave",
+                "unique_id": "33-72057594597621777"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
+                "disabled_by": null,
+                "entity_id": "switch.neo_coolcam_power_plug_12a_switch05",
+                "name": "Neo05_Switch",
+                "platform": "zwave",
+                "unique_id": "33-72057594596376576"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_energy05",
+                "name": "Neo05_Energy",
+                "platform": "zwave",
+                "unique_id": "33-72057594596589570"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading05",
+                "name": "Neo05_PrevRead",
+                "platform": "zwave",
+                "unique_id": "33-72057594596589586"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_interval05",
+                "name": "Neo05_Interval",
+                "platform": "zwave",
+                "unique_id": "33-72057594596589603"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading_2_05",
+                "name": "Neo05_PrevRead2",
+                "platform": "zwave",
+                "unique_id": "33-72057594596589714"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_interval_2_05",
+                "name": "Neo05_Interval2",
+                "platform": "zwave",
+                "unique_id": "33-72057594596589731"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading_3_05",
+                "name": "Neo05_PrevRead3",
+                "platform": "zwave",
+                "unique_id": "33-72057594596589842"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_interval_3_05",
+                "name": "Neo05_Interval3",
+                "platform": "zwave",
+                "unique_id": "33-72057594596589859"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading_4_05",
+                "name": "Neo05_PrevRead4",
+                "platform": "zwave",
+                "unique_id": "33-72057594596589906"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_interval_4_05",
+                "name": "Neo05_Interval4",
+                "platform": "zwave",
+                "unique_id": "33-72057594596589923"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.kaipule_im20_doorwindow_sensor",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-34"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "d7b5a55a4a1b44c0a09fc67ab6587fd2",
+                "disabled_by": null,
+                "entity_id": "sensor.kaipule_im20_doorwindow_sensor_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "34-72057594614399009"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "d7b5a55a4a1b44c0a09fc67ab6587fd2",
+                "disabled_by": null,
+                "entity_id": "sensor.kaipule_im20_doorwindow_sensor_access_control",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "34-72057594614399121"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "d7b5a55a4a1b44c0a09fc67ab6587fd2",
+                "disabled_by": null,
+                "entity_id": "sensor.kaipule_im20_doorwindow_sensor_burglar",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "34-72057594614399137"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "d7b5a55a4a1b44c0a09fc67ab6587fd2",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.kaipule_im20_doorwindow_sensor_sensor",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "34-72057594613334016"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "d7b5a55a4a1b44c0a09fc67ab6587fd2",
+                "disabled_by": null,
+                "entity_id": "sensor.kaipule_im20_doorwindow_sensor_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "34-72057594614398977"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "d7b5a55a4a1b44c0a09fc67ab6587fd2",
+                "disabled_by": null,
+                "entity_id": "sensor.kaipule_im20_doorwindow_sensor_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "34-72057594614398993"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.ecolink_garage_door_tilt_sensor",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-35"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "ca6f2c845553457d9b3575e6fac3f9f8",
+                "disabled_by": null,
+                "entity_id": "sensor.ecolink_garage_door_tilt_sensor_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "35-72057594631176225"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "ca6f2c845553457d9b3575e6fac3f9f8",
+                "disabled_by": null,
+                "entity_id": "sensor.ecolink_garage_door_tilt_sensor_access_control",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "35-72057594631176337"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "ca6f2c845553457d9b3575e6fac3f9f8",
+                "disabled_by": null,
+                "entity_id": "sensor.ecolink_garage_door_tilt_sensor_burglar",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "35-72057594631176353"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "ca6f2c845553457d9b3575e6fac3f9f8",
+                "disabled_by": null,
+                "entity_id": "sensor.ecolink_garage_door_tilt_sensor_power_management",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "35-72057594631176369"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "ca6f2c845553457d9b3575e6fac3f9f8",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.ecolink_garage_door_tilt_sensor_sensor",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "35-72057594630111232"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "ca6f2c845553457d9b3575e6fac3f9f8",
+                "disabled_by": null,
+                "entity_id": "sensor.ecolink_garage_door_tilt_sensor_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "35-72057594631176193"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "ca6f2c845553457d9b3575e6fac3f9f8",
+                "disabled_by": null,
+                "entity_id": "sensor.ecolink_garage_door_tilt_sensor_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "35-72057594631176209"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.kaipule_im20_doorwindow_sensor_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-36"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "2e9ff1acb3cc49e589bfc413d0dba446",
+                "disabled_by": null,
+                "entity_id": "sensor.kaipule_im20_doorwindow_sensor_sourcenodeid_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "36-72057594647953441"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "2e9ff1acb3cc49e589bfc413d0dba446",
+                "disabled_by": null,
+                "entity_id": "sensor.kaipule_im20_doorwindow_sensor_access_control_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "36-72057594647953553"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "2e9ff1acb3cc49e589bfc413d0dba446",
+                "disabled_by": null,
+                "entity_id": "sensor.kaipule_im20_doorwindow_sensor_burglar_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "36-72057594647953569"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "2e9ff1acb3cc49e589bfc413d0dba446",
+                "disabled_by": null,
+                "entity_id": "sensor.kaipule_im20_doorwindow_sensor_alarm_type_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "36-72057594647953409"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "2e9ff1acb3cc49e589bfc413d0dba446",
+                "disabled_by": null,
+                "entity_id": "sensor.kaipule_im20_doorwindow_sensor_alarm_level_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "36-72057594647953425"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "2e9ff1acb3cc49e589bfc413d0dba446",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.kaipule_im20_doorwindow_sensor_sensor_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "36-72057594646888448"
             }
         ]
     },

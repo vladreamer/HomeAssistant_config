@@ -2,7 +2,7 @@
 # USB_Camera
 ########################
 - platform: mjpeg 
-  mjpeg_url: http://localhost:8081 
+  mjpeg_url: http://192.168.0.218:8081
   name: Camera1
   username: viewer
   password: 1234
@@ -22,12 +22,20 @@
   name: Camera3
   username: viewer 
   password: 1234
+########################
+# USB_Camera2
+########################
+- platform: mjpeg 
+  mjpeg_url: http://192.168.0.218:8082
+  name: Camera4
+  username: viewer
+  password: 1234
 ###########################
 # Network_Camera D-Link01 
 ###########################
 - platform: mjpeg 
   mjpeg_url: http://viewer:1234@192.168.0.223/video1.mjpg
-  name: Camera4
+  name: Camera5
 ###########################
 # Network_Camera Digoo
 ###########################

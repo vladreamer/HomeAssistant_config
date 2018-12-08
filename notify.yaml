@@ -8,6 +8,6 @@
   username: pykodel@gmail.com
   password: Darish2015 
   recipient:
-    - pykodel@gmail.com
+    - homealertmails@gmail.com
   #  - redalertmail@gmail.com
   sender_name: HomeAssistant

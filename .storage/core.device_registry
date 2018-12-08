@@ -285,8 +285,8 @@
                     ]
                 ],
                 "manufacturer": "Zooz",
-                "model": "NZW37 2-Channel Smart Plug (w/Scene)",
-                "name": "Zooz NZW37 2-Channel Smart Plug (w/Scene)",
+                "model": "Unknown: type=2500, id=2500",
+                "name": "Zooz Unknown: type=2500, id=2500",
                 "sw_version": null
             },
             {
@@ -321,8 +321,8 @@
                     ]
                 ],
                 "manufacturer": "Zooz",
-                "model": "ZEN21 Switch V2.0",
-                "name": "Zooz ZEN21 Switch V2.0",
+                "model": "Unknown: type=b111, id=1e1c",
+                "name": "Zooz Unknown: type=b111, id=1e1c",
                 "sw_version": null
             },
             {
@@ -431,6 +431,78 @@
                 "manufacturer": "Zooz",
                 "model": "ZEN22 Dimmer V2",
                 "name": "Zooz ZEN22 Dimmer V2",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "5b82b774861244dfa644e2ff39bcdf3e",
+                "identifiers": [
+                    [
+                        "zwave",
+                        33
+                    ]
+                ],
+                "manufacturer": "Neo CoolCam",
+                "model": "Power plug 12A",
+                "name": "Neo CoolCam Power plug 12A",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "d7b5a55a4a1b44c0a09fc67ab6587fd2",
+                "identifiers": [
+                    [
+                        "zwave",
+                        34
+                    ]
+                ],
+                "manufacturer": "Kaipule",
+                "model": "IM20 Door/Window Sensor",
+                "name": "Kaipule IM20 Door/Window Sensor",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "ca6f2c845553457d9b3575e6fac3f9f8",
+                "identifiers": [
+                    [
+                        "zwave",
+                        35
+                    ]
+                ],
+                "manufacturer": "Ecolink",
+                "model": "Garage Door Tilt Sensor",
+                "name": "Ecolink Garage Door Tilt Sensor",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "2e9ff1acb3cc49e589bfc413d0dba446",
+                "identifiers": [
+                    [
+                        "zwave",
+                        36
+                    ]
+                ],
+                "manufacturer": "Kaipule",
+                "model": "IM20 Door/Window Sensor",
+                "name": "Kaipule IM20 Door/Window Sensor",
                 "sw_version": null
             }
         ]

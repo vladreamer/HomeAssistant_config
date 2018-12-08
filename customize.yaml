@@ -1,3 +1,24 @@
+##################
+### DoorSensors
+###################
+binary_sensor.ecolink_garage_door_tilt_sensor_sensor:
+  friendly_name: Garage
+  device_class: garage_door
+binary_sensor.kaipule_im20_doorwindow_sensor_sensor:
+  friendly_name: Basement
+  device_class: door
+binary_sensor.kaipule_im20_doorwindow_sensor_sensor_2:
+  friendly_name: Entrance
+  device_class: door
+
+##########################################################
+#  Thermostat Id:28  
+##########################################################
+sensor.2gig_technologies_ct101_thermostat_iris_relative_humidity:
+  friendly_name: Thermostat Humidity
+  icon: mdi:water-percent
+  unit_of_measurement: '%'
+
 ##########################################################
 #  Water Walve/Switch  
 ##########################################################
@@ -106,15 +127,15 @@ switch.zooz_zen21_switch_v20_switch_01:
 #  Neo Coolcam Power Plugs  
 ##########################################################
 switch.neo_coolcam_power_plug_12a_switch01:
-  friendly_name: BasementSW_Id:8
+  friendly_name: FurnaceSW_Id:8
 sensor.neo_coolcam_power_plug_12a_power01:
-  friendly_name: BasementSW_Pwr
+  friendly_name: FurnaceSW_Pwr
 sensor.neo_coolcam_power_plug_12a_voltage01:
-  friendly_name: BasementSW_V
+  friendly_name: FurnaceSW_V
 sensor.neo_coolcam_power_plug_12a_current01:
-  friendly_name: BasementSW_A
+  friendly_name: FurnaceSW_A
 sensor.neo_coolcam_power_plug_12a_energy01:
-  friendly_name: BasementSW
+  friendly_name: FurnaceSW
   icon: mdi:finance
   unit_of_measurement: kWh
   #
@@ -154,6 +175,19 @@ sensor.neo_coolcam_power_plug_12a_current04:
   friendly_name: ChatRoom_A
 sensor.neo_coolcam_power_plug_12a_energy04:
   friendly_name: ChatRoomSW 
+  icon: mdi:finance
+  unit_of_measurement: kWh
+  #
+switch.neo_coolcam_power_plug_12a_switch05:
+  friendly_name: Porch_Id:33
+sensor.neo_coolcam_power_plug_12a_power05:
+  friendly_name: Porch_Pwr
+sensor.neo_coolcam_power_plug_12a_voltage05:
+  friendly_name: Porch_V
+sensor.neo_coolcam_power_plug_12a_current05:
+  friendly_name: Porch_A
+sensor.neo_coolcam_power_plug_12a_energy05:
+  friendly_name: PorchSW 
   icon: mdi:finance
   unit_of_measurement: kWh
 

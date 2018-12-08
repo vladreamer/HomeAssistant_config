@@ -6,14 +6,19 @@ default_view:
   entities:
     - sensor.disk_use_percent_
     - sensor.since_last_boot
-    - sensor.weather_temperature
-    - sensor.weather_humidity
+    - sensor.2gig_technologies_ct101_thermostat_iris_temperature  
+    - sensor.2gig_technologies_ct101_thermostat_iris_relative_humidity  
+   #- sensor.weather_temperature
+   #- sensor.weather_humidity
     - binary_sensor.hvacfan  
     - binary_sensor.neo_coolcam_water_leakage_detector_sensor01
     - binary_sensor.neo_coolcam_water_leakage_detector_sensor02
     - binary_sensor.neo_coolcam_water_leakage_detector_sensor03
     - sensor.aeotec_zw095_home_energy_meter_gen5_power
     - sensor.aeotec_zw095_home_energy_meter_gen5_energy
+    - binary_sensor.ecolink_garage_door_tilt_sensor_sensor
+    - binary_sensor.kaipule_im20_doorwindow_sensor_sensor   
+    - binary_sensor.kaipule_im20_doorwindow_sensor_sensor_2   
     - group.basement
     - group.kitchen
     - group.chatroom
@@ -44,11 +49,6 @@ basement:
     - sensor.vision_zp3111_multisensor_4in1_battery_1
       ## Zen21
     - switch.zooz_zen21_switch_v20_switch_01
-      ## Neo01
-    - sensor.neo_coolcam_power_plug_12a_power01 
-    - switch.neo_coolcam_power_plug_12a_switch01
-    #- sensor.neo_coolcam_power_plug_12a_voltage01
-    #- sensor.neo_coolcam_power_plug_12a_current01
 
 kitchen:
   name: MainFloor 
@@ -100,6 +100,9 @@ bedroom2:
   entities:
       ## HA02-white
     - switch.intermatic_ha02_appliance_module_switch 
+      ## Neo05
+    - sensor.neo_coolcam_power_plug_12a_power05 
+    - switch.neo_coolcam_power_plug_12a_switch05
 
 masteroom:
   name: Master Bedroom
@@ -135,27 +138,35 @@ attic:
 ###############################################################    
 thermostat_views:
   view: yes
-  name: Thermostat
+  name: Climate
   entities:
   - group.thermostat_mode
 thermostat_mode:
-  name: Thermostat Modes
+  name: Thermostat Id:28 
   entities:
   - climate.2gig_technologies_ct101_thermostat_iris_cooling_1
   - climate.2gig_technologies_ct101_thermostat_iris_heating_1
   - sensor.thermostat_battery
     #- sensor.thermostat_cool_fan_state
     #- sensor.thermostat_heat_fan_state
-  - sensor.thermostat_cool_operation_mode_state
-  - sensor.thermostat_heat_operation_mode_state
-  - sensor.thermostat_cool_current_temperature
-  - sensor.thermostat_heat_current_temperature
-  - sensor.thermostat_cool_temperature
-  - sensor.thermostat_heat_temperature
-  - sensor.thermostat_cool_min_temp
-  - sensor.thermostat_heat_min_temp
-  - sensor.thermostat_cool_max_temp
-  - sensor.thermostat_heat_max_temp    
+  - sensor.thermostat_operation_mode_state
+    #- sensor.thermostat_cool_operation_mode_state
+    #- sensor.thermostat_heat_operation_mode_state
+  - sensor.thermostat_current_temperature
+  - sensor.2gig_technologies_ct101_thermostat_iris_relative_humidity
+    #- sensor.thermostat_cool_current_temperature
+    #- sensor.thermostat_heat_current_temperature
+    #- sensor.thermostat_cool_temperature
+    #- sensor.thermostat_heat_temperature
+    #- sensor.thermostat_cool_min_temp
+    #- sensor.thermostat_heat_min_temp
+    #- sensor.thermostat_cool_max_temp
+    #- sensor.thermostat_heat_max_temp    
+      ## Neo01
+  - sensor.neo_coolcam_power_plug_12a_power01 
+  - switch.neo_coolcam_power_plug_12a_switch01
+    #- sensor.neo_coolcam_power_plug_12a_voltage01
+    #- sensor.neo_coolcam_power_plug_12a_current01
 
 ###############################################################
 #
@@ -171,8 +182,17 @@ energy:
     - group.hempower
     - group.batteries
     - group.energydata
+    - group.ups
    #- group.hemenergy
           
+ups:
+  name: BasementUPS
+  entities:
+    - sensor.ups_battery_temperature
+    - sensor.ups_input_volts
+    - sensor.ups_battery_capacity
+    - sensor.ups_battery_runtime_remain
+
 batteries:
   name: Batteries
   entities:
@@ -215,6 +235,7 @@ energydata:
     - sensor.neo_coolcam_power_plug_12a_energy02
     - sensor.neo_coolcam_power_plug_12a_energy03
     - sensor.neo_coolcam_power_plug_12a_energy04
+    - sensor.neo_coolcam_power_plug_12a_energy05
 
 ###############################################################
 #
@@ -281,6 +302,7 @@ cameras:
     - camera.camera2 
     - camera.camera3
     - camera.camera4
+    - camera.camera5
 
 ###############################################################
 #
@@ -316,10 +338,11 @@ neoswitch:
   name: Neo_Coolcam
   control: hidden
   entities:
-    - switch.neo_coolcam_power_plug_12a_switch01
+   #- switch.neo_coolcam_power_plug_12a_switch01
     - switch.neo_coolcam_power_plug_12a_switch02
     - switch.neo_coolcam_power_plug_12a_switch03
     - switch.neo_coolcam_power_plug_12a_switch04
+    - switch.neo_coolcam_power_plug_12a_switch05
 
 oldswitch:
   name: Intermatic

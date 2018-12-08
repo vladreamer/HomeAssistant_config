@@ -35,6 +35,15 @@
                 "source": "discovery",
                 "title": "CGN3ACSMR",
                 "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {},
+                "domain": "mqtt",
+                "entry_id": "e59fe602d94c4fc6a0b13b147e07ddf5",
+                "source": "import",
+                "title": "configuration.yaml",
+                "version": 1
             }
         ]
     },

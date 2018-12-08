@@ -42,6 +42,20 @@
   - service: homeassistant.turn_off
     entity_id: light.zooz_zen22_dimmer_v2_2_level
 
+- id: 'ThermostatUpdate_2018112800'
+########################################################
+## Thermostat (ID:28) 
+########################################################
+  alias: Thermostat Refresh Timer
+  trigger:
+  - seconds: /30
+    platform: time
+  condition: []
+  action:
+  - data:
+     entity_id: climate.2gig_technologies_ct101_thermostat_iris_heating_1 
+    service: zwave.refresh_entity
+
 
 - id: 'TempMorning_2018111400'
 ########################################################
@@ -246,30 +260,22 @@
   - service: homeassistant.turn_off
     #entity_id: switch.inovelli_2ch_01_2
     entity_id: light.zooz_zen22_dimmer_v2_1_level
-
-
-
-
-- id: '20180083001' 
+#
+#
+#
+#
+- id: 'GarageDoor_Open' 
 ########################################################
-## Basement StairsLigth "ON" if it was "OFF" triggered by 
-## Multisensor1 After that take 4 snapshoots and send
+## Garage door "OPEN" if it was "OFF" triggered by 
+## GarageDoor sensor ID:35 After that take 4 snapshoots and send
 ## them by mail "notify.MailtoPykodel" 
 ########################################################
-  alias: Basement StairsLight ON
+  alias: Garage Door is OPEN
   trigger:
-    - entity_id: binary_sensor.multi01_motion
+    - entity_id: binary_sensor.ecolink_garage_door_tilt_sensor_sensor
       platform: state
       to: 'on'
-  condition:
-    - condition: state
-      #entity_id: switch.neo_coolcam_power_plug_12a_switch01
-      entity_id: switch.zooz_zen21_switch_v20_switch_01 
-      state: 'off'
   action:
-    - service: homeassistant.turn_on 
-      #entity_id: switch.neo_coolcam_power_plug_12a_switch01
-      entity_id: switch.zooz_zen21_switch_v20_switch_01 
     - service: camera.snapshot
       data:
         entity_id: camera.camera4
@@ -278,7 +284,7 @@
       data:
         filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_01.jpg"
         filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_01cor.jpg"
-    - delay: '00:00:02'
+    - delay: '00:00:10'
     - service: camera.snapshot
       data:
         entity_id: camera.camera4
@@ -287,7 +293,7 @@
       data:
         filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_02.jpg"
         filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_02cor.jpg"
-    - delay: '00:00:12'
+    - delay: '00:00:20'
     - service: camera.snapshot
       data:
         entity_id: camera.camera4
@@ -296,7 +302,203 @@
       data:
         filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_03.jpg"
         filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_03cor.jpg"
-    - delay: '00:00:25'
+    - delay: '00:00:30'
+    - service: camera.snapshot
+      data:
+        entity_id: camera.camera4
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_04.jpg"
+    - service: shell_command.fix_snapshot
+      data:
+        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_04.jpg"
+        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_04cor.jpg"
+    - service: notify.MailtoPykodel
+      data_template:
+        title: "Garage Door is OPEN"
+        message: "Someone opened Garage Door"
+        data:
+          images:
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera4_01cor.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera4_02cor.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera4_03cor.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera4_04cor.jpg
+          html: >
+            <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+            <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+              <head>
+
+                <meta charset="UTF-8">
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Garage Door is Open</title>
+                <style type="text/css">
+                  h1,h2,h3,h4,h5,h6 {
+                  font-family:Arial,sans-serif;
+                  }
+                </style>
+              </head>
+              <body>
+                <h1>Garage Door is Open  0sec</h1>
+                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera4?api_password=3health1">
+                <img style="width: 100%; alt="Image1 from Camera4" src="cid:snapshot_camera4_01cor.jpg" /></a>
+                <h4>4 sec</h4>
+                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera4?api_password=3health1">
+                <img style="width: 100%; alt="Image2 from Camera4" src="cid:snapshot_camera4_02cor.jpg" /></a>
+                <h4>16 sec</h4>
+                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera4?api_password=3health1">
+                <img style="width: 100%; alt="Image3 from Camera4" src="cid:snapshot_camera4_03cor.jpg" /></a>
+                <h4>32 sec</h4>
+                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera4?api_password=3health1">
+                <img style="width: 100%; alt="Image3 from Camera4" src="cid:snapshot_camera4_04cor.jpg" /></a>
+              </body>
+            </html>
+#
+#
+#
+#
+- id: 'BasementStairsLigt_Door' 
+########################################################
+## Basement StairsLigth "ON" if it was "OFF" triggered by 
+## Door sensor ID:34 After that take 4 snapshoots and send
+## them by mail "notify.MailtoPykodel" 
+########################################################
+  alias: Basement StairsLight ON
+  trigger:
+    - entity_id: binary_sensor.kaipule_im20_doorwindow_sensor_sensor
+      platform: state
+      to: 'on'
+  condition:
+    - condition: state
+      entity_id: switch.zooz_zen21_switch_v20_switch_01 
+      state: 'off'
+  action:
+    - service: homeassistant.turn_on 
+      entity_id: switch.zooz_zen21_switch_v20_switch_01 
+    - delay: '00:00:02'
+    - service: camera.snapshot
+      data:
+        entity_id: camera.camera5
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_01.jpg"
+    - service: shell_command.fix_snapshot
+      data:
+        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_01.jpg"
+        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_01cor.jpg"
+    - delay: '00:00:10'
+    - service: camera.snapshot
+      data:
+        entity_id: camera.camera5
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_02.jpg"
+    - service: shell_command.fix_snapshot
+      data:
+        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_02.jpg"
+        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_02cor.jpg"
+    - delay: '00:00:20'
+    - service: camera.snapshot
+      data:
+        entity_id: camera.camera5
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_03.jpg"
+    - service: shell_command.fix_snapshot
+      data:
+        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_03.jpg"
+        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_03cor.jpg"
+    - delay: '00:00:30'
+    - service: camera.snapshot
+      data:
+        entity_id: camera.camera5
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_04.jpg"
+    - service: shell_command.fix_snapshot
+      data:
+        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_04.jpg"
+        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_04cor.jpg"
+    - service: notify.MailtoPykodel
+      data_template:
+        title: "Basement Motion Detected"
+        message: "Motion Detected in Basement by Multisensor Multi01"
+        data:
+          images:
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera5_01cor.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera5_02cor.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera5_03cor.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera5_04cor.jpg
+          html: >
+            <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+            <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+              <head>
+
+                <meta charset="UTF-8">
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Switch1 Triggered</title>
+                <style type="text/css">
+                  h1,h2,h3,h4,h5,h6 {
+                  font-family:Arial,sans-serif;
+                  }
+                </style>
+              </head>
+              <body>
+                <h1>Motion in Basement  0sec</h1>
+                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera5?api_password=3health1">
+                <img style="width: 100%; alt="Image1 from Camera5" src="cid:snapshot_camera5_01cor.jpg" /></a>
+                <h4>4 sec</h4>
+                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera5?api_password=3health1">
+                <img style="width: 100%; alt="Image2 from Camera5" src="cid:snapshot_camera5_02cor.jpg" /></a>
+                <h4>16 sec</h4>
+                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera5?api_password=3health1">
+                <img style="width: 100%; alt="Image3 from Camera5" src="cid:snapshot_camera5_03cor.jpg" /></a>
+                <h4>32 sec</h4>
+                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera5?api_password=3health1">
+                <img style="width: 100%; alt="Image3 from Camera5" src="cid:snapshot_camera5_04cor.jpg" /></a>
+              </body>
+            </html>
+#
+#
+#
+#
+- id: 'BasementStairsLigt_Motion' 
+########################################################
+## Basement StairsLigth "ON" if it was "OFF" triggered by 
+## Motion sensor ID:15 After that take 4 snapshoots and send
+## them by mail "notify.MailtoPykodel" 
+########################################################
+  alias: Basement StairsLight ON
+  trigger:
+    - entity_id: binary_sensor.multi01_motion 
+      platform: state
+      to: 'on'
+  condition:
+    - condition: state
+      entity_id: switch.zooz_zen21_switch_v20_switch_01 
+      state: 'off'
+  action:
+    - service: homeassistant.turn_on 
+      entity_id: switch.zooz_zen21_switch_v20_switch_01 
+    - delay: '00:00:02'
+    - service: camera.snapshot
+      data:
+        entity_id: camera.camera4
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_01.jpg"
+    - service: shell_command.fix_snapshot
+      data:
+        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_01.jpg"
+        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_01cor.jpg"
+    - delay: '00:00:10'
+    - service: camera.snapshot
+      data:
+        entity_id: camera.camera4
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_02.jpg"
+    - service: shell_command.fix_snapshot
+      data:
+        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_02.jpg"
+        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_02cor.jpg"
+    - delay: '00:00:20'
+    - service: camera.snapshot
+      data:
+        entity_id: camera.camera4
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_03.jpg"
+    - service: shell_command.fix_snapshot
+      data:
+        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_03.jpg"
+        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_03cor.jpg"
+    - delay: '00:00:30'
     - service: camera.snapshot
       data:
         entity_id: camera.camera4
@@ -347,7 +549,31 @@
             </html>
 #
 #
-- id: '2018083002'
+- id: 'BasementLight_OFF_Closed'
+########################################################
+## Basement StairsLight "OFF" if it was "ON"
+## after 2 minutes and "NO MOTION"
+########################################################
+  alias: Basement StairsLight 3min OFF
+  trigger:
+  - entity_id: switch.zooz_zen21_switch_v20_switch_01
+    for:
+      minutes: 2
+    platform: state
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: binary_sensor.multi01_motion
+    state: 'off'
+  #- condition: state
+  #  entity_id: switch.zooz_zen21_switch_v20_switch_01
+  #  state: 'on'
+  action:
+  - service: homeassistant.turn_off
+    entity_id: switch.zooz_zen21_switch_v20_switch_01
+#
+#
+- id: 'BasementLight_OFF_Motion'
 ########################################################
 ## Basement StairsLight "OFF" if it was "ON" triggered by
 ## Multisensor1 after 15 minutes "NO MOTION"
@@ -362,12 +588,10 @@
     to: 'off'
   condition:
   - condition: state
-    #entity_id: switch.neo_coolcam_power_plug_12a_switch01
     entity_id: switch.zooz_zen21_switch_v20_switch_01
     state: 'on'
   action:
   - service: homeassistant.turn_off
-    #entity_id: switch.neo_coolcam_power_plug_12a_switch01
     entity_id: switch.zooz_zen21_switch_v20_switch_01
 #
 #
@@ -395,7 +619,7 @@
 #
 #
 #
-- id: '2018100300'
+- id: 'MainFloor_Motion'
 ########################################################
 ## Triger by EZM01 ID 23 (MainFloor_Motion) 
 ## Take 4 snapshoots and send them by mail "notify.MailtoPykodel" 
@@ -403,13 +627,24 @@
 ########################################################
   alias: Snapshots trigered by EZM01 ID:23
   trigger:
-    - entity_id: binary_sensor.ezm01_motion
+      ## Basemen Door   
+    - entity_id: binary_sensor.kaipule_im20_doorwindow_sensor_sensor
       platform: state
+      from: 'off'
+      to: 'on'
+      ## Main Door   
+    - entity_id: binary_sensor.kaipule_im20_doorwindow_sensor_sensor_2
+      platform: state
+      from: 'off'
       to: 'on'
   condition:
-    - condition: time
-      after: '14:30:00'
-      before: '22:50:00'    
+    - condition: state
+      entity_id: binary_sensor.ezm01_motion
+      state: 'on'
+ #condition:
+ #   - condition: time
+ #     after: '14:30:00'
+ #     before: '22:50:00'    
   action:
     - service: camera.snapshot
       data:
@@ -534,11 +769,11 @@
     to: 'on'
   condition:
   - condition: state
-    entity_id: switch.sigma_valveswitch
+    entity_id: switch.sigma_valveswitch01
     state: 'on'
   action:
   - service: homeassistant.turn_off
-    entity_id: switch.sigma_valveswitch
+    entity_id: switch.sigma_valveswitch01
   - service: notify.MailtoPykodel
     data:
       title: "FLOOD ALERT"
