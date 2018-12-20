@@ -509,3 +509,111 @@
 #      icon_template: >-
 #        mdi:thermometer-lines 
 ##########
+#
+#
+#
+#
+################
+## MQQT_Sensor
+################
+- platform: mqtt
+  state_topic: 'RTL_433/JSON'
+  name: 'Basement P1 Temperature'
+  unit_of_measurement: "°C"
+  value_template: "{% if value_json.model == 'Prologue sensor' and value_json.channel == 1 and value_json.id == 5 %}{{ value_json.temperature_C | round(1) }}{% else %}{{ states.sensor.basement_p1_temperature.state }}{% endif %}"
+
+- platform: mqtt
+  state_topic: 'RTL_433/JSON'
+  name: 'Basement P1 Humidity'
+  unit_of_measurement: "%"
+  value_template: "{% if value_json.model == 'Prologue sensor' and value_json.channel == 1 and value_json.id == 5 %}{{ value_json.humidity | round(1) }}{% else %}{{ states.sensor.basement_p1_humidity.state }}{% endif %}"
+
+- platform: mqtt
+  state_topic: 'RTL_433/JSON'
+  name: 'Basement P1 Battery'
+  value_template: "{% if value_json.model == 'Prologue sensor' and value_json.channel == 1 and value_json.id == 5 %}{{ value_json.battery }}{% else %}{{ states.sensor.basement_p1_battery.state }}{% endif %}"
+
+- platform: mqtt
+  state_topic: 'RTL_433/JSON'
+  name: 'ChatRoom P2 Temperature'
+  unit_of_measurement: "°C"
+  value_template: "{% if value_json.model == 'Prologue sensor' and value_json.channel == 2 and value_json.id == 5 %}{{ value_json.temperature_C | round(1) }}{% else %}{{ states.sensor.chatroom_p2_temperature.state }}{% endif %}"
+
+- platform: mqtt
+  state_topic: 'RTL_433/JSON'
+  name: 'ChatRoom P2 Humidity'
+  unit_of_measurement: "%"
+  value_template: "{% if value_json.model == 'Prologue sensor' and value_json.channel == 2 and value_json.id == 5 %}{{ value_json.humidity | round(1) }}{% else %}{{ states.chatroom.office_p2_humidity.state }}{% endif %}"
+
+- platform: mqtt
+  state_topic: 'RTL_433/JSON'
+  name: 'ChatRoom P2 Battery'
+  value_template: "{% if value_json.model == 'Prologue sensor' and value_json.channel == 2 and value_json.id == 5 %}{{ value_json.battery }}{% else %}{{ states.sensor.chatroom_p2_battery.state }}{% endif %}"
+
+- platform: mqtt
+  state_topic: 'RTL_433/JSON'
+  name: 'Kitchen P3 Temperature'
+  unit_of_measurement: "°C"
+  value_template: "{% if value_json.model == 'Prologue sensor' and value_json.channel == 3 and value_json.id == 5 %}{{ value_json.temperature_C | round(1) }}{% else %}{{ states.sensor.kitchen_p3_temperature.state }}{% endif %}"
+
+- platform: mqtt
+  state_topic: 'RTL_433/JSON'
+  name: 'Kitchen P3 Humidity'
+  unit_of_measurement: "%"
+  value_template: "{% if value_json.model == 'Prologue sensor' and value_json.channel == 3 and value_json.id == 5 %}{{ value_json.humidity | round(1) }}{% else %}{{ states.sensor.kitchen_p3_humidity.state }}{% endif %}"
+
+- platform: mqtt
+  state_topic: 'RTL_433/JSON'
+  name: 'Kitchen P3 Battery'
+  value_template: "{% if value_json.model == 'Prologue sensor' and value_json.channel == 3 and value_json.id == 5 %}{{ value_json.battery }}{% else %}{{ states.sensor.kitchen_p3_battery.state }}{% endif %}"
+
+- platform: mqtt
+  state_topic: 'RTL_433/JSON'
+  name: 'Garage T1 Temperature'
+  unit_of_measurement: "°C"
+  value_template: "{% if value_json.model == 'THGR122N' and value_json.channel == 1 %}{{ value_json.temperature_C | round(1) }}{% else %}{{ states.sensor.garage_t1_temperature.state }}{% endif %}"
+
+- platform: mqtt
+  state_topic: 'RTL_433/JSON'
+  name: 'Garage T1 Humidity'
+  unit_of_measurement: "%"
+  value_template: "{% if value_json.model == 'THGR122N' and value_json.channel == 1 %}{{ value_json.humidity | round(1) }}{% else %}{{ states.sensor.garage_t1_humidity.state }}{% endif %}"
+
+- platform: mqtt
+  state_topic: 'RTL_433/JSON'
+  name: 'Garage T1 Battery'
+  value_template: "{% if value_json.model == 'THGR122N' and value_json.channel == 1 %}{{ value_json.battery }}{% else %}{{ states.sensor.garage_t1_battery.state }}{% endif %}"
+
+- platform: mqtt
+  state_topic: 'RTL_433/JSON'
+  name: 'Bathroom T2 Temperature'
+  unit_of_measurement: "°C"
+  value_template: "{% if value_json.model == 'THGR122N' and value_json.channel == 2 %}{{ value_json.temperature_C | round(1) }}{% else %}{{ states.sensor.bathroom_t2_temperature.state }}{% endif %}"
+
+- platform: mqtt
+  state_topic: 'RTL_433/JSON'
+  name: 'Bathroom T2 Humidity'
+  unit_of_measurement: "%"
+  value_template: "{% if value_json.model == 'THGR122N' and value_json.channel == 2 %}{{ value_json.humidity | round(1) }}{% else %}{{ states.sensor.bathroom_t2_humidity.state }}{% endif %}"
+
+- platform: mqtt
+  state_topic: 'RTL_433/JSON'
+  name: 'Bathroom T2 Battery'
+  value_template: "{% if value_json.model == 'THGR122N' and value_json.channel == 2 %}{{ value_json.battery }}{% else %}{{ states.sensor.bathroom_t2_battery.state }}{% endif %}"
+
+- platform: mqtt
+  state_topic: 'RTL_433/JSON'
+  name: 'Office T3 Temperature'
+  unit_of_measurement: "°C"
+  value_template: "{% if value_json.model == 'THGR122N' and value_json.channel == 3 %}{{ value_json.temperature_C | round(1) }}{% else %}{{ states.sensor.office_t3_temperature.state }}{% endif %}"
+
+- platform: mqtt
+  state_topic: 'RTL_433/JSON'
+  name: 'Office T3 Humidity'
+  unit_of_measurement: "%"
+  value_template: "{% if value_json.model == 'THGR122N' and value_json.channel == 3 %}{{ value_json.humidity | round(1) }}{% else %}{{ states.sensor.office_t3_humidity.state }}{% endif %}"
+
+- platform: mqtt
+  state_topic: 'RTL_433/JSON'
+  name: 'Office T3 Battery'
+  value_template: "{% if value_json.model == 'THGR122N' and value_json.channel == 3 %}{{ value_json.battery }}{% else %}{{ states.sensor.office_t3_battery.state }}{% endif %}"

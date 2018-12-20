@@ -36,6 +36,7 @@ date_time:
     - sensor.time_utc
     - sensor.time_in_odessa
     - script.test_notification    
+    - script.facebook_notification    
 
 basement:
   name: Basement
@@ -164,7 +165,8 @@ thermostat_mode:
     #- sensor.thermostat_heat_max_temp    
       ## Neo01
   - sensor.neo_coolcam_power_plug_12a_power01 
-  - switch.neo_coolcam_power_plug_12a_switch01
+  - sensor.neo_coolcam_power_plug_12a_energy01
+    #- switch.neo_coolcam_power_plug_12a_switch01
     #- sensor.neo_coolcam_power_plug_12a_voltage01
     #- sensor.neo_coolcam_power_plug_12a_current01
 
@@ -230,11 +232,17 @@ energydata:
   name: Energy Usage
   entities:
     - sensor.aeotec_zw095_home_energy_meter_gen5_energy
+    - sensor.hank_hkzwso03_smart_plug_power01  
     - sensor.hank_hkzwso03_smart_plug_energy01
+    - sensor.neo_coolcam_power_plug_12a_power01 
     - sensor.neo_coolcam_power_plug_12a_energy01
+    - sensor.neo_coolcam_power_plug_12a_power02 
     - sensor.neo_coolcam_power_plug_12a_energy02
+    - sensor.neo_coolcam_power_plug_12a_power03 
     - sensor.neo_coolcam_power_plug_12a_energy03
+    - sensor.neo_coolcam_power_plug_12a_power04 
     - sensor.neo_coolcam_power_plug_12a_energy04
+    - sensor.neo_coolcam_power_plug_12a_power05 
     - sensor.neo_coolcam_power_plug_12a_energy05
 
 ###############################################################

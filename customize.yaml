@@ -140,15 +140,15 @@ sensor.neo_coolcam_power_plug_12a_energy01:
   unit_of_measurement: kWh
   #
 switch.neo_coolcam_power_plug_12a_switch02:
-  friendly_name: GreatRoomSW_Id:10
+  friendly_name: KitchenSW_Id:10
 sensor.neo_coolcam_power_plug_12a_power02:
-  friendly_name: GreatRoomSW_Pwr
+  friendly_name: KitchenSW_Pwr
 sensor.neo_coolcam_power_plug_12a_voltage02:
-  friendly_name: GreatRoomSW_V
+  friendly_name: KitchenSW_V
 sensor.neo_coolcam_power_plug_12a_current02:
-  friendly_name: GreatRoomSW_A
+  friendly_name: KitchenSW_A
 sensor.neo_coolcam_power_plug_12a_energy02:
-  friendly_name: GreatRoomSW 
+  friendly_name: KitchenSW 
   icon: mdi:finance
   unit_of_measurement: kWh
   #  
@@ -192,15 +192,15 @@ sensor.neo_coolcam_power_plug_12a_energy05:
   unit_of_measurement: kWh
 
 switch.hank_hkzwso03_smart_plug_switch01:
-  friendly_name: KitchenSW_Id:21
+  friendly_name: GreatRoomSW_Id:21
 sensor.hank_hkzwso03_smart_plug_power01:
-  friendly_name: KitchenSW_Pwr
+  friendly_name: GreatRoomSW_Pwr
 sensor.hank_hkzwso03_smart_plug_voltage01:
-  friendly_name: KitchenSW_V
+  friendly_name: GreatRoomSW_V
 sensor.hank_hkzwso03_smart_plug_current01:
-  friendly_name: KitchenSW_A
+  friendly_name: GreatRoomSW_A
 sensor.hank_hkzwso03_smart_plug_energy01:
-  friendly_name: KitchenSW 
+  friendly_name: GreatRoomSW 
   icon: mdi:finance
   unit_of_measurement: kWh
   

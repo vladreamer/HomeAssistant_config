@@ -1,7 +1,17 @@
 test_notification:
   alias: 'Test Gmail'
   sequence:
-    - service: notify.MailToPykodel
+    - service: notify.MailToGmail
       data_template:
         title: "Test Message {{ now().strftime('%d %b, %Y %-I:%M %P') }}"
         message: "This is a test!{{now()}}"
+#
+#
+facebook_notification:
+  alias: 'FaceBook Notification'
+  sequence:
+    - service: notify.FaceBookMessanger
+      data:
+        message: "Home FaceBook test"
+        target:
+        - '+14166487193'        

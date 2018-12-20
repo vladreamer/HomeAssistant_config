@@ -2160,6 +2160,15 @@
                 "name": null,
                 "platform": "zwave",
                 "unique_id": "36-72057594646888448"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "ebe27f026f054e59aac5abe537b3d7b1",
+                "disabled_by": null,
+                "entity_id": "sensor.hank_hkzwso03_smart_plug_previous_reading",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "21-72057594395263122"
             }
         ]
     },
