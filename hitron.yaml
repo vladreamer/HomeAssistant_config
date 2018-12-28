@@ -1,7 +1,4 @@
 - platform: hitron_coda
-  #host: 192.168.0.1 
-  #username: cusadmin
-  #password: vladreamer
   host: !secret router_ip
   username: !secret router_username
   password: !secret router_password

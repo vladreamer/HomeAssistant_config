@@ -52,7 +52,8 @@
   resources:
   - type: disk_use_percent
     arg: /
-  - type: since_last_boot
+  - type: last_boot
+  - type: processor_use 
 
 ###############
 ##Date and Time
@@ -69,6 +70,120 @@
 - platform: worldclock
   name: Time in Odessa
   time_zone: Europe/Kiev
+
+##########################
+## DoorSensors Batteries
+##########################
+#
+    ############################################    
+    ##  Kaipule IM20 Door/Window Sensor ID:34 
+    ############################################    
+- platform: template
+  sensors:
+    door01_battery:
+      friendly_name: "BasementDoor_Battery"
+      value_template: "{% if states.zwave.kaipule_im20_doorwindow_sensor %}
+        {{ states.zwave.kaipule_im20_doorwindow_sensor.attributes.battery_level }}
+        {% else %}
+        unknown
+        {% endif %}"
+      unit_of_measurement: '%'
+      # entity_id: zwave.kaipule_im20_doorwindow_sensor
+      icon_template: >-
+        {% set battery_level = states('sensor.door01_battery')|int('unknown') %}
+        {% set battery_round = (battery_level|int / 10)|int * 10 %}
+        {% if battery_level == 'unknown' %}
+        mdi:battery-unknown
+        {% else %}
+        {% if battery_round >= 100 %}
+        mdi:battery
+        {% elif battery_round > 0 %}
+        mdi:battery-{{ battery_round }}
+        {% else %}
+        mdi:battery-alert
+        {% endif %}
+        {% endif %}
+    #    
+    ############################################    
+    ##  Kaipule IM20 Door/Window Sensor ID:36 
+    ############################################    
+    door02_battery:
+      friendly_name: "EntranceDoor_Battery"
+      value_template: "{% if states.zwave.kaipule_im20_doorwindow_sensor_2 %}
+        {{ states.zwave.kaipule_im20_doorwindow_sensor_2.attributes.battery_level }}
+        {% else %}
+        unknown
+        {% endif %}"
+      unit_of_measurement: '%'
+      # entity_id: zwave.kaipule_im20_doorwindow_sensor_2
+      icon_template: >-
+        {% set battery_level = states('sensor.door02_battery')|int('unknown') %}
+        {% set battery_round = (battery_level|int / 10)|int * 10 %}
+        {% if battery_level == 'unknown' %}
+        mdi:battery-unknown
+        {% else %}
+        {% if battery_round >= 100 %}
+        mdi:battery
+        {% elif battery_round > 0 %}
+        mdi:battery-{{ battery_round }}
+        {% else %}
+        mdi:battery-alert
+        {% endif %}
+        {% endif %}
+    #    
+    ############################################    
+    ##  Kaipule IM20 Door/Window Sensor ID:37 
+    ############################################    
+    door03_battery:
+      friendly_name: "BackDoor_Battery"
+      value_template: "{% if states.zwave.kaipule_im20_doorwindow_sensor_3 %}
+        {{ states.zwave.kaipule_im20_doorwindow_sensor_3.attributes.battery_level }}
+        {% else %}
+        unknown
+        {% endif %}"
+      unit_of_measurement: '%'
+      # entity_id: zwave.kaipule_im20_doorwindow_sensor_3
+      icon_template: >-
+        {% set battery_level = states('sensor.door03_battery')|int('unknown') %}
+        {% set battery_round = (battery_level|int / 10)|int * 10 %}
+        {% if battery_level == 'unknown' %}
+        mdi:battery-unknown
+        {% else %}
+        {% if battery_round >= 100 %}
+        mdi:battery
+        {% elif battery_round > 0 %}
+        mdi:battery-{{ battery_round }}
+        {% else %}
+        mdi:battery-alert
+        {% endif %}
+        {% endif %}
+    #    
+    ############################################    
+    ##  Ecolink Garage Door Tilt Sensor ID:35 
+    ############################################    
+    garagedoor_battery:
+      friendly_name: "GarageDoor_Battery"
+      value_template: "{% if states.zwave.ecolink_garage_door_tilt_sensor %}
+        {{ states.zwave.ecolink_garage_door_tilt_sensor.attributes.battery_level }}
+        {% else %}
+        unknown
+        {% endif %}"
+      unit_of_measurement: '%'
+      # entity_id: zwave.ecolink_garage_door_tilt_sensor
+      icon_template: >-
+        {% set battery_level = states('sensor.garagedoor_battery')|int('unknown') %}
+        {% set battery_round = (battery_level|int / 10)|int * 10 %}
+        {% if battery_level == 'unknown' %}
+        mdi:battery-unknown
+        {% else %}
+        {% if battery_round >= 100 %}
+        mdi:battery
+        {% elif battery_round > 0 %}
+        mdi:battery-{{ battery_round }}
+        {% else %}
+        mdi:battery-alert
+        {% endif %}
+        {% endif %}
 
 ##########################
 ## MultiSensors Batteries
@@ -392,125 +507,6 @@
 #        {%- endif %}
 #      icon_template: >-
 #        mdi:snowflake  
-##
-#    thermostat_heat_operation_mode_state:
-#      friendly_name: "Thermostat Heat State"
-#      entity_id: sensor.time
-#      value_template: >-
-#        {%- if states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.operating_state %}
-#            {{ states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.operating_state }}
-#        {% else %}
-#            Unknown
-#        {%- endif %}
-#      icon_template: >-
-#        mdi:fire 
-##
-#    thermostat_cool_current_temperature:
-#      friendly_name: "Thermostat Cool Current Temperature"
-#      entity_id: sensor.time
-#      unit_of_measurement: °C
-#      value_template: >-
-#        {%- if states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.current_temperature %}
-#            {{ states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.current_temperature }}
-#        {% else %}
-#            Unknown
-#        {%- endif %}
-#      icon_template: >-
-#        mdi:thermometer
-##        
-#    thermostat_heat_current_temperature:
-#      friendly_name: "Thermostat Heat Current Temperature"
-#      entity_id: sensor.time
-#      unit_of_measurement: °C
-#      value_template: >-
-#        {%- if states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.current_temperature %}
-#            {{ states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.current_temperature }}
-#        {% else %}
-#            Unknown
-#        {%- endif %}
-#      icon_template: >-
-#        mdi:thermometer 
-##
-#    thermostat_cool_temperature:
-#      friendly_name: "Thermostat Cool Temperature"
-#      entity_id: sensor.time
-#      unit_of_measurement: °C
-#      value_template: >-
-#        {%- if states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.temperature %}
-#            {{ states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.temperature }}
-#        {% else %}
-#            Unknown
-#        {%- endif %}
-#      icon_template: >-
-#        mdi:thermometer-lines
-## 
-#    thermostat_heat_temperature:
-#      friendly_name: "Thermostat Heat Temperature"
-#      entity_id: sensor.time
-#      unit_of_measurement: °C
-#      value_template: >-
-#        {%- if states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.temperature %}
-#            {{ states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.temperature }}
-#        {% else %}
-#            Unknown
-#        {%- endif %}
-#      icon_template: >-
-#        mdi:thermometer-lines 
-##
-#    thermostat_cool_min_temp:
-#      friendly_name: "Thermostat Cool Minimum Temperature"
-#      entity_id: sensor.time
-#      unit_of_measurement: °C
-#      value_template: >-
-#        {%- if states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.min_temp %}
-#            {{ states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.min_temp }}
-#        {% else %}
-#            Unknown
-#        {%- endif %}
-#      icon_template: >-
-#        mdi:thermometer-lines 
-##
-#    thermostat_heat_min_temp:
-#      friendly_name: "Thermostat Heat Minimum Temperature"
-#      entity_id: sensor.time
-#      unit_of_measurement: °C
-#      value_template: >-
-#        {%- if states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.min_temp %}
-#            {{ states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.min_temp }}
-#        {% else %}
-#            Unknown
-#        {%- endif %}
-#      icon_template: >-
-#        mdi:thermometer-lines 
-##
-#    thermostat_cool_max_temp:
-#      friendly_name: "Thermostat Cool Maximum Temperature"
-#      entity_id: sensor.time
-#      unit_of_measurement: °C
-#      value_template: >-
-#        {%- if states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.max_temp %}
-#            {{ states.climate['2gig_technologies_ct101_thermostat_iris_cooling_1'].attributes.max_temp }}
-#        {% else %}
-#            Unknown
-#        {%- endif %}
-#      icon_template: >-
-#        mdi:thermometer-lines 
-##
-#    thermostat_heat_max_temp:
-#      friendly_name: "Thermostat Heat Maximum Temperature"
-#      entity_id: sensor.time
-#      unit_of_measurement: °C
-#      value_template: >-
-#        {%- if states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.max_temp %}
-#            {{ states.climate['2gig_technologies_ct101_thermostat_iris_heating_1'].attributes.max_temp }}
-#        {% else %}
-#            Unknown
-#        {%- endif %}
-#      icon_template: >-
-#        mdi:thermometer-lines 
-##########
-#
-#
 #
 #
 ################
@@ -543,7 +539,7 @@
   state_topic: 'RTL_433/JSON'
   name: 'ChatRoom P2 Humidity'
   unit_of_measurement: "%"
-  value_template: "{% if value_json.model == 'Prologue sensor' and value_json.channel == 2 and value_json.id == 5 %}{{ value_json.humidity | round(1) }}{% else %}{{ states.chatroom.office_p2_humidity.state }}{% endif %}"
+  value_template: "{% if value_json.model == 'Prologue sensor' and value_json.channel == 2 and value_json.id == 5 %}{{ value_json.humidity | round(1) }}{% else %}{{ states.sensor.chatroom_p2_humidity.state }}{% endif %}"
 
 - platform: mqtt
   state_topic: 'RTL_433/JSON'

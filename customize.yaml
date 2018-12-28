@@ -1,6 +1,6 @@
-##################
-### DoorSensors
-###################
+################################################################################
+### DoorSensors (Garage ID:35; Basement ID:36; Entrance ID:34; BackDoor ID:37)
+################################################################################
 binary_sensor.ecolink_garage_door_tilt_sensor_sensor:
   friendly_name: Garage
   device_class: garage_door
@@ -9,6 +9,9 @@ binary_sensor.kaipule_im20_doorwindow_sensor_sensor:
   device_class: door
 binary_sensor.kaipule_im20_doorwindow_sensor_sensor_2:
   friendly_name: Entrance
+  device_class: door
+binary_sensor.kaipule_im20_doorwindow_sensor_sensor_3:
+  friendly_name: BackDoor
   device_class: door
 
 ##########################################################
@@ -41,7 +44,7 @@ binary_sensor.neo_coolcam_water_leakage_detector_sensor03:
 #  Motion/Temperature/Humidity detectors
 ##########################################################
 sensor.vision_zp3111_multisensor_4in1_temperature_1:
-  friendly_name: Basement
+  friendly_name: MudRoom
   icon: mdi:temperature-celsius
   unit_of_measurement: °C
 sensor.vision_zp3111_multisensor_4in1_temperature_2:
@@ -49,7 +52,7 @@ sensor.vision_zp3111_multisensor_4in1_temperature_2:
   icon: mdi:temperature-celsius
   unit_of_measurement: °C
 sensor.vision_zp3111_multisensor_4in1_temperature_3:
-  friendly_name: Vlad'sRoom
+  friendly_name: VladsRoom
   icon: mdi:temperature-celsius
   unit_of_measurement: °C
 sensor.vision_zp3111_multisensor_4in1_temperature_4:
@@ -61,7 +64,7 @@ sensor.homeseer_hsm200_wireless_multisensor_temperature_1:
   icon: mdi:temperature-celsius
   unit_of_measurement: °C
 sensor.vision_zp3111_multisensor_4in1_relative_humidity_1:
-  friendly_name: Basement
+  friendly_name: MudRoom
   icon: mdi:water-percent
   unit_of_measurement: '%'
 sensor.vision_zp3111_multisensor_4in1_relative_humidity_2:
@@ -69,7 +72,7 @@ sensor.vision_zp3111_multisensor_4in1_relative_humidity_2:
   icon: mdi:water-percent
   unit_of_measurement: '%'
 sensor.vision_zp3111_multisensor_4in1_relative_humidity_3:
-  friendly_name: Vlad'sRoom
+  friendly_name: VladsRoom
   icon: mdi:water-percent
   unit_of_measurement: '%'
 sensor.vision_zp3111_multisensor_4in1_relative_humidity_4:
@@ -77,7 +80,7 @@ sensor.vision_zp3111_multisensor_4in1_relative_humidity_4:
   icon: mdi:water-percent
   unit_of_measurement: '%'
 sensor.vision_zp3111_multisensor_4in1_luminance_1:
-  friendly_name: Basement
+  friendly_name: MudRoom
   icon: mdi:brightness-5
   unit_of_measurement: '%'
 sensor.vision_zp3111_multisensor_4in1_luminance_2:
@@ -85,7 +88,7 @@ sensor.vision_zp3111_multisensor_4in1_luminance_2:
   icon: mdi:brightness-5
   unit_of_measurement: '%'
 sensor.vision_zp3111_multisensor_4in1_luminance_3:
-  friendly_name: Vlad'sRoom
+  friendly_name: VladsRoom
   icon: mdi:brightness-5
   unit_of_measurement: '%'
 sensor.vision_zp3111_multisensor_4in1_luminance_4:
@@ -241,12 +244,14 @@ sensor.weather_humidity:
 ##########################################################
 group.all_automations:
   hidden: false
+  control: hidden
   friendly_name: All Automations
 group.all_devices:
   hidden: false
   friendly_name: All Devices
 group.all_lights:
   hidden: false
+  control: hidden
   friendly_name: All Lights
 group.all_locks:
   hidden: false
@@ -259,6 +264,7 @@ group.all_scripts:
   friendly_name: All Scripts
 group.all_switches:
   hidden: false
+  control: hidden
   friendly_name: All Switches
 group.all_sensors:
   hidden: false

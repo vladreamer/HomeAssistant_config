@@ -1,0 +1,128 @@
+
+android5be593e45e109125:
+  hide_if_away: false
+  icon:
+  mac: E4:58:B8:1A:5B:54
+  name: android-5be593e45e109125
+  picture:
+  track: true
+
+unknown:
+  hide_if_away: false
+  icon:
+  mac: B0:C5:54:19:21:9F
+  name: Unknown
+  picture:
+  track: true
+
+iphone:
+  hide_if_away: false
+  icon:
+  mac: DC:56:E7:9A:F2:03
+  name: iPhone
+  picture:
+  track: true
+
+unknown_2:
+  hide_if_away: false
+  icon:
+  mac: 00:0E:8F:8E:76:9A
+  name: Unknown
+  picture:
+  track: true
+
+ipadlo:
+  hide_if_away: false
+  icon:
+  mac: 3C:15:C2:2A:30:82
+  name: iPadLo
+  picture:
+  track: true
+
+vladbook:
+  hide_if_away: false
+  icon:
+  mac: 70:56:81:90:19:FB
+  name: VladBook
+  picture:
+  track: true
+
+unknown_3:
+  hide_if_away: false
+  icon:
+  mac: B8:27:EB:54:73:72
+  name: Unknown
+  picture:
+  track: true
+
+unknown_4:
+  hide_if_away: false
+  icon:
+  mac: 00:C0:B7:D7:78:76
+  name: Unknown
+  picture:
+  track: true
+
+unknown_5:
+  hide_if_away: false
+  icon:
+  mac: F0:D7:AA:01:04:89
+  name: Unknown
+  picture:
+  track: true
+
+unknown_6:
+  hide_if_away: false
+  icon:
+  mac: 00:0E:8F:CA:62:3C
+  name: Unknown
+  picture:
+  track: true
+
+unknown_7:
+  hide_if_away: false
+  icon:
+  mac: 88:1F:A1:29:83:89
+  name: Unknown
+  picture:
+  track: true
+
+unknown_8:
+  hide_if_away: false
+  icon:
+  mac: 58:E6:BA:41:80:E2
+  name: Unknown
+  picture:
+  track: true
+
+ha:
+  hide_if_away: false
+  icon:
+  mac: B8:27:EB:97:68:C3
+  name: ha
+  picture:
+  track: true
+
+unknown_9:
+  hide_if_away: false
+  icon:
+  mac: 14:9F:3C:6C:9F:79
+  name: Unknown
+  picture:
+  track: true
+
+chromecast:
+  hide_if_away: false
+  icon:
+  mac: 88:3D:24:1F:97:EC
+  name: Chromecast
+  picture:
+  track: true
+
+unknown_10:
+  hide_if_away: false
+  icon:
+  mac: C8:69:CD:07:21:DE
+  name: Unknown
+  picture:
+  track: true

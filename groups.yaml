@@ -5,7 +5,8 @@ default_view:
   name: AllRooms
   entities:
     - sensor.disk_use_percent_
-    - sensor.since_last_boot
+    - sensor.last_boot
+    - sensor.processor_use
     - sensor.2gig_technologies_ct101_thermostat_iris_temperature  
     - sensor.2gig_technologies_ct101_thermostat_iris_relative_humidity  
    #- sensor.weather_temperature
@@ -19,6 +20,7 @@ default_view:
     - binary_sensor.ecolink_garage_door_tilt_sensor_sensor
     - binary_sensor.kaipule_im20_doorwindow_sensor_sensor   
     - binary_sensor.kaipule_im20_doorwindow_sensor_sensor_2   
+    - binary_sensor.kaipule_im20_doorwindow_sensor_sensor_3   
     - group.basement
     - group.kitchen
     - group.chatroom
@@ -142,6 +144,9 @@ thermostat_views:
   name: Climate
   entities:
   - group.thermostat_mode
+  - group.temp
+  - group.humid
+
 thermostat_mode:
   name: Thermostat Id:28 
   entities:
@@ -168,7 +173,42 @@ thermostat_mode:
   - sensor.neo_coolcam_power_plug_12a_energy01
     #- switch.neo_coolcam_power_plug_12a_switch01
     #- sensor.neo_coolcam_power_plug_12a_voltage01
-    #- sensor.neo_coolcam_power_plug_12a_current01
+  - sensor.neo_coolcam_power_plug_12a_current01
+
+temp:
+  name: Temperature
+  control: hidden
+  entities:
+  - sensor.weather_temperature
+  - sensor.vision_zp3111_multisensor_4in1_temperature_2        
+  - sensor.garage_t1_temperature
+  - sensor.basement_p1_temperature
+  - sensor.vision_zp3111_multisensor_4in1_temperature_1        
+  - sensor.vision_zp3111_multisensor_4in1_temperature_3        
+  - sensor.vision_zp3111_multisensor_4in1_temperature_4
+  - sensor.thermostat_current_temperature
+  - sensor.chatroom_p2_temperature
+  - sensor.kitchen_p3_temperature
+  - sensor.bathroom_t2_temperature
+  - sensor.office_t3_temperature
+  - sensor.homeseer_hsm200_wireless_multisensor_temperature_1       
+
+humid:
+  name: Humidity
+  control: hidden
+  entities:
+  - sensor.weather_humidity
+  - sensor.vision_zp3111_multisensor_4in1_relative_humidity_2
+  - sensor.garage_t1_humidity
+  - sensor.basement_p1_humidity
+  - sensor.vision_zp3111_multisensor_4in1_relative_humidity_1
+  - sensor.vision_zp3111_multisensor_4in1_relative_humidity_3
+  - sensor.vision_zp3111_multisensor_4in1_relative_humidity_4
+  - sensor.2gig_technologies_ct101_thermostat_iris_relative_humidity
+  - sensor.chatroom_p2_humidity
+  - sensor.kitchen_p3_humidity
+  - sensor.bathroom_t2_humidity
+  - sensor.office_t3_humidity
 
 ###############################################################
 #
@@ -205,6 +245,15 @@ batteries:
     - sensor.waterleaksensor01_battery
     - sensor.waterleaksensor02_battery
     - sensor.waterleaksensor03_battery
+    - sensor.door01_battery
+    - sensor.door02_battery
+    - sensor.garagedoor_battery
+    - sensor.basement_p1_battery
+    - sensor.bathroom_t2_battery
+    - sensor.chatroom_p2_battery
+    - sensor.garage_t1_battery
+    - sensor.kitchen_p3_battery
+    - sensor.office_t3_battery  
 
 powermeter:
   name: HomeEnergyMeter
@@ -369,6 +418,17 @@ dimmer:
       ## Dimmer Zen22 Vlad's Room (Node ID:32)
     - light.zooz_zen22_dimmer_v2_2_level
 
+###############################################################
+#
+#  NewTab "Automation" 
+#
+###############################################################
+automation:
+  view: yes
+  name: AUTOMATION
+  control: hidden
+  entities:
+    - group.all_automations
 
 
 ###############################################################

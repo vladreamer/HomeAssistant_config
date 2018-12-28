@@ -504,6 +504,24 @@
                 "model": "IM20 Door/Window Sensor",
                 "name": "Kaipule IM20 Door/Window Sensor",
                 "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "67c661c3d92e4d1aad6ac3b8d64cf2b8",
+                "identifiers": [
+                    [
+                        "zwave",
+                        37
+                    ]
+                ],
+                "manufacturer": "Kaipule",
+                "model": "IM20 Door/Window Sensor",
+                "name": "Kaipule IM20 Door/Window Sensor",
+                "sw_version": null
             }
         ]
     },

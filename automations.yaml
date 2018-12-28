@@ -3,6 +3,7 @@
 ## Porch Light with Neo05 ID:33 at 6:00pm ON 
 ########################################################
   alias: "PorchLight ON at 18:00"
+  initial_state: true
   trigger:
     - platform: time
       at: '18:00:00'
@@ -13,6 +14,8 @@
   action:
   - service: homeassistant.turn_on 
     entity_id: switch.neo_coolcam_power_plug_12a_switch05
+  - service: homeassistant.turn_on 
+    entity_id: switch.intermatic_ha02_appliance_module_switch
 #
 #
 - id: 'PorchLightOFF_20181216'
@@ -20,6 +23,7 @@
 ## Porch Light with Neo05 ID:33 at 23:00pm OFF 
 ########################################################
   alias: "PorchLight OFF at 23:00"
+  initial_state: true
   trigger:
     - platform: time
       at: '23:00:00'
@@ -30,6 +34,8 @@
   action:
   - service: homeassistant.turn_off 
     entity_id: switch.neo_coolcam_power_plug_12a_switch05
+  - service: homeassistant.turn_off 
+    entity_id: switch.intermatic_ha02_appliance_module_switch
 #
 #
 
@@ -39,7 +45,8 @@
 ## Turn Dimmer Switch (VladsRoom ID:29) "ON" with 55 brightness 
 ## if it was "OFF" triggered by Multisensor3 after 6pm
 ########################################################
-  alias: "Vlad's LightScene 18:00-22:30"
+  alias: "Vlad's LightScene 18:00-21:00"
+  initial_state: true
   trigger:
     - entity_id: binary_sensor.multi03_motion
       platform: state
@@ -47,7 +54,7 @@
   condition:
     - condition: time
       after: '18:00:00'
-      before: '22:00:00'
+      before: '21:00:00'
     - condition: state
       entity_id: light.zooz_zen22_dimmer_v2_2_level 
       state: 'off'
@@ -60,7 +67,8 @@
 ## Turn Dimmer switch (ID:29) "OFF" if it was "ON" triggered by
 ## Multisensor3 after 15 minutes "NO MOTION" after 10:30pm
 ########################################################
-  alias: "Vlad's Dimmer OFF 15min after 23:30"
+  alias: "Vlad's Dimmer OFF 15min after 21:30"
+  initial_state: true
   trigger:
   - entity_id: binary_sensor.multi03_motion
     for:
@@ -69,7 +77,7 @@
     to: 'off'
   condition:
     - condition: time
-      after: '22:00:00'
+      after: '21:30:00'
     - condition: state
       entity_id: light.zooz_zen22_dimmer_v2_2_level
       state: 'on'
@@ -82,6 +90,7 @@
 ## Thermostat (ID:28) 
 ########################################################
   alias: Thermostat Refresh Timer
+  initial_state: true
   trigger:
   - seconds: /30
     platform: time
@@ -97,6 +106,7 @@
 ## Thrmostat (ID:28) 
 ########################################################
   alias: "TEMP 22C Morning"
+  initial_state: true
   trigger:
     - platform: template
       value_template: "{% if states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') | float < 22 %} true {% endif %}"
@@ -123,6 +133,7 @@
 ## Thrmostat (ID:28) 
 ########################################################
   alias: "TEMP 21C Day"
+  initial_state: true
   trigger:
     - platform: template
       value_template: "{% if states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') | float > 21.5 %} true {% endif %}"
@@ -150,6 +161,7 @@
 ## Thrmostat (ID:28) 
 ########################################################
   alias: "TEMP 22C Evening"
+  initial_state: true
   trigger:
     - platform: template
       value_template: "{% if states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') | float < 22 %} true {% endif %}"
@@ -175,6 +187,7 @@
 ## Thrmostat (ID:28) 
 ########################################################
   alias: "TEMP 20C Night" 
+  initial_state: true
   trigger:
     - platform: template
       value_template: "{% if states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') | float > 20.5 %} true {% endif %}"
@@ -203,6 +216,7 @@
 ## Reset Home Energy Meter (ID:25) monthly consumption 
 ########################################################
   alias: Reset HEM (ID:25) monthly 
+  initial_state: true
   trigger:
       platform: time
       at: "00:00:00"
@@ -245,7 +259,8 @@
 ## Multisensor4 After that take 4 snapshoots and send
 ## them by mail "notify.MailToGmail"
 ########################################################
-  alias: "MasterRoom LightScene 18:00-22:30"
+  alias: "MasterRoom LightScene 18:00-22:00"
+  initial_state: true
  #alias: Inolelli01SW2 ON before 22:50 
   trigger:
     - entity_id: binary_sensor.multi04_motion
@@ -279,6 +294,7 @@
 ##
 ########################################################
   alias: "Master Dimmer OFF 15min"
+  initial_state: true
  #alias: Inovelli01SW2 OFF after 15min
   trigger:
   - entity_id: binary_sensor.multi04_motion
@@ -306,6 +322,7 @@
 ## them by mail "notify.MailToGmail" 
 ########################################################
   alias: Garage Door is OPEN
+  initial_state: true
   trigger:
     - entity_id: binary_sensor.ecolink_garage_door_tilt_sensor_sensor
       platform: state
@@ -397,6 +414,7 @@
 ## them by mail "notify.MailToGmail" 
 ########################################################
   alias: Basement StairsLight ON
+  initial_state: true
   trigger:
     - entity_id: binary_sensor.kaipule_im20_doorwindow_sensor_sensor
       platform: state
@@ -495,6 +513,7 @@
 ## them by mail "notify.MailToGmail" 
 ########################################################
   alias: Basement StairsLight ON
+  initial_state: true
   trigger:
     - entity_id: binary_sensor.multi01_motion 
       platform: state
@@ -590,6 +609,7 @@
 ## after 2 minutes and "NO MOTION"
 ########################################################
   alias: Basement StairsLight 3min OFF
+  initial_state: true
   trigger:
   - entity_id: switch.zooz_zen21_switch_v20_switch_01
     for:
@@ -615,6 +635,7 @@
 ##
 ########################################################
   alias: Basement StairsLight 3min OFF
+  initial_state: true
   trigger:
   - entity_id: binary_sensor.multi01_motion
     for:
@@ -638,6 +659,7 @@
 ##  
 ########################################################
   alias: Turn off Neo3 3 minutes after last movement
+  initial_state: true
   trigger:
   - entity_id: binary_sensor.multisensor2_motion
     for:
@@ -661,21 +683,27 @@
 ## 
 ########################################################
   alias: Snapshots trigered by EZM01 ID:23
+  initial_state: true
   trigger:
-      ## Basemen Door   
+      ## Basemen Door ID: 36  
     - entity_id: binary_sensor.kaipule_im20_doorwindow_sensor_sensor
       platform: state
       from: 'off'
       to: 'on'
-      ## Main Door   
+      ## Entrance Door ID:34   
     - entity_id: binary_sensor.kaipule_im20_doorwindow_sensor_sensor_2
       platform: state
       from: 'off'
       to: 'on'
-  condition:
-    - condition: state
-      entity_id: binary_sensor.ezm01_motion
-      state: 'on'
+      ## BackDoor ID:37   
+    - entity_id: binary_sensor.kaipule_im20_doorwindow_sensor_sensor_3
+      platform: state
+      from: 'off'
+      to: 'on'
+ #  condition:
+ #   - condition: state
+ #     entity_id: binary_sensor.ezm01_motion
+ #     state: 'on'
  #condition:
  #   - condition: time
  #     after: '14:30:00'
@@ -798,6 +826,7 @@
 ## 
 ########################################################
   alias: Front Door is OPEN ID:36
+  initial_state: true
   trigger:
       ## Main Door   
     - entity_id: binary_sensor.kaipule_im20_doorwindow_sensor_sensor_2
@@ -926,6 +955,7 @@
 ## an mail "notify.MailToGmail" 
 ########################################################
   alias: Auto_Switch_Water
+  initial_state: true
   trigger:
   - entity_id: binary_sensor.neo_coolcam_water_leakage_detector_sensor01
     platform: state

@@ -1,4 +1,11 @@
 ##################
+## External Sensors 
+##################
+"sensor.*_humidity":
+  icon: mdi:water-percent
+"sensor.*_temperature":
+  icon: mdi:temperature-celsius
+##################
 ## PowerPlugs 
 ##################
 ## NeoCoolcam ##
