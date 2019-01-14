@@ -182,15 +182,15 @@ sensor.neo_coolcam_power_plug_12a_energy04:
   unit_of_measurement: kWh
   #
 switch.neo_coolcam_power_plug_12a_switch05:
-  friendly_name: Porch_Id:33
+  friendly_name: Modem_Id:33
 sensor.neo_coolcam_power_plug_12a_power05:
-  friendly_name: Porch_Pwr
+  friendly_name: Modem_Pwr
 sensor.neo_coolcam_power_plug_12a_voltage05:
-  friendly_name: Porch_V
+  friendly_name: Modem_V
 sensor.neo_coolcam_power_plug_12a_current05:
-  friendly_name: Porch_A
+  friendly_name: Modem_A
 sensor.neo_coolcam_power_plug_12a_energy05:
-  friendly_name: PorchSW 
+  friendly_name: ModemSW 
   icon: mdi:finance
   unit_of_measurement: kWh
 

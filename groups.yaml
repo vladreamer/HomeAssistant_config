@@ -25,7 +25,8 @@ default_view:
     - group.kitchen
     - group.chatroom
     - group.bedroom1
-    - group.bedroom2
+    - group.office
+    - group.modem
     - group.masteroom
     - group.attic
     - group.date_time
@@ -98,13 +99,17 @@ bedroom1:
     #- sensor.neo_coolcam_power_plug_12a_voltage03
     #- sensor.neo_coolcam_power_plug_12a_current03
 
-bedroom2:
+office:
   name: Office
   entities:
       ## HA02-white
     - switch.intermatic_ha02_appliance_module_switch 
+modem:
+  name: Modem
+  entities:
       ## Neo05
-    - sensor.neo_coolcam_power_plug_12a_power05 
+      #- sensor.neo_coolcam_power_plug_12a_energy05
+      #- sensor.neo_coolcam_power_plug_12a_power05 
     - switch.neo_coolcam_power_plug_12a_switch05
 
 masteroom:
@@ -247,6 +252,7 @@ batteries:
     - sensor.waterleaksensor03_battery
     - sensor.door01_battery
     - sensor.door02_battery
+    - sensor.door03_battery
     - sensor.garagedoor_battery
     - sensor.basement_p1_battery
     - sensor.bathroom_t2_battery

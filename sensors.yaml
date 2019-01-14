@@ -263,7 +263,7 @@
         {% endif %} 
 
     multi04_battery:
-      friendly_name: "Multisensor4_Battery"
+      friendly_name: "Multisensor4_Battery_ID19"
       value_template: "{% if states.zwave.vision_zp3111_multisensor_4in1_4 %}
         {{ states.zwave.vision_zp3111_multisensor_4in1_4.attributes.battery_level }}
         {% else %}
@@ -613,3 +613,15 @@
   state_topic: 'RTL_433/JSON'
   name: 'Office T3 Battery'
   value_template: "{% if value_json.model == 'THGR122N' and value_json.channel == 3 %}{{ value_json.battery }}{% else %}{{ states.sensor.office_t3_battery.state }}{% endif %}"
+
+- platform: mqtt
+  state_topic: 'RTL_433/JSON'
+  name: 'VladsBed K2 Temperature'
+  unit_of_measurement: "°C"
+  value_template: "{% if value_json.model == 'Kedsum Temperature & Humidity Sensor' and value_json.channel == 2 %}{{ value_json.temperature_F | round(1) }}{% else %}{{ states.sensor.vladsbed_k2_temperature.state }}{% endif %}"
+
+- platform: mqtt
+  state_topic: 'RTL_433/JSON'
+  name: 'VladsBed K2 Humidity'
+  unit_of_measurement: "%"
+  value_template: "{% if value_json.model == 'Kedsum Temperature & Humidity Sensor' and value_json.channel == 3 %}{{ value_json.humidity | round(1) }}{% else %}{{ states.sensor.vladsbed_k2_humidity.state }}{% endif %}"

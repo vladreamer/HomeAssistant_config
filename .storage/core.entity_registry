@@ -2232,6 +2232,24 @@
                 "name": null,
                 "platform": "zwave",
                 "unique_id": "37-72057594664730641"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a277b4089d0f4101889e08f5a76cd57b",
+                "disabled_by": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_direction",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "19-72057594361692274"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "9ea779fb11ea4920b4982871207bcc53",
+                "disabled_by": null,
+                "entity_id": "sensor.ezm_direction",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "23-72057594428801138"
             }
         ]
     },

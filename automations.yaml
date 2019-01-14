@@ -1,32 +1,12 @@
-- id: 'PorchLightON_20181216'
+- id: 'ModemReboot_20190113'
 ########################################################
-## Porch Light with Neo05 ID:33 at 6:00pm ON 
+## Reboot modem connected to Neo05 ID:33 at 5:00am 
 ########################################################
-  alias: "PorchLight ON at 18:00"
+  alias: "Modem reboot at 5:00"
   initial_state: true
   trigger:
     - platform: time
-      at: '18:00:00'
-  condition:
-  - condition: state
-    entity_id: switch.neo_coolcam_power_plug_12a_switch05
-    state: 'off'
-  action:
-  - service: homeassistant.turn_on 
-    entity_id: switch.neo_coolcam_power_plug_12a_switch05
-  - service: homeassistant.turn_on 
-    entity_id: switch.intermatic_ha02_appliance_module_switch
-#
-#
-- id: 'PorchLightOFF_20181216'
-########################################################
-## Porch Light with Neo05 ID:33 at 23:00pm OFF 
-########################################################
-  alias: "PorchLight OFF at 23:00"
-  initial_state: true
-  trigger:
-    - platform: time
-      at: '23:00:00'
+      at: '05:00:00'
   condition:
   - condition: state
     entity_id: switch.neo_coolcam_power_plug_12a_switch05
@@ -34,19 +14,61 @@
   action:
   - service: homeassistant.turn_off 
     entity_id: switch.neo_coolcam_power_plug_12a_switch05
+  - delay: '00:00:03'
+  - service: homeassistant.turn_on
+    entity_id: switch.neo_coolcam_power_plug_12a_switch05
+#
+#
+# 
+- id: 'PorchLightON_20181216'
+########################################################
+## Porch Light with Neo10 ID:?? at 6:00pm ON 
+########################################################
+  alias: "PorchLight ON at 18:00"
+  initial_state: false
+  trigger:
+    - platform: time
+      at: '18:00:00'
+  condition:
+  - condition: state
+    entity_id: switch.neo_coolcam_power_plug_12a_switch10
+    state: 'off'
+  action:
+  - service: homeassistant.turn_on 
+    entity_id: switch.neo_coolcam_power_plug_12a_switch10
+# - service: homeassistant.turn_on 
+#   entity_id: switch.intermatic_ha02_appliance_module_switch
+#
+#
+- id: 'PorchLightOFF_20181216'
+########################################################
+## Porch Light with Neo10 ID:?? at 23:00pm OFF 
+########################################################
+  alias: "PorchLight OFF at 23:00"
+  initial_state: false
+  trigger:
+    - platform: time
+      at: '23:00:00'
+  condition:
+  - condition: state
+    entity_id: switch.neo_coolcam_power_plug_12a_switch10
+    state: 'on'
+  action:
   - service: homeassistant.turn_off 
-    entity_id: switch.intermatic_ha02_appliance_module_switch
+    entity_id: switch.neo_coolcam_power_plug_12a_switch10
+# - service: homeassistant.turn_off 
+#   entity_id: switch.intermatic_ha02_appliance_module_switch
 #
 #
 
-- id: 'VladsRoomLightScene_20181106'
+- id: 'LightSceneVladsRoom_20181106'
 ########################################################
 ## LightScene in Vlad's Room 
 ## Turn Dimmer Switch (VladsRoom ID:29) "ON" with 55 brightness 
 ## if it was "OFF" triggered by Multisensor3 after 6pm
 ########################################################
-  alias: "Vlad's LightScene 18:00-21:00"
-  initial_state: true
+  alias: "LightScene Dimmer VladRoom 18:00-21:00"
+  initial_state: false
   trigger:
     - entity_id: binary_sensor.multi03_motion
       platform: state
@@ -62,12 +84,12 @@
      service: scene.turn_on
      entity_id: scene.lightlow_vlad
 
-- id: 'VladsRoomLightOFF_20181106'
+- id: 'LighSceneVladsRoom_OFF_20181106'
 ########################################################
 ## Turn Dimmer switch (ID:29) "OFF" if it was "ON" triggered by
 ## Multisensor3 after 15 minutes "NO MOTION" after 10:30pm
 ########################################################
-  alias: "Vlad's Dimmer OFF 15min after 21:30"
+  alias: "LightScene Dimmer VladRoom OFF in 15min after 21:30"
   initial_state: true
   trigger:
   - entity_id: binary_sensor.multi03_motion
@@ -253,14 +275,14 @@
     
 
 
-- id: 'MasterRoom_LighON_2018082601'
+- id: 'LightSceneMasterRoom_2018082601'
 ########################################################
 ## Turn Light ON MAsterBedroom if it was "OFF" triggered by
-## Multisensor4 After that take 4 snapshoots and send
+## Multisensor4 ID:19 After that take 4 snapshoots and send
 ## them by mail "notify.MailToGmail"
 ########################################################
-  alias: "MasterRoom LightScene 18:00-22:00"
-  initial_state: true
+  alias: "LightScene Dimmer MasterRoom 18:00-22:00"
+  initial_state: false
  #alias: Inolelli01SW2 ON before 22:50 
   trigger:
     - entity_id: binary_sensor.multi04_motion
@@ -287,13 +309,13 @@
      entity_id: scene.lightlow_master
 
 
-- id: 'MasterRoom_LighOFF_2018082602'
+- id: 'LightSeceneMasterRoom_OFF_2018082602'
 ########################################################
 ## Turn Dimmer "OFF" if it was "ON" triggered by
 ## Multisensor4 after 15 minutes "NO MOTION"
 ##
 ########################################################
-  alias: "Master Dimmer OFF 15min"
+  alias: "LightScene Dimmer MasterRoom OFF in 15min"
   initial_state: true
  #alias: Inovelli01SW2 OFF after 15min
   trigger:
@@ -823,7 +845,7 @@
 ########################################################
 ## Triger by MainDoor sensor Id:36 
 ## Take 4 snapshoots and send them by mail "notify.MailToGmail" 
-## 
+## Camera #3 is "External Camera"
 ########################################################
   alias: Front Door is OPEN ID:36
   initial_state: true
@@ -840,69 +862,49 @@
   action:
     - service: camera.snapshot
       data:
-        entity_id: camera.camera1
-        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera1_01.jpg"
-    - service: camera.snapshot
-      data:
-        entity_id: camera.camera2
-        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_01.jpg"
+        entity_id: camera.camera3
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera3_01.jpg"
     - service: shell_command.fix_snapshot
       data:
-        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_01.jpg"  
-        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_01cor.jpg"  
+        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera3_01.jpg"  
+        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera3_01cor.jpg"  
     - delay: '00:00:05'
     - service: camera.snapshot
       data:
-        entity_id: camera.camera1
-        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera1_02.jpg"
-    - service: camera.snapshot
-      data:
-        entity_id: camera.camera2
-        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_02.jpg"
+        entity_id: camera.camera3
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera3_02.jpg"
     - service: shell_command.fix_snapshot
       data:
-        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_02.jpg"  
-        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_02cor.jpg"  
+        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera3_02.jpg"  
+        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera3_02cor.jpg"  
     - delay: '00:00:15'
     - service: camera.snapshot
       data:
-        entity_id: camera.camera1
-        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera1_03.jpg"
-    - service: camera.snapshot
-      data:
-        entity_id: camera.camera2
-        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_03.jpg"
+        entity_id: camera.camera3
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera3_03.jpg"
     - service: shell_command.fix_snapshot
       data:
-        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_03.jpg"  
-        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_03cor.jpg"  
+        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera3_03.jpg"  
+        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera3_03cor.jpg"  
     - delay: '00:00:25'
     - service: camera.snapshot
       data:
-        entity_id: camera.camera1
-        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera1_04.jpg"
-    - service: camera.snapshot
-      data:
-        entity_id: camera.camera2
-        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_04.jpg"
+        entity_id: camera.camera3
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera3_04.jpg"
     - service: shell_command.fix_snapshot
       data:
-        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_04.jpg"  
-        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_04cor.jpg"  
+        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera3_04.jpg"  
+        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera3_04cor.jpg"  
     - service: notify.MailToGmail
       data_template:
         title: "Entrance Door was Open" 
         message: "Entrance Door was Open"
         data:
           images:
-            - /home/homeassistant/.homeassistant/downloads/snapshot_camera1_01.jpg
-            - /home/homeassistant/.homeassistant/downloads/snapshot_camera1_02.jpg
-            - /home/homeassistant/.homeassistant/downloads/snapshot_camera1_03.jpg
-            - /home/homeassistant/.homeassistant/downloads/snapshot_camera1_04.jpg
-            - /home/homeassistant/.homeassistant/downloads/snapshot_camera2_01cor.jpg
-            - /home/homeassistant/.homeassistant/downloads/snapshot_camera2_02cor.jpg
-            - /home/homeassistant/.homeassistant/downloads/snapshot_camera2_03cor.jpg
-            - /home/homeassistant/.homeassistant/downloads/snapshot_camera2_04cor.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera3_01cor.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera3_02cor.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera3_03cor.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera3_04cor.jpg
           
           html: >
             <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -919,30 +921,18 @@
                 </style>
               </head>
               <body>
-                <h1>Entrance Door was Open (Camera1) 0sec</h1>
-                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera1?api_password=3health1">
-                <img style="width: 100%; alt="Image1 from Camera1" src="cid:snapshot_camera1_01.jpg" /></a>
+                <h1>Entrance Door was Open (Camera3-External) 0sec</h1>
+                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera3?api_password=3health1">
+                <img style="width: 100%; alt="Image1 from Camera3" src="cid:snapshot_camera3_01cor.jpg" /></a>
                 <h6>4 sec</h6>
-                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera1?api_password=3health1">
-                <img style="width: 100%; alt="Image2 from Camera1" src="cid:snapshot_camera1_02.jpg" /></a>
+                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera3?api_password=3health1">
+                <img style="width: 100%; alt="Image2 from Camera3" src="cid:snapshot_camera3_02cor.jpg" /></a>
                 <h6>16 sec</h6>
-                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera1?api_password=3health1">
-                <img style="width: 100%; alt="Image3 from Camera1" src="cid:snapshot_camera1_03.jpg" /></a>
+                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera3?api_password=3health1">
+                <img style="width: 100%; alt="Image3 from Camera3" src="cid:snapshot_camera3_03cor.jpg" /></a>
                 <h6>32 sec</h6>
-                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera1?api_password=3health1">
-                <img style="width: 100%; alt="Image3 from Camera1" src="cid:snapshot_camera1_04.jpg" /></a>
-                <h1>iEntrance Door was Open (Camera2) 0sec</h1>
-                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera2?api_password=3health1">
-                <img style="width: 100%; alt="Image1 from Camera2" src="cid:snapshot_camera2_01cor.jpg" /></a>
-                <h6>4 sec</h6>
-                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera2?api_password=3health1">
-                <img style="width: 100%; alt="Image2 from Camera2" src="cid:snapshot_camera2_02cor.jpg" /></a>
-                <h6>16 sec</h6>
-                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera2?api_password=3health1">
-                <img style="width: 100%; alt="Image3 from Camera2" src="cid:snapshot_camera2_03cor.jpg" /></a>
-                <h6>32 sec</h6>
-                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera2?api_password=3health1">
-                <img style="width: 100%; alt="Image3 from Camera2" src="cid:snapshot_camera2_04cor.jpg" /></a>
+                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera3?api_password=3health1">
+                <img style="width: 100%; alt="Image3 from Camera3" src="cid:snapshot_camera3_04cor.jpg" /></a>
               </body>
             </html>
 #
