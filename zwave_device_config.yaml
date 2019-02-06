@@ -32,3 +32,6 @@ switch.intermatic_ha04c_outdoor_module_switch:
 light.zooz_zen22_dimmer_v2_level:
   ignored: false
   polling_intensity: 1
+sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_temperature:
+  ignored: false
+  polling_intensity: 1

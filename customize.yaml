@@ -130,15 +130,15 @@ switch.zooz_zen21_switch_v20_switch_01:
 #  Neo Coolcam Power Plugs  
 ##########################################################
 switch.neo_coolcam_power_plug_12a_switch01:
-  friendly_name: FurnaceSW_Id:8
+  friendly_name: HRV_SW_Id:8
 sensor.neo_coolcam_power_plug_12a_power01:
-  friendly_name: FurnaceSW_Pwr
+  friendly_name: HRV_SW_Pwr
 sensor.neo_coolcam_power_plug_12a_voltage01:
-  friendly_name: FurnaceSW_V
+  friendly_name: HRV_SW_V
 sensor.neo_coolcam_power_plug_12a_current01:
-  friendly_name: FurnaceSW_A
+  friendly_name: HRV_SW_A
 sensor.neo_coolcam_power_plug_12a_energy01:
-  friendly_name: FurnaceSW
+  friendly_name: HRV_SW
   icon: mdi:finance
   unit_of_measurement: kWh
   #
@@ -204,6 +204,32 @@ sensor.hank_hkzwso03_smart_plug_current01:
   friendly_name: GreatRoomSW_A
 sensor.hank_hkzwso03_smart_plug_energy01:
   friendly_name: GreatRoomSW 
+  icon: mdi:finance
+  unit_of_measurement: kWh
+  
+##########################################################
+#  Aeotec ZW078 heavy_duty Furnace Switch ID:39
+##########################################################
+switch.aeotec_zw078_heavy_duty_smart_switch_gen5_switch:
+  friendly_name: FurnaceSW_Id:39
+sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_power:
+  friendly_name: Furnace_Pwr
+  icon: mdi:power-plug
+  unit_of_measurement: W
+sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_voltage:
+  friendly_name: Furnace_V
+  icon: mdi:power-socket
+  unit_of_measurement: V
+sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_current:
+  friendly_name: Furnace_A
+  icon: mdi:flash-auto
+  unit_of_measurement: A
+sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_temperature:  
+  friendly_name: Furnace_Bsmt_temp
+  unit_of_measurement: °C
+  icon: mdi:temperature-celsius
+sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_energy:
+  friendly_name: Furnace 
   icon: mdi:finance
   unit_of_measurement: kWh
   

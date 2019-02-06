@@ -896,123 +896,6 @@
                 "config_entry_id": null,
                 "device_id": null,
                 "disabled_by": null,
-                "entity_id": "zwave.vision_zp3111_multisensor_4in1_2",
-                "name": "Multi02",
-                "platform": "zwave",
-                "unique_id": "node-16"
-            },
-            {
-                "config_entry_id": "897c878fba894ee3ac600341208a3265",
-                "device_id": "febfd7db23194cccad55ca05dd20a919",
-                "disabled_by": null,
-                "entity_id": "binary_sensor.vision_zp3111_multisensor_4in1_sensor_2",
-                "name": "Multi02_Sensor",
-                "platform": "zwave",
-                "unique_id": "16-72057594311344128"
-            },
-            {
-                "config_entry_id": "897c878fba894ee3ac600341208a3265",
-                "device_id": "febfd7db23194cccad55ca05dd20a919",
-                "disabled_by": null,
-                "entity_id": "sensor.vision_zp3111_multisensor_4in1_temperature_2",
-                "name": "Multi02_Temp",
-                "platform": "zwave",
-                "unique_id": "16-72057594311360530"
-            },
-            {
-                "config_entry_id": "897c878fba894ee3ac600341208a3265",
-                "device_id": "febfd7db23194cccad55ca05dd20a919",
-                "disabled_by": null,
-                "entity_id": "sensor.vision_zp3111_multisensor_4in1_luminance_2",
-                "name": "Multi02_Lum",
-                "platform": "zwave",
-                "unique_id": "16-72057594311360562"
-            },
-            {
-                "config_entry_id": "897c878fba894ee3ac600341208a3265",
-                "device_id": "febfd7db23194cccad55ca05dd20a919",
-                "disabled_by": null,
-                "entity_id": "sensor.vision_zp3111_multisensor_4in1_relative_humidity_2",
-                "name": "Multi02_Hum",
-                "platform": "zwave",
-                "unique_id": "16-72057594311360594"
-            },
-            {
-                "config_entry_id": "897c878fba894ee3ac600341208a3265",
-                "device_id": "febfd7db23194cccad55ca05dd20a919",
-                "disabled_by": null,
-                "entity_id": "sensor.vision_zp3111_multisensor_4in1_alarm_type_2",
-                "name": "Multi02_AlarmType",
-                "platform": "zwave",
-                "unique_id": "16-72057594312409089"
-            },
-            {
-                "config_entry_id": "897c878fba894ee3ac600341208a3265",
-                "device_id": "febfd7db23194cccad55ca05dd20a919",
-                "disabled_by": null,
-                "entity_id": "sensor.vision_zp3111_multisensor_4in1_alarm_level_2",
-                "name": "Multi02_AlarmLvl",
-                "platform": "zwave",
-                "unique_id": "16-72057594312409105"
-            },
-            {
-                "config_entry_id": "897c878fba894ee3ac600341208a3265",
-                "device_id": "febfd7db23194cccad55ca05dd20a919",
-                "disabled_by": null,
-                "entity_id": "sensor.vision_zp3111_multisensor_4in1_sourcenodeid_2",
-                "name": "Multi02_Src",
-                "platform": "zwave",
-                "unique_id": "16-72057594312409121"
-            },
-            {
-                "config_entry_id": "897c878fba894ee3ac600341208a3265",
-                "device_id": "febfd7db23194cccad55ca05dd20a919",
-                "disabled_by": null,
-                "entity_id": "sensor.vision_zp3111_multisensor_4in1_burglar_2",
-                "name": "Multi02_Burglar",
-                "platform": "zwave",
-                "unique_id": "16-72057594312409249"
-            },
-            {
-                "config_entry_id": "897c878fba894ee3ac600341208a3265",
-                "device_id": "febfd7db23194cccad55ca05dd20a919",
-                "disabled_by": null,
-                "entity_id": "sensor.vision_zp3111_multisensor_4in1_power_management_2",
-                "name": "Multi02_PowerMgmt",
-                "platform": "zwave",
-                "unique_id": "16-72057594312409265"
-            },
-            {
-                "config_entry_id": "897c878fba894ee3ac600341208a3265",
-                "device_id": "febfd7db23194cccad55ca05dd20a919",
-                "disabled_by": null,
-                "entity_id": "sensor.vision_zp3111_multisensor_4in1_emergency_2",
-                "name": "Multi02_Emerg",
-                "platform": "zwave",
-                "unique_id": "16-72057594312409297"
-            },
-            {
-                "config_entry_id": "897c878fba894ee3ac600341208a3265",
-                "device_id": "febfd7db23194cccad55ca05dd20a919",
-                "disabled_by": null,
-                "entity_id": "sensor.vision_zp3111_multisensor_4in1_clock_2",
-                "name": "Multi02_Clock",
-                "platform": "zwave",
-                "unique_id": "16-72057594312409313"
-            },
-            {
-                "config_entry_id": "897c878fba894ee3ac600341208a3265",
-                "device_id": "febfd7db23194cccad55ca05dd20a919",
-                "disabled_by": null,
-                "entity_id": "sensor.vision_zp3111_multisensor_4in1_appliance_2",
-                "name": "Multi02_Appliance",
-                "platform": "zwave",
-                "unique_id": "16-72057594312409329"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
                 "entity_id": "zwave.vision_zp3111_multisensor_4in1_3",
                 "name": "Multi03",
                 "platform": "zwave",
@@ -1235,6 +1118,15 @@
                 "unique_id": "19-72057594362740977"
             },
             {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a277b4089d0f4101889e08f5a76cd57b",
+                "disabled_by": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_direction_4",
+                "name": "Multi04_Direct",
+                "platform": "zwave",
+                "unique_id": "19-72057594361692274"
+            },
+            {
                 "config_entry_id": null,
                 "device_id": null,
                 "disabled_by": null,
@@ -1404,6 +1296,15 @@
                 "name": "EZM01_bin",
                 "platform": "zwave",
                 "unique_id": "23-72057594428784640"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "9ea779fb11ea4920b4982871207bcc53",
+                "disabled_by": null,
+                "entity_id": "sensor.ezm_direction_1",
+                "name": "EZM01_Direct",
+                "platform": "zwave",
+                "unique_id": "23-72057594428801138"
             },
             {
                 "config_entry_id": "cc84ff9870624e8787bdbe79cebe7748",
@@ -1584,6 +1485,15 @@
                 "name": "HEM01_PrevRead3",
                 "platform": "zwave",
                 "unique_id": "25-216172782538227730"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "8d8d327d6c5148e2ad1e46a490c7148f",
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw095_home_energy_meter_gen5_previous_reading_4",
+                "name": "HEM01_PrevRead4",
+                "platform": "zwave",
+                "unique_id": "25-72057594462371986"
             },
             {
                 "config_entry_id": null,
@@ -2235,21 +2145,264 @@
             },
             {
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
-                "device_id": "a277b4089d0f4101889e08f5a76cd57b",
+                "device_id": "6e8f5e8545414733bbcf1c11238e0df3",
                 "disabled_by": null,
-                "entity_id": "sensor.vision_zp3111_multisensor_4in1_direction",
-                "name": null,
+                "entity_id": "binary_sensor.vision_zp3111_multisensor_4in1_sensor_2",
+                "name": "Multi02_Sensor",
                 "platform": "zwave",
-                "unique_id": "19-72057594361692274"
+                "unique_id": "38-72057594680442880"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.vision_zp3111_multisensor_4in1_2",
+                "name": "Multi02",
+                "platform": "zwave",
+                "unique_id": "node-38"
             },
             {
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
-                "device_id": "9ea779fb11ea4920b4982871207bcc53",
+                "device_id": "6e8f5e8545414733bbcf1c11238e0df3",
                 "disabled_by": null,
-                "entity_id": "sensor.ezm_direction",
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_temperature_2",
+                "name": "Multi02_Temp",
+                "platform": "zwave",
+                "unique_id": "38-72057594680459282"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "6e8f5e8545414733bbcf1c11238e0df3",
+                "disabled_by": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_luminance_2",
+                "name": "Multi02_Lum",
+                "platform": "zwave",
+                "unique_id": "38-72057594680459314"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "6e8f5e8545414733bbcf1c11238e0df3",
+                "disabled_by": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_relative_humidity_2",
+                "name": "Multi02_Hum",
+                "platform": "zwave",
+                "unique_id": "38-72057594680459346"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "6e8f5e8545414733bbcf1c11238e0df3",
+                "disabled_by": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_sourcenodeid_2",
+                "name": "Multi02_Src",
+                "platform": "zwave",
+                "unique_id": "38-72057594681507873"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "6e8f5e8545414733bbcf1c11238e0df3",
+                "disabled_by": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_burglar_2",
+                "name": "Multi02_Burglar",
+                "platform": "zwave",
+                "unique_id": "38-72057594681508001"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "6e8f5e8545414733bbcf1c11238e0df3",
+                "disabled_by": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_power_management_2",
+                "name": "Multi02_Mgmt",
+                "platform": "zwave",
+                "unique_id": "38-72057594681508017"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "6e8f5e8545414733bbcf1c11238e0df3",
+                "disabled_by": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_system_2",
+                "name": "Multi02_System",
+                "platform": "zwave",
+                "unique_id": "38-72057594681508033"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "6e8f5e8545414733bbcf1c11238e0df3",
+                "disabled_by": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_clock_2",
+                "name": "Multi02_Clock",
+                "platform": "zwave",
+                "unique_id": "38-72057594681508065"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "6e8f5e8545414733bbcf1c11238e0df3",
+                "disabled_by": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_homehealth_2",
+                "name": "Multi02_Health",
+                "platform": "zwave",
+                "unique_id": "38-72057594681508097"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "6e8f5e8545414733bbcf1c11238e0df3",
+                "disabled_by": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_alarm_type_2",
+                "name": "Multi02_AlarmType",
+                "platform": "zwave",
+                "unique_id": "38-72057594681507841"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "6e8f5e8545414733bbcf1c11238e0df3",
+                "disabled_by": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_alarm_level_2",
+                "name": "Multi02_AlarmLevel",
+                "platform": "zwave",
+                "unique_id": "38-72057594681507857"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.aeotec_zw078_heavy_duty_smart_switch_gen5",
                 "name": null,
                 "platform": "zwave",
-                "unique_id": "23-72057594428801138"
+                "unique_id": "node-39"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0cf960d0c23642d5b46486a35124c6c0",
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_temperature",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "39-72057594697236498"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0cf960d0c23642d5b46486a35124c6c0",
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_power",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "39-72057594697252994"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0cf960d0c23642d5b46486a35124c6c0",
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_energy",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "39-72057594697252866"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0cf960d0c23642d5b46486a35124c6c0",
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_voltage",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "39-72057594697253122"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0cf960d0c23642d5b46486a35124c6c0",
+                "disabled_by": null,
+                "entity_id": "switch.aeotec_zw078_heavy_duty_smart_switch_gen5_switch",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "39-72057594697039872"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0cf960d0c23642d5b46486a35124c6c0",
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_current",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "39-72057594697253186"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0cf960d0c23642d5b46486a35124c6c0",
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_exporting",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "39-72057594697253376"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0cf960d0c23642d5b46486a35124c6c0",
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_previous_reading",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "39-72057594697252882"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0cf960d0c23642d5b46486a35124c6c0",
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_interval",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "39-72057594697252899"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.samsung_clx_3300_series_192_168_0_26",
+                "name": null,
+                "platform": "syncthru",
+                "unique_id": "Z748B8KD3B00C3J_main"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.samsung_clx_3300_series_192_168_0_26_toner_black",
+                "name": null,
+                "platform": "syncthru",
+                "unique_id": "Z748B8KD3B00C3J_toner_black"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.samsung_clx_3300_series_192_168_0_26_toner_yellow",
+                "name": null,
+                "platform": "syncthru",
+                "unique_id": "Z748B8KD3B00C3J_toner_yellow"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.samsung_clx_3300_series_192_168_0_26_tray_1",
+                "name": null,
+                "platform": "syncthru",
+                "unique_id": "Z748B8KD3B00C3J_tray_1"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.samsung_clx_3300_series_192_168_0_26_toner_cyan",
+                "name": null,
+                "platform": "syncthru",
+                "unique_id": "Z748B8KD3B00C3J_toner_cyan"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.samsung_clx_3300_series_192_168_0_26_toner_magenta",
+                "name": null,
+                "platform": "syncthru",
+                "unique_id": "Z748B8KD3B00C3J_toner_magenta"
             }
         ]
     },

@@ -26,7 +26,7 @@ default_view:
     - group.chatroom
     - group.bedroom1
     - group.office
-    - group.modem
+   #- group.modem
     - group.masteroom
     - group.attic
     - group.date_time
@@ -39,7 +39,6 @@ date_time:
     - sensor.time_utc
     - sensor.time_in_odessa
     - script.test_notification    
-    - script.facebook_notification    
 
 basement:
   name: Basement
@@ -154,6 +153,7 @@ thermostat_views:
 
 thermostat_mode:
   name: Thermostat Id:28 
+  control: hidden
   entities:
   - climate.2gig_technologies_ct101_thermostat_iris_cooling_1
   - climate.2gig_technologies_ct101_thermostat_iris_heating_1
@@ -172,13 +172,24 @@ thermostat_mode:
     #- sensor.thermostat_cool_min_temp
     #- sensor.thermostat_heat_min_temp
     #- sensor.thermostat_cool_max_temp
-    #- sensor.thermostat_heat_max_temp    
+    #- sensor.thermostat_heat_max_temp
+    #
+    #
       ## Neo01
   - sensor.neo_coolcam_power_plug_12a_power01 
   - sensor.neo_coolcam_power_plug_12a_energy01
-    #- switch.neo_coolcam_power_plug_12a_switch01
+  - switch.neo_coolcam_power_plug_12a_switch01
     #- sensor.neo_coolcam_power_plug_12a_voltage01
-  - sensor.neo_coolcam_power_plug_12a_current01
+    #- sensor.neo_coolcam_power_plug_12a_current01
+    #
+    #
+      ##  Aeotec ZW078 heavy_duty Furnace Switch ID:39
+  - sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_power
+  - sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_energy
+    #- sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_voltage
+    #- sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_current
+    #- sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_temperature
+  - switch.aeotec_zw078_heavy_duty_smart_switch_gen5_switch
 
 temp:
   name: Temperature
@@ -289,6 +300,8 @@ energydata:
     - sensor.aeotec_zw095_home_energy_meter_gen5_energy
     - sensor.hank_hkzwso03_smart_plug_power01  
     - sensor.hank_hkzwso03_smart_plug_energy01
+    - sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_power
+    - sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_energy
     - sensor.neo_coolcam_power_plug_12a_power01 
     - sensor.neo_coolcam_power_plug_12a_energy01
     - sensor.neo_coolcam_power_plug_12a_power02 
@@ -311,6 +324,7 @@ powergraphs:
   entities:
     - group.powerneo
     - group.powerzooz
+    - group.powerfurnace
       #- group.voltage
 
 
@@ -322,6 +336,10 @@ powerzooz:
     name: PowerZooz
     entities:
     - history_graph.zoozpower_graphs
+powerfurnace:
+    name: PowerFurnace
+    entities:
+    - history_graph.furnacepower_graph
 #voltage:
    #name: Voltage
    #entities:
@@ -383,6 +401,14 @@ power_switch:
     - group.neoswitch
     - group.oldswitch
     - group.dimmer
+    #- group.furnace
+
+
+furnace:
+  name: Furnace 
+  control: hidden
+  entities:
+    - switch.aeotec_zw078_heavy_duty_smart_switch_gen5_switch
 
 zoozswitch:
   name: Zooz
@@ -401,11 +427,14 @@ neoswitch:
   name: Neo_Coolcam
   control: hidden
   entities:
-   #- switch.neo_coolcam_power_plug_12a_switch01
+    # Modem Neo05 ID:33
+    #- switch.neo_coolcam_power_plug_12a_switch05
+    - script.restart_modem
+    - switch.neo_coolcam_power_plug_12a_switch01
     - switch.neo_coolcam_power_plug_12a_switch02
     - switch.neo_coolcam_power_plug_12a_switch03
     - switch.neo_coolcam_power_plug_12a_switch04
-    - switch.neo_coolcam_power_plug_12a_switch05
+
 
 oldswitch:
   name: Intermatic

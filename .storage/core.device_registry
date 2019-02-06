@@ -205,24 +205,6 @@
                 ],
                 "connections": [],
                 "hub_device_id": null,
-                "id": "febfd7db23194cccad55ca05dd20a919",
-                "identifiers": [
-                    [
-                        "zwave",
-                        16
-                    ]
-                ],
-                "manufacturer": "Vision",
-                "model": "ZP3111 Multisensor 4in1",
-                "name": "Vision ZP3111 Multisensor 4in1",
-                "sw_version": null
-            },
-            {
-                "config_entries": [
-                    "897c878fba894ee3ac600341208a3265"
-                ],
-                "connections": [],
-                "hub_device_id": null,
                 "id": "8d169808d666498ba6da036ca8961dbe",
                 "identifiers": [
                     [
@@ -304,7 +286,7 @@
                 ],
                 "manufacturer": "Homeseer",
                 "model": "HSM200 Wireless Multi-Sensor",
-                "name": "EZM",
+                "name": "Homeseer HSM200 Wireless Multi-Sensor",
                 "sw_version": null
             },
             {
@@ -521,6 +503,42 @@
                 "manufacturer": "Kaipule",
                 "model": "IM20 Door/Window Sensor",
                 "name": "Kaipule IM20 Door/Window Sensor",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "6e8f5e8545414733bbcf1c11238e0df3",
+                "identifiers": [
+                    [
+                        "zwave",
+                        38
+                    ]
+                ],
+                "manufacturer": "Vision",
+                "model": "ZP3111 Multisensor 4in1",
+                "name": "Vision ZP3111 Multisensor 4in1",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "0cf960d0c23642d5b46486a35124c6c0",
+                "identifiers": [
+                    [
+                        "zwave",
+                        39
+                    ]
+                ],
+                "manufacturer": "Aeotec",
+                "model": "ZW078 Heavy Duty Smart Switch Gen5",
+                "name": "Aeotec ZW078 Heavy Duty Smart Switch Gen5",
                 "sw_version": null
             }
         ]

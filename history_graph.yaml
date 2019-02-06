@@ -62,6 +62,15 @@ power_zooz:
     - sensor.hank_hkzwso03_smart_plug_power01  
   hours_to_show: 100
 #
+#
+##  Aeotec ZW078 heavy_duty Furnace Switch ID:39
+furnace:
+  name: FurnacePower Graph
+  entities:
+    - sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_power  
+  hours_to_show: 100
+  
+#
 #voltage:
 #  name: Voltage Graphs
 #  entities:

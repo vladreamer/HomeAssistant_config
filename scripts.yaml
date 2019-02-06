@@ -1,17 +1,33 @@
 test_notification:
   alias: 'Test Gmail'
   sequence:
-    - service: notify.MailToGmail
+    - service: notify.mailtogmail
       data_template:
         title: "Test Message {{ now().strftime('%d %b, %Y %-I:%M %P') }}"
         message: "This is a test!{{now()}}"
-#
-#
-facebook_notification:
-  alias: 'FaceBook Notification'
+##
+##
+#acebook_notification:
+# alias: 'FaceBook Notification'
+# sequence:
+#   - service: notify.FaceBookMessanger
+#     data:
+#       message: "Home FaceBook test"
+#       target:
+#       - '+14166487193'        
+##
+##
+restart_modem:
+  alias: 'Restart Modem ID:33'
   sequence:
-    - service: notify.FaceBookMessanger
-      data:
-        message: "Home FaceBook test"
-        target:
-        - '+14166487193'        
+      - service: homeassistant.turn_off
+        data:
+          entity_id: switch.neo_coolcam_power_plug_12a_switch05
+      - delay: '00:00:03'
+      - service: homeassistant.turn_on
+        data:
+          entity_id: switch.neo_coolcam_power_plug_12a_switch05
+      - service: notify.mailtogmail
+        data_template:
+          title: "Modem Restarted by script {{ now().strftime('%d %b, %Y %-I:%M %P') }}"
+          message: "Modem Restarted by script  {{now()}}"

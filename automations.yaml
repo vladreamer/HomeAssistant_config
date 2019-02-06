@@ -127,7 +127,7 @@
 ########################################################
 ## Thrmostat (ID:28) 
 ########################################################
-  alias: "TEMP 22C Morning"
+  alias: "TEMP 22C Morn. 7:15-9:00"
   initial_state: true
   trigger:
     - platform: template
@@ -139,12 +139,14 @@
       after: '07:15:00'
       before: '08:59:00'
   action:
+    - service: homeassistant.turn_on 
+      entity_id: switch.neo_coolcam_power_plug_12a_switch01
     - service: climate.set_temperature
       data:
        entity_id: climate.2gig_technologies_ct101_thermostat_iris_heating_1
        temperature: 22
        operation_mode: Heat
-    - service: notify.MailToGmail
+    - service: notify.mailtogmail
       data_template:
         title: "Morning Temperature to 22C {{ now().strftime('%d %b, %Y %-I:%M %P') }}"
         message: "Current Temperature is {{ states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') }}"
@@ -154,7 +156,7 @@
 ########################################################
 ## Thrmostat (ID:28) 
 ########################################################
-  alias: "TEMP 21C Day"
+  alias: "TEMP 21C Day 9:00-17:30"
   initial_state: true
   trigger:
     - platform: template
@@ -168,12 +170,14 @@
       after: '09:00:00'
       before: '17:29:00'
   action:
+    - service: homeassistant.turn_off
+      entity_id: switch.neo_coolcam_power_plug_12a_switch01
     - service: climate.set_temperature
       data:
        entity_id: climate.2gig_technologies_ct101_thermostat_iris_heating_1
        temperature: 21
        operation_mode: Heat
-    - service: notify.MailToGmail
+    - service: notify.mailtogmail
       data_template:
         title: "Day Temperature to 21C {{ now().strftime('%d %b, %Y %-I:%M %P') }}"
         message: "Current Temperature is {{ states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') }}"
@@ -182,7 +186,7 @@
 ########################################################
 ## Thrmostat (ID:28) 
 ########################################################
-  alias: "TEMP 22C Evening"
+  alias: "TEMP 22C Eve. 17:30-22:30"
   initial_state: true
   trigger:
     - platform: template
@@ -194,12 +198,14 @@
       after: '17:30:00'
       before: '22:29:00'
   action:
+    - service: homeassistant.turn_on 
+      entity_id: switch.neo_coolcam_power_plug_12a_switch01
     - service: climate.set_temperature
       data:
        entity_id: climate.2gig_technologies_ct101_thermostat_iris_heating_1
        temperature: 22
        operation_mode: Heat
-    - service: notify.MailToGmail
+    - service: notify.mailtogmail
       data_template:
         title: "Evening Temperature to 22C {{ now().strftime('%d %b, %Y %-I:%M %P') }}"
         message: "Current Temperature is {{ states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') }}"
@@ -208,7 +214,7 @@
 ########################################################
 ## Thrmostat (ID:28) 
 ########################################################
-  alias: "TEMP 20C Night" 
+  alias: "TEMP 20C Night 22:30-7:15" 
   initial_state: true
   trigger:
     - platform: template
@@ -222,12 +228,14 @@
       after: '22:30:00'
       before: '07:14:00'
   action:
+    - service: homeassistant.turn_off
+      entity_id: switch.neo_coolcam_power_plug_12a_switch01
     - service: climate.set_temperature
       data:
        entity_id: climate.2gig_technologies_ct101_thermostat_iris_heating_1
        temperature: 20
        operation_mode: Heat
-    - service: notify.MailToGmail
+    - service: notify.mailtogmail
       data_template:
         title: "Night Temperature to 20C {{ now().strftime('%d %b, %Y %-I:%M %P') }}"
         message: "Current Temperature is {{ states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') }}"
@@ -246,10 +254,12 @@
      condition: template
      value_template: "{{ now().date().day == 1 }}" 
   action:
-    - service: notify.MailToGmail
+    - service: notify.mailtogmail
       data_template:
         title: "Energy iused {{states.sensor.aeotec_zw095_home_energy_meter_gen5_energy.state}} kWh"
         message: "Total Energy Used per month is {{states.sensor.aeotec_zw095_home_energy_meter_gen5_energy.state}} kWh
+    
+        ID:39 - FurnaceSW - {{states.sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_energy.state}} kWh;
     
         ID:21 - GreatRoomSW - {{states.sensor.hank_hkzwso03_smart_plug_energy01.state}} kWh;
         
@@ -259,7 +269,10 @@
         
         ID:12 - Vlad'sRoomSW - {{states.sensor.neo_coolcam_power_plug_12a_energy03.state}} kWh;
         
-        ID:14 - ChatRoomSW - {{states.sensor.neo_coolcam_power_plug_12a_energy04.state}} kWh;"
+        ID:14 - ChatRoomSW - {{states.sensor.neo_coolcam_power_plug_12a_energy04.state}} kWh;
+        
+        ID:33 - ModemSW - {{states.sensor.neo_coolcam_power_plug_12a_energy05.state}} kWh;"
+   
     - service: zwave.reset_node_meters 
       data: {"node_id": 25}
     - service: zwave.reset_node_meters 
@@ -272,6 +285,10 @@
       data: {"node_id": 12}
     - service: zwave.reset_node_meters 
       data: {"node_id": 14}
+    - service: zwave.reset_node_meters 
+      data: {"node_id": 33}
+    - service: zwave.reset_node_meters 
+      data: {"node_id": 39}
     
 
 
@@ -279,7 +296,7 @@
 ########################################################
 ## Turn Light ON MAsterBedroom if it was "OFF" triggered by
 ## Multisensor4 ID:19 After that take 4 snapshoots and send
-## them by mail "notify.MailToGmail"
+## them by mail "notify.mailtogmail"
 ########################################################
   alias: "LightScene Dimmer MasterRoom 18:00-22:00"
   initial_state: false
@@ -341,7 +358,7 @@
 ########################################################
 ## Garage door "OPEN" if it was "OFF" triggered by 
 ## GarageDoor sensor ID:35 After that take 4 snapshoots and send
-## them by mail "notify.MailToGmail" 
+## them by mail "notify.mailtogmail" 
 ########################################################
   alias: Garage Door is OPEN
   initial_state: true
@@ -385,7 +402,7 @@
       data:
         filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_04.jpg"
         filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_04cor.jpg"
-    - service: notify.MailToGmail
+    - service: notify.mailtogmail
       data_template:
         title: "Garage Door is OPEN"
         message: "Someone opened Garage Door"
@@ -433,7 +450,7 @@
 ########################################################
 ## Basement StairsLigth "ON" if it was "OFF" triggered by 
 ## Door sensor ID:34 After that take 4 snapshoots and send
-## them by mail "notify.MailToGmail" 
+## them by mail "notify.mailtogmail" 
 ########################################################
   alias: Basement StairsLight ON
   initial_state: true
@@ -484,7 +501,7 @@
       data:
         filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_04.jpg"
         filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_04cor.jpg"
-    - service: notify.MailToGmail
+    - service: notify.mailtogmail
       data_template:
         title: "Basement Motion Detected"
         message: "Motion Detected in Basement by Multisensor Multi01"
@@ -532,7 +549,7 @@
 ########################################################
 ## Basement StairsLigth "ON" if it was "OFF" triggered by 
 ## Motion sensor ID:15 After that take 4 snapshoots and send
-## them by mail "notify.MailToGmail" 
+## them by mail "notify.mailtogmail" 
 ########################################################
   alias: Basement StairsLight ON
   initial_state: true
@@ -550,49 +567,49 @@
     - delay: '00:00:02'
     - service: camera.snapshot
       data:
-        entity_id: camera.camera4
-        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_01.jpg"
+        entity_id: camera.camera5
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_01.jpg"
     - service: shell_command.fix_snapshot
       data:
-        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_01.jpg"
-        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_01cor.jpg"
+        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_01.jpg"
+        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_01cor.jpg"
     - delay: '00:00:10'
     - service: camera.snapshot
       data:
-        entity_id: camera.camera4
-        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_02.jpg"
+        entity_id: camera.camera5
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_02.jpg"
     - service: shell_command.fix_snapshot
       data:
-        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_02.jpg"
-        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_02cor.jpg"
+        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_02.jpg"
+        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_02cor.jpg"
     - delay: '00:00:20'
     - service: camera.snapshot
       data:
-        entity_id: camera.camera4
-        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_03.jpg"
+        entity_id: camera.camera5
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_03.jpg"
     - service: shell_command.fix_snapshot
       data:
-        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_03.jpg"
-        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_03cor.jpg"
+        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_03.jpg"
+        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_03cor.jpg"
     - delay: '00:00:30'
     - service: camera.snapshot
       data:
-        entity_id: camera.camera4
-        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_04.jpg"
+        entity_id: camera.camera5
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_04.jpg"
     - service: shell_command.fix_snapshot
       data:
-        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_04.jpg"
-        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera4_04cor.jpg"
-    - service: notify.MailToGmail
+        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_04.jpg"
+        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera5_04cor.jpg"
+    - service: notify.mailtogmail
       data_template:
         title: "Basement Motion Detected"
         message: "Motion Detected in Basement by Multisensor Multi01"
         data:
           images:
-            - /home/homeassistant/.homeassistant/downloads/snapshot_camera4_01cor.jpg
-            - /home/homeassistant/.homeassistant/downloads/snapshot_camera4_02cor.jpg
-            - /home/homeassistant/.homeassistant/downloads/snapshot_camera4_03cor.jpg
-            - /home/homeassistant/.homeassistant/downloads/snapshot_camera4_04cor.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera5_01cor.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera5_02cor.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera5_03cor.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera5_04cor.jpg
           html: >
             <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
             <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -610,17 +627,17 @@
               </head>
               <body>
                 <h1>Motion in Basement  0sec</h1>
-                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera4?api_password=3health1">
-                <img style="width: 100%; alt="Image1 from Camera4" src="cid:snapshot_camera4_01cor.jpg" /></a>
+                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera5?api_password=3health1">
+                <img style="width: 100%; alt="Image1 from Camera5" src="cid:snapshot_camera5_01cor.jpg" /></a>
                 <h4>4 sec</h4>
-                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera4?api_password=3health1">
-                <img style="width: 100%; alt="Image2 from Camera4" src="cid:snapshot_camera4_02cor.jpg" /></a>
+                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera5?api_password=3health1">
+                <img style="width: 100%; alt="Image2 from Camera5" src="cid:snapshot_camera5_02cor.jpg" /></a>
                 <h4>16 sec</h4>
-                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera4?api_password=3health1">
-                <img style="width: 100%; alt="Image3 from Camera4" src="cid:snapshot_camera4_03cor.jpg" /></a>
+                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera5?api_password=3health1">
+                <img style="width: 100%; alt="Image3 from Camera5" src="cid:snapshot_camera5_03cor.jpg" /></a>
                 <h4>32 sec</h4>
-                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera4?api_password=3health1">
-                <img style="width: 100%; alt="Image3 from Camera4" src="cid:snapshot_camera4_04cor.jpg" /></a>
+                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera5?api_password=3health1">
+                <img style="width: 100%; alt="Image3 from Camera5" src="cid:snapshot_camera5_04cor.jpg" /></a>
               </body>
             </html>
 #
@@ -701,7 +718,7 @@
 - id: 'MainFloor_Motion'
 ########################################################
 ## Triger by EZM01 ID 23 (MainFloor_Motion) 
-## Take 4 snapshoots and send them by mail "notify.MailToGmail" 
+## Take 4 snapshoots and send them by mail "notify.mailtogmail" 
 ## 
 ########################################################
   alias: Snapshots trigered by EZM01 ID:23
@@ -782,7 +799,7 @@
       data:
         filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_04.jpg"  
         filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_04cor.jpg"  
-    - service: notify.MailToGmail
+    - service: notify.mailtogmail
       data_template:
         title: "MainFloor Motion detected"
         message: "MainFloor Motion detected"
@@ -844,7 +861,7 @@
 - id: 'MainDoor_Open'
 ########################################################
 ## Triger by MainDoor sensor Id:36 
-## Take 4 snapshoots and send them by mail "notify.MailToGmail" 
+## Take 4 snapshoots and send them by mail "notify.mailtogmail" 
 ## Camera #3 is "External Camera"
 ########################################################
   alias: Front Door is OPEN ID:36
@@ -895,7 +912,7 @@
       data:
         filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera3_04.jpg"  
         filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera3_04cor.jpg"  
-    - service: notify.MailToGmail
+    - service: notify.mailtogmail
       data_template:
         title: "Entrance Door was Open" 
         message: "Entrance Door was Open"
@@ -942,12 +959,18 @@
 ########################################################
 ## Turn Water Valve "OFF" if it was "ON" triggered by 
 ## Water Leak sensor from "OFF" to "ON". After that send
-## an mail "notify.MailToGmail" 
+## an mail "notify.mailtogmail" 
 ########################################################
   alias: Auto_Switch_Water
   initial_state: true
   trigger:
   - entity_id: binary_sensor.neo_coolcam_water_leakage_detector_sensor01
+    platform: state
+    to: 'on'
+  - entity_id: binary_sensor.neo_coolcam_water_leakage_detector_sensor02
+    platform: state
+    to: 'on'
+  - entity_id: binary_sensor.neo_coolcam_water_leakage_detector_sensor03
     platform: state
     to: 'on'
   condition:
@@ -957,7 +980,7 @@
   action:
   - service: homeassistant.turn_off
     entity_id: switch.sigma_valveswitch01
-  - service: notify.MailToGmail
+  - service: notify.mailtogmail
     data:
       title: "FLOOD ALERT"
       message: "WaterSwitch trigerred by WaterLeak sensor"

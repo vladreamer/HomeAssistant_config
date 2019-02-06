@@ -1,4 +1,4 @@
-- name: MailToGmail 
+- name: mailtogmail 
   platform: smtp
   server: smtp.gmail.com
   port: 587
@@ -12,9 +12,9 @@
   recipient:
     - homealertmails@gmail.com
   sender_name: HomeAssistant
-#
-#
-- name: FaceBookMessanger
-  platform: facebook
-  page_access_token: EAAQhd0cP0aYBABEIDACeJhbeZAZA3Rna2iL5tou15GKe2wHYd3oxo2a5kfcCZATZBeTJ5ccAwu0LCDY6bYnUsB0qyWNHvaPIZBZBzyybfnHArIZBASeF8vahZCEsEJLWDutBcUh7fmnZCMUsp3pIZAY9jrPPGdQfkrWNJd9jJKUpLRzz7WyesL7PdA 
+##
+##
+#- name: FaceBookMessanger
+#  platform: facebook
+#  page_access_token: EAAQhd0cP0aYBABEIDACeJhbeZAZA3Rna2iL5tou15GKe2wHYd3oxo2a5kfcCZATZBeTJ5ccAwu0LCDY6bYnUsB0qyWNHvaPIZBZBzyybfnHArIZBASeF8vahZCEsEJLWDutBcUh7fmnZCMUsp3pIZAY9jrPPGdQfkrWNJd9jJKUpLRzz7WyesL7PdA 
 
