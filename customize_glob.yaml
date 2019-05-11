@@ -8,6 +8,28 @@
 ##################
 ## PowerPlugs 
 ##################
+## Dome ##
+"sensor.dome_on_off_plug_in_switch_previous_reading*":
+  hidden: true
+"sensor.dome_on_off_plug_in_switch_power_management*":
+  hidden: true
+"sensor.dome_on_off_plug_in_switch_sourcenodeid*":
+  hidden: true
+"sensor.dome_on_off_plug_in_switch_alarm_type*":
+  hidden: true
+"sensor.dome_on_off_plug_in_switch_alarm_level*":
+  hidden: true
+"sensor.dome_on_off_plug_in_switch_exporting*":
+  hidden: true
+"sensor.dome_on_off_plug_in_switch_interval*":
+  hidden: true
+"sensor.dome_on_off_plug_in_switch_power*":
+  icon: mdi:power-plug
+"sensor.dome_on_off_plug_in_switch_voltage*":
+  icon: mdi:power-socket
+"sensor.dome_on_off_plug_in_switch_current*":
+  icon: mdi:flash
+#       
 ## NeoCoolcam ##
 "sensor.neo_coolcam_power_plug_12a_previous_reading*":
   hidden: true
@@ -29,6 +51,7 @@
   icon: mdi:power-socket
 "sensor.neo_coolcam_power_plug_12a_current*":
   icon: mdi:flash
+#
 ## Zooz ##
 "sensor.hank_hkzwso03_smart_plug_power*":
   icon: mdi:power-plug

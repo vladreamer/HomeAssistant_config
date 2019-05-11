@@ -54,7 +54,17 @@ power_neo:
     - sensor.neo_coolcam_power_plug_12a_power02
     - sensor.neo_coolcam_power_plug_12a_power03
     - sensor.neo_coolcam_power_plug_12a_power04
+    - sensor.neo_coolcam_power_plug_12a_power05
+    - sensor.neo_coolcam_power_plug_12a_power06
+    - sensor.neo_coolcam_power_plug_12a_power07
   hours_to_show: 100
+#
+power_dome:
+  name: DomePower Graphs
+  entities:
+    - sensor.dome_on_off_plug_in_switch_power 
+  hours_to_show: 100
+#
 #
 power_zooz:
   name: ZoozPower Graphs
@@ -94,7 +104,7 @@ hemvoltage:
 #  hours_to_show: 150
 #
 hempower:
-  name: HEMPower Graph
-  entities:
-    - sensor.aeotec_zw095_home_energy_meter_gen5_power  
-  hours_to_show: 150
+    name: HEMPower Graph
+    entities:
+     - sensor.aeotec_zw095_home_energy_meter_gen5_power  
+    hours_to_show: 150

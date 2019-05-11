@@ -26,37 +26,37 @@ sensor.2gig_technologies_ct101_thermostat_iris_relative_humidity:
 #  Water Walve/Switch  
 ##########################################################
 switch.sigma_valveswitch01:
-  friendly_name: WaterSwitch01_Id:2
+  friendly_name: WaterSwitch01_Id2
 
 ##########################################################
 #  WaterLeak detectors
 ##########################################################
 binary_sensor.neo_coolcam_water_leakage_detector_sensor01:
-  friendly_name: Basement
+  friendly_name: Basement_Id3
   device_class: moisture
 binary_sensor.neo_coolcam_water_leakage_detector_sensor02:
-  friendly_name: Kitchen
+  friendly_name: Kitchen_Id31
   device_class: moisture
 binary_sensor.neo_coolcam_water_leakage_detector_sensor03:
-  friendly_name: Laundry
+  friendly_name: Laundry_Id27
   device_class: moisture
 ##########################################################
 #  Motion/Temperature/Humidity detectors
 ##########################################################
 sensor.vision_zp3111_multisensor_4in1_temperature_1:
-  friendly_name: MudRoom
+  friendly_name: MudRoom_Id15
   icon: mdi:temperature-celsius
   unit_of_measurement: °C
 sensor.vision_zp3111_multisensor_4in1_temperature_2:
-  friendly_name: Attic
+  friendly_name: Attic_Id38
   icon: mdi:temperature-celsius
   unit_of_measurement: °C
 sensor.vision_zp3111_multisensor_4in1_temperature_3:
-  friendly_name: VladsRoom
+  friendly_name: VladsRoom_Id17
   icon: mdi:temperature-celsius
   unit_of_measurement: °C
 sensor.vision_zp3111_multisensor_4in1_temperature_4:
-  friendly_name: MasterRoom
+  friendly_name: MasterRoom_Id19
   icon: mdi:temperature-celsius
   unit_of_measurement: °C
 sensor.homeseer_hsm200_wireless_multisensor_temperature_1:
@@ -103,7 +103,7 @@ sensor.homeseer_hsm200_wireless_multisensor_luminance_1:
 #  Home Energy Meter HEM ID:25 
 ##########################################################
 sensor.aeotec_zw095_home_energy_meter_gen5_power:
-  friendly_name: PowerConsumtion
+  friendly_name: PowerConsumtion_Id25
   icon: mdi:power-plug
   unit_of_measurement: W
 sensor.aeotec_zw095_home_energy_meter_gen5_energy:
@@ -123,14 +123,14 @@ sensor.aeotec_zw095_home_energy_meter_gen5_current:
 #  ZEN21  Basement Light Switch ID:24 
 ##########################################################
 switch.zooz_zen21_switch_v20_switch_01:
-  friendly_name: BasementStairs_Id:24
+  friendly_name: BasementStairs_Id24
   icon: mdi:lightbulb
   
 ##########################################################
 #  Neo Coolcam Power Plugs  
 ##########################################################
 switch.neo_coolcam_power_plug_12a_switch01:
-  friendly_name: HRV_SW_Id:8
+  friendly_name: HRV_SW_Id8
 sensor.neo_coolcam_power_plug_12a_power01:
   friendly_name: HRV_SW_Pwr
 sensor.neo_coolcam_power_plug_12a_voltage01:
@@ -143,7 +143,7 @@ sensor.neo_coolcam_power_plug_12a_energy01:
   unit_of_measurement: kWh
   #
 switch.neo_coolcam_power_plug_12a_switch02:
-  friendly_name: KitchenSW_Id:10
+  friendly_name: KitchenSW_Id10
 sensor.neo_coolcam_power_plug_12a_power02:
   friendly_name: KitchenSW_Pwr
 sensor.neo_coolcam_power_plug_12a_voltage02:
@@ -156,7 +156,7 @@ sensor.neo_coolcam_power_plug_12a_energy02:
   unit_of_measurement: kWh
   #  
 switch.neo_coolcam_power_plug_12a_switch03:
-  friendly_name: Vlad'sRoomSW_Id:12
+  friendly_name: Vlad'sRoomSW_Id12
 sensor.neo_coolcam_power_plug_12a_power03:
   friendly_name: Vlad'sRoomSW_Pwr
 sensor.neo_coolcam_power_plug_12a_voltage03:
@@ -169,7 +169,7 @@ sensor.neo_coolcam_power_plug_12a_energy03:
   unit_of_measurement: kWh
   #
 switch.neo_coolcam_power_plug_12a_switch04:
-  friendly_name: ChatRoom_Id:14
+  friendly_name: ChatRoom_Id14
 sensor.neo_coolcam_power_plug_12a_power04:
   friendly_name: ChatRoom_Pwr
 sensor.neo_coolcam_power_plug_12a_voltage04:
@@ -182,7 +182,7 @@ sensor.neo_coolcam_power_plug_12a_energy04:
   unit_of_measurement: kWh
   #
 switch.neo_coolcam_power_plug_12a_switch05:
-  friendly_name: Modem_Id:33
+  friendly_name: Modem_Id33
 sensor.neo_coolcam_power_plug_12a_power05:
   friendly_name: Modem_Pwr
 sensor.neo_coolcam_power_plug_12a_voltage05:
@@ -193,9 +193,47 @@ sensor.neo_coolcam_power_plug_12a_energy05:
   friendly_name: ModemSW 
   icon: mdi:finance
   unit_of_measurement: kWh
-
+  #
+switch.neo_coolcam_power_plug_12a_switch06:
+  friendly_name: Office_Id40
+sensor.neo_coolcam_power_plug_12a_power06:
+  friendly_name: Office_Pwr
+sensor.neo_coolcam_power_plug_12a_voltage06:
+  friendly_name: Office_V
+sensor.neo_coolcam_power_plug_12a_current06:
+  friendly_name: Office_A
+sensor.neo_coolcam_power_plug_12a_energy06:
+  friendly_name: OfficeSW 
+  icon: mdi:finance
+  unit_of_measurement: kWh
+  #
+switch.neo_coolcam_power_plug_12a_switch07:
+  friendly_name: Neo07_Id43
+sensor.neo_coolcam_power_plug_12a_power07:
+  friendly_name: Neo07_Pwr
+sensor.neo_coolcam_power_plug_12a_voltage07:
+  friendly_name: Neo07_V
+sensor.neo_coolcam_power_plug_12a_current07:
+  friendly_name: Neo07_A
+sensor.neo_coolcam_power_plug_12a_energy07:
+  friendly_name: Neo07SW 
+  icon: mdi:finance
+  unit_of_measurement: kWh
+  #
+switch.dome_on_off_plug_in_switch_switch:
+  friendly_name: Dome01_Id44
+sensor.dome_on_off_plug_in_switch_power:
+  friendly_name: Dome01_Pwr
+sensor.dome_on_off_plug_in_switch_voltage:
+  friendly_name: Dome01_V
+sensor.dome_on_off_plug_in_switch_current:
+  friendly_name: Dome01_A
+sensor.dome_on_off_plug_in_switch_energy:
+  friendly_name: Dome01SW 
+  icon: mdi:finance
+  #
 switch.hank_hkzwso03_smart_plug_switch01:
-  friendly_name: GreatRoomSW_Id:21
+  friendly_name: GreatRoomSW_Id21
 sensor.hank_hkzwso03_smart_plug_power01:
   friendly_name: GreatRoomSW_Pwr
 sensor.hank_hkzwso03_smart_plug_voltage01:
@@ -211,7 +249,7 @@ sensor.hank_hkzwso03_smart_plug_energy01:
 #  Aeotec ZW078 heavy_duty Furnace Switch ID:39
 ##########################################################
 switch.aeotec_zw078_heavy_duty_smart_switch_gen5_switch:
-  friendly_name: FurnaceSW_Id:39
+  friendly_name: FurnaceSW_Id39
 sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_power:
   friendly_name: Furnace_Pwr
   icon: mdi:power-plug
@@ -237,22 +275,22 @@ sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_energy:
 #  Old Intermatic Power Plugs  
 ##########################################################
 switch.intermatic_ha02_appliance_module_switch:
-  friendly_name: SecondFloorHall_Id:5
+  friendly_name: SecondFloorHall_Id5
 switch.intermatic_ha04c_outdoor_module_switch:
-  friendly_name: GarageSW_Id:4
+  friendly_name: GarageSW_Id4
 
 ##########################################################
 #  Double Power Plug Inovelli Switch  
 ##########################################################
 switch.inovelli_2ch_01_1:
-  friendly_name: MasterRmSW1_Id:22
+  friendly_name: MasterRmSW1_Id22
 switch.inovelli_2ch_01_2:
-  friendly_name: MasterRmSW2_Id:22
+  friendly_name: MasterRmSW2_Id22
 
 ##########################################################
 #  Internal System Sensorsh  
 ##########################################################
-sensor.disk_use_percent_:
+sensor.disk_use_percent:
   friendly_name: Disk
 sensor.since_last_boot:
   friendly_name: UpTime
@@ -295,6 +333,3 @@ group.all_switches:
 group.all_sensors:
   hidden: false
   friendly_name: All Sensors
-zwave.unknown_node_26:
-  hidden: true
-  is_failed: true

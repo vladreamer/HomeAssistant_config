@@ -2,6 +2,7 @@
     "data": {
         "devices": [
             {
+                "area_id": null,
                 "config_entries": [
                     "cc84ff9870624e8787bdbe79cebe7748"
                 ],
@@ -20,6 +21,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "cc84ff9870624e8787bdbe79cebe7748"
                 ],
@@ -38,6 +40,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -56,6 +59,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -74,6 +78,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -92,6 +97,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -110,6 +116,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -128,6 +135,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -146,6 +154,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -164,6 +173,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -182,6 +192,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -200,6 +211,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -218,6 +230,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -236,6 +249,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -254,6 +268,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -272,6 +287,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -286,10 +302,11 @@
                 ],
                 "manufacturer": "Homeseer",
                 "model": "HSM200 Wireless Multi-Sensor",
-                "name": "Homeseer HSM200 Wireless Multi-Sensor",
+                "name": "EZM",
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -308,6 +325,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -326,6 +344,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -344,6 +363,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -362,6 +382,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -380,6 +401,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -398,6 +420,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -416,6 +439,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -434,6 +458,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -452,6 +477,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -470,6 +496,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -488,6 +515,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -506,6 +534,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -524,6 +553,7 @@
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "897c878fba894ee3ac600341208a3265"
                 ],
@@ -539,6 +569,101 @@
                 "manufacturer": "Aeotec",
                 "model": "ZW078 Heavy Duty Smart Switch Gen5",
                 "name": "Aeotec ZW078 Heavy Duty Smart Switch Gen5",
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "bb23b7a5d8c94b34a77c9a77be96950d",
+                "identifiers": [
+                    [
+                        "zwave",
+                        40
+                    ]
+                ],
+                "manufacturer": "Neo CoolCam",
+                "model": "Power plug 12A",
+                "name": "Neo CoolCam Power plug 12A",
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "c47f69f1903c400bbc5e6f9fe6980cf9",
+                "identifiers": [
+                    [
+                        "zwave",
+                        41
+                    ]
+                ],
+                "manufacturer": "Neo CoolCam",
+                "model": "Power plug 12A",
+                "name": "Neo CoolCam Power plug 12A",
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "5a18d1594f6948ec934e0a43389595b0",
+                "identifiers": [
+                    [
+                        "zwave",
+                        42
+                    ]
+                ],
+                "manufacturer": "Zooz",
+                "model": "ZEN22 Dimmer V2",
+                "name": "Zooz ZEN22 Dimmer V2",
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "a1a33e30c27244f6bea644014a3d0109",
+                "identifiers": [
+                    [
+                        "zwave",
+                        43
+                    ]
+                ],
+                "manufacturer": "Neo CoolCam",
+                "model": "Power plug 12A",
+                "name": "Neo CoolCam Power plug 12A",
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "0fe8e54588df48238a8c08184e65682d",
+                "identifiers": [
+                    [
+                        "zwave",
+                        44
+                    ]
+                ],
+                "manufacturer": "Dome",
+                "model": "On/Off Plug-In Switch",
+                "name": "Dome On/Off Plug-In Switch",
                 "sw_version": null
             }
         ]

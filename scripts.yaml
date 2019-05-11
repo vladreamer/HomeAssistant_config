@@ -1,5 +1,5 @@
 test_notification:
-  alias: 'Test Gmail'
+  alias: 'TestGmail'
   sequence:
     - service: notify.mailtogmail
       data_template:
@@ -18,7 +18,7 @@ test_notification:
 ##
 ##
 restart_modem:
-  alias: 'Restart Modem ID:33'
+  alias: 'RestartModem_Id33'
   sequence:
       - service: homeassistant.turn_off
         data:

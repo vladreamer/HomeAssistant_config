@@ -4,7 +4,7 @@ default_view:
   view: yes
   name: AllRooms
   entities:
-    - sensor.disk_use_percent_
+    - sensor.disk_use_percent
     - sensor.last_boot
     - sensor.processor_use
     - sensor.2gig_technologies_ct101_thermostat_iris_temperature  
@@ -33,6 +33,7 @@ default_view:
 
 date_time:
   name: Date and Time
+  control: hidden
   entities:
     - sensor.time
     - sensor.date
@@ -42,6 +43,7 @@ date_time:
 
 basement:
   name: Basement
+  control: hidden
   entities:
     - binary_sensor.multi01_motion
     - binary_sensor.multi01_tamper
@@ -49,12 +51,13 @@ basement:
     - sensor.vision_zp3111_multisensor_4in1_luminance_1
     - sensor.vision_zp3111_multisensor_4in1_relative_humidity_1
     - sensor.vision_zp3111_multisensor_4in1_temperature_1
-    - sensor.vision_zp3111_multisensor_4in1_battery_1
+      #- sensor.vision_zp3111_multisensor_4in1_battery_1
       ## Zen21
     - switch.zooz_zen21_switch_v20_switch_01
 
 kitchen:
   name: MainFloor 
+  control: hidden
   entities:
     - binary_sensor.ezm01_motion
     - sensor.homeseer_hsm200_wireless_multisensor_luminance_1
@@ -72,16 +75,20 @@ kitchen:
 
 chatroom:
   name: ChatRoom 
+  control: hidden
   entities:
       ## Neo04
     - sensor.neo_coolcam_power_plug_12a_power04
     - switch.neo_coolcam_power_plug_12a_switch04
     #- sensor.neo_coolcam_power_plug_12a_voltage04
     #- sensor.neo_coolcam_power_plug_12a_current04
+      ## Dimmer Zen22 Chat Room (Node ID:42)
+    - light.zooz_zen22_dimmer_v2_3_level
   
 
 bedroom1:
   name: Vlad's Room
+  control: hidden
   entities:
     - binary_sensor.multi03_motion
     - binary_sensor.multi03_tamper
@@ -89,7 +96,7 @@ bedroom1:
     - sensor.vision_zp3111_multisensor_4in1_luminance_3
     - sensor.vision_zp3111_multisensor_4in1_relative_humidity_3
     - sensor.vision_zp3111_multisensor_4in1_temperature_3
-    - sensor.vision_zp3111_multisensor_4in1_battery_3
+      #- sensor.vision_zp3111_multisensor_4in1_battery_3
       ## Dimmer Zen22 (Node ID:32)
     - light.zooz_zen22_dimmer_v2_2_level
       ## Neo03
@@ -100,11 +107,22 @@ bedroom1:
 
 office:
   name: Office
+  control: hidden
   entities:
       ## HA02-white
     - switch.intermatic_ha02_appliance_module_switch 
+      ## Neo06
+    - sensor.neo_coolcam_power_plug_12a_power06 
+    - switch.neo_coolcam_power_plug_12a_switch06
+      ## Neo07
+    - sensor.neo_coolcam_power_plug_12a_power07 
+    - sensor.neo_coolcam_power_plug_12a_energy07
+    - sensor.neo_coolcam_power_plug_12a_voltage07
+    - sensor.neo_coolcam_power_plug_12a_current07
+      
 modem:
   name: Modem
+  control: hidden
   entities:
       ## Neo05
       #- sensor.neo_coolcam_power_plug_12a_energy05
@@ -113,6 +131,7 @@ modem:
 
 masteroom:
   name: Master Bedroom
+  control: hidden
   entities:
     - binary_sensor.multi04_motion
     - binary_sensor.multi04_tamper
@@ -120,7 +139,7 @@ masteroom:
     - sensor.vision_zp3111_multisensor_4in1_luminance_4
     - sensor.vision_zp3111_multisensor_4in1_relative_humidity_4
     - sensor.vision_zp3111_multisensor_4in1_temperature_4
-    - sensor.vision_zp3111_multisensor_4in1_battery_4
+      #- sensor.vision_zp3111_multisensor_4in1_battery_4
       ## Dimmer Zen22 (Node ID:29)
     - light.zooz_zen22_dimmer_v2_1_level
       ## Inovelli01
@@ -129,6 +148,7 @@ masteroom:
 
 attic:
   name: AtticSpace
+  control: hidden
   entities:
     - binary_sensor.multi02_motion
     - binary_sensor.multi02_tamper
@@ -136,7 +156,7 @@ attic:
     - sensor.vision_zp3111_multisensor_4in1_luminance_2
     - sensor.vision_zp3111_multisensor_4in1_relative_humidity_2
     - sensor.vision_zp3111_multisensor_4in1_temperature_2
-    - sensor.vision_zp3111_multisensor_4in1_battery_2
+      #- sensor.vision_zp3111_multisensor_4in1_battery_2
 
 ###############################################################
 #
@@ -245,6 +265,7 @@ energy:
           
 ups:
   name: BasementUPS
+  control: hidden
   entities:
     - sensor.ups_battery_temperature
     - sensor.ups_input_volts
@@ -253,6 +274,7 @@ ups:
 
 batteries:
   name: Batteries
+  control: hidden
   entities:
     - sensor.multi01_battery
     - sensor.multi02_battery
@@ -274,6 +296,7 @@ batteries:
 
 powermeter:
   name: HomeEnergyMeter
+  control: hidden
   entities:
     - sensor.aeotec_zw095_home_energy_meter_gen5_current
     - sensor.aeotec_zw095_home_energy_meter_gen5_voltage
@@ -282,10 +305,17 @@ powermeter:
   
 hemvoltage:
   name: Home Voltage,V
+  control: hidden
   entities:
     - history_graph.hemvoltage_graph
+        #- type: history-graph
+        #title: 'HEMPower Graph'
+        #entities:
+        #- sensor.aeotec_zw095_home_energy_meter_gen5_power
+        #hours_to_show: 150
 hempower:
   name: Home Power,W
+  control: hidden
   entities:
     - history_graph.hempower_graph
 #hemenergy:
@@ -296,22 +326,30 @@ hempower:
 
 energydata:
   name: Energy Usage
+  control: hidden
   entities:
     - sensor.aeotec_zw095_home_energy_meter_gen5_energy
-    - sensor.hank_hkzwso03_smart_plug_power01  
+      #- sensor.hank_hkzwso03_smart_plug_power01  
     - sensor.hank_hkzwso03_smart_plug_energy01
-    - sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_power
+      #- sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_power
     - sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_energy
-    - sensor.neo_coolcam_power_plug_12a_power01 
+      #- sensor.neo_coolcam_power_plug_12a_power01 
     - sensor.neo_coolcam_power_plug_12a_energy01
-    - sensor.neo_coolcam_power_plug_12a_power02 
+      #- sensor.neo_coolcam_power_plug_12a_power02 
     - sensor.neo_coolcam_power_plug_12a_energy02
-    - sensor.neo_coolcam_power_plug_12a_power03 
+      #- sensor.neo_coolcam_power_plug_12a_power03 
     - sensor.neo_coolcam_power_plug_12a_energy03
-    - sensor.neo_coolcam_power_plug_12a_power04 
+      #- sensor.neo_coolcam_power_plug_12a_power04 
     - sensor.neo_coolcam_power_plug_12a_energy04
-    - sensor.neo_coolcam_power_plug_12a_power05 
+      #- sensor.neo_coolcam_power_plug_12a_power05 
     - sensor.neo_coolcam_power_plug_12a_energy05
+      #- sensor.neo_coolcam_power_plug_12a_power06 
+    - sensor.neo_coolcam_power_plug_12a_energy06
+      #- sensor.neo_coolcam_power_plug_12a_power07 
+    - sensor.neo_coolcam_power_plug_12a_energy07
+      #- sensor.dome_on_off_plug_in_switch_power
+    - sensor.dome_on_off_plug_in_switch_energy
+
 
 ###############################################################
 #
@@ -324,6 +362,7 @@ powergraphs:
   entities:
     - group.powerneo
     - group.powerzooz
+    - group.powerdome
     - group.powerfurnace
       #- group.voltage
 
@@ -336,6 +375,10 @@ powerzooz:
     name: PowerZooz
     entities:
     - history_graph.zoozpower_graphs
+powerdome:
+    name: PowerDome
+    entities:
+    - history_graph.domepower_graphs
 powerfurnace:
     name: PowerFurnace
     entities:
@@ -358,6 +401,7 @@ watercontrol:
 
 watervalve:
   name: Water Leaks Control
+  control: hidden
   entities:
     - sensor.waterleakstatus01
     - sensor.waterleakstatus02
@@ -384,6 +428,8 @@ cameras:
     - camera.camera3
     - camera.camera4
     - camera.camera5
+    - camera.camera6
+    - camera.camera7
 
 ###############################################################
 #
@@ -399,6 +445,7 @@ power_switch:
     - group.zoozswitch
     - group.inovelliswitch
     - group.neoswitch
+    - group.domeswitch
     - group.oldswitch
     - group.dimmer
     #- group.furnace
@@ -409,6 +456,12 @@ furnace:
   control: hidden
   entities:
     - switch.aeotec_zw078_heavy_duty_smart_switch_gen5_switch
+
+domeswitch:
+  name: Dome
+  control: hidden
+  entities:
+    - switch.dome_on_off_plug_in_switch_switch
 
 zoozswitch:
   name: Zooz
@@ -434,6 +487,8 @@ neoswitch:
     - switch.neo_coolcam_power_plug_12a_switch02
     - switch.neo_coolcam_power_plug_12a_switch03
     - switch.neo_coolcam_power_plug_12a_switch04
+    - switch.neo_coolcam_power_plug_12a_switch06
+    - switch.neo_coolcam_power_plug_12a_switch07
 
 
 oldswitch:
@@ -445,6 +500,7 @@ oldswitch:
 
 dimmer:
   name: Room Light 
+  control: hidden
   entities:
       ## Light SW ZEN21 (Node ID:24)
     - switch.zooz_zen21_switch_v20_switch_01
@@ -452,6 +508,8 @@ dimmer:
     - light.zooz_zen22_dimmer_v2_1_level
       ## Dimmer Zen22 Vlad's Room (Node ID:32)
     - light.zooz_zen22_dimmer_v2_2_level
+      ## Dimmer Zen22 Chat Room (Node ID:42)
+    - light.zooz_zen22_dimmer_v2_3_level
 
 ###############################################################
 #

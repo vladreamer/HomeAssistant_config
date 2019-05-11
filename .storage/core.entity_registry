@@ -1599,7 +1599,7 @@
                 "device_id": null,
                 "disabled_by": null,
                 "entity_id": "zwave.zooz_zen22_dimmer_v2_1",
-                "name": "MasterDimmer",
+                "name": "MasterDimmer_Id29",
                 "platform": "zwave",
                 "unique_id": "node-29"
             },
@@ -1608,7 +1608,7 @@
                 "device_id": "e6fe9866bff44677b573de44f0b7bb30",
                 "disabled_by": null,
                 "entity_id": "light.zooz_zen22_dimmer_v2_1_level",
-                "name": "MasterDimmer",
+                "name": "MasterDimmer_Id29",
                 "platform": "zwave",
                 "unique_id": "29-72057594529284097"
             },
@@ -1671,7 +1671,7 @@
                 "device_id": null,
                 "disabled_by": null,
                 "entity_id": "zwave.zooz_zen22_dimmer_v2_2",
-                "name": "Vlad'sRoomDimmer",
+                "name": "Vlad'sRoomDimmer_Id32",
                 "platform": "zwave",
                 "unique_id": "node-32"
             },
@@ -1680,7 +1680,7 @@
                 "device_id": "c27f25c426774873bd99c654f83a6dcb",
                 "disabled_by": null,
                 "entity_id": "light.zooz_zen22_dimmer_v2_2_level",
-                "name": "Vlad'sRoomDimmer",
+                "name": "Vlad'sRoomDimmer_Id32",
                 "platform": "zwave",
                 "unique_id": "32-72057594579615745"
             },
@@ -1805,7 +1805,7 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
                 "disabled_by": null,
-                "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading05",
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading05_1",
                 "name": "Neo05_PrevRead",
                 "platform": "zwave",
                 "unique_id": "33-72057594596589586"
@@ -1814,7 +1814,7 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
                 "disabled_by": null,
-                "entity_id": "sensor.neo_coolcam_power_plug_12a_interval05",
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_interval05_1",
                 "name": "Neo05_Interval",
                 "platform": "zwave",
                 "unique_id": "33-72057594596589603"
@@ -1823,7 +1823,7 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
                 "disabled_by": null,
-                "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading_2_05",
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading05_2",
                 "name": "Neo05_PrevRead2",
                 "platform": "zwave",
                 "unique_id": "33-72057594596589714"
@@ -1832,7 +1832,7 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
                 "disabled_by": null,
-                "entity_id": "sensor.neo_coolcam_power_plug_12a_interval_2_05",
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_interval05_2",
                 "name": "Neo05_Interval2",
                 "platform": "zwave",
                 "unique_id": "33-72057594596589731"
@@ -1841,7 +1841,7 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
                 "disabled_by": null,
-                "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading_3_05",
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading05_3",
                 "name": "Neo05_PrevRead3",
                 "platform": "zwave",
                 "unique_id": "33-72057594596589842"
@@ -1850,7 +1850,7 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
                 "disabled_by": null,
-                "entity_id": "sensor.neo_coolcam_power_plug_12a_interval_3_05",
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_interval05_3",
                 "name": "Neo05_Interval3",
                 "platform": "zwave",
                 "unique_id": "33-72057594596589859"
@@ -1859,7 +1859,7 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
                 "disabled_by": null,
-                "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading_4_05",
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading05_4",
                 "name": "Neo05_PrevRead4",
                 "platform": "zwave",
                 "unique_id": "33-72057594596589906"
@@ -1868,7 +1868,7 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "5b82b774861244dfa644e2ff39bcdf3e",
                 "disabled_by": null,
-                "entity_id": "sensor.neo_coolcam_power_plug_12a_interval_4_05",
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_interval05_4",
                 "name": "Neo05_Interval4",
                 "platform": "zwave",
                 "unique_id": "33-72057594596589923"
@@ -2354,55 +2354,514 @@
                 "config_entry_id": null,
                 "device_id": null,
                 "disabled_by": null,
-                "entity_id": "sensor.samsung_clx_3300_series_192_168_0_26",
-                "name": null,
-                "platform": "syncthru",
-                "unique_id": "Z748B8KD3B00C3J_main"
+                "entity_id": "zwave.neo_coolcam_power_plug_12a_06",
+                "name": "Neo06",
+                "platform": "zwave",
+                "unique_id": "node-40"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "bb23b7a5d8c94b34a77c9a77be96950d",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_power06",
+                "name": "Neo06_Power",
+                "platform": "zwave",
+                "unique_id": "40-72057594714030210"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "bb23b7a5d8c94b34a77c9a77be96950d",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_voltage06",
+                "name": "Neo06_Volts",
+                "platform": "zwave",
+                "unique_id": "40-72057594714030338"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "bb23b7a5d8c94b34a77c9a77be96950d",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_current06",
+                "name": "Neo06_amps",
+                "platform": "zwave",
+                "unique_id": "40-72057594714030402"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "bb23b7a5d8c94b34a77c9a77be96950d",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_exporting06",
+                "name": "Neo06_Export",
+                "platform": "zwave",
+                "unique_id": "40-72057594714030592"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "bb23b7a5d8c94b34a77c9a77be96950d",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_sourcenodeid06",
+                "name": "Neo06_Src",
+                "platform": "zwave",
+                "unique_id": "40-72057594715062305"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "bb23b7a5d8c94b34a77c9a77be96950d",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_power_management06",
+                "name": "Neo06_PwrMgmt",
+                "platform": "zwave",
+                "unique_id": "40-72057594715062449"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "bb23b7a5d8c94b34a77c9a77be96950d",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading06_1",
+                "name": "Neo06_PrevRead",
+                "platform": "zwave",
+                "unique_id": "40-72057594714030098"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "bb23b7a5d8c94b34a77c9a77be96950d",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_interval06_1",
+                "name": "Neo06_Interval",
+                "platform": "zwave",
+                "unique_id": "40-72057594714030115"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "bb23b7a5d8c94b34a77c9a77be96950d",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading06_2",
+                "name": "Neo06_PrevRead2",
+                "platform": "zwave",
+                "unique_id": "40-72057594714030226"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "bb23b7a5d8c94b34a77c9a77be96950d",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_interval06_2",
+                "name": "Neo06_Interval2",
+                "platform": "zwave",
+                "unique_id": "40-72057594714030243"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "bb23b7a5d8c94b34a77c9a77be96950d",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading06_3",
+                "name": "Neo06_PrevRead3",
+                "platform": "zwave",
+                "unique_id": "40-72057594714030354"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "bb23b7a5d8c94b34a77c9a77be96950d",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_interval06_3",
+                "name": "Neo06_Interval3",
+                "platform": "zwave",
+                "unique_id": "40-72057594714030371"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "bb23b7a5d8c94b34a77c9a77be96950d",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading06_4",
+                "name": "Neo06_PrevRead4",
+                "platform": "zwave",
+                "unique_id": "40-72057594714030418"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "bb23b7a5d8c94b34a77c9a77be96950d",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_interval06_4",
+                "name": "Neo06_Interval4",
+                "platform": "zwave",
+                "unique_id": "40-72057594714030435"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "bb23b7a5d8c94b34a77c9a77be96950d",
+                "disabled_by": null,
+                "entity_id": "switch.neo_coolcam_power_plug_12a_switch06",
+                "name": "Neo06",
+                "platform": "zwave",
+                "unique_id": "40-72057594713817088"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "bb23b7a5d8c94b34a77c9a77be96950d",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_energy06",
+                "name": "Neo06_Energy",
+                "platform": "zwave",
+                "unique_id": "40-72057594714030082"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "bb23b7a5d8c94b34a77c9a77be96950d",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_alarm_type06",
+                "name": "Neo06_AlarmType",
+                "platform": "zwave",
+                "unique_id": "40-72057594715062273"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "bb23b7a5d8c94b34a77c9a77be96950d",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_alarm_level06",
+                "name": "Neo06_AlarmLevel",
+                "platform": "zwave",
+                "unique_id": "40-72057594715062289"
             },
             {
                 "config_entry_id": null,
                 "device_id": null,
                 "disabled_by": null,
-                "entity_id": "sensor.samsung_clx_3300_series_192_168_0_26_toner_black",
-                "name": null,
-                "platform": "syncthru",
-                "unique_id": "Z748B8KD3B00C3J_toner_black"
+                "entity_id": "zwave.zooz_zen22_dimmer_v2_3",
+                "name": "ChatRoomDimmer_Id42",
+                "platform": "zwave",
+                "unique_id": "node-42"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "5a18d1594f6948ec934e0a43389595b0",
+                "disabled_by": null,
+                "entity_id": "light.zooz_zen22_dimmer_v2_3_level",
+                "name": "ChatRoomDimmer_Id42",
+                "platform": "zwave",
+                "unique_id": "42-72057594747387905"
             },
             {
                 "config_entry_id": null,
                 "device_id": null,
                 "disabled_by": null,
-                "entity_id": "sensor.samsung_clx_3300_series_192_168_0_26_toner_yellow",
-                "name": null,
-                "platform": "syncthru",
-                "unique_id": "Z748B8KD3B00C3J_toner_yellow"
+                "entity_id": "zwave.neo_coolcam_power_plug_12a_07",
+                "name": "Neo07",
+                "platform": "zwave",
+                "unique_id": "node-43"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a1a33e30c27244f6bea644014a3d0109",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_power07",
+                "name": "Neo07_Pwr",
+                "platform": "zwave",
+                "unique_id": "43-72057594764361858"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a1a33e30c27244f6bea644014a3d0109",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_alarm_level07",
+                "name": "Neo07_AlarmLevel",
+                "platform": "zwave",
+                "unique_id": "43-72057594765393937"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a1a33e30c27244f6bea644014a3d0109",
+                "disabled_by": null,
+                "entity_id": "switch.neo_coolcam_power_plug_12a_switch07",
+                "name": "Neo07",
+                "platform": "zwave",
+                "unique_id": "43-72057594764148736"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a1a33e30c27244f6bea644014a3d0109",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_voltage07",
+                "name": "Neo07_Volts",
+                "platform": "zwave",
+                "unique_id": "43-72057594764361986"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a1a33e30c27244f6bea644014a3d0109",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_energy07",
+                "name": "Neo07_Energy",
+                "platform": "zwave",
+                "unique_id": "43-72057594764361730"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a1a33e30c27244f6bea644014a3d0109",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_current07",
+                "name": "Neo07_Amps",
+                "platform": "zwave",
+                "unique_id": "43-72057594764362050"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a1a33e30c27244f6bea644014a3d0109",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_alarm_type07",
+                "name": "Neo07_AlarmType",
+                "platform": "zwave",
+                "unique_id": "43-72057594765393921"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a1a33e30c27244f6bea644014a3d0109",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_exporting07",
+                "name": "Neo07_Export",
+                "platform": "zwave",
+                "unique_id": "43-72057594764362240"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a1a33e30c27244f6bea644014a3d0109",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading07_1",
+                "name": "Neo07_PrevRead",
+                "platform": "zwave",
+                "unique_id": "43-72057594764361746"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a1a33e30c27244f6bea644014a3d0109",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_interval07_1",
+                "name": "Neo07_Interval",
+                "platform": "zwave",
+                "unique_id": "43-72057594764361763"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a1a33e30c27244f6bea644014a3d0109",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading07_2",
+                "name": "Neo07_PrevRead2",
+                "platform": "zwave",
+                "unique_id": "43-72057594764361874"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a1a33e30c27244f6bea644014a3d0109",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_interval07_2",
+                "name": "Neo07_Interval2",
+                "platform": "zwave",
+                "unique_id": "43-72057594764361891"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a1a33e30c27244f6bea644014a3d0109",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading07_3",
+                "name": "Neo07_PrevRead3",
+                "platform": "zwave",
+                "unique_id": "43-72057594764362002"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a1a33e30c27244f6bea644014a3d0109",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_interval07_3",
+                "name": "Neo07_Interval3",
+                "platform": "zwave",
+                "unique_id": "43-72057594764362019"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a1a33e30c27244f6bea644014a3d0109",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading07_4",
+                "name": "Neo07_PrevRead4",
+                "platform": "zwave",
+                "unique_id": "43-72057594764362066"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a1a33e30c27244f6bea644014a3d0109",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_interval07_4",
+                "name": "Neo07_Interval4",
+                "platform": "zwave",
+                "unique_id": "43-72057594764362083"
             },
             {
                 "config_entry_id": null,
                 "device_id": null,
                 "disabled_by": null,
-                "entity_id": "sensor.samsung_clx_3300_series_192_168_0_26_tray_1",
+                "entity_id": "zwave.dome_on_off_plug_in_switch",
                 "name": null,
-                "platform": "syncthru",
-                "unique_id": "Z748B8KD3B00C3J_tray_1"
+                "platform": "zwave",
+                "unique_id": "node-44"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0fe8e54588df48238a8c08184e65682d",
                 "disabled_by": null,
-                "entity_id": "sensor.samsung_clx_3300_series_192_168_0_26_toner_cyan",
+                "entity_id": "sensor.dome_on_off_plug_in_switch_power",
                 "name": null,
-                "platform": "syncthru",
-                "unique_id": "Z748B8KD3B00C3J_toner_cyan"
+                "platform": "zwave",
+                "unique_id": "44-72057594781139074"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0fe8e54588df48238a8c08184e65682d",
                 "disabled_by": null,
-                "entity_id": "sensor.samsung_clx_3300_series_192_168_0_26_toner_magenta",
+                "entity_id": "sensor.dome_on_off_plug_in_switch_voltage",
                 "name": null,
-                "platform": "syncthru",
-                "unique_id": "Z748B8KD3B00C3J_toner_magenta"
+                "platform": "zwave",
+                "unique_id": "44-72057594781139202"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0fe8e54588df48238a8c08184e65682d",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch_current",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "44-72057594781139266"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0fe8e54588df48238a8c08184e65682d",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch_exporting",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "44-72057594781139456"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0fe8e54588df48238a8c08184e65682d",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "44-72057594782171137"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0fe8e54588df48238a8c08184e65682d",
+                "disabled_by": null,
+                "entity_id": "switch.dome_on_off_plug_in_switch_switch",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "44-72057594780925952"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0fe8e54588df48238a8c08184e65682d",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "44-72057594782171153"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0fe8e54588df48238a8c08184e65682d",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch_energy",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "44-72057594781138946"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0fe8e54588df48238a8c08184e65682d",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "44-72057594782171169"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0fe8e54588df48238a8c08184e65682d",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch_power_management",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "44-72057594782171313"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0fe8e54588df48238a8c08184e65682d",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch_previous_reading",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "44-72057594781138962"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0fe8e54588df48238a8c08184e65682d",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch_interval",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "44-72057594781138979"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0fe8e54588df48238a8c08184e65682d",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch_previous_reading_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "44-72057594781139090"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0fe8e54588df48238a8c08184e65682d",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch_interval_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "44-72057594781139107"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0fe8e54588df48238a8c08184e65682d",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch_previous_reading_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "44-72057594781139218"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0fe8e54588df48238a8c08184e65682d",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch_interval_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "44-72057594781139235"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0fe8e54588df48238a8c08184e65682d",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch_previous_reading_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "44-72057594781139282"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0fe8e54588df48238a8c08184e65682d",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch_interval_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "44-72057594781139299"
             }
         ]
     },

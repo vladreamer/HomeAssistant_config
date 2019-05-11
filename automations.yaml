@@ -1,3 +1,69 @@
+#
+#
+#
+- id: 'AllDimmersOFF_20190213'
+########################################################
+## ChatRoom Light with Zen22 ID:42 at 22:20pm OFF 
+########################################################
+  alias: "LightScene Dimmers AllRooms OFF at 00:00"
+  initial_state: true
+  trigger:
+    - platform: time
+      at: '00:00:00'
+  action:
+    ## MasterRoom Dimmer Id:29
+  - service: homeassistant.turn_off
+    entity_id: light.zooz_zen22_dimmer_v2_1_level
+    ## VladsRoom Dimmer Id:32
+  - service: homeassistant.turn_off
+    entity_id: light.zooz_zen22_dimmer_v2_2_level
+    ## ChatRoom Dimmer Id:42
+  - service: homeassistant.turn_off
+    entity_id: light.zooz_zen22_dimmer_v2_3_level
+    ## Basement Stairs Id:24
+  - service: homeassistant.turn_off
+    entity_id: switch.zooz_zen21_switch_v20_switch_01
+#
+# 
+#
+- id: 'ChatRoomLightON_20190213'
+########################################################
+## ChatRoom Light with Zen22 ID:42 at 8:30pm ON 
+########################################################
+  alias: "LightScene Dimmer ChatRoom 20:30-22:30"
+  initial_state: true 
+  trigger:
+    - platform: time
+      at: '20:30:00'
+  condition:
+  - condition: state
+    entity_id: light.zooz_zen22_dimmer_v2_3_level 
+    state: 'off'
+  action:
+  - service: scene.turn_on
+    entity_id: scene.lightlow_chatroom
+#
+#
+#
+- id: 'ChatRoomLightOFF_20190213'
+########################################################
+## ChatRoom Light with Zen22 ID:42 at 22:30pm OFF 
+########################################################
+  alias: "LightScene Dimmer ChatRoom OFF at 22:30"
+  initial_state: true
+  trigger:
+    - platform: time
+      at: '22:30:00'
+  condition:
+  - condition: state
+    entity_id: light.zooz_zen22_dimmer_v2_3_level
+    state: 'on'
+  action:
+  - service: homeassistant.turn_off
+    entity_id: light.zooz_zen22_dimmer_v2_3_level
+#
+# 
+#
 - id: 'ModemReboot_20190113'
 ########################################################
 ## Reboot modem connected to Neo05 ID:33 at 5:00am 
@@ -114,8 +180,8 @@
   alias: Thermostat Refresh Timer
   initial_state: true
   trigger:
-  - seconds: /30
-    platform: time
+  - platform: time_pattern
+    seconds: '/30'
   condition: []
   action:
   - data:
@@ -241,6 +307,28 @@
         message: "Current Temperature is {{ states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') }}"
 
 
+- id: 'VentilationNight_2018111400'
+########################################################
+## HRV unit for ventilation during the night  (ID:8) 
+########################################################
+  alias: "Night Ventilation 10min every hour 00:00-6:00" 
+  initial_state: true
+  trigger:
+   - platform: time_pattern       
+     minutes: '/60'
+     seconds: 0
+  condition:
+   - condition: time
+     after: '00:00:00'
+     before: '06:00:00'
+  action:
+   - service: homeassistant.turn_on
+     entity_id: switch.neo_coolcam_power_plug_12a_switch01
+   - delay: 00:15:00
+   - service: homeassistant.turn_off
+     entity_id: switch.neo_coolcam_power_plug_12a_switch01
+    
+    
 - id: 'ResetEnergySensors_2018110500'
 ########################################################
 ## Reset Home Energy Meter (ID:25) monthly consumption 
@@ -263,15 +351,20 @@
     
         ID:21 - GreatRoomSW - {{states.sensor.hank_hkzwso03_smart_plug_energy01.state}} kWh;
         
-        ID:8  - BasementSW - {{states.sensor.neo_coolcam_power_plug_12a_energy01.state}} kWh;
+        ID:8  - HRV_SW - {{states.sensor.neo_coolcam_power_plug_12a_energy01.state}} kWh;
         
-        ID:10 - GreatRoomSW - {{states.sensor.neo_coolcam_power_plug_12a_energy02.state}} kWh;
+        ID:10 - KitchenSW - {{states.sensor.neo_coolcam_power_plug_12a_energy02.state}} kWh;
         
         ID:12 - Vlad'sRoomSW - {{states.sensor.neo_coolcam_power_plug_12a_energy03.state}} kWh;
         
         ID:14 - ChatRoomSW - {{states.sensor.neo_coolcam_power_plug_12a_energy04.state}} kWh;
         
-        ID:33 - ModemSW - {{states.sensor.neo_coolcam_power_plug_12a_energy05.state}} kWh;"
+        ID:33 - ModemSW - {{states.sensor.neo_coolcam_power_plug_12a_energy05.state}} kWh;
+       
+        ID:40 - OfficeSW - {{states.sensor.neo_coolcam_power_plug_12a_energy06.state}} kWh;
+        
+        ID:41 - Neo07SW - {{states.sensor.neo_coolcam_power_plug_12a_energy07.state}} kWh;"
+        
    
     - service: zwave.reset_node_meters 
       data: {"node_id": 25}
@@ -289,6 +382,10 @@
       data: {"node_id": 33}
     - service: zwave.reset_node_meters 
       data: {"node_id": 39}
+    - service: zwave.reset_node_meters 
+      data: {"node_id": 40}
+    - service: zwave.reset_node_meters 
+      data: {"node_id": 41}
     
 
 

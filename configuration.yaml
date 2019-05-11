@@ -105,6 +105,7 @@ mqtt:
   broker: 192.168.0.218
   discovery: false
 
+system_health:
 binary_sensor: !include binary_sensors.yaml 
 sensor: !include sensors.yaml
 camera: !include camera.yaml     
