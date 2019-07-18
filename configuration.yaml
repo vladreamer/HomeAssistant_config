@@ -117,4 +117,5 @@ notify: !include notify.yaml
 history_graph: !include history_graph.yaml
 shell_command: !include shell_command.yaml
 scene: !include scene.yaml
+cover: !include cover.yaml
 #device_tracker: !include hitron.yaml

@@ -665,6 +665,120 @@
                 "model": "On/Off Plug-In Switch",
                 "name": "Dome On/Off Plug-In Switch",
                 "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "d8d46efd7d644f169b34dad5cbd855dd",
+                "identifiers": [
+                    [
+                        "zwave",
+                        46
+                    ]
+                ],
+                "manufacturer": "Dome",
+                "model": "On/Off Plug-In Switch",
+                "name": "Dome On/Off Plug-In Switch",
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "a3a9bf5a848e43aea5099df91fa089fa",
+                "identifiers": [
+                    [
+                        "zwave",
+                        47
+                    ]
+                ],
+                "manufacturer": "Neo CoolCam",
+                "model": "Power plug 12A",
+                "name": "Neo CoolCam Power plug 12A",
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "69ee8dc991a949a380ad11dca6806990",
+                "identifiers": [
+                    [
+                        "zwave",
+                        45
+                    ]
+                ],
+                "manufacturer": "Vision",
+                "model": "ZP3111 Multisensor 4in1",
+                "name": "Vision ZP3111 Multisensor 4in1",
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "934e53a033f84f99a04b1b6c68a41863",
+                "identifiers": [
+                    [
+                        "zwave",
+                        48
+                    ]
+                ],
+                "manufacturer": "Linear",
+                "model": "GD00Z-4 Garage Door Opener Remote Controller",
+                "name": "Linear GD00Z-4 Garage Door Opener Remote Controller",
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "b8afaca8fd724834bac973024fed4167",
+                "identifiers": [
+                    [
+                        "zwave",
+                        49
+                    ]
+                ],
+                "manufacturer": "Linear",
+                "model": "GD00Z-4 Garage Door Opener Remote Controller",
+                "name": "Linear GD00Z-4 Garage Door Opener Remote Controller",
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "df2af77417cb47a3aba5b246a8769511",
+                "identifiers": [
+                    [
+                        "zwave",
+                        53
+                    ]
+                ],
+                "manufacturer": "Linear",
+                "model": "GD00Z-4 Garage Door Opener Remote Controller",
+                "name": "Linear GD00Z-4 Garage Door Opener Remote Controller",
+                "sw_version": null
             }
         ]
     },

@@ -6,8 +6,10 @@ temperature:
     - sensor.vision_zp3111_multisensor_4in1_temperature_2
     - sensor.vision_zp3111_multisensor_4in1_temperature_3
     - sensor.vision_zp3111_multisensor_4in1_temperature_4
+    - sensor.vision_zp3111_multisensor_4in1_temperature_5
     - sensor.homeseer_hsm200_wireless_multisensor_temperature_1
-    - sensor.2gig_technologies_ct101_thermostat_iris_temperature  
+   #- sensor.2gig_technologies_ct101_thermostat_iris_temperature
+    - sensor.thermostat_current_temperature 
     - sensor.basement_p1_temperature
     - sensor.chatroom_p2_temperature  
     - sensor.kitchen_p3_temperature
@@ -24,6 +26,7 @@ humidity:
     - sensor.vision_zp3111_multisensor_4in1_relative_humidity_2
     - sensor.vision_zp3111_multisensor_4in1_relative_humidity_3
     - sensor.vision_zp3111_multisensor_4in1_relative_humidity_4
+    - sensor.vision_zp3111_multisensor_4in1_relative_humidity_5
     - sensor.basement_p1_humidity
     - sensor.chatroom_p2_humidity
     - sensor.kitchen_p3_humidity
@@ -45,6 +48,7 @@ luminance:
     - sensor.vision_zp3111_multisensor_4in1_luminance_2
     - sensor.vision_zp3111_multisensor_4in1_luminance_3
     - sensor.vision_zp3111_multisensor_4in1_luminance_4
+    - sensor.vision_zp3111_multisensor_4in1_luminance_5
   hours_to_show: 100
 #
 power_neo:
@@ -57,12 +61,14 @@ power_neo:
     - sensor.neo_coolcam_power_plug_12a_power05
     - sensor.neo_coolcam_power_plug_12a_power06
     - sensor.neo_coolcam_power_plug_12a_power07
+    - sensor.neo_coolcam_power_plug_12a_power08
   hours_to_show: 100
 #
 power_dome:
   name: DomePower Graphs
   entities:
-    - sensor.dome_on_off_plug_in_switch_power 
+    - sensor.dome_on_off_plug_in_switch01_power 
+    - sensor.dome_on_off_plug_in_switch02_power 
   hours_to_show: 100
 #
 #

@@ -54,6 +54,10 @@ basement:
       #- sensor.vision_zp3111_multisensor_4in1_battery_1
       ## Zen21
     - switch.zooz_zen21_switch_v20_switch_01
+      ## Neo01
+    - sensor.neo_coolcam_power_plug_12a_power01 
+    - sensor.neo_coolcam_power_plug_12a_energy01
+    - switch.neo_coolcam_power_plug_12a_switch01
 
 kitchen:
   name: MainFloor 
@@ -67,6 +71,13 @@ kitchen:
     - switch.neo_coolcam_power_plug_12a_switch02
     #- sensor.neo_coolcam_power_plug_12a_voltage02
     #- sensor.neo_coolcam_power_plug_12a_current02
+      ##
+    - binary_sensor.multi05_motion
+    - binary_sensor.multi05_tamper
+      ## Multi05
+    - sensor.vision_zp3111_multisensor_4in1_luminance_5
+    - sensor.vision_zp3111_multisensor_4in1_relative_humidity_5
+    - sensor.vision_zp3111_multisensor_4in1_temperature_5
       ## Zooz01 
     - sensor.hank_hkzwso03_smart_plug_power01  
     - switch.hank_hkzwso03_smart_plug_switch01  
@@ -82,6 +93,9 @@ chatroom:
     - switch.neo_coolcam_power_plug_12a_switch04
     #- sensor.neo_coolcam_power_plug_12a_voltage04
     #- sensor.neo_coolcam_power_plug_12a_current04
+      ## Dome01
+    - sensor.dome_on_off_plug_in_switch01_power
+    - switch.dome_on_off_plug_in_switch01_switch
       ## Dimmer Zen22 Chat Room (Node ID:42)
     - light.zooz_zen22_dimmer_v2_3_level
   
@@ -195,12 +209,12 @@ thermostat_mode:
     #- sensor.thermostat_heat_max_temp
     #
     #
-      ## Neo01
-  - sensor.neo_coolcam_power_plug_12a_power01 
-  - sensor.neo_coolcam_power_plug_12a_energy01
-  - switch.neo_coolcam_power_plug_12a_switch01
-    #- sensor.neo_coolcam_power_plug_12a_voltage01
-    #- sensor.neo_coolcam_power_plug_12a_current01
+      ## Neo08
+  - sensor.neo_coolcam_power_plug_12a_power08 
+  - sensor.neo_coolcam_power_plug_12a_energy08
+  - switch.neo_coolcam_power_plug_12a_switch08
+    #- sensor.neo_coolcam_power_plug_12a_voltage08
+    #- sensor.neo_coolcam_power_plug_12a_current08
     #
     #
       ##  Aeotec ZW078 heavy_duty Furnace Switch ID:39
@@ -222,6 +236,7 @@ temp:
   - sensor.vision_zp3111_multisensor_4in1_temperature_1        
   - sensor.vision_zp3111_multisensor_4in1_temperature_3        
   - sensor.vision_zp3111_multisensor_4in1_temperature_4
+  - sensor.vision_zp3111_multisensor_4in1_temperature_5
   - sensor.thermostat_current_temperature
   - sensor.chatroom_p2_temperature
   - sensor.kitchen_p3_temperature
@@ -240,6 +255,7 @@ humid:
   - sensor.vision_zp3111_multisensor_4in1_relative_humidity_1
   - sensor.vision_zp3111_multisensor_4in1_relative_humidity_3
   - sensor.vision_zp3111_multisensor_4in1_relative_humidity_4
+  - sensor.vision_zp3111_multisensor_4in1_relative_humidity_5
   - sensor.2gig_technologies_ct101_thermostat_iris_relative_humidity
   - sensor.chatroom_p2_humidity
   - sensor.kitchen_p3_humidity
@@ -347,8 +363,12 @@ energydata:
     - sensor.neo_coolcam_power_plug_12a_energy06
       #- sensor.neo_coolcam_power_plug_12a_power07 
     - sensor.neo_coolcam_power_plug_12a_energy07
-      #- sensor.dome_on_off_plug_in_switch_power
-    - sensor.dome_on_off_plug_in_switch_energy
+      #- sensor.neo_coolcam_power_plug_12a_power08 
+    - sensor.neo_coolcam_power_plug_12a_energy08
+      #- sensor.dome_on_off_plug_in_switch01_power
+    - sensor.dome_on_off_plug_in_switch01_energy
+      #- sensor.dome_on_off_plug_in_switch02_power
+    - sensor.dome_on_off_plug_in_switch02_energy
 
 
 ###############################################################
@@ -360,9 +380,9 @@ powergraphs:
   view: yes
   name: PowerStat 
   entities:
-    - group.powerneo
     - group.powerzooz
     - group.powerdome
+    - group.powerneo
     - group.powerfurnace
       #- group.voltage
 
@@ -461,7 +481,8 @@ domeswitch:
   name: Dome
   control: hidden
   entities:
-    - switch.dome_on_off_plug_in_switch_switch
+    - switch.dome_on_off_plug_in_switch01_switch
+    - switch.dome_on_off_plug_in_switch02_switch
 
 zoozswitch:
   name: Zooz
@@ -489,6 +510,7 @@ neoswitch:
     - switch.neo_coolcam_power_plug_12a_switch04
     - switch.neo_coolcam_power_plug_12a_switch06
     - switch.neo_coolcam_power_plug_12a_switch07
+    - switch.neo_coolcam_power_plug_12a_switch08
 
 
 oldswitch:
@@ -534,8 +556,8 @@ graphs:
   name: Monitor
   icon: mdi:chart-line-variant
   entities:
-    - group.temperature
     - group.humidity
+    - group.temperature
     - group.luminance
    #- group.mainfloorlux
     

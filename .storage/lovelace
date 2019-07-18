@@ -1,0 +1,713 @@
+{
+    "data": {
+        "config": {
+            "title": "Sydie Lane, Tottenham",
+            "views": [
+                {
+                    "badges": [
+                        "binary_sensor.hvacfan",
+                        "binary_sensor.neo_coolcam_water_leakage_detector_sensor01",
+                        "binary_sensor.neo_coolcam_water_leakage_detector_sensor02",
+                        "binary_sensor.neo_coolcam_water_leakage_detector_sensor03",
+                        "binary_sensor.ecolink_garage_door_tilt_sensor_sensor",
+                        "binary_sensor.kaipule_im20_doorwindow_sensor_sensor",
+                        "binary_sensor.kaipule_im20_doorwindow_sensor_sensor_2",
+                        "binary_sensor.kaipule_im20_doorwindow_sensor_sensor_3",
+                        "sensor.disk_use_percent",
+                        "sensor.last_boot",
+                        "sensor.processor_use",
+                        "sensor.2gig_technologies_ct101_thermostat_iris_temperature",
+                        "sensor.2gig_technologies_ct101_thermostat_iris_relative_humidity",
+                        "sensor.aeotec_zw095_home_energy_meter_gen5_power",
+                        "sensor.aeotec_zw095_home_energy_meter_gen5_energy"
+                    ],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "binary_sensor.multi01_motion"
+                                },
+                                {
+                                    "entity": "binary_sensor.multi01_tamper"
+                                },
+                                {
+                                    "entity": "sensor.vision_zp3111_multisensor_4in1_luminance_1"
+                                },
+                                {
+                                    "entity": "sensor.vision_zp3111_multisensor_4in1_relative_humidity_1"
+                                },
+                                {
+                                    "entity": "sensor.vision_zp3111_multisensor_4in1_temperature_1"
+                                },
+                                {
+                                    "entity": "switch.zooz_zen21_switch_v20_switch_01"
+                                },
+                                {
+                                    "entity": "switch.neo_coolcam_power_plug_12a_switch01"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Basement",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "binary_sensor.ezm01_motion",
+                                "sensor.homeseer_hsm200_wireless_multisensor_luminance_1",
+                                "sensor.homeseer_hsm200_wireless_multisensor_temperature_1",
+                                "sensor.neo_coolcam_power_plug_12a_power02",
+                                "switch.neo_coolcam_power_plug_12a_switch02",
+                                "sensor.hank_hkzwso03_smart_plug_power01",
+                                "switch.hank_hkzwso03_smart_plug_switch01"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "MainFloor",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.neo_coolcam_power_plug_12a_power04"
+                                },
+                                {
+                                    "entity": "switch.neo_coolcam_power_plug_12a_switch04"
+                                },
+                                {
+                                    "entity": "sensor.dome_on_off_plug_in_switch01_power"
+                                },
+                                {
+                                    "entity": "sensor.dome_on_off_plug_in_switch01_energy"
+                                },
+                                {
+                                    "entity": "light.zooz_zen22_dimmer_v2_3_level"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "ChatRoom",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "binary_sensor.multi03_motion",
+                                "binary_sensor.multi03_tamper",
+                                "sensor.vision_zp3111_multisensor_4in1_luminance_3",
+                                "sensor.vision_zp3111_multisensor_4in1_relative_humidity_3",
+                                "sensor.vision_zp3111_multisensor_4in1_temperature_3",
+                                "light.zooz_zen22_dimmer_v2_2_level",
+                                "sensor.neo_coolcam_power_plug_12a_power03",
+                                "switch.neo_coolcam_power_plug_12a_switch03"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Vlad's Room",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "switch.intermatic_ha02_appliance_module_switch",
+                                "sensor.neo_coolcam_power_plug_12a_power06",
+                                "switch.neo_coolcam_power_plug_12a_switch06",
+                                "sensor.neo_coolcam_power_plug_12a_power07",
+                                "sensor.neo_coolcam_power_plug_12a_energy07",
+                                "sensor.neo_coolcam_power_plug_12a_voltage07",
+                                "sensor.neo_coolcam_power_plug_12a_current07"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Office",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "binary_sensor.multi04_motion",
+                                "binary_sensor.multi04_tamper",
+                                "sensor.vision_zp3111_multisensor_4in1_luminance_4",
+                                "sensor.vision_zp3111_multisensor_4in1_relative_humidity_4",
+                                "sensor.vision_zp3111_multisensor_4in1_temperature_4",
+                                "light.zooz_zen22_dimmer_v2_1_level",
+                                "switch.inovelli_2ch_01_1",
+                                "switch.inovelli_2ch_01_2"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Master Bedroom",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "binary_sensor.multi02_motion",
+                                "binary_sensor.multi02_tamper",
+                                "sensor.vision_zp3111_multisensor_4in1_luminance_2",
+                                "sensor.vision_zp3111_multisensor_4in1_relative_humidity_2",
+                                "sensor.vision_zp3111_multisensor_4in1_temperature_2"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "AtticSpace",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "sensor.time",
+                                "sensor.date",
+                                "sensor.time_utc",
+                                "sensor.time_in_odessa",
+                                "script.test_notification"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Date and Time",
+                            "type": "entities"
+                        }
+                    ],
+                    "path": "default_view",
+                    "title": "AllRooms"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.thermostat_battery"
+                                },
+                                {
+                                    "entity": "sensor.thermostat_operation_mode_state"
+                                },
+                                {
+                                    "entity": "sensor.thermostat_current_temperature"
+                                },
+                                {
+                                    "entity": "sensor.2gig_technologies_ct101_thermostat_iris_relative_humidity"
+                                },
+                                {
+                                    "entity": "sensor.neo_coolcam_power_plug_12a_power08"
+                                },
+                                {
+                                    "entity": "sensor.neo_coolcam_power_plug_12a_energy08"
+                                },
+                                {
+                                    "entity": "switch.neo_coolcam_power_plug_12a_switch08"
+                                },
+                                {
+                                    "entity": "sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_power"
+                                },
+                                {
+                                    "entity": "sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_energy"
+                                },
+                                {
+                                    "entity": "switch.aeotec_zw078_heavy_duty_smart_switch_gen5_switch"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Thermostat Id:28",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "climate.2gig_technologies_ct101_thermostat_iris_cooling_1",
+                            "type": "thermostat"
+                        },
+                        {
+                            "entity": "climate.2gig_technologies_ct101_thermostat_iris_heating_1",
+                            "type": "thermostat"
+                        },
+                        {
+                            "entities": [
+                                "sensor.weather_temperature",
+                                "sensor.vision_zp3111_multisensor_4in1_temperature_2",
+                                "sensor.garage_t1_temperature",
+                                "sensor.basement_p1_temperature",
+                                "sensor.vision_zp3111_multisensor_4in1_temperature_1",
+                                "sensor.vision_zp3111_multisensor_4in1_temperature_3",
+                                "sensor.vision_zp3111_multisensor_4in1_temperature_4",
+                                "sensor.thermostat_current_temperature",
+                                "sensor.chatroom_p2_temperature",
+                                "sensor.kitchen_p3_temperature",
+                                "sensor.bathroom_t2_temperature",
+                                "sensor.office_t3_temperature",
+                                "sensor.homeseer_hsm200_wireless_multisensor_temperature_1"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Temperature",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "sensor.weather_humidity",
+                                "sensor.vision_zp3111_multisensor_4in1_relative_humidity_2",
+                                "sensor.garage_t1_humidity",
+                                "sensor.basement_p1_humidity",
+                                "sensor.vision_zp3111_multisensor_4in1_relative_humidity_1",
+                                "sensor.vision_zp3111_multisensor_4in1_relative_humidity_3",
+                                "sensor.vision_zp3111_multisensor_4in1_relative_humidity_4",
+                                "sensor.2gig_technologies_ct101_thermostat_iris_relative_humidity",
+                                "sensor.chatroom_p2_humidity",
+                                "sensor.kitchen_p3_humidity",
+                                "sensor.bathroom_t2_humidity",
+                                "sensor.office_t3_humidity"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Humidity",
+                            "type": "entities"
+                        }
+                    ],
+                    "path": "thermostat_views",
+                    "title": "Climate"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                "sensor.aeotec_zw095_home_energy_meter_gen5_current",
+                                "sensor.aeotec_zw095_home_energy_meter_gen5_voltage",
+                                "sensor.aeotec_zw095_home_energy_meter_gen5_power",
+                                "sensor.aeotec_zw095_home_energy_meter_gen5_energy"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "HomeEnergyMeter",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "sensor.aeotec_zw095_home_energy_meter_gen5_voltage"
+                            ],
+                            "hours_to_show": 150,
+                            "refresh_interval": 0,
+                            "title": "HEMVoltage Graph",
+                            "type": "history-graph"
+                        },
+                        {
+                            "entities": [
+                                "sensor.aeotec_zw095_home_energy_meter_gen5_power"
+                            ],
+                            "hours_to_show": 150,
+                            "refresh_interval": 0,
+                            "title": "HEMPower Graph",
+                            "type": "history-graph"
+                        },
+                        {
+                            "entities": [
+                                "sensor.multi01_battery",
+                                "sensor.multi02_battery",
+                                "sensor.multi03_battery",
+                                "sensor.multi04_battery",
+                                "sensor.waterleaksensor01_battery",
+                                "sensor.waterleaksensor02_battery",
+                                "sensor.waterleaksensor03_battery",
+                                "sensor.door01_battery",
+                                "sensor.door02_battery",
+                                "sensor.door03_battery",
+                                "sensor.garagedoor_battery",
+                                "sensor.basement_p1_battery",
+                                "sensor.bathroom_t2_battery",
+                                "sensor.chatroom_p2_battery",
+                                "sensor.garage_t1_battery",
+                                "sensor.kitchen_p3_battery",
+                                "sensor.office_t3_battery"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Batteries",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.aeotec_zw095_home_energy_meter_gen5_energy"
+                                },
+                                {
+                                    "entity": "sensor.hank_hkzwso03_smart_plug_energy01"
+                                },
+                                {
+                                    "entity": "sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_energy"
+                                },
+                                {
+                                    "entity": "sensor.neo_coolcam_power_plug_12a_energy01"
+                                },
+                                {
+                                    "entity": "sensor.neo_coolcam_power_plug_12a_energy02"
+                                },
+                                {
+                                    "entity": "sensor.neo_coolcam_power_plug_12a_energy03"
+                                },
+                                {
+                                    "entity": "sensor.neo_coolcam_power_plug_12a_energy04"
+                                },
+                                {
+                                    "entity": "sensor.neo_coolcam_power_plug_12a_energy05"
+                                },
+                                {
+                                    "entity": "sensor.neo_coolcam_power_plug_12a_energy06"
+                                },
+                                {
+                                    "entity": "sensor.neo_coolcam_power_plug_12a_energy07"
+                                },
+                                {
+                                    "entity": "sensor.neo_coolcam_power_plug_12a_energy08"
+                                },
+                                {
+                                    "entity": "sensor.dome_on_off_plug_in_switch02_energy"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Energy Usage",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "sensor.ups_battery_temperature",
+                                "sensor.ups_input_volts",
+                                "sensor.ups_battery_capacity",
+                                "sensor.ups_battery_runtime_remain"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "BasementUPS",
+                            "type": "entities"
+                        }
+                    ],
+                    "path": "energy",
+                    "title": "Energy/Battery"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                "sensor.hank_hkzwso03_smart_plug_power01"
+                            ],
+                            "hours_to_show": 100,
+                            "refresh_interval": 0,
+                            "title": "ZoozPower Graphs",
+                            "type": "history-graph"
+                        },
+                        {
+                            "entities": [
+                                "sensor.dome_on_off_plug_in_switch01_power"
+                            ],
+                            "hours_to_show": 100,
+                            "refresh_interval": 0,
+                            "title": "DomePower Graphs",
+                            "type": "history-graph"
+                        },
+                        {
+                            "entities": [
+                                "sensor.neo_coolcam_power_plug_12a_power01",
+                                "sensor.neo_coolcam_power_plug_12a_power02",
+                                "sensor.neo_coolcam_power_plug_12a_power03",
+                                "sensor.neo_coolcam_power_plug_12a_power04",
+                                "sensor.neo_coolcam_power_plug_12a_power05",
+                                "sensor.neo_coolcam_power_plug_12a_power06",
+                                "sensor.neo_coolcam_power_plug_12a_power07"
+                            ],
+                            "hours_to_show": 100,
+                            "refresh_interval": 0,
+                            "title": "NeoPower Graphs",
+                            "type": "history-graph"
+                        },
+                        {
+                            "entities": [
+                                "sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_power"
+                            ],
+                            "hours_to_show": 100,
+                            "refresh_interval": 0,
+                            "title": "FurnacePower Graph",
+                            "type": "history-graph"
+                        }
+                    ],
+                    "path": "powergraphs",
+                    "title": "PowerStat"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                "sensor.waterleakstatus01",
+                                "sensor.waterleakstatus02",
+                                "sensor.waterleakstatus03",
+                                "switch.sigma_valveswitch01"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Water Leaks Control",
+                            "type": "entities"
+                        }
+                    ],
+                    "path": "watercontrol",
+                    "title": "Water"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entity": "camera.camera1",
+                            "type": "picture-entity"
+                        },
+                        {
+                            "entity": "camera.camera2",
+                            "type": "picture-entity"
+                        },
+                        {
+                            "entity": "camera.camera3",
+                            "type": "picture-entity"
+                        },
+                        {
+                            "entity": "camera.camera4",
+                            "type": "picture-entity"
+                        },
+                        {
+                            "entity": "camera.camera5",
+                            "type": "picture-entity"
+                        },
+                        {
+                            "entity": "camera.camera6",
+                            "type": "picture-entity"
+                        },
+                        {
+                            "entity": "camera.camera7",
+                            "type": "picture-entity"
+                        }
+                    ],
+                    "path": "security",
+                    "title": "Security"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                "switch.hank_hkzwso03_smart_plug_switch01"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Zooz",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "switch.inovelli_2ch_01_1",
+                                "switch.inovelli_2ch_01_2"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Inovelli",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "script.restart_modem"
+                                },
+                                {
+                                    "entity": "switch.neo_coolcam_power_plug_12a_switch01"
+                                },
+                                {
+                                    "entity": "switch.neo_coolcam_power_plug_12a_switch02"
+                                },
+                                {
+                                    "entity": "switch.neo_coolcam_power_plug_12a_switch03"
+                                },
+                                {
+                                    "entity": "switch.neo_coolcam_power_plug_12a_switch04"
+                                },
+                                {
+                                    "entity": "switch.neo_coolcam_power_plug_12a_switch06"
+                                },
+                                {
+                                    "entity": "switch.neo_coolcam_power_plug_12a_switch07"
+                                },
+                                {
+                                    "entity": "switch.neo_coolcam_power_plug_12a_switch08"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Neo_Coolcam",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "switch.dome_on_off_plug_in_switch01_switch"
+                                },
+                                {
+                                    "entity": "switch.dome_on_off_plug_in_switch02_switch"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Dome",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "switch.intermatic_ha02_appliance_module_switch",
+                                "switch.intermatic_ha04c_outdoor_module_switch"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Intermatic",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "switch.zooz_zen21_switch_v20_switch_01",
+                                "light.zooz_zen22_dimmer_v2_1_level",
+                                "light.zooz_zen22_dimmer_v2_2_level",
+                                "light.zooz_zen22_dimmer_v2_3_level"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Room Light",
+                            "type": "entities"
+                        }
+                    ],
+                    "path": "power_switch",
+                    "title": "Switches"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "automation.auto_switch_water"
+                                },
+                                {
+                                    "entity": "automation.basement_stairslight_3min_closed_off"
+                                },
+                                {
+                                    "entity": "automation.basement_stairslight_3min_motion_off"
+                                },
+                                {
+                                    "entity": "automation.basement_stairslight_door_on"
+                                },
+                                {
+                                    "entity": "automation.basement_stairslight_motion_on"
+                                },
+                                {
+                                    "entity": "automation.front_door_is_open_id_36"
+                                },
+                                {
+                                    "entity": "automation.garage_door_is_open"
+                                },
+                                {
+                                    "entity": "automation.lightscene_dimmer_chatroom_20_30_22_30"
+                                },
+                                {
+                                    "entity": "automation.lightscene_dimmer_chatroom_off_at_22_30"
+                                },
+                                {
+                                    "entity": "automation.lightscene_dimmer_masterroom_18_00_22_00"
+                                },
+                                {
+                                    "entity": "automation.lightscene_dimmer_masterroom_off_in_15min"
+                                },
+                                {
+                                    "entity": "automation.lightscene_dimmer_vladroom_18_00_21_00"
+                                },
+                                {
+                                    "entity": "automation.lightscene_dimmer_vladroom_off_in_15min_after_21_30"
+                                },
+                                {
+                                    "entity": "automation.lightscene_dimmers_allrooms_off_at_00_00"
+                                },
+                                {
+                                    "entity": "automation.modem_reboot_at_5_00"
+                                },
+                                {
+                                    "entity": "automation.porchlight_off_at_23_00"
+                                },
+                                {
+                                    "entity": "automation.porchlight_on_at_18_00"
+                                },
+                                {
+                                    "entity": "automation.reset_hem_id_25_monthly"
+                                },
+                                {
+                                    "entity": "automation.snapshots_trigered_by_ezm01_id_23"
+                                },
+                                {
+                                    "entity": "automation.temp_20c_night_22_30_7_15"
+                                },
+                                {
+                                    "entity": "automation.temp_21c_day_9_00_17_30"
+                                },
+                                {
+                                    "entity": "automation.temp_22c_eve_17_30_22_30"
+                                },
+                                {
+                                    "entity": "automation.temp_22c_morn_7_15_9_00"
+                                },
+                                {
+                                    "entity": "automation.thermostat_refresh_timer"
+                                },
+                                {
+                                    "entity": "automation.turn_off_neo3_3_minutes_after_last_movement"
+                                },
+                                {
+                                    "entity": "automation.ventilation_15min_every_hour_1_00_6_00"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "All Automations",
+                            "type": "entities"
+                        }
+                    ],
+                    "path": "automation",
+                    "title": "AUTOMATION"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                "sensor.weather_humidity",
+                                "sensor.vision_zp3111_multisensor_4in1_relative_humidity_1",
+                                "sensor.vision_zp3111_multisensor_4in1_relative_humidity_2",
+                                "sensor.vision_zp3111_multisensor_4in1_relative_humidity_3",
+                                "sensor.vision_zp3111_multisensor_4in1_relative_humidity_4",
+                                "sensor.basement_p1_humidity",
+                                "sensor.chatroom_p2_humidity",
+                                "sensor.kitchen_p3_humidity",
+                                "sensor.garage_t1_humidity",
+                                "sensor.bathroom_t2_humidity",
+                                "sensor.office_t3_humidity"
+                            ],
+                            "hours_to_show": 100,
+                            "refresh_interval": 0,
+                            "title": "Humidity Graphs",
+                            "type": "history-graph"
+                        },
+                        {
+                            "entities": [
+                                "sensor.weather_temperature",
+                                "sensor.vision_zp3111_multisensor_4in1_temperature_1",
+                                "sensor.vision_zp3111_multisensor_4in1_temperature_2",
+                                "sensor.vision_zp3111_multisensor_4in1_temperature_3",
+                                "sensor.vision_zp3111_multisensor_4in1_temperature_4",
+                                "sensor.homeseer_hsm200_wireless_multisensor_temperature_1",
+                                "sensor.2gig_technologies_ct101_thermostat_iris_temperature",
+                                "sensor.basement_p1_temperature",
+                                "sensor.chatroom_p2_temperature",
+                                "sensor.kitchen_p3_temperature",
+                                "sensor.garage_t1_temperature",
+                                "sensor.bathroom_t2_temperature",
+                                "sensor.office_t3_temperature"
+                            ],
+                            "hours_to_show": 100,
+                            "refresh_interval": 0,
+                            "title": "Temperature Graphs",
+                            "type": "history-graph"
+                        },
+                        {
+                            "entities": [
+                                "sensor.vision_zp3111_multisensor_4in1_luminance_1",
+                                "sensor.vision_zp3111_multisensor_4in1_luminance_2",
+                                "sensor.vision_zp3111_multisensor_4in1_luminance_3",
+                                "sensor.vision_zp3111_multisensor_4in1_luminance_4"
+                            ],
+                            "hours_to_show": 100,
+                            "refresh_interval": 0,
+                            "title": "Luminance Graphs",
+                            "type": "history-graph"
+                        }
+                    ],
+                    "icon": "mdi:chart-line-variant",
+                    "path": "graphs",
+                    "title": "Monitor"
+                }
+            ]
+        }
+    },
+    "key": "lovelace",
+    "version": 1
+}

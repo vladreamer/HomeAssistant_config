@@ -194,7 +194,7 @@
 ## Thrmostat (ID:28) 
 ########################################################
   alias: "TEMP 22C Morn. 7:15-9:00"
-  initial_state: true
+  initial_state: false
   trigger:
     - platform: template
       value_template: "{% if states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') | float < 22 %} true {% endif %}"
@@ -206,7 +206,8 @@
       before: '08:59:00'
   action:
     - service: homeassistant.turn_on 
-      entity_id: switch.neo_coolcam_power_plug_12a_switch01
+      ## Neo08 (ID: 47) 
+      entity_id: switch.neo_coolcam_power_plug_12a_switch08
     - service: climate.set_temperature
       data:
        entity_id: climate.2gig_technologies_ct101_thermostat_iris_heating_1
@@ -223,7 +224,7 @@
 ## Thrmostat (ID:28) 
 ########################################################
   alias: "TEMP 21C Day 9:00-17:30"
-  initial_state: true
+  initial_state: false
   trigger:
     - platform: template
       value_template: "{% if states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') | float > 21.5 %} true {% endif %}"
@@ -237,7 +238,8 @@
       before: '17:29:00'
   action:
     - service: homeassistant.turn_off
-      entity_id: switch.neo_coolcam_power_plug_12a_switch01
+      ## Neo08 (ID: 47)
+      entity_id: switch.neo_coolcam_power_plug_12a_switch08
     - service: climate.set_temperature
       data:
        entity_id: climate.2gig_technologies_ct101_thermostat_iris_heating_1
@@ -253,7 +255,7 @@
 ## Thrmostat (ID:28) 
 ########################################################
   alias: "TEMP 22C Eve. 17:30-22:30"
-  initial_state: true
+  initial_state: false
   trigger:
     - platform: template
       value_template: "{% if states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') | float < 22 %} true {% endif %}"
@@ -264,8 +266,8 @@
       after: '17:30:00'
       before: '22:29:00'
   action:
-    - service: homeassistant.turn_on 
-      entity_id: switch.neo_coolcam_power_plug_12a_switch01
+   #- service: homeassistant.turn_on 
+   #  entity_id: switch.neo_coolcam_power_plug_12a_switch08
     - service: climate.set_temperature
       data:
        entity_id: climate.2gig_technologies_ct101_thermostat_iris_heating_1
@@ -281,7 +283,7 @@
 ## Thrmostat (ID:28) 
 ########################################################
   alias: "TEMP 20C Night 22:30-7:15" 
-  initial_state: true
+  initial_state: false
   trigger:
     - platform: template
       value_template: "{% if states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') | float > 20.5 %} true {% endif %}"
@@ -295,7 +297,8 @@
       before: '07:14:00'
   action:
     - service: homeassistant.turn_off
-      entity_id: switch.neo_coolcam_power_plug_12a_switch01
+      ## Neo08 (ID: 47)
+      entity_id: switch.neo_coolcam_power_plug_12a_switch08
     - service: climate.set_temperature
       data:
        entity_id: climate.2gig_technologies_ct101_thermostat_iris_heating_1
@@ -307,11 +310,31 @@
         message: "Current Temperature is {{ states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') }}"
 
 
-- id: 'VentilationNight_2018111400'
+- id: 'VladsRoomSW_Timer_2019070200'
 ########################################################
-## HRV unit for ventilation during the night  (ID:8) 
+## VladsRoomSW for ventilation during the night  (ID:12) 
 ########################################################
-  alias: "Night Ventilation 10min every hour 00:00-6:00" 
+  alias: "VladsRoomSW_Timer ON/OFF hour 8:00-22:30" 
+  initial_state: true
+  trigger:
+   - platform: time
+     at: '08:00:00'    
+  condition:
+   - condition: time
+     after: '07:59:00'
+     before: '22:31:00'
+  action:
+   - service: homeassistant.turn_on
+     entity_id: switch.neo_coolcam_power_plug_12a_switch03
+   - delay: 14:30:00
+   - service: homeassistant.turn_off
+     entity_id: switch.neo_coolcam_power_plug_12a_switch03
+
+- id: 'VentilationNight_2019062700'
+########################################################
+## HRV unit for ventilation during the night  (ID:47) 
+########################################################
+  alias: "Ventilation 15min every hour 1:00-6:00" 
   initial_state: true
   trigger:
    - platform: time_pattern       
@@ -319,14 +342,14 @@
      seconds: 0
   condition:
    - condition: time
-     after: '00:00:00'
+     after: '1:00:00'
      before: '06:00:00'
   action:
    - service: homeassistant.turn_on
-     entity_id: switch.neo_coolcam_power_plug_12a_switch01
+     entity_id: switch.neo_coolcam_power_plug_12a_switch08
    - delay: 00:15:00
    - service: homeassistant.turn_off
-     entity_id: switch.neo_coolcam_power_plug_12a_switch01
+     entity_id: switch.neo_coolcam_power_plug_12a_switch08
     
     
 - id: 'ResetEnergySensors_2018110500'
@@ -351,7 +374,7 @@
     
         ID:21 - GreatRoomSW - {{states.sensor.hank_hkzwso03_smart_plug_energy01.state}} kWh;
         
-        ID:8  - HRV_SW - {{states.sensor.neo_coolcam_power_plug_12a_energy01.state}} kWh;
+        ID:8  - Solar Panel - {{states.sensor.neo_coolcam_power_plug_12a_energy01.state}} kWh;
         
         ID:10 - KitchenSW - {{states.sensor.neo_coolcam_power_plug_12a_energy02.state}} kWh;
         
@@ -363,7 +386,13 @@
        
         ID:40 - OfficeSW - {{states.sensor.neo_coolcam_power_plug_12a_energy06.state}} kWh;
         
-        ID:41 - Neo07SW - {{states.sensor.neo_coolcam_power_plug_12a_energy07.state}} kWh;"
+        ID:41 - Neo07SW - {{states.sensor.neo_coolcam_power_plug_12a_energy07.state}} kWh;
+       
+        ID:47 - HRV_SW - {{states.sensor.neo_coolcam_power_plug_12a_energy08.state}} kWh;
+        
+        ID:44 - ChatRoomRight - {{states.sensor.dome_on_off_plug_in_switch01_energy.state}} kWh;
+        
+        ID:46 - Dome02 - {{states.sensor.dome_on_off_plug_in_switch02_energy.state}} kWh;"
         
    
     - service: zwave.reset_node_meters 
@@ -386,6 +415,12 @@
       data: {"node_id": 40}
     - service: zwave.reset_node_meters 
       data: {"node_id": 41}
+    - service: zwave.reset_node_meters 
+      data: {"node_id": 47}
+    - service: zwave.reset_node_meters 
+      data: {"node_id": 44}
+    - service: zwave.reset_node_meters 
+      data: {"node_id": 46}
     
 
 
@@ -549,7 +584,7 @@
 ## Door sensor ID:34 After that take 4 snapshoots and send
 ## them by mail "notify.mailtogmail" 
 ########################################################
-  alias: Basement StairsLight ON
+  alias: Basement StairsLight Door_ON
   initial_state: true
   trigger:
     - entity_id: binary_sensor.kaipule_im20_doorwindow_sensor_sensor
@@ -648,7 +683,7 @@
 ## Motion sensor ID:15 After that take 4 snapshoots and send
 ## them by mail "notify.mailtogmail" 
 ########################################################
-  alias: Basement StairsLight ON
+  alias: Basement StairsLight Motion_ON
   initial_state: true
   trigger:
     - entity_id: binary_sensor.multi01_motion 
@@ -744,7 +779,7 @@
 ## Basement StairsLight "OFF" if it was "ON"
 ## after 2 minutes and "NO MOTION"
 ########################################################
-  alias: Basement StairsLight 3min OFF
+  alias: Basement StairsLight 3min Closed_OFF
   initial_state: true
   trigger:
   - entity_id: switch.zooz_zen21_switch_v20_switch_01
@@ -770,7 +805,7 @@
 ## Multisensor1 after 15 minutes "NO MOTION"
 ##
 ########################################################
-  alias: Basement StairsLight 3min OFF
+  alias: Basement StairsLight 3min Motion_OFF
   initial_state: true
   trigger:
   - entity_id: binary_sensor.multi01_motion
@@ -851,12 +886,12 @@
         filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera1_01.jpg"
     - service: camera.snapshot
       data:
-        entity_id: camera.camera2
-        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_01.jpg"
+        entity_id: camera.camera7
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera7_01.jpg"
     - service: shell_command.fix_snapshot
       data:
-        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_01.jpg"  
-        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_01cor.jpg"  
+        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera7_01.jpg"  
+        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera7_01cor.jpg"  
     - delay: '00:00:02'
     - service: camera.snapshot
       data:
@@ -864,12 +899,12 @@
         filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera1_02.jpg"
     - service: camera.snapshot
       data:
-        entity_id: camera.camera2
-        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_02.jpg"
+        entity_id: camera.camera7
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera7_02.jpg"
     - service: shell_command.fix_snapshot
       data:
-        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_02.jpg"  
-        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_02cor.jpg"  
+        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera7_02.jpg"  
+        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera7_02cor.jpg"  
     - delay: '00:00:12'
     - service: camera.snapshot
       data:
@@ -877,12 +912,12 @@
         filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera1_03.jpg"
     - service: camera.snapshot
       data:
-        entity_id: camera.camera2
-        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_03.jpg"
+        entity_id: camera.camera7
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera7_03.jpg"
     - service: shell_command.fix_snapshot
       data:
-        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_03.jpg"  
-        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_03cor.jpg"  
+        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera7_03.jpg"  
+        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera7_03cor.jpg"  
     - delay: '00:00:25'
     - service: camera.snapshot
       data:
@@ -890,12 +925,12 @@
         filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera1_04.jpg"
     - service: camera.snapshot
       data:
-        entity_id: camera.camera2
-        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_04.jpg"
+        entity_id: camera.camera7
+        filename: "/home/homeassistant/.homeassistant/downloads/snapshot_camera7_04.jpg"
     - service: shell_command.fix_snapshot
       data:
-        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_04.jpg"  
-        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera2_04cor.jpg"  
+        filename1: "/home/homeassistant/.homeassistant/downloads/snapshot_camera7_04.jpg"  
+        filename2: "/home/homeassistant/.homeassistant/downloads/snapshot_camera7_04cor.jpg"  
     - service: notify.mailtogmail
       data_template:
         title: "MainFloor Motion detected"
@@ -906,10 +941,10 @@
             - /home/homeassistant/.homeassistant/downloads/snapshot_camera1_02.jpg
             - /home/homeassistant/.homeassistant/downloads/snapshot_camera1_03.jpg
             - /home/homeassistant/.homeassistant/downloads/snapshot_camera1_04.jpg
-            - /home/homeassistant/.homeassistant/downloads/snapshot_camera2_01cor.jpg
-            - /home/homeassistant/.homeassistant/downloads/snapshot_camera2_02cor.jpg
-            - /home/homeassistant/.homeassistant/downloads/snapshot_camera2_03cor.jpg
-            - /home/homeassistant/.homeassistant/downloads/snapshot_camera2_04cor.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera7_01cor.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera7_02cor.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera7_03cor.jpg
+            - /home/homeassistant/.homeassistant/downloads/snapshot_camera7_04cor.jpg
           
           html: >
             <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -939,17 +974,17 @@
                 <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera1?api_password=3health1">
                 <img style="width: 100%; alt="Image3 from Camera1" src="cid:snapshot_camera1_04.jpg" /></a>
                 <h1>MainFloor Motion detected (Camera2) 0sec</h1>
-                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera2?api_password=3health1">
-                <img style="width: 100%; alt="Image1 from Camera2" src="cid:snapshot_camera2_01cor.jpg" /></a>
+                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera7?api_password=3health1">
+                <img style="width: 100%; alt="Image1 from Camera2" src="cid:snapshot_camera7_01cor.jpg" /></a>
                 <h6>4 sec</h6>
-                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera2?api_password=3health1">
-                <img style="width: 100%; alt="Image2 from Camera2" src="cid:snapshot_camera2_02cor.jpg" /></a>
+                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera7?api_password=3health1">
+                <img style="width: 100%; alt="Image2 from Camera2" src="cid:snapshot_camera7_02cor.jpg" /></a>
                 <h6>16 sec</h6>
-                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera2?api_password=3health1">
-                <img style="width: 100%; alt="Image3 from Camera2" src="cid:snapshot_camera2_03cor.jpg" /></a>
+                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera7?api_password=3health1">
+                <img style="width: 100%; alt="Image3 from Camera2" src="cid:snapshot_camera7_03cor.jpg" /></a>
                 <h6>32 sec</h6>
-                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera2?api_password=3health1">
-                <img style="width: 100%; alt="Image3 from Camera2" src="cid:snapshot_camera2_04cor.jpg" /></a>
+                <a href="https://jumpier-panther-8852.dataplicity.io/api/camera_proxy_stream/camera.camera7?api_password=3health1">
+                <img style="width: 100%; alt="Image3 from Camera2" src="cid:snapshot_camera7_04cor.jpg" /></a>
               </body>
             </html>
 #

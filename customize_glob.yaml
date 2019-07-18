@@ -9,25 +9,25 @@
 ## PowerPlugs 
 ##################
 ## Dome ##
-"sensor.dome_on_off_plug_in_switch_previous_reading*":
+"sensor.dome_on_off_plug_in_switch*_previous_reading*":
   hidden: true
-"sensor.dome_on_off_plug_in_switch_power_management*":
+"sensor.dome_on_off_plug_in_switch*_power_management*":
   hidden: true
-"sensor.dome_on_off_plug_in_switch_sourcenodeid*":
+"sensor.dome_on_off_plug_in_switch*_sourcenodeid*":
   hidden: true
-"sensor.dome_on_off_plug_in_switch_alarm_type*":
+"sensor.dome_on_off_plug_in_switch*_alarm_type*":
   hidden: true
-"sensor.dome_on_off_plug_in_switch_alarm_level*":
+"sensor.dome_on_off_plug_in_switch*_alarm_level*":
   hidden: true
-"sensor.dome_on_off_plug_in_switch_exporting*":
+"sensor.dome_on_off_plug_in_switch*_exporting*":
   hidden: true
-"sensor.dome_on_off_plug_in_switch_interval*":
+"sensor.dome_on_off_plug_in_switch*_interval*":
   hidden: true
-"sensor.dome_on_off_plug_in_switch_power*":
+"sensor.dome_on_off_plug_in_switch*_power*":
   icon: mdi:power-plug
-"sensor.dome_on_off_plug_in_switch_voltage*":
+"sensor.dome_on_off_plug_in_switch*_voltage*":
   icon: mdi:power-socket
-"sensor.dome_on_off_plug_in_switch_current*":
+"sensor.dome_on_off_plug_in_switch*_current*":
   icon: mdi:flash
 #       
 ## NeoCoolcam ##

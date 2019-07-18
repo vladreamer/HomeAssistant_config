@@ -1307,6 +1307,15 @@
                 "unique_id": "23-72057594428801138"
             },
             {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "9ea779fb11ea4920b4982871207bcc53",
+                "disabled_by": null,
+                "entity_id": "sensor.ezm_general",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "23-72057594428801058"
+            },
+            {
                 "config_entry_id": "cc84ff9870624e8787bdbe79cebe7748",
                 "device_id": "2d26e1f99c964c8ebf39ad8b5bf9d4bc",
                 "disabled_by": null,
@@ -2696,8 +2705,8 @@
                 "config_entry_id": null,
                 "device_id": null,
                 "disabled_by": null,
-                "entity_id": "zwave.dome_on_off_plug_in_switch",
-                "name": null,
+                "entity_id": "zwave.dome_on_off_plug_in_switch01",
+                "name": "Dome01",
                 "platform": "zwave",
                 "unique_id": "node-44"
             },
@@ -2705,8 +2714,8 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "0fe8e54588df48238a8c08184e65682d",
                 "disabled_by": null,
-                "entity_id": "sensor.dome_on_off_plug_in_switch_power",
-                "name": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch01_power",
+                "name": "Dome01_Pwr",
                 "platform": "zwave",
                 "unique_id": "44-72057594781139074"
             },
@@ -2714,8 +2723,8 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "0fe8e54588df48238a8c08184e65682d",
                 "disabled_by": null,
-                "entity_id": "sensor.dome_on_off_plug_in_switch_voltage",
-                "name": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch01_voltage",
+                "name": "Dome01_Volts",
                 "platform": "zwave",
                 "unique_id": "44-72057594781139202"
             },
@@ -2723,8 +2732,8 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "0fe8e54588df48238a8c08184e65682d",
                 "disabled_by": null,
-                "entity_id": "sensor.dome_on_off_plug_in_switch_current",
-                "name": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch01_current",
+                "name": "Dome01_Amps",
                 "platform": "zwave",
                 "unique_id": "44-72057594781139266"
             },
@@ -2732,8 +2741,8 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "0fe8e54588df48238a8c08184e65682d",
                 "disabled_by": null,
-                "entity_id": "sensor.dome_on_off_plug_in_switch_exporting",
-                "name": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch01_exporting",
+                "name": "Dome01_Export",
                 "platform": "zwave",
                 "unique_id": "44-72057594781139456"
             },
@@ -2741,8 +2750,8 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "0fe8e54588df48238a8c08184e65682d",
                 "disabled_by": null,
-                "entity_id": "sensor.dome_on_off_plug_in_switch_alarm_type",
-                "name": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch01_alarm_type",
+                "name": "Dome01_AlarmType",
                 "platform": "zwave",
                 "unique_id": "44-72057594782171137"
             },
@@ -2750,8 +2759,8 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "0fe8e54588df48238a8c08184e65682d",
                 "disabled_by": null,
-                "entity_id": "switch.dome_on_off_plug_in_switch_switch",
-                "name": null,
+                "entity_id": "switch.dome_on_off_plug_in_switch01_switch",
+                "name": "Dome01_SW",
                 "platform": "zwave",
                 "unique_id": "44-72057594780925952"
             },
@@ -2759,8 +2768,8 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "0fe8e54588df48238a8c08184e65682d",
                 "disabled_by": null,
-                "entity_id": "sensor.dome_on_off_plug_in_switch_alarm_level",
-                "name": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch01_alarm_level",
+                "name": "Dome01_AlarmLevel",
                 "platform": "zwave",
                 "unique_id": "44-72057594782171153"
             },
@@ -2768,8 +2777,8 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "0fe8e54588df48238a8c08184e65682d",
                 "disabled_by": null,
-                "entity_id": "sensor.dome_on_off_plug_in_switch_energy",
-                "name": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch01_energy",
+                "name": "Dome01_Energy",
                 "platform": "zwave",
                 "unique_id": "44-72057594781138946"
             },
@@ -2777,8 +2786,8 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "0fe8e54588df48238a8c08184e65682d",
                 "disabled_by": null,
-                "entity_id": "sensor.dome_on_off_plug_in_switch_sourcenodeid",
-                "name": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch01_sourcenodeid",
+                "name": "Dome01_Src",
                 "platform": "zwave",
                 "unique_id": "44-72057594782171169"
             },
@@ -2786,8 +2795,8 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "0fe8e54588df48238a8c08184e65682d",
                 "disabled_by": null,
-                "entity_id": "sensor.dome_on_off_plug_in_switch_power_management",
-                "name": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch01_power_management",
+                "name": "Dome01_PwrMgt",
                 "platform": "zwave",
                 "unique_id": "44-72057594782171313"
             },
@@ -2795,8 +2804,8 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "0fe8e54588df48238a8c08184e65682d",
                 "disabled_by": null,
-                "entity_id": "sensor.dome_on_off_plug_in_switch_previous_reading",
-                "name": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch01_previous_reading",
+                "name": "Dome01_PrevRead",
                 "platform": "zwave",
                 "unique_id": "44-72057594781138962"
             },
@@ -2804,8 +2813,8 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "0fe8e54588df48238a8c08184e65682d",
                 "disabled_by": null,
-                "entity_id": "sensor.dome_on_off_plug_in_switch_interval",
-                "name": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch01_interval",
+                "name": "Dome01_Interval",
                 "platform": "zwave",
                 "unique_id": "44-72057594781138979"
             },
@@ -2813,8 +2822,8 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "0fe8e54588df48238a8c08184e65682d",
                 "disabled_by": null,
-                "entity_id": "sensor.dome_on_off_plug_in_switch_previous_reading_2",
-                "name": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch01_previous_reading_2",
+                "name": "Dome01_PrevRead2",
                 "platform": "zwave",
                 "unique_id": "44-72057594781139090"
             },
@@ -2822,8 +2831,8 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "0fe8e54588df48238a8c08184e65682d",
                 "disabled_by": null,
-                "entity_id": "sensor.dome_on_off_plug_in_switch_interval_2",
-                "name": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch01_interval_2",
+                "name": "Dome01_Interval2",
                 "platform": "zwave",
                 "unique_id": "44-72057594781139107"
             },
@@ -2831,8 +2840,8 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "0fe8e54588df48238a8c08184e65682d",
                 "disabled_by": null,
-                "entity_id": "sensor.dome_on_off_plug_in_switch_previous_reading_3",
-                "name": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch01_previous_reading_3",
+                "name": "Dome01_PrevRead3",
                 "platform": "zwave",
                 "unique_id": "44-72057594781139218"
             },
@@ -2840,8 +2849,8 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "0fe8e54588df48238a8c08184e65682d",
                 "disabled_by": null,
-                "entity_id": "sensor.dome_on_off_plug_in_switch_interval_3",
-                "name": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch01_interval_3",
+                "name": "Dome01_Interval3",
                 "platform": "zwave",
                 "unique_id": "44-72057594781139235"
             },
@@ -2849,8 +2858,8 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "0fe8e54588df48238a8c08184e65682d",
                 "disabled_by": null,
-                "entity_id": "sensor.dome_on_off_plug_in_switch_previous_reading_4",
-                "name": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch01_previous_reading_4",
+                "name": "Dome01_PrevRead4",
                 "platform": "zwave",
                 "unique_id": "44-72057594781139282"
             },
@@ -2858,10 +2867,460 @@
                 "config_entry_id": "897c878fba894ee3ac600341208a3265",
                 "device_id": "0fe8e54588df48238a8c08184e65682d",
                 "disabled_by": null,
-                "entity_id": "sensor.dome_on_off_plug_in_switch_interval_4",
-                "name": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch01_interval_4",
+                "name": "Dome01_Interval4",
                 "platform": "zwave",
                 "unique_id": "44-72057594781139299"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.dome_on_off_plug_in_switch02",
+                "name": "Dome02",
+                "platform": "zwave",
+                "unique_id": "node-46"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "d8d46efd7d644f169b34dad5cbd855dd",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch02_power",
+                "name": "Dome02_Pwr",
+                "platform": "zwave",
+                "unique_id": "46-72057594814693506"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "d8d46efd7d644f169b34dad5cbd855dd",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch02_voltage",
+                "name": "Dome02_Volts",
+                "platform": "zwave",
+                "unique_id": "46-72057594814693634"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "d8d46efd7d644f169b34dad5cbd855dd",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch02_current",
+                "name": "Dome02_Amps",
+                "platform": "zwave",
+                "unique_id": "46-72057594814693698"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "d8d46efd7d644f169b34dad5cbd855dd",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch02_energy",
+                "name": "Dome02_Energy",
+                "platform": "zwave",
+                "unique_id": "46-72057594814693378"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "d8d46efd7d644f169b34dad5cbd855dd",
+                "disabled_by": null,
+                "entity_id": "switch.dome_on_off_plug_in_switch02_switch",
+                "name": "Dome02SW",
+                "platform": "zwave",
+                "unique_id": "46-72057594814480384"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "d8d46efd7d644f169b34dad5cbd855dd",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch02_alarm_type",
+                "name": "Dome02_AlarmType",
+                "platform": "zwave",
+                "unique_id": "46-72057594815725569"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "d8d46efd7d644f169b34dad5cbd855dd",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch02_alarm_level",
+                "name": "Dome02_AlarmLvl",
+                "platform": "zwave",
+                "unique_id": "46-72057594815725585"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "d8d46efd7d644f169b34dad5cbd855dd",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch02_exporting",
+                "name": "Dome02_Export",
+                "platform": "zwave",
+                "unique_id": "46-72057594814693888"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "d8d46efd7d644f169b34dad5cbd855dd",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch02_sourcenodeid",
+                "name": "Dome02_SorceID",
+                "platform": "zwave",
+                "unique_id": "46-72057594815725601"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "d8d46efd7d644f169b34dad5cbd855dd",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch02_power_management",
+                "name": "Dome02_PwrMgmt",
+                "platform": "zwave",
+                "unique_id": "46-72057594815725745"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.neo_coolcam_power_plug_12a_08",
+                "name": "Neo08",
+                "platform": "zwave",
+                "unique_id": "node-47"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a3a9bf5a848e43aea5099df91fa089fa",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_power08",
+                "name": "Neo08_Pwr",
+                "platform": "zwave",
+                "unique_id": "47-72057594831470722"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a3a9bf5a848e43aea5099df91fa089fa",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_voltage08",
+                "name": "Neo08_Volts",
+                "platform": "zwave",
+                "unique_id": "47-72057594831470850"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a3a9bf5a848e43aea5099df91fa089fa",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_current08",
+                "name": "Neo08_Amps",
+                "platform": "zwave",
+                "unique_id": "47-72057594831470914"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a3a9bf5a848e43aea5099df91fa089fa",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_alarm_type08",
+                "name": "Neo08_AlarmType",
+                "platform": "zwave",
+                "unique_id": "47-72057594832502785"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a3a9bf5a848e43aea5099df91fa089fa",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_alarm_level08",
+                "name": "Neo08_AlarmLevel",
+                "platform": "zwave",
+                "unique_id": "47-72057594832502801"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a3a9bf5a848e43aea5099df91fa089fa",
+                "disabled_by": null,
+                "entity_id": "switch.neo_coolcam_power_plug_12a_switch08",
+                "name": "Neo08",
+                "platform": "zwave",
+                "unique_id": "47-72057594831257600"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a3a9bf5a848e43aea5099df91fa089fa",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_energy08",
+                "name": "Neo08_Energy",
+                "platform": "zwave",
+                "unique_id": "47-72057594831470594"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a3a9bf5a848e43aea5099df91fa089fa",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_exporting08",
+                "name": "Neo08_Export",
+                "platform": "zwave",
+                "unique_id": "47-72057594831471104"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a3a9bf5a848e43aea5099df91fa089fa",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_sourcenodeid08",
+                "name": "Neo08_SrcID",
+                "platform": "zwave",
+                "unique_id": "47-72057594832502817"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a3a9bf5a848e43aea5099df91fa089fa",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_power_management08",
+                "name": "Neo08_PwrMgt",
+                "platform": "zwave",
+                "unique_id": "47-72057594832502961"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "d8d46efd7d644f169b34dad5cbd855dd",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch02_previous_reading",
+                "name": "Dome02_PrevRead",
+                "platform": "zwave",
+                "unique_id": "46-72057594814693394"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "d8d46efd7d644f169b34dad5cbd855dd",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch02_interval",
+                "name": "Dome02_Interval",
+                "platform": "zwave",
+                "unique_id": "46-72057594814693411"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "d8d46efd7d644f169b34dad5cbd855dd",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch02_previous_reading_2",
+                "name": "Dome02_PrevRead2",
+                "platform": "zwave",
+                "unique_id": "46-72057594814693522"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "d8d46efd7d644f169b34dad5cbd855dd",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch02_interval_2",
+                "name": "Dome02_Interval2",
+                "platform": "zwave",
+                "unique_id": "46-72057594814693539"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "d8d46efd7d644f169b34dad5cbd855dd",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch02_previous_reading_3",
+                "name": "Dome02_PrevRead3",
+                "platform": "zwave",
+                "unique_id": "46-72057594814693714"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "d8d46efd7d644f169b34dad5cbd855dd",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch02_interval_3",
+                "name": "Dome02_Interval3",
+                "platform": "zwave",
+                "unique_id": "46-72057594814693731"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.vision_zp3111_multisensor_4in1_5",
+                "name": "Multi05",
+                "platform": "zwave",
+                "unique_id": "node-45"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "69ee8dc991a949a380ad11dca6806990",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.vision_zp3111_multisensor_4in1_sensor_5",
+                "name": "Multi05_Sensor",
+                "platform": "zwave",
+                "unique_id": "45-72057594797883392"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "69ee8dc991a949a380ad11dca6806990",
+                "disabled_by": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_temperature_5",
+                "name": "Multi05_Temp",
+                "platform": "zwave",
+                "unique_id": "45-72057594797899794"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "69ee8dc991a949a380ad11dca6806990",
+                "disabled_by": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_luminance_5",
+                "name": "Multi05_Lum",
+                "platform": "zwave",
+                "unique_id": "45-72057594797899826"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "69ee8dc991a949a380ad11dca6806990",
+                "disabled_by": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_relative_humidity_5",
+                "name": "Multi05_Hum",
+                "platform": "zwave",
+                "unique_id": "45-72057594797899858"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "69ee8dc991a949a380ad11dca6806990",
+                "disabled_by": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_sourcenodeid_5",
+                "name": "Multi05_SrcID",
+                "platform": "zwave",
+                "unique_id": "45-72057594798948385"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "69ee8dc991a949a380ad11dca6806990",
+                "disabled_by": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_burglar_5",
+                "name": "Multi05_Burglar",
+                "platform": "zwave",
+                "unique_id": "45-72057594798948513"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "69ee8dc991a949a380ad11dca6806990",
+                "disabled_by": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_homehealth_5",
+                "name": "Multi05_HomeHealth",
+                "platform": "zwave",
+                "unique_id": "45-72057594798948609"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "d8d46efd7d644f169b34dad5cbd855dd",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch02_previous_reading_4",
+                "name": "Dome02_PrevRead4",
+                "platform": "zwave",
+                "unique_id": "46-72057594814693650"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "d8d46efd7d644f169b34dad5cbd855dd",
+                "disabled_by": null,
+                "entity_id": "sensor.dome_on_off_plug_in_switch02_interval_4",
+                "name": "Dome02_Interval4",
+                "platform": "zwave",
+                "unique_id": "46-72057594814693667"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "69ee8dc991a949a380ad11dca6806990",
+                "disabled_by": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_alarm_type_5",
+                "name": "Multi05_AlarmType",
+                "platform": "zwave",
+                "unique_id": "45-72057594798948353"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "69ee8dc991a949a380ad11dca6806990",
+                "disabled_by": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_alarm_level_5",
+                "name": "Multi05_AlarmLvl",
+                "platform": "zwave",
+                "unique_id": "45-72057594798948369"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a3a9bf5a848e43aea5099df91fa089fa",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading08",
+                "name": "Neo08_PrevRead",
+                "platform": "zwave",
+                "unique_id": "47-72057594831470610"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a3a9bf5a848e43aea5099df91fa089fa",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_interval08",
+                "name": "Neo08_Interval",
+                "platform": "zwave",
+                "unique_id": "47-72057594831470627"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a3a9bf5a848e43aea5099df91fa089fa",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading08_2",
+                "name": "Neo08_PrevRead2",
+                "platform": "zwave",
+                "unique_id": "47-72057594831470738"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a3a9bf5a848e43aea5099df91fa089fa",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_interval08_2",
+                "name": "Neo08_Interval2",
+                "platform": "zwave",
+                "unique_id": "47-72057594831470755"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a3a9bf5a848e43aea5099df91fa089fa",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading08_3",
+                "name": "Neo08_PrevRead3",
+                "platform": "zwave",
+                "unique_id": "47-72057594831470866"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a3a9bf5a848e43aea5099df91fa089fa",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_interval08_3",
+                "name": "Neo08_Interval3",
+                "platform": "zwave",
+                "unique_id": "47-72057594831470883"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a3a9bf5a848e43aea5099df91fa089fa",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_previous_reading08_4",
+                "name": "Neo08_PrevRead4",
+                "platform": "zwave",
+                "unique_id": "47-72057594831470930"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "a3a9bf5a848e43aea5099df91fa089fa",
+                "disabled_by": null,
+                "entity_id": "sensor.neo_coolcam_power_plug_12a_interval08_4",
+                "name": "Neo08_Interval4",
+                "platform": "zwave",
+                "unique_id": "47-72057594831470947"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.linear_gd00z_4_garage_door_opener_remote_controller",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-53"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "df2af77417cb47a3aba5b246a8769511",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.linear_gd00z_4_garage_door_opener_remote_controller_sensor",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "53-72057594932101120"
             }
         ]
     },
