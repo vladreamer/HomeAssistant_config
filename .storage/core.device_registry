@@ -15,7 +15,7 @@
                         "2d9536a6efaa2a43945c121688b29d32"
                     ]
                 ],
-                "manufacturer": "Google Inc.",
+                "manufacturer": "Unknown manufacturer",
                 "model": "Chromecast",
                 "name": "GreatRoom",
                 "sw_version": null
@@ -34,7 +34,7 @@
                         "2e2a591a6f2697d75e7dd35d0d3456e6"
                     ]
                 ],
-                "manufacturer": "Google Inc.",
+                "manufacturer": "Unknown manufacturer",
                 "model": "Chromecast",
                 "name": "ChatRoom",
                 "sw_version": null
@@ -778,6 +778,44 @@
                 "manufacturer": "Linear",
                 "model": "GD00Z-4 Garage Door Opener Remote Controller",
                 "name": "Linear GD00Z-4 Garage Door Opener Remote Controller",
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "cc84ff9870624e8787bdbe79cebe7748"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "7b12f7e25d1541e283331a1813aecfe2",
+                "identifiers": [
+                    [
+                        "cast",
+                        "7350e172ed7ddcb1b083e62c4b2079be"
+                    ]
+                ],
+                "manufacturer": "",
+                "model": "AirScreen",
+                "name": "AS-H96MaxRK3318[Cast]",
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "bd15189d63f04de59b03bafdcad5c7ad",
+                "identifiers": [
+                    [
+                        "zwave",
+                        54
+                    ]
+                ],
+                "manufacturer": "Zooz",
+                "model": "ZEN22 Dimmer V2",
+                "name": "Zooz ZEN22 Dimmer V2",
                 "sw_version": null
             }
         ]

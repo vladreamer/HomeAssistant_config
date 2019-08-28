@@ -4,6 +4,7 @@ default_view:
   view: yes
   name: AllRooms
   entities:
+    - sun.sun     
     - sensor.disk_use_percent
     - sensor.last_boot
     - sensor.processor_use
@@ -20,7 +21,7 @@ default_view:
     - binary_sensor.ecolink_garage_door_tilt_sensor_sensor
     - binary_sensor.kaipule_im20_doorwindow_sensor_sensor   
     - binary_sensor.kaipule_im20_doorwindow_sensor_sensor_2   
-    - binary_sensor.kaipule_im20_doorwindow_sensor_sensor_3   
+    - binary_sensor.kaipule_im20_doorwindow_sensor_sensor_3 
     - group.basement
     - group.kitchen
     - group.chatroom
@@ -35,6 +36,7 @@ date_time:
   name: Date and Time
   control: hidden
   entities:
+    - sensor.sun_elevation      
     - sensor.time
     - sensor.date
     - sensor.time_utc
@@ -96,7 +98,7 @@ chatroom:
       ## Dome01
     - sensor.dome_on_off_plug_in_switch01_power
     - switch.dome_on_off_plug_in_switch01_switch
-      ## Dimmer Zen22 Chat Room (Node ID:42)
+      ## Dimmer Zen22 Chat Room (Node ID:54)
     - light.zooz_zen22_dimmer_v2_3_level
   
 
@@ -530,7 +532,7 @@ dimmer:
     - light.zooz_zen22_dimmer_v2_1_level
       ## Dimmer Zen22 Vlad's Room (Node ID:32)
     - light.zooz_zen22_dimmer_v2_2_level
-      ## Dimmer Zen22 Chat Room (Node ID:42)
+      ## Dimmer Zen22 Chat Room (Node ID:54)
     - light.zooz_zen22_dimmer_v2_3_level
 
 ###############################################################

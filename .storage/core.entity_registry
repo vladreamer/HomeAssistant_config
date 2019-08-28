@@ -2534,24 +2534,6 @@
                 "config_entry_id": null,
                 "device_id": null,
                 "disabled_by": null,
-                "entity_id": "zwave.zooz_zen22_dimmer_v2_3",
-                "name": "ChatRoomDimmer_Id42",
-                "platform": "zwave",
-                "unique_id": "node-42"
-            },
-            {
-                "config_entry_id": "897c878fba894ee3ac600341208a3265",
-                "device_id": "5a18d1594f6948ec934e0a43389595b0",
-                "disabled_by": null,
-                "entity_id": "light.zooz_zen22_dimmer_v2_3_level",
-                "name": "ChatRoomDimmer_Id42",
-                "platform": "zwave",
-                "unique_id": "42-72057594747387905"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "disabled_by": null,
                 "entity_id": "zwave.neo_coolcam_power_plug_12a_07",
                 "name": "Neo07",
                 "platform": "zwave",
@@ -3321,6 +3303,51 @@
                 "name": null,
                 "platform": "zwave",
                 "unique_id": "53-72057594932101120"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0cf960d0c23642d5b46486a35124c6c0",
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_previous_reading_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "39-72057594697253138"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "0cf960d0c23642d5b46486a35124c6c0",
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_interval_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "39-72057594697253155"
+            },
+            {
+                "config_entry_id": "cc84ff9870624e8787bdbe79cebe7748",
+                "device_id": "7b12f7e25d1541e283331a1813aecfe2",
+                "disabled_by": null,
+                "entity_id": "media_player.as_h96maxrk3318_cast",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "7350e172-ed7d-dcb1-b083-e62c4b2079be"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.zooz_zen22_dimmer_v2_3",
+                "name": "ChatRoomDimmer_Id54",
+                "platform": "zwave",
+                "unique_id": "node-54"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "bd15189d63f04de59b03bafdcad5c7ad",
+                "disabled_by": null,
+                "entity_id": "light.zooz_zen22_dimmer_v2_3_level",
+                "name": "ChatRoomDimmer_Id54",
+                "platform": "zwave",
+                "unique_id": "54-72057594948714497"
             }
         ]
     },

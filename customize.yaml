@@ -314,7 +314,7 @@ sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_energy:
 #  Old Intermatic Power Plugs  
 ##########################################################
 switch.intermatic_ha02_appliance_module_switch:
-  friendly_name: SecondFloorHall_Id5
+  friendly_name: GreatRoomCamera_Id5
 switch.intermatic_ha04c_outdoor_module_switch:
   friendly_name: GarageSW_Id4
 

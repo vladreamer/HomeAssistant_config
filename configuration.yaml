@@ -75,6 +75,7 @@ logger:
 
 # Enables a map showing the location of tracked devices
 map:
+sun:        
 
 recorder:
   purge_interval: 2
@@ -90,7 +91,7 @@ recorder:
       - weblink
       - updater
     entities:
-      - sun.sun # Don't record sun data
+    # - sun.sun # Don't record sun data
       - sensor.last_boot # Comes from 'systemmonitor' sensor platform
       - sensor.date
 

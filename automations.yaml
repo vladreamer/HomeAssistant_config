@@ -3,7 +3,7 @@
 #
 - id: 'AllDimmersOFF_20190213'
 ########################################################
-## ChatRoom Light with Zen22 ID:42 at 22:20pm OFF 
+## All Light OFF at 00:00am 
 ########################################################
   alias: "LightScene Dimmers AllRooms OFF at 00:00"
   initial_state: true
@@ -33,8 +33,11 @@
   alias: "LightScene Dimmer ChatRoom 20:30-22:30"
   initial_state: true 
   trigger:
-    - platform: time
-      at: '20:30:00'
+  - platform: sun
+    event: sunset
+    offset: "-00:05:00"
+# - platform: time
+#   at: '20:30:00'
   condition:
   - condition: state
     entity_id: light.zooz_zen22_dimmer_v2_3_level 
