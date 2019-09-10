@@ -635,6 +635,12 @@
                                 },
                                 {
                                     "entity": "automation.ventilation_15min_every_hour_1_00_6_00"
+                                },
+                                {
+                                    "entity": "automation.dehumidifier_on_after_3h_sunrise"
+                                },
+                                {
+                                    "entity": "automation.dehumidifier_off_before_1h_of_sunset"
                                 }
                             ],
                             "show_header_toggle": false,

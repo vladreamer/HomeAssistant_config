@@ -17,6 +17,12 @@ homeassistant:
      - /home/homeassistant/.homeassistant/downloads
      - /tmp
 
+weather:
+    - platform: yweather
+      #- platform: universal
+      weather: weather.yweather
+      sensors:
+        temperature: sensor.netatmo_utomhus_temperature
 # Show links to resources in log and frontend
 #introduction:
 

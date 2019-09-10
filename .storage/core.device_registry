@@ -817,6 +817,25 @@
                 "model": "ZEN22 Dimmer V2",
                 "name": "Zooz ZEN22 Dimmer V2",
                 "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "897c878fba894ee3ac600341208a3265"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "1c8851733c674c9181553097b71a118f",
+                "identifiers": [
+                    [
+                        "zwave",
+                        56
+                    ]
+                ],
+                "manufacturer": "Hank",
+                "model": "HKZW-SO01 Smart Plug",
+                "name": "Hank HKZW-SO01 Smart Plug",
+                "sw_version": null
             }
         ]
     },

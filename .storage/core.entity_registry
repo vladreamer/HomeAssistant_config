@@ -3348,6 +3348,69 @@
                 "name": "ChatRoomDimmer_Id54",
                 "platform": "zwave",
                 "unique_id": "54-72057594948714497"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.hank_hkzw_so01_smart_plug",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-56"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "1c8851733c674c9181553097b71a118f",
+                "disabled_by": null,
+                "entity_id": "sensor.hank_hkzw_so01_smart_plug_power",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "56-72057594982465666"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "1c8851733c674c9181553097b71a118f",
+                "disabled_by": null,
+                "entity_id": "sensor.hank_hkzw_so01_smart_plug_voltage",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "56-72057594982465794"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "1c8851733c674c9181553097b71a118f",
+                "disabled_by": null,
+                "entity_id": "sensor.hank_hkzw_so01_smart_plug_energy",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "56-72057594982465538"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "1c8851733c674c9181553097b71a118f",
+                "disabled_by": null,
+                "entity_id": "sensor.hank_hkzw_so01_smart_plug_current",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "56-72057594982465858"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "1c8851733c674c9181553097b71a118f",
+                "disabled_by": null,
+                "entity_id": "switch.hank_hkzw_so01_smart_plug_switch",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "56-72057594982252544"
+            },
+            {
+                "config_entry_id": "897c878fba894ee3ac600341208a3265",
+                "device_id": "1c8851733c674c9181553097b71a118f",
+                "disabled_by": null,
+                "entity_id": "sensor.hank_hkzw_so01_smart_plug_previous_reading",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "56-72057594982465554"
             }
         ]
     },
