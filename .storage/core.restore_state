@@ -1,7 +1,7 @@
 {
     "data": [
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Auto_Switch_Water",
@@ -19,7 +19,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Modem reboot at 5:00",
@@ -37,7 +37,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "TEMP 22C Eve. 17:30-22:30",
@@ -55,7 +55,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Basement StairsLight Motion_ON",
@@ -73,7 +73,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Basement StairsLight 3min Motion_OFF",
@@ -91,7 +91,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Dehumidifier OFF before 1h of sunset",
@@ -109,7 +109,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "LightScene Dimmers AllRooms OFF at 00:00",
@@ -127,7 +127,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "LightScene Dimmer MasterRoom 18:00-22:00",
@@ -145,7 +145,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Ventilation 15min every hour 1:00-6:00",
@@ -163,7 +163,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Snapshots trigered by EZM01 ID:23",
@@ -181,7 +181,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "TEMP 22C Morn. 7:15-9:00",
@@ -199,25 +199,25 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Thermostat Refresh Timer",
                     "id": "ThermostatUpdate_2018112800",
-                    "last_triggered": "2019-11-12T20:43:30.085336+00:00"
+                    "last_triggered": "2019-11-12T20:58:30.039855+00:00"
                 },
                 "context": {
-                    "id": "6022aad2463d4a419d4c71600ea4f4fc",
+                    "id": "098b6a4cdb7a4ff7b8d6469ae9f9891c",
                     "user_id": null
                 },
                 "entity_id": "automation.thermostat_refresh_timer",
                 "last_changed": "2019-11-08T19:22:51.200663+00:00",
-                "last_updated": "2019-11-12T20:43:30.086323+00:00",
+                "last_updated": "2019-11-12T20:58:30.040360+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Dehumidifier ON after 3h sunrise",
@@ -235,7 +235,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "LightScene Dimmer Office OFF in 15min after 21:30",
@@ -253,7 +253,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "LightScene Dimmer ChatRoom 20:30-22:30",
@@ -271,7 +271,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Basement StairsLight 3min Closed_OFF",
@@ -289,7 +289,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Garage Door is OPEN",
@@ -307,7 +307,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Front Door is OPEN ID:36",
@@ -325,7 +325,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "PorchLight OFF at 23:00",
@@ -343,7 +343,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Basement StairsLight Door_ON",
@@ -361,7 +361,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "TEMP 20C Night 22:30-7:15",
@@ -379,7 +379,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Reset HEM (ID:25) monthly",
@@ -397,7 +397,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "LightScene Dimmer Office 18:00-21:00",
@@ -415,7 +415,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "PorchLight ON at 18:00",
@@ -433,7 +433,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Turn off Neo3 3 minutes after last movement",
@@ -451,7 +451,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "LightScene Dimmer MasterRoom OFF in 15min",
@@ -469,7 +469,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "TEMP 21C Day 9:00-17:30",
@@ -487,7 +487,7 @@
             }
         },
         {
-            "last_seen": "2019-11-12T20:43:43.012951+00:00",
+            "last_seen": "2019-11-12T20:58:44.009137+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "LightScene Dimmer ChatRoom OFF at 22:30",
