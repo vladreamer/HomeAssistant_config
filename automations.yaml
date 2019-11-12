@@ -42,9 +42,16 @@
   - condition: state
     entity_id: switch.dome_on_off_plug_in_switch02_switch 
     state: 'off'
+  - condition: numeric_state
+    entity_id: sensor.basement_p1_humidity 
+    above: 55
   action:
   - service: homeassistant.turn_on
     entity_id: switch.dome_on_off_plug_in_switch02_switch
+  - service: notify.mailtogmail
+    data_template:
+        title: "Basement Dehumidifier ON (Dome02 ID:46) at {{ now().strftime('%d %b, %Y %-I:%M %P') }}"
+        message: "Current Humidity in Basement is {{ states('sensor.basement_p1_humidity') }}"
 #
 #
 #
@@ -172,13 +179,13 @@
 #
 #
 
-- id: 'LightSceneVladsRoom_20181106'
+- id: 'LightSceneOffice_20181106'
 ########################################################
-## LightScene in Vlad's Room 
-## Turn Dimmer Switch (VladsRoom ID:29) "ON" with 55 brightness 
+## LightScene in Office 
+## Turn Dimmer Switch (Office ID:29) "ON" with 55 brightness 
 ## if it was "OFF" triggered by Multisensor3 after 6pm
 ########################################################
-  alias: "LightScene Dimmer VladRoom 18:00-21:00"
+  alias: "LightScene Dimmer Office 18:00-21:00"
   initial_state: false
   trigger:
     - entity_id: binary_sensor.multi03_motion
@@ -195,13 +202,13 @@
      service: scene.turn_on
      entity_id: scene.lightlow_vlad
 
-- id: 'LighSceneVladsRoom_OFF_20181106'
+- id: 'LighSceneOffice_OFF_20181106'
 ########################################################
 ## Turn Dimmer switch (ID:29) "OFF" if it was "ON" triggered by
 ## Multisensor3 after 15 minutes "NO MOTION" after 10:30pm
 ########################################################
-  alias: "LightScene Dimmer VladRoom OFF in 15min after 21:30"
-  initial_state: true
+  alias: "LightScene Dimmer Office OFF in 15min after 21:30"
+  initial_state: false
   trigger:
   - entity_id: binary_sensor.multi03_motion
     for:
@@ -239,7 +246,7 @@
 ## Thrmostat (ID:28) 
 ########################################################
   alias: "TEMP 22C Morn. 7:15-9:00"
-  initial_state: false
+  initial_state: True
   trigger:
     - platform: template
       value_template: "{% if states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') | float < 22 %} true {% endif %}"
@@ -269,7 +276,7 @@
 ## Thrmostat (ID:28) 
 ########################################################
   alias: "TEMP 21C Day 9:00-17:30"
-  initial_state: false
+  initial_state: True
   trigger:
     - platform: template
       value_template: "{% if states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') | float > 21.5 %} true {% endif %}"
@@ -300,7 +307,7 @@
 ## Thrmostat (ID:28) 
 ########################################################
   alias: "TEMP 22C Eve. 17:30-22:30"
-  initial_state: false
+  initial_state: True 
   trigger:
     - platform: template
       value_template: "{% if states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') | float < 22 %} true {% endif %}"
@@ -328,7 +335,7 @@
 ## Thrmostat (ID:28) 
 ########################################################
   alias: "TEMP 20C Night 22:30-7:15" 
-  initial_state: false
+  initial_state: True 
   trigger:
     - platform: template
       value_template: "{% if states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') | float > 20.5 %} true {% endif %}"
@@ -355,32 +362,32 @@
         message: "Current Temperature is {{ states('sensor.2gig_technologies_ct101_thermostat_iris_temperature') }}"
 
 
-- id: 'VladsRoomSW_Timer_2019070200'
+#- id: 'VladsRoomSW_Timer_2019070200'
 ########################################################
 ## VladsRoomSW for ventilation during the night  (ID:12) 
 ########################################################
-  alias: "VladsRoomSW_Timer ON/OFF hour 8:00-22:30" 
-  initial_state: true
-  trigger:
-   - platform: time
-     at: '08:00:00'    
-  condition:
-   - condition: time
-     after: '07:59:00'
-     before: '22:31:00'
-  action:
-   - service: homeassistant.turn_on
-     entity_id: switch.neo_coolcam_power_plug_12a_switch03
-   - delay: 14:30:00
-   - service: homeassistant.turn_off
-     entity_id: switch.neo_coolcam_power_plug_12a_switch03
+#  alias: "VladsRoomSW_Timer ON/OFF hour 8:00-22:30" 
+#  initial_state: true
+#  trigger:
+#   - platform: time
+#     at: '08:00:00'    
+#  condition:
+#   - condition: time
+#     after: '07:59:00'
+#     before: '22:31:00'
+#  action:
+#   - service: homeassistant.turn_on
+#     entity_id: switch.neo_coolcam_power_plug_12a_switch03
+#   - delay: 14:30:00
+#   - service: homeassistant.turn_off
+#     entity_id: switch.neo_coolcam_power_plug_12a_switch03
 
 - id: 'VentilationNight_2019062700'
 ########################################################
 ## HRV unit for ventilation during the night  (ID:47) 
 ########################################################
   alias: "Ventilation 15min every hour 1:00-6:00" 
-  initial_state: true
+  initial_state: false
   trigger:
    - platform: time_pattern       
      minutes: '/60'
@@ -412,7 +419,7 @@
   action:
     - service: notify.mailtogmail
       data_template:
-        title: "Energy iused {{states.sensor.aeotec_zw095_home_energy_meter_gen5_energy.state}} kWh"
+        title: "Energy used {{states.sensor.aeotec_zw095_home_energy_meter_gen5_energy.state}} kWh"
         message: "Total Energy Used per month is {{states.sensor.aeotec_zw095_home_energy_meter_gen5_energy.state}} kWh
     
         ID:39 - FurnaceSW - {{states.sensor.aeotec_zw078_heavy_duty_smart_switch_gen5_energy.state}} kWh;
@@ -423,7 +430,7 @@
         
         ID:10 - KitchenSW - {{states.sensor.neo_coolcam_power_plug_12a_energy02.state}} kWh;
         
-        ID:12 - Vlad'sRoomSW - {{states.sensor.neo_coolcam_power_plug_12a_energy03.state}} kWh;
+        ID:12 - FridgeSW - {{states.sensor.neo_coolcam_power_plug_12a_energy03.state}} kWh;
         
         ID:14 - ChatRoomSW - {{states.sensor.neo_coolcam_power_plug_12a_energy04.state}} kWh;
         
@@ -431,13 +438,13 @@
        
         ID:40 - OfficeSW - {{states.sensor.neo_coolcam_power_plug_12a_energy06.state}} kWh;
         
-        ID:41 - Neo07SW - {{states.sensor.neo_coolcam_power_plug_12a_energy07.state}} kWh;
+        ID:43 - SumpPumpSW - {{states.sensor.neo_coolcam_power_plug_12a_energy07.state}} kWh;
        
         ID:47 - HRV_SW - {{states.sensor.neo_coolcam_power_plug_12a_energy08.state}} kWh;
         
         ID:44 - ChatRoomRight - {{states.sensor.dome_on_off_plug_in_switch01_energy.state}} kWh;
         
-        ID:46 - Dome02 - {{states.sensor.dome_on_off_plug_in_switch02_energy.state}} kWh;"
+        ID:46 - DeHumSW - {{states.sensor.dome_on_off_plug_in_switch02_energy.state}} kWh;"
         
    
     - service: zwave.reset_node_meters 
@@ -459,7 +466,7 @@
     - service: zwave.reset_node_meters 
       data: {"node_id": 40}
     - service: zwave.reset_node_meters 
-      data: {"node_id": 41}
+      data: {"node_id": 43}
     - service: zwave.reset_node_meters 
       data: {"node_id": 47}
     - service: zwave.reset_node_meters 
@@ -510,7 +517,7 @@
 ##
 ########################################################
   alias: "LightScene Dimmer MasterRoom OFF in 15min"
-  initial_state: true
+  initial_state: false
  #alias: Inovelli01SW2 OFF after 15min
   trigger:
   - entity_id: binary_sensor.multi04_motion

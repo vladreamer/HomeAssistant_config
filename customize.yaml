@@ -52,7 +52,7 @@ sensor.vision_zp3111_multisensor_4in1_temperature_2:
   icon: mdi:temperature-celsius
   unit_of_measurement: °C
 sensor.vision_zp3111_multisensor_4in1_temperature_3:
-  friendly_name: VladsRoom_Id17
+  friendly_name: Office_Id17
   icon: mdi:temperature-celsius
   unit_of_measurement: °C
 sensor.vision_zp3111_multisensor_4in1_temperature_4:
@@ -76,7 +76,7 @@ sensor.vision_zp3111_multisensor_4in1_relative_humidity_2:
   icon: mdi:water-percent
   unit_of_measurement: '%'
 sensor.vision_zp3111_multisensor_4in1_relative_humidity_3:
-  friendly_name: VladsRoom
+  friendly_name: Office
   icon: mdi:water-percent
   unit_of_measurement: '%'
 sensor.vision_zp3111_multisensor_4in1_relative_humidity_4:
@@ -96,7 +96,7 @@ sensor.vision_zp3111_multisensor_4in1_luminance_2:
   icon: mdi:brightness-5
   unit_of_measurement: '%'
 sensor.vision_zp3111_multisensor_4in1_luminance_3:
-  friendly_name: VladsRoom
+  friendly_name: Office
   icon: mdi:brightness-5
   unit_of_measurement: '%'
 sensor.vision_zp3111_multisensor_4in1_luminance_4:
@@ -168,15 +168,15 @@ sensor.neo_coolcam_power_plug_12a_energy02:
   unit_of_measurement: kWh
   #  
 switch.neo_coolcam_power_plug_12a_switch03:
-  friendly_name: Vlad'sRoomSW_Id12
+  friendly_name: FridgeSW_Id12
 sensor.neo_coolcam_power_plug_12a_power03:
-  friendly_name: Vlad'sRoomSW_Pwr
+  friendly_name: FridgeSW_Pwr
 sensor.neo_coolcam_power_plug_12a_voltage03:
-  friendly_name: Vlad'sRoomSW_V
+  friendly_name: FridgeSW_V
 sensor.neo_coolcam_power_plug_12a_current03:
-  friendly_name: Vlad'sRoomSW_A
+  friendly_name: FridgeSW_A
 sensor.neo_coolcam_power_plug_12a_energy03:
-  friendly_name: Vlad'sRoomSW 
+  friendly_name: FridgeSW 
   icon: mdi:finance
   unit_of_measurement: kWh
   #
@@ -245,6 +245,9 @@ sensor.neo_coolcam_power_plug_12a_energy08:
   icon: mdi:finance
   unit_of_measurement: kWh
   #
+##########################################################
+#  Dome Power Plugs  
+##########################################################
 switch.dome_on_off_plug_in_switch01_switch:
   friendly_name: ChatRoomRight_Id44
 sensor.dome_on_off_plug_in_switch01_power:
@@ -259,15 +262,15 @@ sensor.dome_on_off_plug_in_switch01_energy:
   unit_of_measurement: kWh
   #
 switch.dome_on_off_plug_in_switch02_switch:
-  friendly_name: Dome02_Id46
+  friendly_name: DeHumSW_Id46
 sensor.dome_on_off_plug_in_switch02_power:
-  friendly_name: Dome02_Pwr
+  friendly_name: DeHumSW_Pwr
 sensor.dome_on_off_plug_in_switch02_voltage:
-  friendly_name: Dome02_V
+  friendly_name: DeHumSW_V
 sensor.dome_on_off_plug_in_switch02_current:
-  friendly_name: Dome02_A
+  friendly_name: DeHumSW_A
 sensor.dome_on_off_plug_in_switch02_energy:
-  friendly_name: Dome02SW 
+  friendly_name: DeHumSW 
   icon: mdi:finance
   unit_of_measurement: kWh
   #

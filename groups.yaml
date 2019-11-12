@@ -60,6 +60,12 @@ basement:
     - sensor.neo_coolcam_power_plug_12a_power01 
     - sensor.neo_coolcam_power_plug_12a_energy01
     - switch.neo_coolcam_power_plug_12a_switch01
+      ## Neo07
+    - sensor.neo_coolcam_power_plug_12a_power07 
+    - sensor.neo_coolcam_power_plug_12a_energy07
+    - sensor.neo_coolcam_power_plug_12a_voltage07
+    - sensor.neo_coolcam_power_plug_12a_current07
+      
 
 kitchen:
   name: MainFloor 
@@ -85,6 +91,13 @@ kitchen:
     - switch.hank_hkzwso03_smart_plug_switch01  
     #- sensor.hank_hkzwso03_smart_plug_voltage01  
     #- sensor.hank_hkzwso03_smart_plug_current01  
+      ## Neo03
+    - sensor.neo_coolcam_power_plug_12a_power03 
+    - switch.neo_coolcam_power_plug_12a_switch03
+    #- sensor.neo_coolcam_power_plug_12a_voltage03
+    #- sensor.neo_coolcam_power_plug_12a_current03
+      ## HA02-white
+    - switch.intermatic_ha02_appliance_module_switch 
 
 chatroom:
   name: ChatRoom 
@@ -102,8 +115,8 @@ chatroom:
     - light.zooz_zen22_dimmer_v2_3_level
   
 
-bedroom1:
-  name: Vlad's Room
+office:
+  name: Office
   control: hidden
   entities:
     - binary_sensor.multi03_motion
@@ -115,26 +128,14 @@ bedroom1:
       #- sensor.vision_zp3111_multisensor_4in1_battery_3
       ## Dimmer Zen22 (Node ID:32)
     - light.zooz_zen22_dimmer_v2_2_level
-      ## Neo03
-    - sensor.neo_coolcam_power_plug_12a_power03 
-    - switch.neo_coolcam_power_plug_12a_switch03
-    #- sensor.neo_coolcam_power_plug_12a_voltage03
-    #- sensor.neo_coolcam_power_plug_12a_current03
-
-office:
-  name: Office
-  control: hidden
-  entities:
-      ## HA02-white
-    - switch.intermatic_ha02_appliance_module_switch 
       ## Neo06
     - sensor.neo_coolcam_power_plug_12a_power06 
     - switch.neo_coolcam_power_plug_12a_switch06
-      ## Neo07
-    - sensor.neo_coolcam_power_plug_12a_power07 
-    - sensor.neo_coolcam_power_plug_12a_energy07
-    - sensor.neo_coolcam_power_plug_12a_voltage07
-    - sensor.neo_coolcam_power_plug_12a_current07
+
+bedroom1:
+  name: Vlad's Room
+  control: hidden
+  entities:
       
 modem:
   name: Modem
@@ -243,7 +244,7 @@ temp:
   - sensor.chatroom_p2_temperature
   - sensor.kitchen_p3_temperature
   - sensor.bathroom_t2_temperature
-  - sensor.office_t3_temperature
+  - sensor.vladroom_t3_temperature
   - sensor.homeseer_hsm200_wireless_multisensor_temperature_1       
 
 humid:
@@ -262,7 +263,7 @@ humid:
   - sensor.chatroom_p2_humidity
   - sensor.kitchen_p3_humidity
   - sensor.bathroom_t2_humidity
-  - sensor.office_t3_humidity
+  - sensor.vladroom_t3_humidity
 
 ###############################################################
 #
@@ -452,6 +453,7 @@ cameras:
     - camera.camera5
     - camera.camera6
     - camera.camera7
+    - camera.camera8
 
 ###############################################################
 #
@@ -530,7 +532,7 @@ dimmer:
     - switch.zooz_zen21_switch_v20_switch_01
       ## Dimmer Zen22 MasterBedroom (Node ID:29)
     - light.zooz_zen22_dimmer_v2_1_level
-      ## Dimmer Zen22 Vlad's Room (Node ID:32)
+      ## Dimmer Zen22 Office (Node ID:32)
     - light.zooz_zen22_dimmer_v2_2_level
       ## Dimmer Zen22 Chat Room (Node ID:54)
     - light.zooz_zen22_dimmer_v2_3_level

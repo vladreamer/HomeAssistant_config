@@ -208,19 +208,45 @@
                         },
                         {
                             "entities": [
-                                "sensor.weather_temperature",
-                                "sensor.vision_zp3111_multisensor_4in1_temperature_2",
-                                "sensor.garage_t1_temperature",
-                                "sensor.basement_p1_temperature",
-                                "sensor.vision_zp3111_multisensor_4in1_temperature_1",
-                                "sensor.vision_zp3111_multisensor_4in1_temperature_3",
-                                "sensor.vision_zp3111_multisensor_4in1_temperature_4",
-                                "sensor.thermostat_current_temperature",
-                                "sensor.chatroom_p2_temperature",
-                                "sensor.kitchen_p3_temperature",
-                                "sensor.bathroom_t2_temperature",
-                                "sensor.office_t3_temperature",
-                                "sensor.homeseer_hsm200_wireless_multisensor_temperature_1"
+                                {
+                                    "entity": "sensor.weather_temperature"
+                                },
+                                {
+                                    "entity": "sensor.vision_zp3111_multisensor_4in1_temperature_2"
+                                },
+                                {
+                                    "entity": "sensor.garage_t1_temperature"
+                                },
+                                {
+                                    "entity": "sensor.basement_p1_temperature"
+                                },
+                                {
+                                    "entity": "sensor.vision_zp3111_multisensor_4in1_temperature_1"
+                                },
+                                {
+                                    "entity": "sensor.vision_zp3111_multisensor_4in1_temperature_3"
+                                },
+                                {
+                                    "entity": "sensor.vision_zp3111_multisensor_4in1_temperature_4"
+                                },
+                                {
+                                    "entity": "sensor.thermostat_current_temperature"
+                                },
+                                {
+                                    "entity": "sensor.chatroom_p2_temperature"
+                                },
+                                {
+                                    "entity": "sensor.kitchen_p3_temperature"
+                                },
+                                {
+                                    "entity": "sensor.bathroom_t2_temperature"
+                                },
+                                {
+                                    "entity": "sensor.vladroom_t3_temperature"
+                                },
+                                {
+                                    "entity": "sensor.homeseer_hsm200_wireless_multisensor_temperature_1"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "Temperature",
@@ -228,18 +254,42 @@
                         },
                         {
                             "entities": [
-                                "sensor.weather_humidity",
-                                "sensor.vision_zp3111_multisensor_4in1_relative_humidity_2",
-                                "sensor.garage_t1_humidity",
-                                "sensor.basement_p1_humidity",
-                                "sensor.vision_zp3111_multisensor_4in1_relative_humidity_1",
-                                "sensor.vision_zp3111_multisensor_4in1_relative_humidity_3",
-                                "sensor.vision_zp3111_multisensor_4in1_relative_humidity_4",
-                                "sensor.2gig_technologies_ct101_thermostat_iris_relative_humidity",
-                                "sensor.chatroom_p2_humidity",
-                                "sensor.kitchen_p3_humidity",
-                                "sensor.bathroom_t2_humidity",
-                                "sensor.office_t3_humidity"
+                                {
+                                    "entity": "sensor.weather_humidity"
+                                },
+                                {
+                                    "entity": "sensor.vision_zp3111_multisensor_4in1_relative_humidity_2"
+                                },
+                                {
+                                    "entity": "sensor.garage_t1_humidity"
+                                },
+                                {
+                                    "entity": "sensor.basement_p1_humidity"
+                                },
+                                {
+                                    "entity": "sensor.vision_zp3111_multisensor_4in1_relative_humidity_1"
+                                },
+                                {
+                                    "entity": "sensor.vision_zp3111_multisensor_4in1_relative_humidity_3"
+                                },
+                                {
+                                    "entity": "sensor.vision_zp3111_multisensor_4in1_relative_humidity_4"
+                                },
+                                {
+                                    "entity": "sensor.2gig_technologies_ct101_thermostat_iris_relative_humidity"
+                                },
+                                {
+                                    "entity": "sensor.chatroom_p2_humidity"
+                                },
+                                {
+                                    "entity": "sensor.kitchen_p3_humidity"
+                                },
+                                {
+                                    "entity": "sensor.bathroom_t2_humidity"
+                                },
+                                {
+                                    "entity": "sensor.vladroom_t3_humidity"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "Humidity",
@@ -377,7 +427,8 @@
                         },
                         {
                             "entities": [
-                                "sensor.dome_on_off_plug_in_switch01_power"
+                                "sensor.dome_on_off_plug_in_switch01_power",
+                                "sensor.dome_on_off_plug_in_switch02_power"
                             ],
                             "hours_to_show": 100,
                             "refresh_interval": 0,
@@ -459,6 +510,10 @@
                         },
                         {
                             "entity": "camera.camera7",
+                            "type": "picture-entity"
+                        },
+                        {
+                            "entity": "camera.camera8",
                             "type": "picture-entity"
                         }
                     ],

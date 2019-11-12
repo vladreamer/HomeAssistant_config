@@ -53,3 +53,14 @@
 #  input: rtsp://192.168.0.224/live1.sdp
 #  extra_arguments: -q:v 2
 
+####################################
+## Network_Camera External  OC821D 
+#####################################
+- platform: mjpeg 
+  mjpeg_url: http://192.168.0.226/img/video.mjpeg
+  name: Camera8
+  username: viewer 
+  password: 1234
+
+
+

@@ -1680,7 +1680,7 @@
                 "device_id": null,
                 "disabled_by": null,
                 "entity_id": "zwave.zooz_zen22_dimmer_v2_2",
-                "name": "Vlad'sRoomDimmer_Id32",
+                "name": "OfficeDimmer_Id32",
                 "platform": "zwave",
                 "unique_id": "node-32"
             },
@@ -1689,7 +1689,7 @@
                 "device_id": "c27f25c426774873bd99c654f83a6dcb",
                 "disabled_by": null,
                 "entity_id": "light.zooz_zen22_dimmer_v2_2_level",
-                "name": "Vlad'sRoomDimmer_Id32",
+                "name": "OfficeDimmer_Id32",
                 "platform": "zwave",
                 "unique_id": "32-72057594579615745"
             },
@@ -3411,6 +3411,69 @@
                 "name": null,
                 "platform": "zwave",
                 "unique_id": "56-72057594982465554"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.unknown_node_55",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-55"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.samsung_clx_3300_series_192_168_0_43_tray_1",
+                "name": null,
+                "platform": "syncthru",
+                "unique_id": "Z748B8KD3B00C3J_tray_1"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.samsung_clx_3300_series_192_168_0_43_toner_cyan",
+                "name": null,
+                "platform": "syncthru",
+                "unique_id": "Z748B8KD3B00C3J_toner_cyan"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.samsung_clx_3300_series_192_168_0_43",
+                "name": null,
+                "platform": "syncthru",
+                "unique_id": "Z748B8KD3B00C3J_main"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.samsung_clx_3300_series_192_168_0_43_toner_black",
+                "name": null,
+                "platform": "syncthru",
+                "unique_id": "Z748B8KD3B00C3J_toner_black"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.samsung_clx_3300_series_192_168_0_43_toner_yellow",
+                "name": null,
+                "platform": "syncthru",
+                "unique_id": "Z748B8KD3B00C3J_toner_yellow"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.samsung_clx_3300_series_192_168_0_43_toner_magenta",
+                "name": null,
+                "platform": "syncthru",
+                "unique_id": "Z748B8KD3B00C3J_toner_magenta"
             }
         ]
     },

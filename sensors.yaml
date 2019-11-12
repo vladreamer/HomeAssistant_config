@@ -599,20 +599,20 @@
 
 - platform: mqtt
   state_topic: 'RTL_433/JSON'
-  name: 'Office T3 Temperature'
+  name: 'VladRoom T3 Temperature'
   unit_of_measurement: "°C"
-  value_template: "{% if value_json.model == 'THGR122N' and value_json.channel == 3 %}{{ value_json.temperature_C | round(1) }}{% else %}{{ states.sensor.office_t3_temperature.state }}{% endif %}"
+  value_template: "{% if value_json.model == 'THGR122N' and value_json.channel == 3 %}{{ value_json.temperature_C | round(1) }}{% else %}{{ states.sensor.vladroom_t3_temperature.state }}{% endif %}"
 
 - platform: mqtt
   state_topic: 'RTL_433/JSON'
-  name: 'Office T3 Humidity'
+  name: 'VladRoom T3 Humidity'
   unit_of_measurement: "%"
-  value_template: "{% if value_json.model == 'THGR122N' and value_json.channel == 3 %}{{ value_json.humidity | round(1) }}{% else %}{{ states.sensor.office_t3_humidity.state }}{% endif %}"
+  value_template: "{% if value_json.model == 'THGR122N' and value_json.channel == 3 %}{{ value_json.humidity | round(1) }}{% else %}{{ states.sensor.vladroom_t3_humidity.state }}{% endif %}"
 
 - platform: mqtt
   state_topic: 'RTL_433/JSON'
-  name: 'Office T3 Battery'
-  value_template: "{% if value_json.model == 'THGR122N' and value_json.channel == 3 %}{{ value_json.battery }}{% else %}{{ states.sensor.office_t3_battery.state }}{% endif %}"
+  name: 'VladRoom T3 Battery'
+  value_template: "{% if value_json.model == 'THGR122N' and value_json.channel == 3 %}{{ value_json.battery }}{% else %}{{ states.sensor.vladroom_t3_battery.state }}{% endif %}"
 
 - platform: mqtt
   state_topic: 'RTL_433/JSON'
