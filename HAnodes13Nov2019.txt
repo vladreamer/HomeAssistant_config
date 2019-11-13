@@ -1,0 +1,59 @@
+ID	Name	Curent Node ID	New Node ID
+1	Aeotec ZW078 Heavy Duty Smart Switch Gen5 	39	
+2	ChatRoomDimmer_Id54 	54	
+3	Dome01 	44	
+4	Dome02 	46	
+5	EZM01 	23	
+6	Ecolink Garage Door Tilt Sensor 	35	
+7	HA02-white 	5	
+8	HA04-black 	4	
+9	HEM01 	25	
+10	Hank HKZW-SO01 Smart Plug 	56 Cache	
+11	Inovelli01 	22	
+12	Kaipule IM20 Door/Window Sensor 	34 Cache	
+13	Kaipule IM20 Door/Window Sensor 	37	
+14	Kaipule IM20 Door/Window Sensor 	36 Cache	
+15	Linear GD00Z-4 Garage Door Opener Remote Controller 	53 Dynamic	
+16	MasterDimmer_Id29 	29	
+17	Multi01 	15	
+18	Multi02 	38	
+19	Multi03 	17	
+20	Multi04 	19	
+21	Multi05 	45	
+22	Neo01 	8	
+23	Neo02 	10	
+24	Neo03 	12	
+25	Neo04 	14	
+26	Neo05 	33	
+27	Neo06 	40	
+28	Neo07 	43	
+29	Neo08 	47	
+30	OfficeDimmer_Id32 	32	
+31	Thermostat 	28	
+32	Unknown Node 55 	55 Cache	
+33	WaterLeak01 	3	
+34	WaterLeak02 	31 Cache	
+35	WaterLeak03 	27	
+36	WaterValve01 	2	
+37	ZStick 	1	
+38	Zen21_01 	24	
+39	Zooz01 	21	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
